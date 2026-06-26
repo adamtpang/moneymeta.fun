@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "gold",
+    "name": "Gold",
+    "category": "asset_class",
+    "description": "Above-ground gold bullion. The monetary metal — capital's flight-to-safety deck.",
+    "source_url": "https://www.gold.org/goldhub/data",
+    "snapshots": [
+      { "market_cap": 27800000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 29200000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "global-equities",
+    "name": "Global Equities",
+    "category": "asset_class",
+    "description": "Total market cap of all listed companies worldwide. The default growth deck.",
+    "source_url": "https://www.sifma.org/resources/research/fact-book/",
+    "snapshots": [
+      { "market_cap": 116400000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 124000000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "global-real-estate",
+    "name": "Real Estate",
+    "category": "asset_class",
+    "description": "Total value of global real estate — residential, commercial, and land. The biggest pool of capital on earth.",
+    "source_url": "https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html",
+    "snapshots": [
+      { "market_cap": 373500000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 381000000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "global-bonds",
+    "name": "Bonds",
+    "category": "asset_class",
+    "description": "Global fixed income — government and corporate debt outstanding. The yield deck.",
+    "source_url": "https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/bond-market-size/",
+    "snapshots": [
+      { "market_cap": 142100000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 140000000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "global-m2",
+    "name": "Cash (M2)",
+    "category": "asset_class",
+    "description": "Global broad money supply — cash and near-cash deposits. The liquidity deck.",
+    "source_url": "https://tradingeconomics.com/country-list/money-supply-m2",
+    "snapshots": [
+      { "market_cap": 114100000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 115000000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "broad-commodities",
+    "name": "Commodities",
+    "category": "asset_class",
+    "description": "Broad commodities ex-gold — energy, industrial metals, agriculture. The real-economy deck.",
+    "source_url": "https://tradingeconomics.com/commodities",
+    "snapshots": [
+      { "market_cap": 3880000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 4000000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "bitcoin",
+    "name": "Bitcoin",
+    "category": "crypto",
+    "description": "The original cryptocurrency and largest digital asset. The hard-money deck.",
+    "source_url": "https://coinmarketcap.com/currencies/bitcoin/",
+    "snapshots": [
+      { "market_cap": 1881000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 2050000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "ethereum",
+    "name": "Ethereum",
+    "category": "crypto",
+    "description": "The largest smart-contract platform. The crypto-infrastructure deck.",
+    "source_url": "https://coinmarketcap.com/currencies/ethereum/",
+    "snapshots": [
+      { "market_cap": 394000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 410000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "altcoins",
+    "name": "Altcoin Market",
+    "category": "crypto",
+    "description": "Total crypto market cap excluding Bitcoin and Ethereum. The high-beta speculation deck.",
+    "source_url": "https://coinmarketcap.com/charts/",
+    "snapshots": [
+      { "market_cap": 1141000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 1107000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "nvidia",
+    "name": "Nvidia",
+    "category": "company",
+    "description": "AI compute supplier. The single most concentrated bet on the AI buildout.",
+    "source_url": "https://companiesmarketcap.com/nvidia/marketcap/",
+    "snapshots": [
+      { "market_cap": 3080000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 3450000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "category": "company",
+    "description": "Consumer hardware and services giant. The blue-chip cash-machine deck.",
+    "source_url": "https://companiesmarketcap.com/apple/marketcap/",
+    "snapshots": [
+      { "market_cap": 3415000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 3500000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "microsoft",
+    "name": "Microsoft",
+    "category": "company",
+    "description": "Enterprise software and cloud. The diversified-tech-incumbent deck.",
+    "source_url": "https://companiesmarketcap.com/microsoft/marketcap/",
+    "snapshots": [
+      { "market_cap": 3158000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 3300000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "saudi-aramco",
+    "name": "Saudi Aramco",
+    "category": "company",
+    "description": "The world's largest oil producer. The legacy-energy deck.",
+    "source_url": "https://companiesmarketcap.com/saudi-aramco/marketcap/",
+    "snapshots": [
+      { "market_cap": 1804000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 1750000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "tesla",
+    "name": "Tesla",
+    "category": "company",
+    "description": "EV and robotics maker. The high-volatility narrative deck.",
+    "source_url": "https://companiesmarketcap.com/tesla/marketcap/",
+    "snapshots": [
+      { "market_cap": 902000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 1100000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "elon-musk",
+    "name": "Elon Musk",
+    "category": "person",
+    "description": "Net worth, mostly Tesla, SpaceX, and xAI equity. The founder-concentration deck.",
+    "source_url": "https://www.forbes.com/profile/elon-musk/",
+    "snapshots": [
+      { "market_cap": 394500000000, "captured_at": "2026-05-24" },
+      { "market_cap": 430000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "jeff-bezos",
+    "name": "Jeff Bezos",
+    "category": "person",
+    "description": "Net worth, mostly Amazon equity. The diversified-mogul deck.",
+    "source_url": "https://www.forbes.com/profile/jeff-bezos/",
+    "snapshots": [
+      { "market_cap": 233000000000, "captured_at": "2026-05-24" },
+      { "market_cap": 240000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "mark-zuckerberg",
+    "name": "Mark Zuckerberg",
+    "category": "person",
+    "description": "Net worth, mostly Meta equity. The AI-pivot founder deck.",
+    "source_url": "https://www.forbes.com/profile/mark-zuckerberg/",
+    "snapshots": [
+      { "market_cap": 198100000000, "captured_at": "2026-05-24" },
+      { "market_cap": 210000000000, "captured_at": "2026-06-24" }
+    ]
+  },
+  {
+    "slug": "bernard-arnault",
+    "name": "Bernard Arnault",
+    "category": "person",
+    "description": "Net worth, mostly LVMH equity. The luxury-cycle deck.",
+    "source_url": "https://www.forbes.com/profile/bernard-arnault/",
+    "snapshots": [
+      { "market_cap": 207900000000, "captured_at": "2026-05-24" },
+      { "market_cap": 185000000000, "captured_at": "2026-06-24" }
+    ]
+  }
+]
