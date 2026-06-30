@@ -1,9 +1,14 @@
 # moneymeta.fun — Claude Code Project Brief
 
-> Status: **Phase 1 is built.** Static tier list renders from `seed/vehicles.json`
-> (no DB needed) via `lib/meta.ts` + `lib/data.ts`. Drizzle schema + Neon seed
-> script exist for Phase 2. Next up: deploy to Vercel, then Phase 2 (movement
-> arrows + snapshot history).
+> Status: **Live on moneymeta.fun (Vercel).** Two boards now exist:
+> - **Capital board** (`/`, `app/page.tsx`) — wealth vehicles by market cap × momentum,
+>   from `seed/vehicles.json` via `lib/meta.ts` + `lib/data.ts`.
+> - **Income board** (`/income`, `app/income/page.tsx`) — income *paths* ("decks")
+>   from `seed/income-decks.json` (BLS-anchored) via `lib/income.ts`, with a two-lens
+>   toggle (start-now vs highest-ceiling), data-confidence badges, and real indie-hacker
+>   exemplars (`seed/exemplars.json`) on the internet decks. The "where to walk" map.
+>
+> Drizzle schema + Neon seed script exist for Phase 2 (not required to ship).
 
 ---
 

@@ -5,6 +5,7 @@ import { TIER_ORDER } from "@/lib/meta";
 import { formatDate, formatPercent } from "@/lib/format";
 import { TIER_STYLES } from "@/components/tier-styles";
 import { TierRow } from "@/components/tier-row";
+import { BoardTabs } from "@/components/board-tabs";
 
 export default function Home() {
   const list = getTierList();
@@ -20,17 +21,18 @@ export default function Home() {
       <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
         {/* Header */}
         <header className="mb-6 sm:mb-8">
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h1 className="font-mono text-2xl font-black tracking-tight sm:text-3xl">
+              moneymeta<span className="text-primary">.fun</span>
+            </h1>
+            <BoardTabs />
+          </div>
           <div className="flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <h1 className="font-mono text-2xl font-black tracking-tight sm:text-3xl">
-                moneymeta<span className="text-primary">.fun</span>
-              </h1>
-              <p className="mt-1 max-w-xl text-sm text-muted-foreground">
-                The capitalism meta report. Wealth vehicles ranked{" "}
-                <span className="font-semibold text-foreground">S→D</span> by
-                market cap × momentum.
-              </p>
-            </div>
+            <p className="max-w-xl text-sm text-muted-foreground">
+              The capitalism meta report. Wealth vehicles ranked{" "}
+              <span className="font-semibold text-foreground">S→D</span> by
+              market cap × momentum.
+            </p>
             <div className="text-right">
               <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
                 Meta snapshot
