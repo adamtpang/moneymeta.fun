@@ -16,7 +16,7 @@
   "online-courses-cohorts": [
     { "name": "Justin Welsh", "handle": "@thejustinwelsh", "url": "https://www.justinwelsh.me", "note": "Productized one skill into evergreen courses", "rev": "~$4.15M/yr" },
     { "name": "Daniel Vassallo", "handle": "@dvassallo", "url": "https://smallbets.com", "note": "Small Bets community + AWS ebook; stacks small bets", "rev": "~$1M/yr" },
-    { "name": "Marc Lou", "handle": "@marc_louvion", "url": "https://codefa.st", "note": "CodeFast course — sell shovels to the gold rush", "rev": "~$1M/yr" }
+    { "name": "Marc Lou", "handle": "@marc_louvion", "url": "https://codefa.st", "note": "CodeFast course, sell shovels to the gold rush", "rev": "~$1M/yr" }
   ],
   "affiliate-seo-content-sites": [
     { "name": "John Rush", "handle": "@johnrushx", "url": "https://johnrush.me", "note": "~12 SEO directories feeding his SaaS portfolio", "rev": "~$2M/yr" },
@@ -25,10 +25,10 @@
   ],
   "ai-automation-agency": [
     { "name": "Maor Shlomo", "handle": "@MaorShlomo", "url": "https://base44.com", "note": "Base44 vibe-coding builder; fast acquisition", "rev": "~$1.5M/yr" },
-    { "name": "Ben Broca", "handle": "@benbroca", "url": "https://polsia.com", "note": "Polsia 'AI CEO' agents — newest + hypiest, treat skeptically", "rev": "~$6M/yr claimed" }
+    { "name": "Ben Broca", "handle": "@benbroca", "url": "https://polsia.com", "note": "Polsia 'AI CEO' agents, newest + hypiest, treat skeptically", "rev": "~$6M/yr claimed" }
   ],
   "marketing-agency": [
-    { "name": "Brett Williams", "handle": "@designjoy", "url": "https://designjoy.co", "note": "DesignJoy — one-man flat-rate productized design subscription", "rev": "~$1.5M/yr" }
+    { "name": "Brett Williams", "handle": "@designjoy", "url": "https://designjoy.co", "note": "DesignJoy, one-man flat-rate productized design subscription", "rev": "~$1.5M/yr" }
   ],
   "app-development": [
     { "name": "Zach Yadegari", "handle": "@zach_yadegari", "url": "https://www.calai.app", "note": "Cal AI calorie app (built at 17); sold to MyFitnessPal", "rev": "~$35M/yr" },

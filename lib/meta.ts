@@ -1,5 +1,5 @@
 /**
- * The meta score — moneymeta.fun's single source of truth for ranking.
+ * The meta score, moneymeta.fun's single source of truth for ranking.
  *
  * Vicious Syndicate's meta score ≈ popularity × win rate. We map that onto
  * capital: market cap (where capital lives) × growth rate (recent performance).
@@ -8,7 +8,7 @@
  *              + WEIGHT.growth * normGrowth(growth_rate)
  *
  * Every constant below is exposed so the formula stays trivially tunable.
- * Nothing here is stored in the database — score and tier are always derived.
+ * Nothing here is stored in the database, score and tier are always derived.
  */
 
 export type Tier = "S" | "A" | "B" | "C" | "D";
@@ -47,7 +47,7 @@ function clamp(n: number, lo: number, hi: number): number {
   return Math.max(lo, Math.min(hi, n));
 }
 
-/** 0..100 — bigger pool of capital scores higher. */
+/** 0..100, bigger pool of capital scores higher. */
 export function normalizeSize(marketCap: number): number {
   if (marketCap <= 0) return 0;
   const log = Math.log10(marketCap);
@@ -58,7 +58,7 @@ export function normalizeSize(marketCap: number): number {
   );
 }
 
-/** 0..100 — faster recent growth scores higher; 0% growth maps to 50. */
+/** 0..100, faster recent growth scores higher; 0% growth maps to 50. */
 export function normalizeGrowth(growthRate: number): number {
   return clamp(
     ((growthRate - GROWTH_CLAMP_LO) / (GROWTH_CLAMP_HI - GROWTH_CLAMP_LO)) * 100,

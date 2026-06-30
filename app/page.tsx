@@ -38,7 +38,7 @@ export default function Home() {
                 Meta snapshot
               </div>
               <div className="font-mono text-sm font-semibold text-foreground">
-                {capturedAt ? formatDate(capturedAt) : "—"}
+                {capturedAt ? formatDate(capturedAt) : ", "}
               </div>
             </div>
           </div>
@@ -78,8 +78,8 @@ export default function Home() {
 
         {/* Tier list */}
         <main className="flex flex-col gap-3" aria-label="Wealth vehicle tier list">
-          {TIER_ORDER.map((tier) => (
-            <TierRow key={tier} tier={tier} vehicles={tiers[tier]} />
+          {TIER_ORDER.map((tier, i) => (
+            <TierRow key={tier} tier={tier} vehicles={tiers[tier]} index={i} />
           ))}
         </main>
 
@@ -113,7 +113,7 @@ export default function Home() {
             (0–100) = 50% normalized market cap (log scale) + 50% normalized
             30-day growth. The <span className="font-mono">number</span> on each
             card is the score; the percentage is the trailing 30-day change.
-            Bigger pools of capital and faster momentum rank higher — the same
+            Bigger pools of capital and faster momentum rank higher, the same
             popularity × win-rate idea Vicious Syndicate uses for decks, applied
             to capital. Tap any card to open its public source.
           </p>

@@ -1,8 +1,8 @@
 /**
- * The Income board — moneymeta's second map: income *paths* ("decks") ranked by
+ * The Income board, moneymeta's second map: income *paths* ("decks") ranked by
  * the same popularity x win-rate idea, but win-rate = median income and the
  * score is barrier-aware. Two lenses:
- *   - startNow  : reachable + fast (income ÷ barrier ÷ time) — for a high-agency
+ *   - startNow  : reachable + fast (income ÷ barrier ÷ time), for a high-agency
  *                 person starting today with little capital.
  *   - ceiling   : highest expected value (terminal pay x trajectory).
  * All scores are derived here from seed/income-decks.json (BLS-anchored). Nothing

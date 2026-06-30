@@ -2,7 +2,7 @@
  * Phase 2+ seed script: loads seed/vehicles.json into Neon.
  * Run with: pnpm db:seed   (requires DATABASE_URL in .env)
  *
- * Phase 1 does not use this — the site renders directly from the JSON.
+ * Phase 1 does not use this, the site renders directly from the JSON.
  */
 import "dotenv/config";
 import { readFileSync } from "node:fs";
@@ -64,7 +64,7 @@ async function main() {
     console.log(`seeded ${v.slug} (${v.snapshots.length} snapshots)`);
   }
 
-  console.log(`done — ${data.length} vehicles`);
+  console.log(`done, ${data.length} vehicles`);
   process.exit(0);
 }
 

@@ -14,13 +14,13 @@ const LENS_COPY: Record<Lens, { label: string; icon: typeof Rocket; blurb: strin
     label: "Best to start now",
     icon: Rocket,
     blurb:
-      "Ranked by income ÷ barrier ÷ time — what a high-agency person with little capital can reach fastest.",
+      "Ranked by income over barrier over time, what a high-agency person with little capital can reach fastest.",
   },
   ceiling: {
     label: "Highest ceiling",
     icon: Trophy,
     blurb:
-      "Ranked by terminal pay and trajectory — the biggest outcomes if you have the years and capital to climb.",
+      "Ranked by terminal pay and trajectory, the biggest outcomes if you have the years and capital to climb.",
   },
 };
 
@@ -39,9 +39,9 @@ export function IncomeBoard({ decks }: { decks: IncomeDeckView[] }) {
   return (
     <div>
       {/* Lens toggle */}
-      <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mb-5 flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
         <div
-          className="inline-flex rounded-lg border bg-card p-0.5"
+          className="inline-flex rounded-lg border border-border/70 bg-card/80 p-1 backdrop-blur-sm"
           role="tablist"
           aria-label="Ranking lens"
         >
@@ -55,9 +55,9 @@ export function IncomeBoard({ decks }: { decks: IncomeDeckView[] }) {
                 aria-selected={active}
                 onClick={() => setLens(key)}
                 className={cn(
-                  "inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                  "inline-flex items-center gap-1.5 rounded-md px-3.5 py-1.5 text-xs font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                   active
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-primary text-primary-foreground shadow-[0_0_20px_-6px] shadow-primary/60"
                     : "text-muted-foreground hover:text-foreground",
                 )}
               >
@@ -74,31 +74,34 @@ export function IncomeBoard({ decks }: { decks: IncomeDeckView[] }) {
 
       {/* Tier rows */}
       <div className="flex flex-col gap-3">
-        {TIER_ORDER.map((tier) => {
+        {TIER_ORDER.map((tier, i) => {
           const style = TIER_STYLES[tier];
           const items = grouped[tier];
           return (
             <section
               key={tier}
               aria-label={`Tier ${tier}: ${style.label}`}
+              style={{ animationDelay: `${i * 70}ms` }}
               className={cn(
-                "flex flex-col gap-3 rounded-xl border border-l-4 bg-gradient-to-r to-transparent p-3 sm:flex-row sm:gap-4 sm:p-4",
+                "flex animate-rise flex-col gap-3 rounded-2xl border border-l-[3px] bg-gradient-to-r to-transparent p-3 sm:flex-row sm:gap-4 sm:p-4",
                 style.border,
                 style.tint,
               )}
             >
-              <div className="flex shrink-0 items-center gap-3 sm:w-28 sm:flex-col sm:items-start sm:gap-2 sm:pt-1">
+              <div className="flex shrink-0 items-center gap-3 sm:w-28 sm:flex-col sm:items-start sm:gap-2.5 sm:pt-1">
                 <div
                   className={cn(
-                    "flex h-12 w-12 items-center justify-center rounded-lg text-2xl font-black",
+                    "flex h-14 w-14 items-center justify-center rounded-xl font-mono text-3xl font-black",
                     style.chip,
                   )}
                 >
                   {tier}
                 </div>
                 <div className="flex flex-col leading-tight">
-                  <span className="text-xs font-semibold text-foreground">{style.label}</span>
-                  <span className="text-[11px] text-muted-foreground">
+                  <span className={cn("text-xs font-semibold", style.text)}>
+                    {style.label}
+                  </span>
+                  <span className="font-mono text-[11px] text-muted-foreground">
                     {items.length} {items.length === 1 ? "deck" : "decks"}
                   </span>
                 </div>
@@ -112,7 +115,7 @@ export function IncomeBoard({ decks }: { decks: IncomeDeckView[] }) {
                     ))}
                   </div>
                 ) : (
-                  <div className="flex h-full min-h-[64px] items-center justify-center rounded-lg border border-dashed text-xs text-muted-foreground">
+                  <div className="flex h-full min-h-[72px] items-center justify-center rounded-xl border border-dashed text-xs text-muted-foreground">
                     No decks in this tier under this lens
                   </div>
                 )}

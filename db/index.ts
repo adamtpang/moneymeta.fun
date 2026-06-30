@@ -3,8 +3,8 @@ import { drizzle } from "drizzle-orm/neon-http";
 import * as schema from "./schema";
 
 /**
- * Lazily construct the Drizzle client. Phase 1 never calls this — the tier list
- * renders from seed/vehicles.json — so a missing DATABASE_URL is fine until the
+ * Lazily construct the Drizzle client. Phase 1 never calls this, the tier list
+ * renders from seed/vehicles.json, so a missing DATABASE_URL is fine until the
  * Phase 2+ ingestion/seed work needs it.
  */
 export function getDb() {

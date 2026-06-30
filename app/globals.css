@@ -4,29 +4,29 @@
 
 @layer base {
   :root {
-    --background: 225 30% 5%;
-    --foreground: 210 20% 92%;
+    --background: 200 32% 4%;
+    --foreground: 200 14% 92%;
 
-    --card: 224 24% 8%;
-    --card-foreground: 210 20% 92%;
+    --card: 200 24% 7%;
+    --card-foreground: 200 14% 92%;
 
-    --primary: 142 71% 45%;
-    --primary-foreground: 144 80% 5%;
+    --primary: 152 76% 46%;
+    --primary-foreground: 152 92% 5%;
 
-    --secondary: 222 16% 14%;
-    --secondary-foreground: 210 20% 92%;
+    --secondary: 200 16% 13%;
+    --secondary-foreground: 200 14% 92%;
 
-    --muted: 222 16% 14%;
-    --muted-foreground: 216 14% 56%;
+    --muted: 200 16% 13%;
+    --muted-foreground: 200 11% 57%;
 
-    --accent: 222 16% 17%;
-    --accent-foreground: 210 20% 92%;
+    --accent: 200 18% 16%;
+    --accent-foreground: 200 14% 92%;
 
-    --border: 220 16% 16%;
-    --input: 220 16% 16%;
-    --ring: 142 71% 45%;
+    --border: 200 16% 14%;
+    --input: 200 16% 14%;
+    --ring: 152 76% 46%;
 
-    --radius: 0.6rem;
+    --radius: 0.7rem;
   }
 
   * {
@@ -35,17 +35,58 @@
 
   body {
     @apply bg-background font-sans text-foreground antialiased;
+    font-feature-settings: "cv05", "ss01";
+  }
+
+  /* Fixed atmospheric backdrop: terminal glow + blueprint grid, masked at top. */
+  .atmosphere {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(52rem 34rem at 88% -10%, hsl(152 76% 46% / 0.1), transparent 60%),
+      radial-gradient(46rem 30rem at 4% 0%, hsl(42 92% 52% / 0.06), transparent 58%),
+      linear-gradient(180deg, hsl(200 32% 5%), hsl(200 34% 3.2%));
+  }
+
+  .atmosphere::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image:
-      radial-gradient(
-        60rem 40rem at 80% -10%,
-        hsl(142 71% 45% / 0.06),
-        transparent 60%
-      ),
-      radial-gradient(
-        50rem 30rem at -10% 0%,
-        hsl(45 93% 47% / 0.05),
-        transparent 55%
-      );
-    background-attachment: fixed;
+      linear-gradient(hsl(200 30% 62% / 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(200 30% 62% / 0.045) 1px, transparent 1px);
+    background-size: 58px 58px;
+    -webkit-mask-image: radial-gradient(125% 85% at 50% -5%, #000 30%, transparent 76%);
+    mask-image: radial-gradient(125% 85% at 50% -5%, #000 30%, transparent 76%);
+  }
+
+  ::selection {
+    background: hsl(152 76% 46% / 0.28);
+    color: hsl(152 30% 96%);
+  }
+
+  ::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(200 14% 22%);
+    border: 3px solid hsl(var(--background));
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(200 14% 30%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }

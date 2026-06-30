@@ -48,23 +48,27 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
+          "var(--font-sans-var)",
           "ui-sans-serif",
           "system-ui",
-          "-apple-system",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica",
-          "Arial",
           "sans-serif",
         ],
         mono: [
+          "var(--font-mono-var)",
           "ui-monospace",
           "SF Mono",
-          "JetBrains Mono",
           "Menlo",
-          "Consolas",
           "monospace",
         ],
+      },
+      keyframes: {
+        rise: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        rise: "rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both",
       },
     },
   },

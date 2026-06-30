@@ -3,7 +3,7 @@
     "slug": "gold",
     "name": "Gold",
     "category": "asset_class",
-    "description": "Above-ground gold bullion. The monetary metal — capital's flight-to-safety deck.",
+    "description": "Above-ground gold bullion. The monetary metal, capital's flight-to-safety deck.",
     "source_url": "https://www.gold.org/goldhub/data",
     "snapshots": [
       { "market_cap": 27800000000000, "captured_at": "2026-05-24" },
@@ -25,7 +25,7 @@
     "slug": "global-real-estate",
     "name": "Real Estate",
     "category": "asset_class",
-    "description": "Total value of global real estate — residential, commercial, and land. The biggest pool of capital on earth.",
+    "description": "Total value of global real estate, residential, commercial, and land. The biggest pool of capital on earth.",
     "source_url": "https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate.html",
     "snapshots": [
       { "market_cap": 373500000000000, "captured_at": "2026-05-24" },
@@ -36,7 +36,7 @@
     "slug": "global-bonds",
     "name": "Bonds",
     "category": "asset_class",
-    "description": "Global fixed income — government and corporate debt outstanding. The yield deck.",
+    "description": "Global fixed income, government and corporate debt outstanding. The yield deck.",
     "source_url": "https://www.icmagroup.org/market-practice-and-regulatory-policy/secondary-markets/bond-market-size/",
     "snapshots": [
       { "market_cap": 142100000000000, "captured_at": "2026-05-24" },
@@ -47,7 +47,7 @@
     "slug": "global-m2",
     "name": "Cash (M2)",
     "category": "asset_class",
-    "description": "Global broad money supply — cash and near-cash deposits. The liquidity deck.",
+    "description": "Global broad money supply, cash and near-cash deposits. The liquidity deck.",
     "source_url": "https://tradingeconomics.com/country-list/money-supply-m2",
     "snapshots": [
       { "market_cap": 114100000000000, "captured_at": "2026-05-24" },
@@ -58,7 +58,7 @@
     "slug": "broad-commodities",
     "name": "Commodities",
     "category": "asset_class",
-    "description": "Broad commodities ex-gold — energy, industrial metals, agriculture. The real-economy deck.",
+    "description": "Broad commodities ex-gold, energy, industrial metals, agriculture. The real-economy deck.",
     "source_url": "https://tradingeconomics.com/commodities",
     "snapshots": [
       { "market_cap": 3880000000000, "captured_at": "2026-05-24" },

@@ -5,7 +5,7 @@
 market-cap data. Check it like a Hearthstone meta report: what's strong right
 now, what's rising, what's falling.
 
-This is a personal daily allocation instrument — **not financial advice**, and
+This is a personal daily allocation instrument, **not financial advice**, and
 **never** built on self-reported data. Every number traces to a public source.
 
 ## The idea
@@ -46,7 +46,7 @@ meta_score = 0.5 * normSize(market_cap)   // log scale, $100B→0 … $500T→10
 tiers: S ≥ 80 · A ≥ 65 · B ≥ 50 · C ≥ 35 · D < 35
 ```
 
-Growth, score, and tier are **always derived**, never stored as columns — the
+Growth, score, and tier are **always derived**, never stored as columns, the
 formula stays a single source of truth.
 
 ## Roadmap
@@ -56,7 +56,7 @@ formula stays a single source of truth.
   `/methodology` page.
 - **Phase 3:** automated weekly ingestion (CoinMarketCap API, companies/assets
   scrapers, Forbes) → `snapshots`. Fail soft: keep last good snapshot.
-- **Phase 4:** dated "this week's meta" report — biggest risers/fallers, new
+- **Phase 4:** dated "this week's meta" report, biggest risers/fallers, new
   S-tier, tier drops.
 
 ## Database (Phase 2+)

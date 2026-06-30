@@ -7,39 +7,42 @@ import { VehicleCard } from "@/components/vehicle-card";
 export function TierRow({
   tier,
   vehicles,
+  index = 0,
 }: {
   tier: Tier;
   vehicles: VehicleView[];
+  index?: number;
 }) {
   const style = TIER_STYLES[tier];
 
   return (
     <section
       aria-labelledby={`tier-${tier}-heading`}
+      style={{ animationDelay: `${index * 70}ms` }}
       className={cn(
-        "flex flex-col gap-3 rounded-xl border border-l-4 bg-gradient-to-r to-transparent p-3 sm:flex-row sm:gap-4 sm:p-4",
+        "flex animate-rise flex-col gap-3 rounded-2xl border border-l-[3px] bg-gradient-to-r to-transparent p-3 sm:flex-row sm:gap-4 sm:p-4",
         style.border,
         style.tint,
       )}
     >
       <h2 id={`tier-${tier}-heading`} className="sr-only">
-        {tier} tier — {style.label} ({vehicles.length}{" "}
+        {tier} tier, {style.label} ({vehicles.length}{" "}
         {vehicles.length === 1 ? "deck" : "decks"})
       </h2>
-      <div className="flex shrink-0 items-center gap-3 sm:w-28 sm:flex-col sm:items-start sm:justify-start sm:gap-2 sm:pt-1">
+      <div className="flex shrink-0 items-center gap-3 sm:w-28 sm:flex-col sm:items-start sm:justify-start sm:gap-2.5 sm:pt-1">
         <div
           className={cn(
-            "flex h-12 w-12 items-center justify-center rounded-lg text-2xl font-black",
+            "flex h-14 w-14 items-center justify-center rounded-xl font-mono text-3xl font-black",
             style.chip,
           )}
         >
           {tier}
         </div>
         <div className="flex flex-col leading-tight">
-          <span className="text-xs font-semibold text-foreground">
+          <span className={cn("text-xs font-semibold", style.text)}>
             {style.label}
           </span>
-          <span className="text-[11px] text-muted-foreground">
+          <span className="font-mono text-[11px] text-muted-foreground">
             {vehicles.length} {vehicles.length === 1 ? "deck" : "decks"}
           </span>
         </div>
@@ -53,8 +56,8 @@ export function TierRow({
             ))}
           </div>
         ) : (
-          <div className="flex h-full min-h-[64px] items-center justify-center rounded-lg border border-dashed text-xs text-muted-foreground">
-            No decks in this tier this week
+          <div className="flex h-full min-h-[72px] items-center justify-center rounded-xl border border-dashed text-xs text-muted-foreground">
+            No decks in this tier this snapshot
           </div>
         )}
       </div>

@@ -8,7 +8,7 @@ import {
   timestamp,
 } from "drizzle-orm/pg-core";
 
-/** The "decks" — wealth vehicles being ranked. */
+/** The "decks", wealth vehicles being ranked. */
 export const vehicles = pgTable("vehicles", {
   id: serial("id").primaryKey(),
   slug: text("slug").notNull().unique(),
@@ -22,7 +22,7 @@ export const vehicles = pgTable("vehicles", {
     .defaultNow(),
 });
 
-/** Time series — one row per vehicle per capture. Growth + meta score are
+/** Time series, one row per vehicle per capture. Growth + meta score are
  *  computed from snapshot history, never stored here. */
 export const snapshots = pgTable(
   "snapshots",

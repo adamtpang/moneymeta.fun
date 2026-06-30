@@ -6,7 +6,7 @@ import { BoardTabs } from "@/components/board-tabs";
 import { IncomeBoard } from "@/components/income/income-board";
 
 export const metadata: Metadata = {
-  title: "moneymeta.fun — the income board",
+  title: "moneymeta.fun, the income board",
   description:
     "Income paths ranked S→D by median income, growth, and barrier-to-entry. Anchored on BLS data; the 'where to walk' map for income-maxxing.",
 };
@@ -29,7 +29,7 @@ export default function IncomePage() {
             <BoardTabs />
           </div>
           <p className="max-w-2xl text-sm text-muted-foreground">
-            The <span className="font-semibold text-foreground">income board</span> — how to
+            The <span className="font-semibold text-foreground">income board</span>, how to
             make the money, ranked. Income paths as &ldquo;decks,&rdquo; scored on{" "}
             <span className="font-semibold text-foreground">median income × growth ÷ barrier</span>.
             Occupations are anchored on{" "}
@@ -41,13 +41,13 @@ export default function IncomePage() {
           <div className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
             <SummaryStat
               icon={<Rocket className="h-4 w-4 text-primary" aria-hidden />}
-              label="Top — start now"
+              label="Top, start now"
               name={topStartNow.name}
               value={`${topStartNow.startNowScore}`}
             />
             <SummaryStat
               icon={<Trophy className="h-4 w-4 text-amber-300" aria-hidden />}
-              label="Top — highest ceiling"
+              label="Top, highest ceiling"
               name={topCeiling.name}
               value={`${topCeiling.ceilingScore}`}
             />
@@ -70,11 +70,11 @@ export default function IncomePage() {
           <p className="max-w-3xl text-xs leading-relaxed text-muted-foreground">
             <span className="font-semibold text-foreground">The two lenses.</span>{" "}
             <span className="font-semibold text-foreground">Start now</span> = 40% income + 20%
-            growth + 40% reachability (time-to-first-income and capital needed) — it rewards $0-capital,
+            growth + 40% reachability (time-to-first-income and capital needed), it rewards $0-capital,
             fast, skill-gated paths. <span className="font-semibold text-foreground">Highest ceiling</span>{" "}
-            = 70% income + 30% growth — terminal pay wins, so decade-long moats rise. The same path
+            = 70% income + 30% growth, terminal pay wins, so decade-long moats rise. The same path
             tiers differently under each. Median is deliberately brutal: most internet paths show a
-            near-$0 median because that&apos;s the real survivorship-adjusted truth — the exemplars
+            near-$0 median because that&apos;s the real survivorship-adjusted truth, the exemplars
             on those cards are the rare winners, not the typical outcome. Every occupation number
             traces to BLS; tap any card for its source.
           </p>

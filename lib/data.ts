@@ -1,6 +1,6 @@
 /**
  * The Phase 1 data layer. Reads the committed seed snapshots and derives the
- * tier list in a pure function — no database. Growth, meta score, and tier are
+ * tier list in a pure function, no database. Growth, meta score, and tier are
  * all computed (never stored). In Phase 3 the only change here is swapping the
  * seed import for a Drizzle query that returns the same VehicleView shape.
  */
