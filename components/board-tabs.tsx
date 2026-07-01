@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 const TABS = [
   { href: "/", label: "Capital" },
   { href: "/income", label: "Income" },
+  { href: "/career", label: "Career" },
 ];
 
 export function BoardTabs() {
