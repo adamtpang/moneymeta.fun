@@ -1,0 +1,16 @@
+# moneymeta.fun (moneymeta.fun)
+
+> A data-driven tier list of wealth and income vehicles, ranked S to D by a meta score built from public, verifiable data. Vicious Syndicate, but for capitalism.
+
+moneymeta.fun reads like a Hearthstone meta report for money: it ranks wealth vehicles and income paths into S/A/B/C/D tiers using a meta score. Popularity maps to market cap (where capital actually lives), win rate maps to growth rate, and the two combine into a score from 0 to 100 that sets the tier. Every number traces back to a public source; there is no self-reported data, and it is a personal allocation instrument, not financial advice.
+
+The site currently runs three boards. The capital board ranks wealth vehicles by market cap times momentum. The income board ranks income paths ("decks") by median income, growth, and barrier to entry, anchored on BLS data. The career engine reverse-engineers real job descriptions into a path toward the proof that gets you placed. Built with Next.js and deployed on Vercel; the capital and income boards render live today, with snapshot history and automated ingestion planned.
+
+## Key links
+- [Capital board](https://moneymeta.fun/): wealth vehicles ranked S to D by market cap and momentum.
+- [Income board](https://moneymeta.fun/income): income paths scored on median income, growth, and barrier to entry, with a start-now vs highest-ceiling toggle.
+- [Career engine](https://moneymeta.fun/career): real job descriptions reverse-engineered into a course ending in placement proof.
+
+## About
+- Part of adam.inc, the internet portfolio of Adam Pangelinan (Anchor Marianas LLC).
+- Builder: https://adampang.com
