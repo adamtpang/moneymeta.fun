@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 
 import "./globals.css";
@@ -62,6 +63,7 @@ export default function RootLayout({
       <body>
         <div className="atmosphere" aria-hidden />
         {children}
+        <Analytics />
       </body>
     </html>
   );

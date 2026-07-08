@@ -127,14 +127,24 @@ export default function Home() {
               Not financial advice. No self-reported data, ever.
             </span>
           </p>
-          <a
-            href="https://github.com/adamtpang/moneymeta.fun"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded font-medium text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          >
-            github.com/adamtpang/moneymeta.fun
-          </a>
+          <p className="flex flex-wrap items-center gap-x-3">
+            <a
+              href="https://github.com/adamtpang/moneymeta.fun"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded font-medium text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              github.com/adamtpang/moneymeta.fun
+            </a>
+            <a
+              href="https://adampang.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded font-medium text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              built by Adam Pangelinan
+            </a>
+          </p>
         </footer>
       </div>
     </div>
