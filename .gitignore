@@ -35,3 +35,6 @@ pnpm-debug.log*
 *.tsbuildinfo
 
 .vercel
+
+# sales material (private, repo is public)
+/sales
