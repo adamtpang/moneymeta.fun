@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 const MAILTO =
   "mailto:adamtpang@gmail.com?subject=sprint&body=The%20one%20thing%20I%20want%20built%3A%20";
+const DEPOSIT_LINK = "https://buy.stripe.com/bJe6oH6UW68BaEwgl3aMU0p";
 
 const DELIVERABLES = [
   "A working AI feature, internal tool, automation, or MVP, live at a URL you own",
@@ -59,6 +60,15 @@ export default function SprintPage() {
               >
                 <Mail className="h-4 w-4" aria-hidden />
                 Book a sprint: tell me the one thing
+              </a>
+              <a
+                href={DEPOSIT_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              >
+                Ready now? Pay the $750 deposit
+                <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
               </a>
               <span className="inline-flex items-center gap-1 font-mono text-xs text-muted-foreground">
                 <Clock className="h-3.5 w-3.5" aria-hidden /> scoped same day, shipped in ~7
@@ -113,9 +123,17 @@ export default function SprintPage() {
         <section className="rounded-xl border bg-card/40 p-4" aria-label="How it works">
           <p className="text-xs leading-relaxed text-muted-foreground">
             <span className="font-semibold text-foreground">How it works.</span> Email the one
-            thing you want built. I reply same day with a fixed scope and a yes or no. Deposit
+            thing you want built. I reply same day with a fixed scope and a yes or no. The{" "}
+            <a
+              href={DEPOSIT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-primary hover:underline"
+            >
+              $750 deposit
+            </a>{" "}
             books the slot, the remainder is due on delivery, and if I miss the scope we agreed,
-            you do not pay the remainder. Payment by card or invoice.{" "}
+            you do not pay the remainder. Card via Stripe, or invoice.{" "}
             <a href={MAILTO} className="inline-flex items-center gap-0.5 font-medium text-primary hover:underline">
               Start now <ArrowUpRight className="h-3 w-3" aria-hidden />
             </a>
