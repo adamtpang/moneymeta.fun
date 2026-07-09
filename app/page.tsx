@@ -6,6 +6,7 @@ import { formatDate, formatPercent } from "@/lib/format";
 import { TIER_STYLES } from "@/components/tier-styles";
 import { TierRow } from "@/components/tier-row";
 import { BoardTabs } from "@/components/board-tabs";
+import { LiveBets } from "@/components/live-bets";
 
 export default function Home() {
   const list = getTierList();
@@ -19,35 +20,62 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
-        {/* Header */}
+        {/* Masthead */}
         <header className="mb-6 sm:mb-8">
-          <div className="mb-4 flex items-center justify-between gap-3">
-            <h1 className="font-mono text-2xl font-black tracking-tight sm:text-3xl">
-              moneymeta<span className="text-primary">.fun</span>
-            </h1>
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <div className="mb-2 flex items-center gap-2">
+                <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                  The capitalism meta report
+                </span>
+                <span className="inline-flex items-center gap-1 rounded bg-primary/15 px-1.5 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-primary ring-1 ring-primary/30">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                  Live
+                </span>
+              </div>
+              <h1 className="font-mono text-3xl font-black tracking-tight sm:text-4xl">
+                moneymeta<span className="text-primary">.fun</span>
+              </h1>
+            </div>
             <BoardTabs />
           </div>
-          <div className="flex flex-wrap items-end justify-between gap-3">
-            <p className="max-w-xl text-sm text-muted-foreground">
-              The capitalism meta report. Wealth vehicles ranked{" "}
-              <span className="font-semibold text-foreground">S→D</span> by
+          <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The meta report for making money. Find where the capital is, where it is
+            going, and the plays winning right now. Then go run them.
+          </p>
+          <div className="mt-4 h-px w-full bg-gradient-to-r from-primary/40 via-border to-transparent" />
+        </header>
+
+        {/* The meta, in action */}
+        <LiveBets />
+
+        {/* Capital board header */}
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+              Capital board
+            </div>
+            <p className="mt-1 max-w-xl text-sm text-muted-foreground">
+              Wealth vehicles ranked{" "}
+              <span className="font-semibold text-foreground">S to D</span> by
               market cap × momentum.
             </p>
-            <div className="text-right">
-              <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
-                Meta snapshot
-              </div>
-              <div className="font-mono text-sm font-semibold text-foreground">
-                {capturedAt ? formatDate(capturedAt) : ", "}
-              </div>
+          </div>
+          <div className="text-right">
+            <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+              Meta snapshot
+            </div>
+            <div className="font-mono text-sm font-semibold text-foreground">
+              {capturedAt ? formatDate(capturedAt) : "n/a"}
             </div>
           </div>
+        </div>
 
-          {/* Snapshot summary strip */}
-          <div
-            className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-3"
-            aria-label="This snapshot's headline movers"
-          >
+        {/* Snapshot summary strip */}
+        <div
+          className="mb-6 grid grid-cols-1 gap-2.5 sm:grid-cols-3"
+          aria-label="This snapshot's headline movers"
+        >
             <SummaryStat
               icon={<Trophy className="h-4 w-4 text-amber-300" aria-hidden />}
               label="Top of the meta"
@@ -73,8 +101,7 @@ export default function Home() {
               value={formatPercent(faller.growth)}
               tone="down"
             />
-          </div>
-        </header>
+        </div>
 
         {/* Tier list */}
         <main className="flex flex-col gap-3" aria-label="Wealth vehicle tier list">
