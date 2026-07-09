@@ -22,6 +22,7 @@ export interface VehicleView {
   tier: Tier;
   capturedAt: string;
   priorAt: string;
+  rank: number;
 }
 
 interface SeedSnapshot {
@@ -62,6 +63,7 @@ function toView(v: SeedVehicle): VehicleView | null {
     tier: tierFor(score),
     capturedAt: latest.captured_at,
     priorAt: prior.captured_at,
+    rank: 0,
   };
 }
 
@@ -76,7 +78,8 @@ export function getTierList(): VehicleView[] {
         b.score - a.score ||
         b.marketCap - a.marketCap ||
         a.name.localeCompare(b.name),
-    );
+    )
+    .map((v, i) => ({ ...v, rank: i + 1 }));
 }
 
 /** Group an already-computed list into tier buckets, preserving order. */

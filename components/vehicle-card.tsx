@@ -21,22 +21,33 @@ export function VehicleCard({ v }: { v: VehicleView }) {
       target="_blank"
       rel="noopener noreferrer"
       title={`${v.name}, source: ${host}`}
-      aria-label={`${v.name}: ${formatUsd(v.marketCap)}, ${formatPercent(v.growth)}, meta score ${v.score}. Opens source at ${host}.`}
+      aria-label={`Rank ${v.rank}. ${v.name}: ${formatUsd(v.marketCap)}, ${formatPercent(v.growth)}, meta score ${v.score}. Opens source at ${host}.`}
       className={cn(
-        "group relative flex flex-col justify-between gap-3 rounded-xl border border-border/70 bg-card/80 p-3.5",
+        "group relative flex flex-col justify-between gap-3 rounded-lg border border-l-2 border-border/70 bg-card/80 p-3.5",
         "ring-1 ring-transparent backdrop-blur-sm transition-all duration-200",
         "hover:-translate-y-1 hover:border-border hover:bg-card",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        category.accent,
         style.ring,
         style.glow,
       )}
     >
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
-          <div className="truncate text-sm font-semibold leading-tight text-foreground">
-            {v.name}
+          <div className="flex items-center gap-1.5">
+            <span className="font-mono text-[10px] font-semibold tabular-nums text-muted-foreground">
+              #{v.rank}
+            </span>
+            <span className="truncate text-sm font-semibold leading-tight text-foreground">
+              {v.name}
+            </span>
           </div>
-          <div className="mt-1 flex items-center gap-1 text-[10px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+          <div
+            className={cn(
+              "mt-1.5 inline-flex items-center gap-1 rounded px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-[0.1em]",
+              category.chip,
+            )}
+          >
             <CategoryIcon className="h-3 w-3" aria-hidden />
             {category.label}
           </div>

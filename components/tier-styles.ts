@@ -81,10 +81,30 @@ export const TIER_STYLES: Record<Tier, TierStyle> = {
 
 export const CATEGORY_META: Record<
   Category,
-  { label: string; icon: LucideIcon }
+  { label: string; icon: LucideIcon; accent: string; chip: string }
 > = {
-  asset_class: { label: "Asset Class", icon: Landmark },
-  crypto: { label: "Crypto", icon: Bitcoin },
-  company: { label: "Company", icon: Building2 },
-  person: { label: "Person", icon: User },
+  asset_class: {
+    label: "Asset Class",
+    icon: Landmark,
+    accent: "border-l-indigo-400/80",
+    chip: "bg-indigo-400/15 text-indigo-300",
+  },
+  crypto: {
+    label: "Crypto",
+    icon: Bitcoin,
+    accent: "border-l-orange-400/80",
+    chip: "bg-orange-400/15 text-orange-300",
+  },
+  company: {
+    label: "Company",
+    icon: Building2,
+    accent: "border-l-sky-400/80",
+    chip: "bg-sky-400/15 text-sky-300",
+  },
+  person: {
+    label: "Person",
+    icon: User,
+    accent: "border-l-pink-400/80",
+    chip: "bg-pink-400/15 text-pink-300",
+  },
 };
