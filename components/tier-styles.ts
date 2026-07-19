@@ -1,7 +1,4 @@
-import { Bitcoin, Building2, Landmark, User, type LucideIcon } from "lucide-react";
-
 import type { Tier } from "@/lib/meta";
-import type { Category } from "@/lib/data";
 
 /**
  * Per-tier visual language. Strings are full literal class names so Tailwind's
@@ -73,38 +70,8 @@ export const TIER_STYLES: Record<Tier, TierStyle> = {
     tint: "from-slate-500/[0.05]",
     score: "bg-slate-500/15 text-slate-300 ring-slate-500/30",
     ring: "hover:ring-slate-400/40",
-    glow: "hover:shadow-lg hover:shadow-slate-400/10",
+    glow: "hover:shadow-xl hover:shadow-slate-400/10",
     text: "text-slate-300",
     label: "Falling off",
-  },
-};
-
-export const CATEGORY_META: Record<
-  Category,
-  { label: string; icon: LucideIcon; accent: string; chip: string }
-> = {
-  asset_class: {
-    label: "Asset Class",
-    icon: Landmark,
-    accent: "border-l-indigo-400/80",
-    chip: "bg-indigo-400/15 text-indigo-300",
-  },
-  crypto: {
-    label: "Crypto",
-    icon: Bitcoin,
-    accent: "border-l-orange-400/80",
-    chip: "bg-orange-400/15 text-orange-300",
-  },
-  company: {
-    label: "Company",
-    icon: Building2,
-    accent: "border-l-sky-400/80",
-    chip: "bg-sky-400/15 text-sky-300",
-  },
-  person: {
-    label: "Person",
-    icon: User,
-    accent: "border-l-pink-400/80",
-    chip: "bg-pink-400/15 text-pink-300",
   },
 };

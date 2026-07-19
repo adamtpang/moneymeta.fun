@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "moneymeta.fun, the Vicious Syndicate of moneymaking";
+export const alt = "moneymeta.fun, the best money deck to play in life";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -35,7 +35,7 @@ export default function OpengraphImage() {
             moneymeta<span style={{ color: "#22c55e" }}>.fun</span>
           </div>
           <div style={{ display: "flex", marginTop: 18, fontSize: 36, color: "#94a3b8" }}>
-            The Vicious Syndicate of moneymaking. Capital, income, and careers, ranked.
+            The best money deck to play in life. Every way to make money, ranked.
           </div>
         </div>
 

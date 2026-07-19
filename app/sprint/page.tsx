@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { ArrowUpRight, Check, Clock, Hammer, Mail, Shield } from "lucide-react";
 
-import { BoardTabs } from "@/components/board-tabs";
-
 export const metadata: Metadata = {
   title: "AI Build Sprint, shipped in 7 days | moneymeta.fun",
   description:
@@ -32,10 +30,18 @@ export default function SprintPage() {
       <div className="mx-auto w-full max-w-[860px] px-4 py-6 sm:py-10">
         <header className="mb-8">
           <div className="mb-6 flex items-center justify-between gap-3">
-            <h1 className="font-mono text-2xl font-black tracking-tight sm:text-3xl">
+            <a
+              href="/"
+              className="rounded font-mono text-2xl font-black tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:text-3xl"
+            >
               moneymeta<span className="text-primary">.fun</span>
-            </h1>
-            <BoardTabs />
+            </a>
+            <a
+              href="/"
+              className="rounded font-mono text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              ← the money meta
+            </a>
           </div>
 
           <div className="rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/[0.08] to-transparent p-5 sm:p-7">
@@ -111,12 +117,12 @@ export default function SprintPage() {
             <Shield className="h-4 w-4 text-primary" aria-hidden /> Proof, not promises
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            This site is the portfolio. Three data products (
-            <a href="/" className="font-medium text-primary hover:underline">Capital</a>,{" "}
-            <a href="/income" className="font-medium text-primary hover:underline">Income</a>,{" "}
-            <a href="/career" className="font-medium text-primary hover:underline">Career</a>
-            ), designed, built, and shipped to production in days, solo. Your sprint gets the
-            same speed and the same bar.
+            This site is the portfolio. The{" "}
+            <a href="/" className="font-medium text-primary hover:underline">
+              money meta
+            </a>
+            , a live, data-ranked tier list of every way to make money, designed, built, and
+            shipped to production in days, solo. Your sprint gets the same speed and the same bar.
           </p>
         </section>
 
