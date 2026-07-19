@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { FileSearch, GraduationCap, Workflow } from "lucide-react";
 
 import { getFeaturedRole, getOtherRoles } from "@/lib/career";
-import { BoardTabs } from "@/components/board-tabs";
+import { ReportMasthead } from "@/components/report-masthead";
+import { SiteFooter } from "@/components/site-footer";
 import { FeaturedRole } from "@/components/career/featured-role";
 import { RoleCard } from "@/components/career/role-card";
 
@@ -25,44 +26,44 @@ export default function CareerPage() {
   return (
     <div className="min-h-screen">
       <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
-        {/* Header */}
-        <header className="mb-6 sm:mb-8">
-          <div className="mb-4 flex items-center justify-between gap-3">
-            <h1 className="font-mono text-2xl font-black tracking-tight sm:text-3xl">
-              moneymeta<span className="text-primary">.fun</span>
-            </h1>
-            <BoardTabs />
-          </div>
-          <p className="max-w-2xl text-sm text-muted-foreground">
-            The <span className="font-semibold text-foreground">career engine</span>. We take a
-            real job description from a top company, reverse-engineer it into a course that meets
-            you where you are, and end at the proof that gets you placed. The{" "}
-            <span className="font-semibold text-foreground">ikigai</span> board: where your skills
-            meet real employer demand.
-          </p>
+        {/* Masthead */}
+        <ReportMasthead />
 
-          {/* How it works */}
-          <div className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
-            {STEPS.map((s, i) => {
-              const Icon = s.icon;
-              return (
-                <div
-                  key={s.title}
-                  className="flex items-start gap-3 rounded-lg border bg-card/60 px-3.5 py-3"
-                >
-                  <Icon className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden />
-                  <div className="leading-tight">
-                    <div className="text-sm font-semibold text-foreground">
-                      <span className="font-mono text-xs text-muted-foreground">{i + 1}. </span>
-                      {s.title}
-                    </div>
-                    <div className="mt-0.5 text-xs text-muted-foreground">{s.detail}</div>
-                  </div>
-                </div>
-              );
-            })}
+        {/* Career board header */}
+        <div className="mb-4">
+          <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+            Career engine
           </div>
-        </header>
+          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+            We take a real job description from a top company, reverse-engineer it
+            into a course that meets you where you are, and end at the proof that
+            gets you placed. The{" "}
+            <span className="font-semibold text-foreground">ikigai</span> board: where
+            your skills meet real employer demand.
+          </p>
+        </div>
+
+        {/* How it works */}
+        <div className="mb-8 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
+          {STEPS.map((s, i) => {
+            const Icon = s.icon;
+            return (
+              <div
+                key={s.title}
+                className="flex items-start gap-3 rounded-lg border bg-card/60 px-3.5 py-3"
+              >
+                <Icon className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden />
+                <div className="leading-tight">
+                  <div className="text-sm font-semibold text-foreground">
+                    <span className="font-mono text-xs text-muted-foreground">{i + 1}. </span>
+                    {s.title}
+                  </div>
+                  <div className="mt-0.5 text-xs text-muted-foreground">{s.detail}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
 
         {/* Featured reverse-engineered role */}
         {featured ? (
@@ -99,6 +100,8 @@ export default function CareerPage() {
             Not career or financial advice.
           </p>
         </section>
+
+        <SiteFooter />
       </div>
     </div>
   );

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Rocket, ShieldCheck, Trophy } from "lucide-react";
 
 import { getIncomeDecks } from "@/lib/income";
-import { BoardTabs } from "@/components/board-tabs";
+import { ReportMasthead } from "@/components/report-masthead";
+import { SiteFooter } from "@/components/site-footer";
 import { IncomeBoard } from "@/components/income/income-board";
 
 export const metadata: Metadata = {
@@ -20,45 +21,44 @@ export default function IncomePage() {
   return (
     <div className="min-h-screen">
       <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
-        {/* Header */}
-        <header className="mb-6 sm:mb-8">
-          <div className="mb-4 flex items-center justify-between gap-3">
-            <h1 className="font-mono text-2xl font-black tracking-tight sm:text-3xl">
-              moneymeta<span className="text-primary">.fun</span>
-            </h1>
-            <BoardTabs />
+        {/* Masthead */}
+        <ReportMasthead />
+
+        {/* Income board header */}
+        <div className="mb-4">
+          <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+            Income board
           </div>
-          <p className="max-w-2xl text-sm text-muted-foreground">
-            The <span className="font-semibold text-foreground">income board</span>, how to
-            make the money, ranked. Income paths as &ldquo;decks,&rdquo; scored on{" "}
+          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+            How to make the money, ranked. Income paths as &ldquo;decks,&rdquo; scored on{" "}
             <span className="font-semibold text-foreground">median income × growth ÷ barrier</span>.
             Occupations are anchored on{" "}
             <span className="font-semibold text-foreground">BLS</span> data; internet paths show
-            the brutal median and a self-reported badge. This is the &ldquo;where to walk&rdquo; map.
+            the brutal median and a self-reported badge. The &ldquo;where to walk&rdquo; map.
           </p>
+        </div>
 
-          {/* Summary strip */}
-          <div className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
-            <SummaryStat
-              icon={<Rocket className="h-4 w-4 text-primary" aria-hidden />}
-              label="Top, start now"
-              name={topStartNow.name}
-              value={`${topStartNow.startNowScore}`}
-            />
-            <SummaryStat
-              icon={<Trophy className="h-4 w-4 text-amber-300" aria-hidden />}
-              label="Top, highest ceiling"
-              name={topCeiling.name}
-              value={`${topCeiling.ceilingScore}`}
-            />
-            <SummaryStat
-              icon={<ShieldCheck className="h-4 w-4 text-emerald-400" aria-hidden />}
-              label="BLS-verified decks"
-              name={`of ${decks.length} total`}
-              value={`${verified}`}
-            />
-          </div>
-        </header>
+        {/* Summary strip */}
+        <div className="mb-6 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
+          <SummaryStat
+            icon={<Rocket className="h-4 w-4 text-primary" aria-hidden />}
+            label="Top, start now"
+            name={topStartNow.name}
+            value={`${topStartNow.startNowScore}`}
+          />
+          <SummaryStat
+            icon={<Trophy className="h-4 w-4 text-amber-300" aria-hidden />}
+            label="Top, highest ceiling"
+            name={topCeiling.name}
+            value={`${topCeiling.ceilingScore}`}
+          />
+          <SummaryStat
+            icon={<ShieldCheck className="h-4 w-4 text-emerald-400" aria-hidden />}
+            label="BLS-verified decks"
+            name={`of ${decks.length} total`}
+            value={`${verified}`}
+          />
+        </div>
 
         <IncomeBoard decks={decks} />
 
@@ -80,23 +80,7 @@ export default function IncomePage() {
           </p>
         </section>
 
-        {/* Footer */}
-        <footer className="mt-6 flex flex-col gap-2 border-t pt-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            Not career or financial advice.{" "}
-            <span className="text-foreground/70">
-              Medians hide variance; your starting position changes everything.
-            </span>
-          </p>
-          <a
-            href="https://github.com/adamtpang/moneymeta.fun"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded font-medium text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          >
-            github.com/adamtpang/moneymeta.fun
-          </a>
-        </footer>
+        <SiteFooter />
       </div>
     </div>
   );

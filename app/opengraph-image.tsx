@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "moneymeta.fun, the capitalism meta report";
+export const alt = "moneymeta.fun, the Vicious Syndicate of moneymaking";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -35,7 +35,7 @@ export default function OpengraphImage() {
             moneymeta<span style={{ color: "#22c55e" }}>.fun</span>
           </div>
           <div style={{ display: "flex", marginTop: 18, fontSize: 36, color: "#94a3b8" }}>
-            The capitalism meta report, wealth vehicles ranked by market cap × momentum.
+            The Vicious Syndicate of moneymaking. Capital, income, and careers, ranked.
           </div>
         </div>
 

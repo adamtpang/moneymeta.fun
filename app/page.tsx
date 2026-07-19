@@ -1,11 +1,12 @@
-import { TrendingDown, TrendingUp, Trophy } from "lucide-react";
+import { ArrowRight, TrendingDown, TrendingUp, Trophy } from "lucide-react";
 
 import { captureDateOf, getTierList, groupByTier } from "@/lib/data";
 import { TIER_ORDER } from "@/lib/meta";
 import { formatDate, formatPercent } from "@/lib/format";
 import { TIER_STYLES } from "@/components/tier-styles";
 import { TierRow } from "@/components/tier-row";
-import { BoardTabs } from "@/components/board-tabs";
+import { ReportMasthead } from "@/components/report-masthead";
+import { SiteFooter } from "@/components/site-footer";
 import { LiveBets } from "@/components/live-bets";
 
 export default function Home() {
@@ -21,30 +22,19 @@ export default function Home() {
     <div className="min-h-screen">
       <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
         {/* Masthead */}
-        <header className="mb-6 sm:mb-8">
-          <div className="flex items-start justify-between gap-3">
-            <div>
-              <div className="mb-2 flex items-center gap-2">
-                <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                  The capitalism meta report
-                </span>
-                <span className="inline-flex items-center gap-1 rounded bg-primary/15 px-1.5 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-primary ring-1 ring-primary/30">
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                  Live
-                </span>
-              </div>
-              <h1 className="font-mono text-3xl font-black tracking-tight sm:text-4xl">
-                moneymeta<span className="text-primary">.fun</span>
-              </h1>
-            </div>
-            <BoardTabs />
-          </div>
-          <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            The meta report for making money. Find where the capital is, where it is
-            going, and the plays winning right now. Then go run them.
-          </p>
-          <div className="mt-4 h-px w-full bg-gradient-to-r from-primary/40 via-border to-transparent" />
-        </header>
+        <ReportMasthead />
+
+        {/* Founding license */}
+        <div className="mb-6">
+          <a
+            href="https://buy.stripe.com/dRmbJ1eno9kNfYQfgZaMU0y"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            Founding license · $29 <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+          </a>
+        </div>
 
         {/* The meta, in action */}
         <LiveBets />
@@ -146,33 +136,7 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Footer */}
-        <footer className="mt-6 flex flex-col gap-2 border-t pt-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            Every number traces to a public source.{" "}
-            <span className="text-foreground/70">
-              Not financial advice. No self-reported data, ever.
-            </span>
-          </p>
-          <p className="flex flex-wrap items-center gap-x-3">
-            <a
-              href="https://github.com/adamtpang/moneymeta.fun"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded font-medium text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            >
-              github.com/adamtpang/moneymeta.fun
-            </a>
-            <a
-              href="https://adampang.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded font-medium text-foreground/70 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            >
-              built by Adam Pangelinan
-            </a>
-          </p>
-        </footer>
+        <SiteFooter />
       </div>
     </div>
   );

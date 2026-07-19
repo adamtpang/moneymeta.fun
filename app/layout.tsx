@@ -18,9 +18,9 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://moneymeta.fun"),
-  title: "moneymeta.fun, the capitalism meta report",
+  title: "moneymeta.fun, the Vicious Syndicate of moneymaking",
   description:
-    "A data-driven tier list of wealth vehicles and income paths, ranked by a meta score from public, verifiable data. What's strong right now, what's rising, where to walk.",
+    "A data-driven tier list of the ways to make money, capital, income, and careers, ranked S to D by a meta score from public, verifiable data. What's strong right now, what's rising, where to walk.",
   keywords: [
     "market cap",
     "tier list",
@@ -33,17 +33,17 @@ export const metadata: Metadata = {
     "BLS",
   ],
   openGraph: {
-    title: "moneymeta.fun, the capitalism meta report",
+    title: "moneymeta.fun, the Vicious Syndicate of moneymaking",
     description:
-      "Wealth vehicles and income paths ranked S to D by the data. Every number traces to a public source.",
+      "The ways to make money, capital, income, and careers, ranked S to D by the data. Every number traces to a public source.",
     url: "https://moneymeta.fun",
     siteName: "moneymeta.fun",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "moneymeta.fun, the capitalism meta report",
-    description: "Wealth and income, ranked S to D by the data.",
+    title: "moneymeta.fun, the Vicious Syndicate of moneymaking",
+    description: "The ways to make money, ranked S to D by the data.",
   },
 };
 
