@@ -15,6 +15,18 @@ import type { Tier } from "@/lib/meta";
 export type Lens = "startNow" | "ceiling";
 export type DataQuality = "verifiable" | "partial" | "self_reported";
 export type CapitalTier = "none" | "low" | "med" | "high";
+/** VS-style class for internet capitalism (popularity charts). */
+export type MetaClass =
+  | "attention"
+  | "owned"
+  | "digital_product"
+  | "commerce"
+  | "software"
+  | "service"
+  | "arbitrage"
+  | "gig"
+  | "career"
+  | "other";
 
 export const INCOME_TIERS: Record<Exclude<Tier, "D">, number> = {
   S: 70,
@@ -66,6 +78,18 @@ interface SeedDeck {
   capitalTier: CapitalTier;
   dataQuality: DataQuality;
   sourceUrl: string;
+  /** Archetype class (attention, software, service…). */
+  metaClass?: MetaClass | string;
+  /**
+   * Relative play rate 0-100: how crowded the ladder is (VS "popularity").
+   * Not a scientific census; editorial estimate for meta context.
+   */
+  playRate?: number;
+  /**
+   * Estimated % of players who clear a livable full-time income (VS "win rate").
+   * Brutal and uncertain for internet decks; higher for BLS-employed paths.
+   */
+  livablePct?: number;
 }
 
 export interface IncomeDeckView extends SeedDeck {
@@ -74,6 +98,9 @@ export interface IncomeDeckView extends SeedDeck {
   ceilingScore: number;
   ceilingTier: Tier;
   exemplars: Exemplar[];
+  metaClass: MetaClass | string;
+  playRate: number;
+  livablePct: number;
 }
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
@@ -116,6 +143,9 @@ function toView(deck: SeedDeck): IncomeDeckView {
     (exemplarMap as Record<string, Exemplar[]>)[deck.slug] ?? [];
   return {
     ...deck,
+    metaClass: deck.metaClass ?? "other",
+    playRate: deck.playRate ?? 0,
+    livablePct: deck.livablePct ?? 0,
     startNowScore,
     startNowTier: tierFor(startNowScore),
     ceilingScore,
@@ -142,4 +172,47 @@ export function groupByLens(
     buckets[t].sort((a, b) => b[scoreKey] - a[scoreKey]);
   }
   return buckets;
+}
+
+export const META_CLASS_LABEL: Record<string, string> = {
+  attention: "Attention",
+  owned: "Owned media",
+  digital_product: "Digital product",
+  commerce: "Commerce",
+  software: "Software",
+  service: "Service",
+  arbitrage: "Arbitrage",
+  gig: "Gig",
+  career: "Career / W2",
+  other: "Other",
+};
+
+/**
+ * Class frequency table (VS distribution strip): share of board "play" by metaClass,
+ * weighted by playRate so crowded attention decks show as high frequency.
+ */
+export function classFrequency(
+  list: IncomeDeckView[],
+): { metaClass: string; label: string; share: number; count: number; avgLivable: number }[] {
+  const totals = new Map<string, { weight: number; count: number; livableSum: number }>();
+  let all = 0;
+  for (const d of list) {
+    const cls = d.metaClass || "other";
+    const w = Math.max(d.playRate, 1);
+    const cur = totals.get(cls) ?? { weight: 0, count: 0, livableSum: 0 };
+    cur.weight += w;
+    cur.count += 1;
+    cur.livableSum += d.livablePct;
+    totals.set(cls, cur);
+    all += w;
+  }
+  return [...totals.entries()]
+    .map(([metaClass, v]) => ({
+      metaClass,
+      label: META_CLASS_LABEL[metaClass] ?? metaClass,
+      share: all > 0 ? Math.round((v.weight / all) * 1000) / 10 : 0,
+      count: v.count,
+      avgLivable: v.count > 0 ? Math.round((v.livableSum / v.count) * 10) / 10 : 0,
+    }))
+    .sort((a, b) => b.share - a.share);
 }

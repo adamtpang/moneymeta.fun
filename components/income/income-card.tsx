@@ -1,4 +1,5 @@
-import { ArrowUpRight, Clock, TrendingUp, Users } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, BookOpen, Clock, TrendingUp, Users } from "lucide-react";
 
 import type { IncomeDeckView, Lens } from "@/lib/income";
 import type { Tier } from "@/lib/meta";
@@ -33,16 +34,14 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
     >
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
-          <a
-            href={deck.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href={`/deck/${deck.slug}`}
             className="group/link inline-flex max-w-full items-center gap-1 rounded text-sm font-semibold leading-tight text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            title={`${deck.name}, source`}
+            title={`${deck.name} playbook`}
           >
             <span className="truncate">{deck.name}</span>
-            <ArrowUpRight className="h-3 w-3 shrink-0 opacity-0 transition-opacity group-hover/link:opacity-60" aria-hidden />
-          </a>
+            <BookOpen className="h-3 w-3 shrink-0 opacity-0 transition-opacity group-hover/link:opacity-60" aria-hidden />
+          </Link>
           <div className="mt-1 flex items-center gap-1 text-[10px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
             <CatIcon className="h-3 w-3" aria-hidden />
             {cat.label}
@@ -73,6 +72,43 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
         ) : null}
       </div>
 
+      {/* VS-style quantity (play) × quality (livable / win rate) */}
+      <div className="grid grid-cols-2 gap-1.5">
+        <div
+          className="rounded-md bg-secondary/80 px-1.5 py-1"
+          title="Relative play rate: how crowded this path is"
+        >
+          <div className="text-[9px] font-medium uppercase tracking-wider text-muted-foreground">
+            Play
+          </div>
+          <div className="font-mono text-xs font-bold tabular-nums text-foreground">
+            {deck.playRate}
+            <span className="text-[10px] font-medium text-muted-foreground">/100</span>
+          </div>
+        </div>
+        <div
+          className="rounded-md bg-secondary/80 px-1.5 py-1"
+          title="Estimated livable full-time rate (win rate proxy)"
+        >
+          <div className="text-[9px] font-medium uppercase tracking-wider text-muted-foreground">
+            Win
+          </div>
+          <div
+            className={cn(
+              "font-mono text-xs font-bold tabular-nums",
+              deck.livablePct >= 20
+                ? "text-emerald-400"
+                : deck.livablePct >= 8
+                  ? "text-amber-300"
+                  : "text-rose-300",
+            )}
+          >
+            {deck.livablePct}
+            <span className="text-[10px] font-medium text-muted-foreground">%</span>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-medium">
         <span
           className="inline-flex items-center gap-1 rounded bg-secondary px-1.5 py-0.5 text-muted-foreground"
@@ -95,6 +131,24 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
       <p className="line-clamp-2 text-xs leading-relaxed text-muted-foreground">
         {deck.whatYouDo}
       </p>
+
+      <div className="flex items-center gap-2">
+        <Link
+          href={`/deck/${deck.slug}`}
+          className="inline-flex items-center gap-1 rounded-md bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary ring-1 ring-primary/25 transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <BookOpen className="h-3 w-3" aria-hidden />
+          Playbook
+        </Link>
+        <a
+          href={deck.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:text-foreground"
+        >
+          Source <ArrowUpRight className="h-3 w-3" aria-hidden />
+        </a>
+      </div>
 
       {deck.exemplars.length > 0 ? (
         <div className="mt-0.5 border-t border-border/70 pt-2">

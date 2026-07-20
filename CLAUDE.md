@@ -3,10 +3,13 @@
 > Status: **Live on moneymeta.fun (Vercel).** ONE board: the money meta.
 > The whole site is the income board, served at the root (`/`, `app/page.tsx`).
 > It answers one question: the best money deck to play in life. Income *paths*
-> ("decks") come from `seed/income-decks.json` (BLS-anchored, 62 decks) via
+> ("decks") come from `seed/income-decks.json` (BLS-anchored, 90 decks) via
 > `lib/income.ts`, with a two-lens toggle (start-now vs highest-ceiling),
 > data-confidence badges, and real indie-hacker exemplars (`seed/exemplars.json`)
-> on the internet decks.
+> on the internet decks. VS-style report layer: **The Pick**, **Meta Breaker**,
+> **class frequency** (play rate × livable win %), and **matchup chart** from
+> `seed/meta-report.json` via `lib/meta-report.ts`. Per-deck playbooks at
+> `/deck/[slug]`.
 >
 > The Capital board and Career board were removed in the 2026-07-20 refocus;
 > `/income` and `/career` 301-redirect to `/`. `/sprint` is a standalone offer
@@ -67,10 +70,15 @@ Each lens derives its own S..D tiering; the same deck can tier differently.
 
 ## Data model (static JSON, nothing computed is stored)
 
-- `seed/income-decks.json` — 62 decks: slug, name, category, whatYouDo, median,
+- `seed/income-decks.json` — 90 decks: slug, name, category, metaClass, playRate
+  (0-100 crowdedness), livablePct (win-rate proxy), whatYouDo, median,
   incomeRangeNote, frequency, frequencyCount, growthPct, barrierToEntry,
   timeToFirstIncomeYears, capitalTier, dataQuality, sourceUrl.
 - `seed/exemplars.json` — real people wired onto internet decks, keyed by slug.
+- `seed/meta-report.json` — curated Data Reaper layer: Meta Breaker + hybrid
+  matchup stacks (opener → midgame → wincon).
+- `seed/playbooks.json` — curated how-to guides for high-leverage decks; all
+  other decks get a category-aware default playbook from `lib/playbook.ts`.
 
 Scores and tiers are computed in a pure function in `lib/income.ts`, never stored.
 
@@ -89,23 +97,27 @@ Weights and thresholds are exported constants, trivial to retune.
 
 ## Where things live
 
-- `app/page.tsx` — the board (masthead + lens toggle + tier rows + methodology).
+- `app/page.tsx` — the board (masthead + lens + The Pick/breaker/matchups + tiers).
+- `app/deck/[slug]/page.tsx` — per-deck playbook (steps, tools, pitfalls, ladder).
 - `app/layout.tsx`, `app/globals.css` — shell, fonts, the atmosphere layer.
 - `app/opengraph-image.tsx` — edge OG image. `app/sprint/page.tsx` — offer page.
-- `components/income/*` — income-board, income-card, income-meta.
+- `components/income/*` — income-board, income-card, income-meta, the-pick,
+  meta-breaker, matchup-chart, class-frequency.
 - `components/report-masthead.tsx`, `components/site-footer.tsx` — shared chrome.
 - `components/tier-styles.ts` — the S..D visual language.
-- `lib/income.ts` — scoring · `lib/meta.ts` — the Tier vocabulary · `lib/format.ts`.
+- `lib/income.ts` — scoring · `lib/meta-report.ts` — The Pick / breaker / matchups
+  · `lib/playbook.ts` — playbook resolve · `lib/meta.ts` · `lib/format.ts`.
 
 ---
 
 ## Roadmap
 
-- **Now (done):** single income board, live, static JSON, two lenses, badges.
-- **Next:** a "the pick" hero for the current #1 deck under the active lens;
-  per-deck playbook detail pages (click a deck -> the exact steps to play it);
-  live BLS ingestion so medians and growth refresh (see the
-  moneymeta-data-sources memory for the free-API plan).
+- **Now (done):** single income board, live, static JSON, two lenses, badges,
+  The Pick, Meta Breaker, class frequency, matchup chart, 90 decks with
+  playRate/livablePct, per-deck playbooks, BLS refresh scaffold (`scripts/`).
+- **Next:** wire live BLS series IDs into `scripts/bls-refresh.mjs --apply`;
+  dated weekly report diffs (movement arrows); deeper curated playbooks for
+  remaining owner-ops decks.
 
 ---
 

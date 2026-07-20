@@ -1,0 +1,90 @@
+{
+  "reportId": "internet-meta-2026-07",
+  "title": "Internet Capitalism Data Reaper",
+  "asOf": "2026-07-20",
+  "lede": "Attention-only decks are overplayed. Owned monetization, vertical software, and outcome-selling services are the format. Hybrids beat pure single-class lists. Open a playbook for the exact steps.",
+  "metaBreaker": {
+    "slug": "service-as-software",
+    "headline": "Meta Breaker: service-as-software",
+    "lede": "Selling the outcome (leads booked, hours saved, cash recovered) is beating pure tool shops and vague AI agency project work. Same skill stack, cleaner offer, stickier retainers.",
+    "bullets": [
+      "Vertical + measurable ROI for SMBs, not horizontal AI wrappers",
+      "Retainer economics closer to SaaS than freelance gigs",
+      "Ladder: freelance automation to productized outcome to software"
+    ]
+  },
+  "matchups": [
+    {
+      "id": "attention-stack",
+      "name": "Attention stack",
+      "role": "Creator hybrid",
+      "note": "Short-form discovers. Email owns. Product pays.",
+      "opener": "short-form-content-funnel",
+      "midgame": "email-list-funnel",
+      "wincon": "digital-products-templates"
+    },
+    {
+      "id": "depth-stack",
+      "name": "Depth stack",
+      "role": "Long-form hybrid",
+      "note": "YouTube builds trust. Newsletter captures. Course or consulting monetizes.",
+      "opener": "youtube-channel",
+      "midgame": "newsletter-substack",
+      "wincon": "online-courses-cohorts"
+    },
+    {
+      "id": "skill-ladder",
+      "name": "Skill ladder",
+      "role": "Service hybrid",
+      "note": "Gigs fund the runway. Productize the offer. Scale to outcome retainers.",
+      "opener": "freelancing",
+      "midgame": "productized-service",
+      "wincon": "service-as-software"
+    },
+    {
+      "id": "arbitrage-stack",
+      "name": "Arbitrage stack",
+      "role": "Media hybrid",
+      "note": "SEO captures intent. Lead gen monetizes. SaaS is the long wincon.",
+      "opener": "affiliate-seo-content-sites",
+      "midgame": "lead-generation-sites",
+      "wincon": "indie-micro-saas"
+    },
+    {
+      "id": "ugc-ladder",
+      "name": "UGC ladder",
+      "role": "2026 entry hybrid",
+      "note": "Clip for hire, then productize content, then retainers or a niche agency.",
+      "opener": "ugc-clipping",
+      "midgame": "productized-service",
+      "wincon": "marketing-agency"
+    },
+    {
+      "id": "owned-recurring",
+      "name": "Owned recurring",
+      "role": "Membership hybrid",
+      "note": "List first, community second, high-ticket for the few who want more.",
+      "opener": "email-list-funnel",
+      "midgame": "community-membership",
+      "wincon": "high-ticket-consulting"
+    },
+    {
+      "id": "software-ladder",
+      "name": "Software ladder",
+      "role": "Builder hybrid",
+      "note": "Tiny tool proves demand. Micro-SaaS captures recurring. Sales skill compounds everything.",
+      "opener": "chrome-extension-tools",
+      "midgame": "indie-micro-saas",
+      "wincon": "b2b-saas-sales"
+    },
+    {
+      "id": "agency-to-product",
+      "name": "Agency to product",
+      "role": "Ops hybrid",
+      "note": "AI project work funds learning. Outcome retainers stabilize. Product is the exit ramp.",
+      "opener": "ai-automation-agency",
+      "midgame": "service-as-software",
+      "wincon": "indie-micro-saas"
+    }
+  ]
+}

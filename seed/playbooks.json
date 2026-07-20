@@ -1,0 +1,1336 @@
+{
+  "service-as-software": {
+    "headline": "Play service-as-software: sell the outcome, not the chatbot",
+    "whoItsFor": "Builders who can ship automation and sell to SMBs. You need sales more than another model wrapper.",
+    "firstDollar": "Days to weeks if you can close a pilot. Price a monthly outcome retainer, not hourly tinkering.",
+    "steps": [
+      {
+        "title": "1. Pick one vertical pain",
+        "body": "Home services, clinics, agencies, ecom ops. One job: booked appointments, recovered failed payments, invoice chase, lead follow-up. Horizontal 'AI for everything' is dead meta."
+      },
+      {
+        "title": "2. Productize the outcome",
+        "body": "Write a one-page offer: input data, weekly deliverable, KPI, price. Example: 'We book 20 qualified calls / mo or you do not pay month two.'"
+      },
+      {
+        "title": "3. Run 5 manual pilots",
+        "body": "Do it scrappy with Zapier/Make/n8n + human QA. Proof of ROI beats a pretty agent demo."
+      },
+      {
+        "title": "4. Turn the runbook into a retainer",
+        "body": "Standardize onboarding, monitoring, and a monthly report. Move off hourly. Keep humans on the edge cases."
+      },
+      {
+        "title": "5. Ladder toward software",
+        "body": "If the same workflow repeats, wrap it. That is the path from agency to micro-SaaS without building in the dark."
+      }
+    ],
+    "tools": [
+      "n8n / Make",
+      "OpenAI / Claude API",
+      "HubSpot or Attio",
+      "Stripe",
+      "Loom for sales demos"
+    ],
+    "pitfalls": [
+      "Selling 'we do AI' instead of a metric the buyer already cares about",
+      "Custom one-offs that never productize",
+      "No access to the client's systems = no outcome"
+    ],
+    "nextDecks": [
+      "productized-service",
+      "indie-micro-saas",
+      "ai-automation-agency"
+    ]
+  },
+  "productized-service": {
+    "headline": "Play productized service: one menu, fixed price",
+    "whoItsFor": "Freelancers who already get clients but bleed time on custom quotes and scope creep.",
+    "firstDollar": "Weeks if you already have a skill buyers pay for. First sale is a repackaged version of work you have done.",
+    "steps": [
+      {
+        "title": "1. Name the single offer",
+        "body": "One deliverable, one price, one turnaround. Kill the 'custom quote' reflex. DesignJoy energy: a menu, not a consulting firm."
+      },
+      {
+        "title": "2. Write the scope wall",
+        "body": "What is in, what is out, revision limits, SLA. Put it on a simple landing page with a buy or apply button."
+      },
+      {
+        "title": "3. Sell before you overbuild",
+        "body": "DM past clients and warm network. Close 3 at the new price. Delivery can stay semi-manual at first."
+      },
+      {
+        "title": "4. Template the delivery",
+        "body": "Checklists, Figma kits, code scaffolds, report shells. Your hours per job must fall every month."
+      },
+      {
+        "title": "5. Raise price or add a second SKU",
+        "body": "Only after utilization is full. Do not expand the menu early."
+      }
+    ],
+    "tools": [
+      "Carrd / Framer page",
+      "Stripe Payment Link",
+      "Notion SOPs",
+      "Cal.com"
+    ],
+    "pitfalls": [
+      "Fake productization that is still fully custom",
+      "Underpricing because you fear saying no",
+      "No waitlist, so you never raise rates"
+    ],
+    "nextDecks": [
+      "marketing-agency",
+      "service-as-software",
+      "high-ticket-consulting"
+    ]
+  },
+  "indie-micro-saas": {
+    "headline": "Play indie / micro-SaaS: boring niche, recurring revenue",
+    "whoItsFor": "Builders who can ship and market. Coding is the easy half. Distribution is the boss fight.",
+    "firstDollar": "Often 3-18 months. Many never clear ramen. Plan for unpaid build + marketing time.",
+    "steps": [
+      {
+        "title": "1. Hunt a paid pain",
+        "body": "Talk to people who already spend money. Prefer boring B2B niches over consumer toys. Scrapers, compliance, reporting, recovery tools beat 'AI journal'."
+      },
+      {
+        "title": "2. Pre-sell or waitlist",
+        "body": "Landing page + Stripe or email waitlist before a full build. If nobody clicks, you saved months."
+      },
+      {
+        "title": "3. Ship the ugly v1",
+        "body": "One core job. Auth, billing, the workflow. Launch in public. Instrument usage."
+      },
+      {
+        "title": "4. Own a distribution channel",
+        "body": "SEO, directories, communities, partnerships, or content. Ads optional. No channel = no SaaS."
+      },
+      {
+        "title": "5. Kill or double down",
+        "body": "If you cannot reach ~1k MRR with honest effort, shelf it. Portfolio of small bets beats one sunk-cost zombie."
+      }
+    ],
+    "tools": [
+      "Next.js",
+      "Stripe",
+      "Postgres / Neon",
+      "PostHog",
+      "Plausible",
+      "Indie Hackers / X"
+    ],
+    "pitfalls": [
+      "Building for other indie hackers only",
+      "Feature bloat before first 10 paying users",
+      "Treating Twitter screenshots as median income"
+    ],
+    "nextDecks": [
+      "chrome-extension-tools",
+      "app-development",
+      "b2b-saas-sales"
+    ]
+  },
+  "freelancing": {
+    "headline": "Play freelancing: skill in, invoice out",
+    "whoItsFor": "Anyone with a marketable skill who needs cash now. Best starter ladder, not the final form.",
+    "firstDollar": "Days to weeks with outbound and a clear offer. Platforms are slow without reviews.",
+    "steps": [
+      {
+        "title": "1. Pick a sellable skill",
+        "body": "Writing, design, dev, video, bookkeeping, ads. Narrow the niche (e.g. 'landing pages for dentists') so buyers feel understood."
+      },
+      {
+        "title": "2. Proof pack",
+        "body": "3 portfolio pieces even if speculative. One case study with a before/after metric."
+      },
+      {
+        "title": "3. Outbound daily",
+        "body": "20-40 targeted messages per day to people who already spend. Platforms are optional. Direct is faster."
+      },
+      {
+        "title": "4. Deliver and ask for the next job",
+        "body": "Under-promise, hit dates, request referrals. Raise rates every few wins."
+      },
+      {
+        "title": "5. Productize or stay stuck",
+        "body": "After consistent clients, move to productized-service or an agency. Pure freelance caps on your hours."
+      }
+    ],
+    "tools": [
+      "Portfolio site",
+      "Stripe / Wise",
+      "Upwork as backup",
+      "Notion CRM"
+    ],
+    "pitfalls": [
+      "Race-to-bottom platform pricing",
+      "No niche, so every pitch is generic",
+      "Never raising rates"
+    ],
+    "nextDecks": [
+      "productized-service",
+      "marketing-agency",
+      "service-as-software"
+    ]
+  },
+  "email-list-funnel": {
+    "headline": "Play the email list: own the relationship",
+    "whoItsFor": "Creators and operators who refuse to rent all their audience from an algorithm.",
+    "firstDollar": "Weeks to months after you have a lead magnet and an offer. A list with no offer is a hobby.",
+    "steps": [
+      {
+        "title": "1. One audience, one promise",
+        "body": "Who and what outcome. 'Weekly money meta for operators' beats 'thoughts on life'."
+      },
+      {
+        "title": "2. Lead magnet that is worth an email",
+        "body": "Checklist, template, mini-tool, or sample issue. Host on your domain. ESP: Beehiiv, ConvertKit, or similar."
+      },
+      {
+        "title": "3. Publish on a cadence",
+        "body": "Weekly is enough. Teach something concrete. Soft CTAs every issue."
+      },
+      {
+        "title": "4. Attach an offer",
+        "body": "Digital product, service, affiliate, or community. Without an offer the list is vanity."
+      },
+      {
+        "title": "5. Grow via content, not only paid",
+        "body": "Short-form, SEO, collaborations. Paid ads only after unit economics work."
+      }
+    ],
+    "tools": [
+      "Beehiiv / ConvertKit",
+      "Carrd landing",
+      "Stripe",
+      "Canva / CapCut for growth content"
+    ],
+    "pitfalls": [
+      "Collecting emails with nothing to sell",
+      "Writing essays nobody asked for",
+      "Ignoring unsubscribes and deliverability"
+    ],
+    "nextDecks": [
+      "digital-products-templates",
+      "community-membership",
+      "high-ticket-consulting"
+    ]
+  },
+  "short-form-content-funnel": {
+    "headline": "Play short-form as a funnel, not a career",
+    "whoItsFor": "People who can post consistently and already know what they will sell off-platform.",
+    "firstDollar": "Platform funds alone are a trap. First real dollar comes from the offer behind the clip.",
+    "steps": [
+      {
+        "title": "1. Decide the destination",
+        "body": "Email, YouTube, booking link, or product. Every video needs a next step. Views without a pipe are a hobby."
+      },
+      {
+        "title": "2. Pick a repeatable format",
+        "body": "Hooks + one idea + CTA. Batch film. Post daily for 30-90 days before judging."
+      },
+      {
+        "title": "3. Route traffic off-app",
+        "body": "Link in bio to one page. Do not scatter CTAs. Measure email signups or sales, not likes."
+      },
+      {
+        "title": "4. Double down on winners",
+        "body": "Remake top hooks. Kill formats that do not convert to the destination."
+      },
+      {
+        "title": "5. Never treat the fund as salary",
+        "body": "Creativity Program and similar payouts are tip money. Build owned monetization."
+      }
+    ],
+    "tools": [
+      "CapCut",
+      "Phone with good mic",
+      "Link-in-bio to your ESP",
+      "Notion content calendar"
+    ],
+    "pitfalls": [
+      "Chasing virality with no offer",
+      "Burnout from infinite posting without systems",
+      "Believing CPM is a business model"
+    ],
+    "nextDecks": [
+      "email-list-funnel",
+      "youtube-channel",
+      "digital-products-templates"
+    ]
+  },
+  "youtube-channel": {
+    "headline": "Play YouTube as a business, not AdSense cosplay",
+    "whoItsFor": "Long-form creators who can ship weekly and build an ecosystem around the channel.",
+    "firstDollar": "Often 12-36 months to meaningful revenue. Partner Program is the floor, not the ceiling.",
+    "steps": [
+      {
+        "title": "1. Niche + promise",
+        "body": "A viewer should know what they get every upload. Searchable topics help early; personality compounds later."
+      },
+      {
+        "title": "2. Upload cadence and packaging",
+        "body": "Thumbnails and titles are half the game. Study CTR. Consistency beats perfect production."
+      },
+      {
+        "title": "3. Monetize in layers",
+        "body": "Ads, then sponsors, then your product/list. MrBeast-scale is not the plan; a small niche business is."
+      },
+      {
+        "title": "4. Capture the audience",
+        "body": "Every video should grow something you own: email, Discord, or product waitlist."
+      },
+      {
+        "title": "5. Kill dead series fast",
+        "body": "Analytics over ego. Double the formats that retain and convert."
+      }
+    ],
+    "tools": [
+      "OBS / camera",
+      "DaVinci or CapCut",
+      "TubeBuddy / vidIQ",
+      "Email ESP",
+      "Media kit"
+    ],
+    "pitfalls": [
+      "AdSense-only strategy",
+      "Inconsistent uploads",
+      "No off-platform capture"
+    ],
+    "nextDecks": [
+      "newsletter-substack",
+      "online-courses-cohorts",
+      "email-list-funnel"
+    ]
+  },
+  "newsletter-substack": {
+    "headline": "Play newsletter / Substack: paid attention",
+    "whoItsFor": "Writers with a sharp niche and the patience to publish before the money shows up.",
+    "firstDollar": "Often 6-24 months to meaningful paid subs. Free growth first, then a clear paid wedge.",
+    "steps": [
+      {
+        "title": "1. Niche that pays",
+        "body": "B2B and career niches convert better than vague lifestyle. Readers should get career or money ROI."
+      },
+      {
+        "title": "2. Free issues that prove value",
+        "body": "Ship weekly. One free banger can outgrow months of quiet posts."
+      },
+      {
+        "title": "3. Paid tier with a sharp wall",
+        "body": "Archives, playbooks, community, or deep dives. Not 'support me' alone."
+      },
+      {
+        "title": "4. Cross-post for growth",
+        "body": "X, LinkedIn, SEO, podcast clips. Substack discovery helps but is not enough."
+      },
+      {
+        "title": "5. Add a second product later",
+        "body": "Courses, consulting, or community once the list trusts you."
+      }
+    ],
+    "tools": [
+      "Substack or Beehiiv",
+      "Notes / social distribution",
+      "Stripe (built-in)"
+    ],
+    "pitfalls": [
+      "Writing without a niche buyer",
+      "Paywalling before trust exists",
+      "Ignoring free-to-paid conversion math"
+    ],
+    "nextDecks": [
+      "online-courses-cohorts",
+      "community-membership",
+      "high-ticket-consulting"
+    ]
+  },
+  "digital-products-templates": {
+    "headline": "Play digital products: build once, sell many",
+    "whoItsFor": "People who already know what a niche repeatedly needs: templates, kits, small tools, guides.",
+    "firstDollar": "Days after listing if you have distribution. Near zero forever without traffic.",
+    "steps": [
+      {
+        "title": "1. Steal demand, do not invent it",
+        "body": "Search Gumroad, Etsy, Twitter wishlists, client requests. Sell something people already buy."
+      },
+      {
+        "title": "2. Make the smallest product",
+        "body": "One template pack, not a 40-hour course. Ship this week."
+      },
+      {
+        "title": "3. Sales page with proof",
+        "body": "Screenshots, who it is for, what they get, refund policy. Price tests beat perfect branding."
+      },
+      {
+        "title": "4. Distribution loop",
+        "body": "SEO, short-form demos, newsletter, niche communities. Product without a pipe dies."
+      },
+      {
+        "title": "5. Iterate from refunds and questions",
+        "body": "Support tickets are a product roadmap."
+      }
+    ],
+    "tools": [
+      "Gumroad / Lemon Squeezy",
+      "Figma / Notion",
+      "Stripe",
+      "Simple landing page"
+    ],
+    "pitfalls": [
+      "Building in a vacuum",
+      "Course-length scope for a template buyer",
+      "Zero marketing plan"
+    ],
+    "nextDecks": [
+      "online-courses-cohorts",
+      "email-list-funnel",
+      "indie-micro-saas"
+    ]
+  },
+  "lead-generation-sites": {
+    "headline": "Play lead gen: traffic in, sold leads out",
+    "whoItsFor": "Operators who like conversion math more than personal branding. High margin when RPL beats CPL.",
+    "firstDollar": "SEO path: months. Paid path: days if tests work, expensive if they do not.",
+    "steps": [
+      {
+        "title": "1. Pick a vertical with hungry buyers",
+        "body": "Insurance, legal, home services, education, solar-like categories with real CPL markets."
+      },
+      {
+        "title": "2. Secure demand first",
+        "body": "Talk to buyers or networks who purchase leads. Know price and quality rules before you spend on traffic."
+      },
+      {
+        "title": "3. Build a converting front end",
+        "body": "Content site or landing + form. Compliance and disclosure matter. Track every source."
+      },
+      {
+        "title": "4. Buy or earn traffic carefully",
+        "body": "SEO compounds; paid is a science experiment. Kill losers in days, not months."
+      },
+      {
+        "title": "5. Protect margin",
+        "body": "Quality scores, refund rates, and seasonality will murder you if ignored. Spreadsheet the unit economics weekly."
+      }
+    ],
+    "tools": [
+      "WordPress or Next.js",
+      "CallRail / form tracking",
+      "Google Ads",
+      "Looker Studio"
+    ],
+    "pitfalls": [
+      "Traffic without a buyer",
+      "Compliance landmines",
+      "Scaling a channel that is only barely profitable"
+    ],
+    "nextDecks": [
+      "affiliate-seo-content-sites",
+      "indie-micro-saas",
+      "marketing-agency"
+    ]
+  },
+  "affiliate-seo-content-sites": {
+    "headline": "Play affiliate SEO: content that ranks, then earns",
+    "whoItsFor": "Writers/operators patient enough for 6-18 month SEO timelines and honest enough to track rankings.",
+    "firstDollar": "Often 6-18 months. Many sites never rank. AI spam made the easy meta harder.",
+    "steps": [
+      {
+        "title": "1. Keyword + affiliate fit",
+        "body": "Commercial intent queries with real programs (Amazon, software affiliates, finance where legal)."
+      },
+      {
+        "title": "2. Publish useful pages",
+        "body": "Comparisons, tutorials, tools. Depth and original data beat spun AI sludge."
+      },
+      {
+        "title": "3. Technical SEO basics",
+        "body": "Speed, internal links, indexation, clean structure. Fix crawl waste."
+      },
+      {
+        "title": "4. Build topical authority",
+        "body": "Clusters, not random posts. Earn links with assets people cite."
+      },
+      {
+        "title": "5. Diversify monetization",
+        "body": "Add email, lead gen, or a product so one algorithm update cannot zero you."
+      }
+    ],
+    "tools": [
+      "Ahrefs / similar",
+      "Search Console",
+      "WordPress or Next.js",
+      "Rank trackers"
+    ],
+    "pitfalls": [
+      "AI content farms",
+      "Single-keyword dependency",
+      "Ignoring EEAT in YMYL niches"
+    ],
+    "nextDecks": [
+      "lead-generation-sites",
+      "email-list-funnel",
+      "indie-micro-saas"
+    ]
+  },
+  "ai-automation-agency": {
+    "headline": "Play AI automation agency: projects first, product later",
+    "whoItsFor": "Technical generalists who can integrate tools and talk to non-technical buyers.",
+    "firstDollar": "Days to weeks with outbound. Projects fund learning; retainers fund stability.",
+    "steps": [
+      {
+        "title": "1. Demo three real automations",
+        "body": "Lead capture, support triage, reporting. Record Loom demos with clear ROI stories."
+      },
+      {
+        "title": "2. Offer a fixed pilot",
+        "body": "2-week paid pilot with a defined success metric. Avoid open-ended discovery forever."
+      },
+      {
+        "title": "3. Outbound to SMBs",
+        "body": "Vertical lists. Speak operations language, not model names."
+      },
+      {
+        "title": "4. Productize delivery",
+        "body": "SOPs, reusable agents, monitoring. Move toward service-as-software retainers."
+      },
+      {
+        "title": "5. Fire bad-fit clients",
+        "body": "No access, no data, no budget = no project."
+      }
+    ],
+    "tools": [
+      "n8n / Make",
+      "OpenAI / Claude",
+      "Notion",
+      "Stripe",
+      "Cal.com"
+    ],
+    "pitfalls": [
+      "Demo theater without production reliability",
+      "Hourly pricing that never scales",
+      "Clients who want magic with no process change"
+    ],
+    "nextDecks": [
+      "service-as-software",
+      "productized-service",
+      "indie-micro-saas"
+    ]
+  },
+  "ugc-clipping": {
+    "headline": "Play UGC / clipping: edit fast, get paid per asset",
+    "whoItsFor": "Editors who can turn product footage into scroll-stopping clips. 2026 entry meta.",
+    "firstDollar": "Days if you cold-outreach with a free sample clip.",
+    "steps": [
+      {
+        "title": "1. Build a 5-clip portfolio",
+        "body": "Re-edit public product videos as speculative samples. Show hook rate taste."
+      },
+      {
+        "title": "2. Price a simple package",
+        "body": "e.g. 8 clips / mo. Fixed scope. Delivery in CapCut or Premiere."
+      },
+      {
+        "title": "3. Outbound to brands and creators",
+        "body": "Send the sample, not a resume. Target brands already running paid social."
+      },
+      {
+        "title": "4. Systemize briefs",
+        "body": "Intake form, brand kit, revision rules. Speed is your moat."
+      },
+      {
+        "title": "5. Ladder to retainers or productized content",
+        "body": "Do not stay stuck at 20 USD clips forever."
+      }
+    ],
+    "tools": [
+      "CapCut / Premiere",
+      "Frame.io or Drive",
+      "Stripe",
+      "Notion"
+    ],
+    "pitfalls": [
+      "Racing to the bottom on price",
+      "No portfolio, only promises",
+      "Clients with no creative direction and infinite revisions"
+    ],
+    "nextDecks": [
+      "productized-service",
+      "marketing-agency",
+      "short-form-content-funnel"
+    ]
+  },
+  "high-ticket-consulting": {
+    "headline": "Play high-ticket consulting: few clients, deep work",
+    "whoItsFor": "Experts with proof. Not for beginners cosplaying mentorship.",
+    "firstDollar": "Weeks if you have a reputation and outbound. Never if you only have vibes.",
+    "steps": [
+      {
+        "title": "1. Codify the outcome",
+        "body": "What changes for the client in 30-90 days. Price against that outcome, not your hours."
+      },
+      {
+        "title": "2. Proof page",
+        "body": "Case studies, metrics, who you refuse. Application form, not a free free-for-all calendar."
+      },
+      {
+        "title": "3. Conversations, not funnels first",
+        "body": "Warm network and targeted outreach. High ticket closes on calls."
+      },
+      {
+        "title": "4. Delivery container",
+        "body": "Calls, async reviews, scorecards. Protect your calendar."
+      },
+      {
+        "title": "5. Productize the common advice",
+        "body": "Turn repeated lessons into a course or community later."
+      }
+    ],
+    "tools": [
+      "Cal.com",
+      "Notion",
+      "Stripe invoices",
+      "Zoom",
+      "Simple application form"
+    ],
+    "pitfalls": [
+      "Selling coaching with no proof",
+      "Unlimited access offers that destroy margins",
+      "Too many low-ticket distractions"
+    ],
+    "nextDecks": [
+      "online-courses-cohorts",
+      "community-membership",
+      "productized-service"
+    ]
+  },
+  "community-membership": {
+    "headline": "Play community / membership: recurring access",
+    "whoItsFor": "Operators who can host, moderate, and show up. Audience without hospitality dies.",
+    "firstDollar": "After you already have trust. Cold communities rarely monetize.",
+    "steps": [
+      {
+        "title": "1. Define the room",
+        "body": "Who belongs, who does not, what members get weekly. 'Vibes' is not an offer."
+      },
+      {
+        "title": "2. Soft-launch with founders",
+        "body": "10-50 paid or founding members. High touch. Learn rituals that keep people."
+      },
+      {
+        "title": "3. Cadence over content dumps",
+        "body": "Office hours, wins threads, challenges. Empty Discord is a refund machine."
+      },
+      {
+        "title": "4. Instrument churn",
+        "body": "Why people leave. Fix onboarding before you buy ads."
+      },
+      {
+        "title": "5. Add tiers carefully",
+        "body": "Core membership first. High-ticket rooms only after core is healthy."
+      }
+    ],
+    "tools": [
+      "Circle / Discord",
+      "Stripe",
+      "Email ESP",
+      "Calendar for office hours"
+    ],
+    "pitfalls": [
+      "Launching without an existing audience",
+      "Moderator burnout",
+      "All take, no member-to-member value"
+    ],
+    "nextDecks": [
+      "high-ticket-consulting",
+      "online-courses-cohorts",
+      "email-list-funnel"
+    ]
+  },
+  "chrome-extension-tools": {
+    "headline": "Play Chrome extensions: tiny tool, store distribution",
+    "whoItsFor": "Devs who can ship a focused utility and grind store SEO + reviews.",
+    "firstDollar": "Weeks to months after listing. Most extensions never monetize.",
+    "steps": [
+      {
+        "title": "1. One workflow pain",
+        "body": "Something people do daily in the browser. Save clicks, scrape carefully, enforce checklists."
+      },
+      {
+        "title": "2. Ship freemium v1",
+        "body": "Useful free tier, clear paid unlock. Privacy policy required."
+      },
+      {
+        "title": "3. Store listing craft",
+        "body": "Screenshots, tight copy, keywords. Reviews are oxygen."
+      },
+      {
+        "title": "4. Support without drowning",
+        "body": "FAQ, templates, scope limits. Extensions attract edge cases."
+      },
+      {
+        "title": "5. Cross-sell into SaaS if it fits",
+        "body": "The extension can be the top of funnel for a bigger product."
+      }
+    ],
+    "tools": [
+      "Extension APIs",
+      "Stripe",
+      "PostHog",
+      "Chrome Web Store dashboard"
+    ],
+    "pitfalls": [
+      "Permission-heavy creepy tools",
+      "No monetization plan",
+      "Store policy surprises"
+    ],
+    "nextDecks": [
+      "indie-micro-saas",
+      "app-development"
+    ]
+  },
+  "amazon-fba-e-commerce-store": {
+    "headline": "Play Amazon FBA: product, inventory, ops",
+    "whoItsFor": "Operators okay with inventory risk and Amazon's rules. Not passive.",
+    "firstDollar": "Often 3-12 months including research, samples, and first inbound shipment.",
+    "steps": [
+      {
+        "title": "1. Validate demand and margin",
+        "body": "Tools + sold history. Need real margin after Amazon fees, ads, returns, and freight."
+      },
+      {
+        "title": "2. Source carefully",
+        "body": "Samples, QC, MOQ math. Do not order a container on a hunch."
+      },
+      {
+        "title": "3. Launch with a plan",
+        "body": "Listing, A+ content, initial reviews within policy, PPC budget."
+      },
+      {
+        "title": "4. Operate the P&L weekly",
+        "body": "TACoS, stockouts, and returns will decide if you keep the SKU."
+      },
+      {
+        "title": "5. Diversify risk",
+        "body": "Second channel or brand site when one SKU works. Amazon can change the rules."
+      }
+    ],
+    "tools": [
+      "Helium 10 / similar",
+      "Seller Central",
+      "supplier comms",
+      "inventory spreadsheet"
+    ],
+    "pitfalls": [
+      "Thin margins after ads",
+      "IP and listing hijacks",
+      "Cash tied in inventory"
+    ],
+    "nextDecks": [
+      "print-on-demand",
+      "marketing-agency"
+    ]
+  },
+  "online-courses-cohorts": {
+    "headline": "Play courses / cohorts: teach what already works for you",
+    "whoItsFor": "People with a proven skill and an audience (or a way to borrow one).",
+    "firstDollar": "Can be fast with a waitlist and a live cohort. Async catalogs are slower and more competitive.",
+    "steps": [
+      {
+        "title": "1. Teach a result you have delivered",
+        "body": "Not a topic you find interesting. A transformation with proof."
+      },
+      {
+        "title": "2. Sell the cohort before filming everything",
+        "body": "Live first cohort, rough notes okay. Record and polish after revenue."
+      },
+      {
+        "title": "3. Curriculum as milestones",
+        "body": "Weekly outcomes, not 40 hours of video filler."
+      },
+      {
+        "title": "4. Distribution is the product",
+        "body": "Email, partnerships, YouTube. Marketplace alone is a race."
+      },
+      {
+        "title": "5. Turn FAQs into assets",
+        "body": "Templates, community, or consulting upsells for people who want more."
+      }
+    ],
+    "tools": [
+      "Zoom",
+      "Circle or Discord",
+      "Stripe",
+      "Notion curriculum",
+      "email list"
+    ],
+    "pitfalls": [
+      "Course with no audience",
+      "Teaching theory you have not practiced",
+      "Infinite module bloat"
+    ],
+    "nextDecks": [
+      "community-membership",
+      "high-ticket-consulting",
+      "digital-products-templates"
+    ]
+  },
+  "marketing-agency": {
+    "headline": "Play marketing agency: sell results, hire delivery later",
+    "whoItsFor": "Operators who can sell and manage clients. Skill alone is not enough.",
+    "firstDollar": "Weeks with outbound if you can show proof. Delivery capacity is the constraint after sales works.",
+    "steps": [
+      {
+        "title": "1. Niche + offer",
+        "body": "One vertical, one channel (SEO, paid, lifecycle, creative). Generalist agencies drown."
+      },
+      {
+        "title": "2. Case study engine",
+        "body": "Even one strong result with numbers beats a moodboard."
+      },
+      {
+        "title": "3. Sales motion",
+        "body": "Outbound + referrals. Packages with clear KPIs and kill-switches."
+      },
+      {
+        "title": "4. Delivery system",
+        "body": "SOPs, reporting cadence, contractor bench. You are an ops company that markets."
+      },
+      {
+        "title": "5. Margin discipline",
+        "body": "Fire bad clients. Raise prices. Avoid becoming a body shop with no leverage."
+      }
+    ],
+    "tools": [
+      "HubSpot / Attio",
+      "Slack",
+      "reporting dashboards",
+      "project tool",
+      "Stripe / ACH"
+    ],
+    "pitfalls": [
+      "Selling everything to everyone",
+      "Hiring ahead of revenue",
+      "No written scope"
+    ],
+    "nextDecks": [
+      "productized-service",
+      "service-as-software",
+      "lead-generation-sites"
+    ]
+  },
+  "b2b-saas-sales": {
+    "headline": "Play B2B SaaS sales: get paid to learn closing",
+    "whoItsFor": "High-agency people who want fast cash, skills, and a ladder into owning an offer later.",
+    "firstDollar": "Weeks after hire once you ramp. Base + commission; OTE is not a guarantee.",
+    "steps": [
+      {
+        "title": "1. Get the seat",
+        "body": "Target growing SaaS companies. Practice discovery calls and objection handling before interviews."
+      },
+      {
+        "title": "2. Learn the product and ICP",
+        "body": "Who buys, why now, what competitors they consider. Shadow top reps."
+      },
+      {
+        "title": "3. Pipeline hygiene",
+        "body": "Activity metrics matter early. Quality notes and next steps matter always."
+      },
+      {
+        "title": "4. Close and document",
+        "body": "Write your own playbook from wins. That IP is portable."
+      },
+      {
+        "title": "5. Optional exit ramps",
+        "body": "Move into founding sales for a startup, or use the skill to sell your own service/SaaS."
+      }
+    ],
+    "tools": [
+      "CRM",
+      "LinkedIn Sales Nav",
+      "call recorder",
+      "email sequencer (ethically)"
+    ],
+    "pitfalls": [
+      "Joining a product that cannot sell",
+      "Burnout territories",
+      "Believing OTE screenshots"
+    ],
+    "nextDecks": [
+      "high-ticket-consulting",
+      "marketing-agency",
+      "indie-micro-saas"
+    ]
+  },
+  "software-developers": {
+    "headline": "Play software developer: employment as a cash engine",
+    "whoItsFor": "People willing to learn fundamentals and ship. Strong start-now path with verifiable pay.",
+    "firstDollar": "Months to a few years depending on background. Bootcamp promises vary wildly.",
+    "steps": [
+      {
+        "title": "1. Fundamentals over frameworks",
+        "body": "One language deep, data structures enough to interview, git, and SQL."
+      },
+      {
+        "title": "2. Portfolio of real ships",
+        "body": "Deployed projects beat tutorial clones. Prefer tools people use."
+      },
+      {
+        "title": "3. Interview loop reps",
+        "body": "LeetCode enough to not panic, system design basics, behavioral stories."
+      },
+      {
+        "title": "4. Land the job, keep learning",
+        "body": "First role is a wedge. Optimize for mentors and code ownership."
+      },
+      {
+        "title": "5. Optional leverage path",
+        "body": "Side projects, freelancing, or micro-SaaS once cash flow is stable."
+      }
+    ],
+    "tools": [
+      "Editor + AI pair",
+      "GitHub",
+      "LeetCode",
+      "LinkedIn",
+      "deploy target"
+    ],
+    "pitfalls": [
+      "Tutorial hell",
+      "Chasing titles over learning",
+      "Ignoring communication skills"
+    ],
+    "nextDecks": [
+      "big-tech-swe-equity",
+      "freelancing",
+      "indie-micro-saas"
+    ]
+  },
+  "big-tech-swe-equity": {
+    "headline": "Play big-tech SWE: cash + equity ceiling",
+    "whoItsFor": "Strong engineers who will grind interviews. Highest ceiling employment deck on many boards.",
+    "firstDollar": "After you clear interviews. Prep is months; the offer is the first real dollar jump.",
+    "steps": [
+      {
+        "title": "1. Level honestly",
+        "body": "Target companies and levels that match your experience. Levels.fyi for ranges, not as destiny."
+      },
+      {
+        "title": "2. Interview machine",
+        "body": "Daily DS&A, weekly system design, mock interviews. Treat it like a sport season."
+      },
+      {
+        "title": "3. Narrative and resume",
+        "body": "Impact metrics, scope, leadership signals. Referrals beat cold apply."
+      },
+      {
+        "title": "4. Negotiate total comp",
+        "body": "Base, bonus, equity, sign-on. Competing offers matter."
+      },
+      {
+        "title": "5. Do not outsource your life to RSUs",
+        "body": "Equity is volatile. Keep skills sharp and options open."
+      }
+    ],
+    "tools": [
+      "Levels.fyi",
+      "LeetCode",
+      "system design primers",
+      "referral network"
+    ],
+    "pitfalls": [
+      "Burnout prep without applications",
+      "Accepting first offer blind",
+      "Single-company identity"
+    ],
+    "nextDecks": [
+      "indie-micro-saas",
+      "ai-ml-engineers",
+      "software-developers"
+    ]
+  },
+  "electrician": {
+    "headline": "Play electrician: paid apprenticeship into high skill trade",
+    "whoItsFor": "People who want hands-on work, clear training path, and strong median pay without a 4-year degree.",
+    "firstDollar": "Apprenticeship wages start during training. Journey-level pay after 4-5 years.",
+    "steps": [
+      {
+        "title": "1. Find a real apprenticeship",
+        "body": "IBEW/NECA or non-union contractors. Apply early; slots are competitive."
+      },
+      {
+        "title": "2. Get in and stay safe",
+        "body": "Show up, learn code, treat journeymen as mentors. Safety is non-negotiable."
+      },
+      {
+        "title": "3. Collect hours and license path",
+        "body": "Track OJT hours toward journeyman exam. Know your state board rules."
+      },
+      {
+        "title": "4. Specialize for ceiling",
+        "body": "Industrial, controls, solar, data centers. Specialization raises rates."
+      },
+      {
+        "title": "5. Optional shop path",
+        "body": "Master license + van + insurance if you want owner-operator."
+      }
+    ],
+    "tools": [
+      "State apprenticeship board",
+      "code book",
+      "hand tools",
+      "van when independent"
+    ],
+    "pitfalls": [
+      "Skipping formal hours",
+      "side jobs without license/insurance",
+      "burnout from OT culture"
+    ],
+    "nextDecks": [
+      "hvac-plumbing-home-services-company",
+      "construction-manager-general-contractor"
+    ]
+  },
+  "plumber-pipefitter": {
+    "headline": "Play plumber: apprenticeship, license, then route or shop",
+    "whoItsFor": "Hands-on operators who want recession-resilient demand and a path to ownership.",
+    "firstDollar": "Apprentice wages during training; service calls pay once licensed.",
+    "steps": [
+      {
+        "title": "1. Enter apprenticeship or helper role",
+        "body": "Union or reputable shop. Helpers can convert if hours count."
+      },
+      {
+        "title": "2. Master service fundamentals",
+        "body": "Drain, water heater, rough-in. Speed and cleanliness win callbacks."
+      },
+      {
+        "title": "3. License on schedule",
+        "body": "State journeyman then master if ownership is the goal."
+      },
+      {
+        "title": "4. Build a book of business",
+        "body": "Google reviews, maintenance plans, relationships with GCs."
+      },
+      {
+        "title": "5. One-truck shop if ready",
+        "body": "Insurance, bonding, truck stock. Price for callbacks."
+      }
+    ],
+    "tools": [
+      "license study materials",
+      "service truck kit",
+      "QuickBooks",
+      "Google Business Profile"
+    ],
+    "pitfalls": [
+      "underpricing emergency work",
+      "no written scope",
+      "weak insurance"
+    ],
+    "nextDecks": [
+      "hvac-plumbing-home-services-company",
+      "pressure-washing-business"
+    ]
+  },
+  "hvac-technician": {
+    "headline": "Play HVAC tech: certs, then service or install path",
+    "whoItsFor": "Mechanical tinkerers who want high demand and a route to a service company.",
+    "firstDollar": "Often within months via school + helper; EPA 608 required for refrigerants.",
+    "steps": [
+      {
+        "title": "1. Get EPA 608 and basic training",
+        "body": "Trade school or manufacturer path. Safety first."
+      },
+      {
+        "title": "2. Join a service company",
+        "body": "Install vs service: service often teaches diagnostics faster."
+      },
+      {
+        "title": "3. Stack manufacturer certs",
+        "body": "Brand certs raise your value to shops and customers."
+      },
+      {
+        "title": "4. Track your close rate on options",
+        "body": "Maintenance agreements and equipment changeouts."
+      },
+      {
+        "title": "5. Owner path optional",
+        "body": "One truck, then techs. Capital and dispatch systems matter."
+      }
+    ],
+    "tools": [
+      "gauges and meters",
+      "EPA cert",
+      "service van",
+      "dispatch software later"
+    ],
+    "pitfalls": [
+      "skipping 608",
+      "no continuing education",
+      "poor flat-rate pricing"
+    ],
+    "nextDecks": [
+      "hvac-plumbing-home-services-company",
+      "appliance-repair-technician"
+    ]
+  },
+  "ghostwriting-copywriting": {
+    "headline": "Play ghostwriting: niche words for other peoples brands",
+    "whoItsFor": "Strong writers who prefer cash and craft over personal fame.",
+    "firstDollar": "Weeks with outbound and 2-3 samples. Niche (SaaS, health, finance) pays more.",
+    "steps": [
+      {
+        "title": "1. Pick a niche and format",
+        "body": "LinkedIn ghost, newsletters, sales pages, or books. One lane first."
+      },
+      {
+        "title": "2. Portfolio of speculative pieces",
+        "body": "Write in the voice of target clients. Show before/after metrics if possible."
+      },
+      {
+        "title": "3. Outbound to buyers",
+        "body": "Founders, agencies, thought leaders. Send a free sample opener."
+      },
+      {
+        "title": "4. Productize packages",
+        "body": "Monthly ghost retainer beats one-off blog posts."
+      },
+      {
+        "title": "5. Raise rates with proof",
+        "body": "Publish anonymized case studies. Fire low-pay marketplaces when full."
+      }
+    ],
+    "tools": [
+      "Google Docs",
+      "Notion",
+      "Stripe",
+      "Cal.com"
+    ],
+    "pitfalls": [
+      "generalist race-to-bottom",
+      "no samples",
+      "scope creep on revisions"
+    ],
+    "nextDecks": [
+      "productized-service",
+      "high-ticket-consulting",
+      "email-marketing-service"
+    ]
+  },
+  "virtual-assistant": {
+    "headline": "Play VA: reliability is the product",
+    "whoItsFor": "Organized operators who want remote retainers and a ladder into specialized ops.",
+    "firstDollar": "Days to weeks via marketplaces or cold outreach with a clear menu.",
+    "steps": [
+      {
+        "title": "1. Offer a tight menu",
+        "body": "Inbox, calendar, research, customer support. Not everything."
+      },
+      {
+        "title": "2. Tools fluency",
+        "body": "Gmail, Notion, Slack, basic Zapier. Show SOPs you follow."
+      },
+      {
+        "title": "3. Land one retainer",
+        "body": "20 hours/mo beats scattershot gigs."
+      },
+      {
+        "title": "4. Specialize",
+        "body": "Podcast VA, ecom VA, real estate VA. Higher rates."
+      },
+      {
+        "title": "5. Productize or agency",
+        "body": "Templates and junior VAs if you want leverage."
+      }
+    ],
+    "tools": [
+      "Notion",
+      "Slack",
+      "Google Workspace",
+      "Zapier"
+    ],
+    "pitfalls": [
+      "hourly chaos",
+      "no boundaries",
+      "staying general forever"
+    ],
+    "nextDecks": [
+      "productized-service",
+      "social-media-management",
+      "email-marketing-service"
+    ]
+  },
+  "web-dev-freelance": {
+    "headline": "Play freelance web dev: portfolio over credentials",
+    "whoItsFor": "Builders who can ship and sell. Closest cash path for coders outside W2.",
+    "firstDollar": "Weeks with a clear offer (landing pages, Next.js apps, Webflow).",
+    "steps": [
+      {
+        "title": "1. One stack, one offer",
+        "body": "e.g. marketing sites in Next.js or Webflow for local services."
+      },
+      {
+        "title": "2. Three live portfolio pieces",
+        "body": "Deployed, with outcomes if possible."
+      },
+      {
+        "title": "3. Outbound weekly",
+        "body": "Agencies and local businesses. Fixed packages beat open bids early."
+      },
+      {
+        "title": "4. Protect scope",
+        "body": "Written SOW, change orders, deposits."
+      },
+      {
+        "title": "5. Ladder",
+        "body": "Productized builds, retainers, or your own SaaS."
+      }
+    ],
+    "tools": [
+      "Next.js or Webflow",
+      "GitHub",
+      "Vercel",
+      "Stripe"
+    ],
+    "pitfalls": [
+      "unpaid discovery forever",
+      "no deposits",
+      "building products for free under client IP"
+    ],
+    "nextDecks": [
+      "no-code-web-agency",
+      "productized-service",
+      "indie-micro-saas"
+    ]
+  },
+  "influencer-brand-deals": {
+    "headline": "Play influencer deals: audience first, media kit second",
+    "whoItsFor": "Creators who already have engaged niche attention. Not a cold-start career.",
+    "firstDollar": "After consistent audience; first deals are often free product or low pay.",
+    "steps": [
+      {
+        "title": "1. Niche audience with proof",
+        "body": "Engagement rate over vanity followers."
+      },
+      {
+        "title": "2. Media kit",
+        "body": "Demographics, past work, rates, deliverables."
+      },
+      {
+        "title": "3. Outbound + platforms",
+        "body": "Brands in your niche; do not wait for inbounds only."
+      },
+      {
+        "title": "4. Own a backend offer",
+        "body": "Email list or product so platform cuts do not own you."
+      },
+      {
+        "title": "5. Diversify",
+        "body": "Multiple brands, multiple platforms, owned product."
+      }
+    ],
+    "tools": [
+      "media kit PDF",
+      "email list",
+      "rate card",
+      "analytics screenshots"
+    ],
+    "pitfalls": [
+      "fake followers",
+      "underpricing",
+      "no contract"
+    ],
+    "nextDecks": [
+      "email-list-funnel",
+      "digital-products-templates",
+      "high-ticket-consulting"
+    ]
+  },
+  "amazon-kdp-self-publishing": {
+    "headline": "Play KDP: catalog and ads, not one viral book",
+    "whoItsFor": "Writers/operators who can treat publishing like a product business.",
+    "firstDollar": "Months; ads can accelerate or burn cash.",
+    "steps": [
+      {
+        "title": "1. Validate categories",
+        "body": "Look at BSR and competition before writing 80k words."
+      },
+      {
+        "title": "2. Ship a tight first title",
+        "body": "Editing and cover matter more than perfect prose early."
+      },
+      {
+        "title": "3. Launch with a plan",
+        "body": "Keywords, categories, optional ads with hard ROAS stops."
+      },
+      {
+        "title": "4. Build a catalog",
+        "body": "Series and related titles compound."
+      },
+      {
+        "title": "5. Own an email list",
+        "body": "Do not rely only on Amazon discoverability."
+      }
+    ],
+    "tools": [
+      "KDP",
+      "editing tools",
+      "cover designer",
+      "optional AMS ads"
+    ],
+    "pitfalls": [
+      "spam low-content floods",
+      "ad spend without unit economics",
+      "one-book dreams"
+    ],
+    "nextDecks": [
+      "email-list-funnel",
+      "online-courses-cohorts",
+      "digital-products-templates"
+    ]
+  },
+  "chick-fil-a-operator": {
+    "headline": "Play Chick-fil-A operator: selection is the boss fight",
+    "whoItsFor": "Operators who want a proven system, can pass a brutal selection process, and will run the store full-time.",
+    "firstDollar": "After selection and opening; multi-year process is common.",
+    "steps": [
+      {
+        "title": "1. Study the model",
+        "body": "Single-unit, operator-in-restaurant. Not passive ownership."
+      },
+      {
+        "title": "2. Strengthen the application",
+        "body": "Leadership proof, hospitality track record, financial readiness."
+      },
+      {
+        "title": "3. Survive selection",
+        "body": "Multiple interviews; acceptance rate is extremely low."
+      },
+      {
+        "title": "4. Train in the system",
+        "body": "Corporate path after selection."
+      },
+      {
+        "title": "5. Operate excellence daily",
+        "body": "People, speed, cleanliness. The brand is the product."
+      }
+    ],
+    "tools": [
+      "official franchise materials",
+      "personal balance sheet",
+      "leadership portfolio"
+    ],
+    "pitfalls": [
+      "treating it like a passive franchise",
+      "underestimating hours",
+      "application without operator experience"
+    ],
+    "nextDecks": [
+      "construction-manager-general-contractor",
+      "hvac-plumbing-home-services-company"
+    ]
+  }
+}

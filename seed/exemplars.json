@@ -1,44 +1,272 @@
 {
   "indie-micro-saas": [
-    { "name": "Pieter Levels", "handle": "@levelsio", "url": "https://levels.io", "note": "70+ launches; PhotoAI + NomadList carry the portfolio", "rev": "~$3.1M/yr" },
-    { "name": "Damon Chen", "handle": "@damengchen", "url": "https://testimonial.to", "note": "Testimonial.to + PDF.ai after ~5 failed side projects", "rev": "~$2.3M/yr" },
-    { "name": "Tony Dinh", "handle": "@tdinh_me", "url": "https://tonydinh.com", "note": "TypingMind (~$137K MRR), DevUtils; sells products as assets", "rev": "~$1.6M/yr" },
-    { "name": "Marc Lou", "handle": "@marc_louvion", "url": "https://marclou.com", "note": "ShipFast boilerplate + ~15 micro-SaaS", "rev": "~$1M/yr" },
-    { "name": "Bhanu Teja", "handle": "@pbteja1998", "url": "https://sitegpt.ai", "note": "SiteGPT; dozens of free SEO tools feed the paid product", "rev": "~$190K/yr" },
-    { "name": "Sebastian Roehl", "handle": "@sebastianroehl", "url": "https://twitter.com/sebastianroehl", "note": "Portfolio of tiny $1-2/mo mobile apps, fully solo", "rev": "~$600K/yr" }
+    {
+      "name": "Pieter Levels",
+      "handle": "@levelsio",
+      "url": "https://levels.io",
+      "note": "70+ launches; PhotoAI + NomadList carry the portfolio",
+      "rev": "~$3.1M/yr"
+    },
+    {
+      "name": "Damon Chen",
+      "handle": "@damengchen",
+      "url": "https://testimonial.to",
+      "note": "Testimonial.to + PDF.ai after ~5 failed side projects",
+      "rev": "~$2.3M/yr"
+    },
+    {
+      "name": "Tony Dinh",
+      "handle": "@tdinh_me",
+      "url": "https://tonydinh.com",
+      "note": "TypingMind (~$137K MRR), DevUtils; sells products as assets",
+      "rev": "~$1.6M/yr"
+    },
+    {
+      "name": "Marc Lou",
+      "handle": "@marc_louvion",
+      "url": "https://marclou.com",
+      "note": "ShipFast boilerplate + ~15 micro-SaaS",
+      "rev": "~$1M/yr"
+    },
+    {
+      "name": "Bhanu Teja",
+      "handle": "@pbteja1998",
+      "url": "https://sitegpt.ai",
+      "note": "SiteGPT; dozens of free SEO tools feed the paid product",
+      "rev": "~$190K/yr"
+    },
+    {
+      "name": "Sebastian Roehl",
+      "handle": "@sebastianroehl",
+      "url": "https://twitter.com/sebastianroehl",
+      "note": "Portfolio of tiny $1-2/mo mobile apps, fully solo",
+      "rev": "~$600K/yr"
+    }
   ],
   "newsletter-substack": [
-    { "name": "Lenny Rachitsky", "handle": "@lennysan", "url": "https://www.lennysnewsletter.com", "note": "#1 PM newsletter on Substack + podcast; paid B2B niche", "rev": "~$2M/yr" },
-    { "name": "Justin Welsh", "handle": "@thejustinwelsh", "url": "https://www.justinwelsh.me", "note": "Saturday Solopreneur → evergreen courses, 86% margins", "rev": "~$4.15M/yr" },
-    { "name": "Dan Koe", "handle": "@thedankoe", "url": "https://thedankoe.com", "note": "The Koe Letter; one viral essay feeds every channel", "rev": "~$4M/yr" },
-    { "name": "Harry Dry", "handle": "@harrydry", "url": "https://marketingexamples.com", "note": "Marketing Examples; distribution > creation", "rev": "~$360K/yr" }
+    {
+      "name": "Lenny Rachitsky",
+      "handle": "@lennysan",
+      "url": "https://www.lennysnewsletter.com",
+      "note": "#1 PM newsletter on Substack + podcast; paid B2B niche",
+      "rev": "~$2M/yr"
+    },
+    {
+      "name": "Justin Welsh",
+      "handle": "@thejustinwelsh",
+      "url": "https://www.justinwelsh.me",
+      "note": "Saturday Solopreneur → evergreen courses, 86% margins",
+      "rev": "~$4.15M/yr"
+    },
+    {
+      "name": "Dan Koe",
+      "handle": "@thedankoe",
+      "url": "https://thedankoe.com",
+      "note": "The Koe Letter; one viral essay feeds every channel",
+      "rev": "~$4M/yr"
+    },
+    {
+      "name": "Harry Dry",
+      "handle": "@harrydry",
+      "url": "https://marketingexamples.com",
+      "note": "Marketing Examples; distribution > creation",
+      "rev": "~$360K/yr"
+    }
   ],
   "online-courses-cohorts": [
-    { "name": "Justin Welsh", "handle": "@thejustinwelsh", "url": "https://www.justinwelsh.me", "note": "Productized one skill into evergreen courses", "rev": "~$4.15M/yr" },
-    { "name": "Daniel Vassallo", "handle": "@dvassallo", "url": "https://smallbets.com", "note": "Small Bets community + AWS ebook; stacks small bets", "rev": "~$1M/yr" },
-    { "name": "Marc Lou", "handle": "@marc_louvion", "url": "https://codefa.st", "note": "CodeFast course, sell shovels to the gold rush", "rev": "~$1M/yr" }
+    {
+      "name": "Justin Welsh",
+      "handle": "@thejustinwelsh",
+      "url": "https://www.justinwelsh.me",
+      "note": "Productized one skill into evergreen courses",
+      "rev": "~$4.15M/yr"
+    },
+    {
+      "name": "Daniel Vassallo",
+      "handle": "@dvassallo",
+      "url": "https://smallbets.com",
+      "note": "Small Bets community + AWS ebook; stacks small bets",
+      "rev": "~$1M/yr"
+    },
+    {
+      "name": "Marc Lou",
+      "handle": "@marc_louvion",
+      "url": "https://codefa.st",
+      "note": "CodeFast course, sell shovels to the gold rush",
+      "rev": "~$1M/yr"
+    }
   ],
   "affiliate-seo-content-sites": [
-    { "name": "John Rush", "handle": "@johnrushx", "url": "https://johnrush.me", "note": "~12 SEO directories feeding his SaaS portfolio", "rev": "~$2M/yr" },
-    { "name": "Piotr Kulpinski", "handle": "@piotrkulpinski", "url": "https://openalternative.co", "note": "OpenAlternative directory built in 48h; sold the boilerplate to cloners", "rev": "~$120K/yr" },
-    { "name": "Andrey Azimov", "handle": "@andreyazimov", "url": "https://sheet2site.com", "note": "Sheet2Site + Web3 Jobs; caught the no-code wave early", "rev": "~$120K/yr" }
+    {
+      "name": "John Rush",
+      "handle": "@johnrushx",
+      "url": "https://johnrush.me",
+      "note": "~12 SEO directories feeding his SaaS portfolio",
+      "rev": "~$2M/yr"
+    },
+    {
+      "name": "Piotr Kulpinski",
+      "handle": "@piotrkulpinski",
+      "url": "https://openalternative.co",
+      "note": "OpenAlternative directory built in 48h; sold the boilerplate to cloners",
+      "rev": "~$120K/yr"
+    },
+    {
+      "name": "Andrey Azimov",
+      "handle": "@andreyazimov",
+      "url": "https://sheet2site.com",
+      "note": "Sheet2Site + Web3 Jobs; caught the no-code wave early",
+      "rev": "~$120K/yr"
+    }
   ],
   "ai-automation-agency": [
-    { "name": "Maor Shlomo", "handle": "@MaorShlomo", "url": "https://base44.com", "note": "Base44 vibe-coding builder; fast acquisition", "rev": "~$1.5M/yr" },
-    { "name": "Ben Broca", "handle": "@benbroca", "url": "https://polsia.com", "note": "Polsia 'AI CEO' agents, newest + hypiest, treat skeptically", "rev": "~$6M/yr claimed" }
+    {
+      "name": "Maor Shlomo",
+      "handle": "@MaorShlomo",
+      "url": "https://base44.com",
+      "note": "Base44 vibe-coding builder; fast acquisition",
+      "rev": "~$1.5M/yr"
+    },
+    {
+      "name": "Ben Broca",
+      "handle": "@benbroca",
+      "url": "https://polsia.com",
+      "note": "Polsia 'AI CEO' agents, newest + hypiest, treat skeptically",
+      "rev": "~$6M/yr claimed"
+    }
   ],
   "marketing-agency": [
-    { "name": "Brett Williams", "handle": "@designjoy", "url": "https://designjoy.co", "note": "DesignJoy, one-man flat-rate productized design subscription", "rev": "~$1.5M/yr" }
+    {
+      "name": "Brett Williams",
+      "handle": "@designjoy",
+      "url": "https://designjoy.co",
+      "note": "DesignJoy, one-man flat-rate productized design subscription",
+      "rev": "~$1.5M/yr"
+    }
   ],
   "app-development": [
-    { "name": "Zach Yadegari", "handle": "@zach_yadegari", "url": "https://www.calai.app", "note": "Cal AI calorie app (built at 17); sold to MyFitnessPal", "rev": "~$35M/yr" },
-    { "name": "Sebastian Roehl", "handle": "@sebastianroehl", "url": "https://twitter.com/sebastianroehl", "note": "Many small subscription apps, solo from a small town", "rev": "~$600K/yr" }
+    {
+      "name": "Zach Yadegari",
+      "handle": "@zach_yadegari",
+      "url": "https://www.calai.app",
+      "note": "Cal AI calorie app (built at 17); sold to MyFitnessPal",
+      "rev": "~$35M/yr"
+    },
+    {
+      "name": "Sebastian Roehl",
+      "handle": "@sebastianroehl",
+      "url": "https://twitter.com/sebastianroehl",
+      "note": "Many small subscription apps, solo from a small town",
+      "rev": "~$600K/yr"
+    }
   ],
   "freelancing": [
-    { "name": "Brett Williams", "handle": "@designjoy", "url": "https://designjoy.co", "note": "Productized freelancing into a $1.5M solo subscription", "rev": "~$1.5M/yr" },
-    { "name": "Hasaam Bhatti", "handle": "@hasaambhatti", "url": "https://twitter.com/hasaambhatti", "note": "Non-technical; found a distribution partner sitting on the customers", "rev": "~$360K/yr" }
+    {
+      "name": "Brett Williams",
+      "handle": "@designjoy",
+      "url": "https://designjoy.co",
+      "note": "Productized freelancing into a $1.5M solo subscription",
+      "rev": "~$1.5M/yr"
+    },
+    {
+      "name": "Hasaam Bhatti",
+      "handle": "@hasaambhatti",
+      "url": "https://twitter.com/hasaambhatti",
+      "note": "Non-technical; found a distribution partner sitting on the customers",
+      "rev": "~$360K/yr"
+    }
   ],
   "big-tech-swe-equity": [
-    { "name": "Tony Dinh", "handle": "@tdinh_me", "url": "https://tonydinh.com", "note": "Left employment after building an audience + products on the side", "rev": "~$1.6M/yr" }
+    {
+      "name": "Tony Dinh",
+      "handle": "@tdinh_me",
+      "url": "https://tonydinh.com",
+      "note": "Left employment after building an audience + products on the side",
+      "rev": "~$1.6M/yr"
+    }
+  ],
+  "productized-service": [
+    {
+      "name": "Brett Williams",
+      "handle": "@designjoy",
+      "url": "https://designjoy.co",
+      "note": "DesignJoy: one-man flat-rate productized design subscription",
+      "rev": "~1.5M USD/yr"
+    },
+    {
+      "name": "Hasaam Bhatti",
+      "handle": "@hasaambhatti",
+      "url": "https://twitter.com/hasaambhatti",
+      "note": "Non-technical; productized delivery with a distribution partner",
+      "rev": "~360K USD/yr"
+    }
+  ],
+  "digital-products-templates": [
+    {
+      "name": "Pieter Levels",
+      "handle": "@levelsio",
+      "url": "https://levels.io",
+      "note": "Many one-time and subscription products; PhotoAI carries the stack",
+      "rev": "~3.1M USD/yr"
+    },
+    {
+      "name": "Marc Lou",
+      "handle": "@marc_louvion",
+      "url": "https://shipfa.st",
+      "note": "ShipFast boilerplate sold as a product, not a course cosplay",
+      "rev": "~1M USD/yr"
+    }
+  ],
+  "community-membership": [
+    {
+      "name": "Daniel Vassallo",
+      "handle": "@dvassallo",
+      "url": "https://smallbets.com",
+      "note": "Small Bets community + stacked digital products",
+      "rev": "~1M USD/yr"
+    }
+  ],
+  "email-list-funnel": [
+    {
+      "name": "Justin Welsh",
+      "handle": "@thejustinwelsh",
+      "url": "https://www.justinwelsh.me",
+      "note": "List to evergreen products; 86% margins on the system",
+      "rev": "~4.15M USD/yr"
+    },
+    {
+      "name": "Dan Koe",
+      "handle": "@thedankoe",
+      "url": "https://thedankoe.com",
+      "note": "Essay to list to products across channels",
+      "rev": "~4M USD/yr"
+    }
+  ],
+  "high-ticket-consulting": [
+    {
+      "name": "Lenny Rachitsky",
+      "handle": "@lennysan",
+      "url": "https://www.lennysnewsletter.com",
+      "note": "Paid newsletter + premium community/consulting adjacency in PM niche",
+      "rev": "~2M USD/yr"
+    }
+  ],
+  "service-as-software": [
+    {
+      "name": "Maor Shlomo",
+      "handle": "@MaorShlomo",
+      "url": "https://base44.com",
+      "note": "Productized AI builder path from service energy into software",
+      "rev": "~1.5M USD/yr"
+    }
+  ],
+  "chrome-extension-tools": [
+    {
+      "name": "Tony Dinh",
+      "handle": "@tdinh_me",
+      "url": "https://tonydinh.com",
+      "note": "Dev tools and products including extension-adjacent indie software",
+      "rev": "~1.6M USD/yr"
+    }
   ]
 }

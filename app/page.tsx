@@ -1,14 +1,14 @@
-import { ArrowRight, Rocket, ShieldCheck, Trophy } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 
 import { getIncomeDecks } from "@/lib/income";
+import { getMetaReport } from "@/lib/meta-report";
 import { ReportMasthead } from "@/components/report-masthead";
 import { SiteFooter } from "@/components/site-footer";
 import { IncomeBoard } from "@/components/income/income-board";
 
 export default function Home() {
   const decks = getIncomeDecks();
-  const topStartNow = [...decks].sort((a, b) => b.startNowScore - a.startNowScore)[0];
-  const topCeiling = [...decks].sort((a, b) => b.ceilingScore - a.ceilingScore)[0];
+  const report = getMetaReport();
   const verified = decks.filter((d) => d.dataQuality === "verifiable").length;
 
   return (
@@ -38,36 +38,32 @@ export default function Home() {
             <span className="font-semibold text-foreground">median income × growth ÷ barrier</span>.
             Occupations are anchored on{" "}
             <span className="font-semibold text-foreground">BLS</span> data; internet paths show
-            the brutal median and a self-reported badge. Pick your lens, then go play the deck.
+            the brutal median and a self-reported badge. The Pick, Meta Breaker, and matchup chart
+            sit above the S-D board, like a Data Reaper report.
           </p>
         </div>
 
-        {/* The meta at a glance */}
         <div
-          className="mb-6 grid grid-cols-1 gap-2.5 sm:grid-cols-3"
-          aria-label="The meta at a glance"
+          className="mb-6 flex items-center justify-between gap-3 rounded-lg border bg-card/60 px-3.5 py-3"
+          aria-label="Board coverage"
         >
-          <SummaryStat
-            icon={<Rocket className="h-4 w-4 text-primary" aria-hidden />}
-            label="Best to start now"
-            name={topStartNow.name}
-            value={`${topStartNow.startNowScore}`}
-          />
-          <SummaryStat
-            icon={<Trophy className="h-4 w-4 text-amber-300" aria-hidden />}
-            label="Highest ceiling"
-            name={topCeiling.name}
-            value={`${topCeiling.ceilingScore}`}
-          />
-          <SummaryStat
-            icon={<ShieldCheck className="h-4 w-4 text-emerald-400" aria-hidden />}
-            label="BLS-verified decks"
-            name={`of ${decks.length} total`}
-            value={`${verified}`}
-          />
+          <div className="flex items-center gap-2.5">
+            <ShieldCheck className="h-4 w-4 text-emerald-400" aria-hidden />
+            <div className="leading-tight">
+              <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+                BLS-verified decks
+              </div>
+              <div className="text-sm font-semibold text-foreground">
+                of {decks.length} total on the board
+              </div>
+            </div>
+          </div>
+          <div className="font-mono text-lg font-bold tabular-nums text-foreground">
+            {verified}
+          </div>
         </div>
 
-        <IncomeBoard decks={decks} />
+        <IncomeBoard decks={decks} report={report} />
 
         {/* Methodology */}
         <section
@@ -81,42 +77,22 @@ export default function Home() {
             $0-capital, fast, skill-gated paths, the best deck to open with today.{" "}
             <span className="font-semibold text-foreground">Highest ceiling</span> = 70% income +
             30% growth, terminal pay wins, so decade-long moats rise. The same deck tiers
-            differently under each. Median is deliberately brutal: most internet paths show a
-            near-$0 median because that&apos;s the real survivorship-adjusted truth, the exemplars
-            on those cards are the rare winners, not the typical outcome. Every occupation number
-            traces to BLS; tap any card for its source.
+            differently under each.{" "}
+            <span className="font-semibold text-foreground">The Pick</span> is #1 under the active
+            lens.{" "}
+            <span className="font-semibold text-foreground">Meta Breaker</span> is the curated
+            rising internet deck this report.{" "}
+            <span className="font-semibold text-foreground">Matchups</span> are hybrid stacks
+            (opener → midgame → wincon), because pure attention decks rarely clear cash alone.
+            Median is deliberately brutal: most internet paths show a near-$0 median because
+            that&apos;s the real survivorship-adjusted truth, the exemplars on those cards are the
+            rare winners, not the typical outcome. Every occupation number traces to BLS; tap any
+            card for its source.
           </p>
         </section>
 
         <SiteFooter />
       </div>
-    </div>
-  );
-}
-
-function SummaryStat({
-  icon,
-  label,
-  name,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  name: string;
-  value: string;
-}) {
-  return (
-    <div className="flex items-center justify-between gap-3 rounded-lg border bg-card/60 px-3.5 py-3">
-      <div className="flex items-center gap-2.5">
-        {icon}
-        <div className="leading-tight">
-          <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
-            {label}
-          </div>
-          <div className="truncate text-sm font-semibold text-foreground">{name}</div>
-        </div>
-      </div>
-      <div className="font-mono text-lg font-bold tabular-nums text-foreground">{value}</div>
     </div>
   );
 }

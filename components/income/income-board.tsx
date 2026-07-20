@@ -4,10 +4,20 @@ import { useMemo, useState } from "react";
 import { Rocket, Trophy } from "lucide-react";
 
 import type { IncomeDeckView, Lens } from "@/lib/income";
+import {
+  getThePick,
+  resolveMatchups,
+  resolveMetaBreaker,
+  type MetaReportSeed,
+} from "@/lib/meta-report";
 import { TIER_ORDER, type Tier } from "@/lib/meta";
 import { cn } from "@/lib/utils";
 import { TIER_STYLES } from "@/components/tier-styles";
 import { IncomeCard } from "@/components/income/income-card";
+import { ThePick } from "@/components/income/the-pick";
+import { MetaBreaker } from "@/components/income/meta-breaker";
+import { MatchupChart } from "@/components/income/matchup-chart";
+import { ClassFrequency } from "@/components/income/class-frequency";
 
 const LENS_COPY: Record<Lens, { label: string; icon: typeof Rocket; blurb: string }> = {
   startNow: {
@@ -24,7 +34,13 @@ const LENS_COPY: Record<Lens, { label: string; icon: typeof Rocket; blurb: strin
   },
 };
 
-export function IncomeBoard({ decks }: { decks: IncomeDeckView[] }) {
+export function IncomeBoard({
+  decks,
+  report,
+}: {
+  decks: IncomeDeckView[];
+  report: MetaReportSeed;
+}) {
   const [lens, setLens] = useState<Lens>("startNow");
   const scoreKey = lens === "ceiling" ? "ceilingScore" : "startNowScore";
   const tierKey = lens === "ceiling" ? "ceilingTier" : "startNowTier";
@@ -35,6 +51,10 @@ export function IncomeBoard({ decks }: { decks: IncomeDeckView[] }) {
     for (const t of TIER_ORDER) b[t].sort((a, c) => c[scoreKey] - a[scoreKey]);
     return b;
   }, [decks, scoreKey, tierKey]);
+
+  const pick = useMemo(() => getThePick(decks, lens), [decks, lens]);
+  const breaker = useMemo(() => resolveMetaBreaker(decks), [decks]);
+  const matchups = useMemo(() => resolveMatchups(decks), [decks]);
 
   return (
     <div>
@@ -70,6 +90,23 @@ export function IncomeBoard({ decks }: { decks: IncomeDeckView[] }) {
         <p className="max-w-md text-xs leading-relaxed text-muted-foreground">
           {LENS_COPY[lens].blurb}
         </p>
+      </div>
+
+      {/* VS report layer: The Pick → Meta Breaker → Class freq → Matchups → tiers */}
+      <div className="mb-5 flex flex-col gap-3">
+        {pick ? <ThePick pick={pick} /> : null}
+        <MetaBreaker breaker={breaker} lens={lens} />
+        <div className="rounded-lg border border-border/50 bg-background/30 px-3 py-2 text-[11px] leading-relaxed text-muted-foreground">
+          <span className="font-semibold text-foreground">{report.title}</span>
+          <span className="mx-1.5 text-border">·</span>
+          <span className="font-mono">{report.asOf}</span>
+          <span className="mx-1.5 text-border">·</span>
+          {report.lede}
+          <span className="mx-1.5 text-border">·</span>
+          <span className="font-mono text-foreground">{decks.length} decks</span>
+        </div>
+        <ClassFrequency decks={decks} />
+        <MatchupChart matchups={matchups} lens={lens} />
       </div>
 
       {/* Tier rows */}
