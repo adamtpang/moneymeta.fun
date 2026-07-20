@@ -1,29 +1,32 @@
 # moneymeta.fun
 
-**Vicious Syndicate for capitalism.** A data-driven tier list of wealth vehicles
-("income decks"), ranked by a **meta score** computed from public, verifiable
-market-cap data. Check it like a Hearthstone meta report: what's strong right
-now, what's rising, what's falling.
+**The Vicious Syndicate of moneymaking.** A data-driven tier list of every way to
+make money, ranked S to D by a **meta score** from public, verifiable data. Check
+it like a Hearthstone meta report: the best money deck to play in life right now.
 
-This is a personal daily allocation instrument, **not financial advice**, and
-**never** built on self-reported data. Every number traces to a public source.
+Not financial or career advice. Every number traces to a public source, and
+internet paths carry a data-confidence badge because most real medians are brutal.
 
 ## The idea
 
-Vicious Syndicate's meta score ≈ **popularity × win rate**. We map that onto
-capital:
+Vicious Syndicate's meta score ≈ **popularity × win rate**, mapped onto income:
 
-| Hearthstone (VS)          | moneymeta.fun                          |
-| ------------------------- | -------------------------------------- |
-| Deck popularity           | **Market cap** (where capital lives)   |
-| Deck win rate             | **Growth rate** (recent % change)      |
-| Meta score                | `f(market_cap, growth_rate)` → 0–100   |
-| Tier (S/A/B/C/D)          | Derived from the meta score            |
+| Hearthstone (VS)   | moneymeta.fun                                   |
+| ------------------ | ----------------------------------------------- |
+| Deck win rate      | **Median income** (BLS wage)                    |
+| Deck trajectory    | **Growth** (BLS 10-year projection)             |
+| Barrier            | time-to-first-income + capital needed           |
+| Meta score         | `income × growth ÷ barrier` → 0–100             |
+| Tier (S/A/B/C/D)   | Derived from the meta score                     |
+
+Two lenses, each with its own tiering: **start now** (income ÷ barrier ÷ time,
+what a high-agency person with little capital can reach fastest) and **highest
+ceiling** (terminal pay and trajectory, the long climb).
 
 ## Stack
 
-Next.js 14 (App Router) · TypeScript · Tailwind + shadcn/ui · Drizzle ORM ·
-Neon (Postgres) · deployed on Vercel · pnpm.
+Next.js 14 (App Router) · TypeScript · Tailwind + shadcn-style primitives ·
+deployed on Vercel · pnpm. No database: the board renders from committed JSON.
 
 ## Run locally
 
@@ -32,40 +35,27 @@ pnpm install
 pnpm dev        # http://localhost:3000
 ```
 
-**Phase 1 needs no database.** The tier list renders directly from
-[`seed/vehicles.json`](seed/vehicles.json); the meta score and tier are computed
-in [`lib/meta.ts`](lib/meta.ts) and read by [`lib/data.ts`](lib/data.ts).
+The board renders directly from
+[`seed/income-decks.json`](seed/income-decks.json) (BLS-anchored, 62 decks) plus
+real exemplars in [`seed/exemplars.json`](seed/exemplars.json). Scores and tiers
+are computed in [`lib/income.ts`](lib/income.ts) and never stored.
 
 ## The meta formula
 
-All tunable constants live in [`lib/meta.ts`](lib/meta.ts):
+All tunable constants live in [`lib/income.ts`](lib/income.ts):
 
 ```
-meta_score = 0.5 * normSize(market_cap)   // log scale, $100B→0 … $500T→100
-           + 0.5 * normGrowth(growth)     // linear, clamped ±12%
-tiers: S ≥ 80 · A ≥ 65 · B ≥ 50 · C ≥ 35 · D < 35
+startNow = 0.4*income + 0.2*growth + 0.4*reach   (reach = 0.6*time + 0.4*capital)
+ceiling  = 0.7*income + 0.3*growth
+income normalized $30k→0 … $250k→100 · growth on the BLS 10-year projection
+tiers: S ≥ 70 · A ≥ 58 · B ≥ 46 · C ≥ 34 · D < 34
 ```
 
-Growth, score, and tier are **always derived**, never stored as columns, the
-formula stays a single source of truth.
+Scores and tiers are always derived, never stored.
 
-## Roadmap
+## Also here
 
-- **Phase 1 (done):** static tier list from seed JSON, live on Vercel.
-- **Phase 2:** real snapshot history, movement arrows vs. previous snapshot,
-  `/methodology` page.
-- **Phase 3:** automated weekly ingestion (CoinMarketCap API, companies/assets
-  scrapers, Forbes) → `snapshots`. Fail soft: keep last good snapshot.
-- **Phase 4:** dated "this week's meta" report, biggest risers/fallers, new
-  S-tier, tier drops.
+- [`/sprint`](https://moneymeta.fun/sprint) — the AI Build Sprint offer page (the cash floor).
 
-## Database (Phase 2+)
-
-The Drizzle schema ([`db/schema.ts`](db/schema.ts)) and seed script
-([`db/seed.ts`](db/seed.ts)) are ready. To wire Neon:
-
-```bash
-cp .env.example .env      # set DATABASE_URL
-pnpm db:push              # create tables
-pnpm db:seed              # load seed/vehicles.json
-```
+The Capital and Career boards were removed in the 2026-07-20 refocus to make the
+site solely the money meta; `/income` and `/career` redirect to `/`.

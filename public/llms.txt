@@ -1,16 +1,12 @@
-# moneymeta.fun (moneymeta.fun)
+# moneymeta.fun
 
-> A data-driven tier list of wealth and income vehicles, ranked S to D by a meta score built from public, verifiable data. Vicious Syndicate, but for capitalism.
+moneymeta.fun is the Vicious Syndicate of moneymaking: a live tier list that ranks every way to make money into S to D tiers by a meta score built from public data. Income paths ("decks") are scored on median income, growth, and barrier to entry, so you can see the best money deck to play in life right now, whether you are starting today with little capital (the "start now" lens) or climbing for the highest ceiling (the "highest ceiling" lens). Occupations are anchored on US BLS data; internet and creator paths show the brutal, survivorship-adjusted median and a data-confidence badge. Every number traces to a public source. It is a personal decision tool, not financial or career advice.
 
-moneymeta.fun reads like a Hearthstone meta report for money: it ranks wealth vehicles and income paths into S/A/B/C/D tiers using a meta score. Popularity maps to market cap (where capital actually lives), win rate maps to growth rate, and the two combine into a score from 0 to 100 that sets the tier. Every number traces back to a public source; there is no self-reported data, and it is a personal allocation instrument, not financial advice.
+## Pricing
+Founding lifetime license $29: https://buy.stripe.com/dRmbJ1eno9kNfYQfgZaMU0y
 
-The site currently runs three boards. The capital board ranks wealth vehicles by market cap times momentum. The income board ranks income paths ("decks") by median income, growth, and barrier to entry, anchored on BLS data. The career engine reverse-engineers real job descriptions into a path toward the proof that gets you placed. Built with Next.js and deployed on Vercel; the capital and income boards render live today, with snapshot history and automated ingestion planned.
-
-## Key links
-- [Capital board](https://moneymeta.fun/): wealth vehicles ranked S to D by market cap and momentum.
-- [Income board](https://moneymeta.fun/income): income paths scored on median income, growth, and barrier to entry, with a start-now vs highest-ceiling toggle.
-- [Career engine](https://moneymeta.fun/career): real job descriptions reverse-engineered into a course ending in placement proof.
-
-## About
-- Part of adam.inc, the internet portfolio of Adam Pangelinan (Anchor Marianas LLC).
-- Builder: https://adampang.com
+## Links
+Site (the money meta, every way to make money ranked S to D): https://moneymeta.fun
+AI Build Sprint (one thing built and shipped in about 7 days): https://moneymeta.fun/sprint
+More from adam.inc (43 products, one menu): https://adam.gives
+Built by Adam Pang: https://adampang.com
