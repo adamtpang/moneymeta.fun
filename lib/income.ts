@@ -10,6 +10,7 @@
  */
 import decks from "@/seed/income-decks.json";
 import exemplarMap from "@/seed/exemplars.json";
+import scoreHistory from "@/seed/score-history.json";
 import type { Tier } from "@/lib/meta";
 
 export type Lens = "startNow" | "ceiling";
@@ -92,6 +93,8 @@ interface SeedDeck {
   livablePct?: number;
 }
 
+export type Movement = "up" | "down" | "flat" | "new";
+
 export interface IncomeDeckView extends SeedDeck {
   startNowScore: number;
   startNowTier: Tier;
@@ -101,6 +104,32 @@ export interface IncomeDeckView extends SeedDeck {
   metaClass: MetaClass | string;
   playRate: number;
   livablePct: number;
+  /** Score delta vs prior report under the active lens (startNow used for default). */
+  movementStartNow: Movement;
+  movementCeiling: Movement;
+  deltaStartNow: number;
+  deltaCeiling: number;
+}
+
+interface ScoreHistoryFile {
+  asOf: string;
+  note?: string;
+  scores: Record<
+    string,
+    { startNow: number; ceiling: number; median?: number; playRate?: number; livablePct?: number }
+  >;
+}
+
+const history = scoreHistory as ScoreHistoryFile;
+
+export function getHistoryAsOf(): string {
+  return history.asOf ?? "";
+}
+
+function movementFromDelta(delta: number): Movement {
+  if (delta >= 1) return "up";
+  if (delta <= -1) return "down";
+  return "flat";
 }
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
@@ -141,6 +170,15 @@ function toView(deck: SeedDeck): IncomeDeckView {
   const ceilingScore = scoreFor(deck, "ceiling");
   const exemplars =
     (exemplarMap as Record<string, Exemplar[]>)[deck.slug] ?? [];
+  const prior = history.scores?.[deck.slug];
+  const deltaStartNow = prior ? startNowScore - prior.startNow : 0;
+  const deltaCeiling = prior ? ceilingScore - prior.ceiling : 0;
+  const movementStartNow: Movement = prior
+    ? movementFromDelta(deltaStartNow)
+    : "new";
+  const movementCeiling: Movement = prior
+    ? movementFromDelta(deltaCeiling)
+    : "new";
   return {
     ...deck,
     metaClass: deck.metaClass ?? "other",
@@ -151,7 +189,32 @@ function toView(deck: SeedDeck): IncomeDeckView {
     ceilingScore,
     ceilingTier: tierFor(ceilingScore),
     exemplars,
+    movementStartNow,
+    movementCeiling,
+    deltaStartNow,
+    deltaCeiling,
   };
+}
+
+/** Biggest risers / fallers under a lens for the weekly meta strip. */
+export function getMovers(
+  list: IncomeDeckView[],
+  lens: Lens,
+  limit = 5,
+): { risers: IncomeDeckView[]; fallers: IncomeDeckView[] } {
+  const deltaKey = lens === "ceiling" ? "deltaCeiling" : "deltaStartNow";
+  const withPrior = list.filter(
+    (d) => (lens === "ceiling" ? d.movementCeiling : d.movementStartNow) !== "new",
+  );
+  const risers = [...withPrior]
+    .filter((d) => d[deltaKey] > 0)
+    .sort((a, b) => b[deltaKey] - a[deltaKey])
+    .slice(0, limit);
+  const fallers = [...withPrior]
+    .filter((d) => d[deltaKey] < 0)
+    .sort((a, b) => a[deltaKey] - b[deltaKey])
+    .slice(0, limit);
+  return { risers, fallers };
 }
 
 /** All income decks with both lenses scored and exemplars attached. */

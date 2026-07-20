@@ -11,18 +11,45 @@ node scripts/expand-internet-meta.mjs
 
 ## `bls-refresh.mjs`
 
-Scaffold for refreshing BLS-anchored medians.
+Fetches national OEWS **annual median wages** (datatype `13`) for mapped SOC
+codes via the BLS Public API and optionally writes them into
+`seed/income-decks.json`.
 
-```bash
-# Checklist mode (no key required)
-node scripts/bls-refresh.mjs
+Series ID pattern:
 
-# Later, with a free BLS API key + series IDs wired in the script:
-# set BLS_API_KEY=...
-# node scripts/bls-refresh.mjs --apply
+```text
+OEUN0000000000000{SOC6}13
 ```
 
-Register free at https://www.bls.gov/developers/
+```bash
+# Dry-run: print old → new medians
+node scripts/bls-refresh.mjs
 
-**Rule:** never auto-write medians without reviewing OEWS `A_MEDIAN` against
-the published table. Internet decks stay self-reported with near-zero medians.
+# Write medians into seed (review git diff after)
+node scripts/bls-refresh.mjs --apply
+
+# Optional higher limits:
+# set BLS_API_KEY=...
+```
+
+Register free at https://data.bls.gov/registrationEngine/
+
+**Rule:** review the git diff after `--apply`. Internet decks stay self-reported
+with near-zero medians and are not in the SOC map.
+
+## `snapshot-scores.mjs`
+
+Locks current start-now / ceiling scores into `seed/score-history.json` so the
+next report can show movement arrows (risers / fallers).
+
+```bash
+# After a BLS refresh or seed retune you are happy with:
+node scripts/snapshot-scores.mjs
+```
+
+Workflow for a weekly meta:
+
+1. `node scripts/bls-refresh.mjs --apply` (optional)
+2. Review and commit median changes
+3. Ship the report (movement uses the *previous* snapshot)
+4. `node scripts/snapshot-scores.mjs` to baseline the next week

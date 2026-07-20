@@ -1,7 +1,16 @@
 import Link from "next/link";
-import { ArrowUpRight, BookOpen, Clock, TrendingUp, Users } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowUp,
+  ArrowUpRight,
+  BookOpen,
+  Clock,
+  Minus,
+  TrendingUp,
+  Users,
+} from "lucide-react";
 
-import type { IncomeDeckView, Lens } from "@/lib/income";
+import type { IncomeDeckView, Lens, Movement } from "@/lib/income";
 import type { Tier } from "@/lib/meta";
 import { formatUsd } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -13,9 +22,60 @@ import {
   timeLabel,
 } from "@/components/income/income-meta";
 
+function MovementChip({
+  movement,
+  delta,
+}: {
+  movement: Movement;
+  delta: number;
+}) {
+  if (movement === "new") {
+    return (
+      <span
+        className="inline-flex items-center rounded bg-sky-400/15 px-1 py-0.5 font-mono text-[10px] font-bold text-sky-300 ring-1 ring-sky-400/30"
+        title="New on the board this report"
+      >
+        NEW
+      </span>
+    );
+  }
+  if (movement === "up") {
+    return (
+      <span
+        className="inline-flex items-center gap-0.5 rounded bg-emerald-400/15 px-1 py-0.5 font-mono text-[10px] font-bold tabular-nums text-emerald-400 ring-1 ring-emerald-400/30"
+        title={`Up ${delta} vs prior report`}
+      >
+        <ArrowUp className="h-3 w-3" aria-hidden />
+        {delta > 0 ? `+${delta}` : delta}
+      </span>
+    );
+  }
+  if (movement === "down") {
+    return (
+      <span
+        className="inline-flex items-center gap-0.5 rounded bg-rose-400/15 px-1 py-0.5 font-mono text-[10px] font-bold tabular-nums text-rose-400 ring-1 ring-rose-400/30"
+        title={`Down ${delta} vs prior report`}
+      >
+        <ArrowDown className="h-3 w-3" aria-hidden />
+        {delta}
+      </span>
+    );
+  }
+  return (
+    <span
+      className="inline-flex items-center gap-0.5 rounded bg-secondary px-1 py-0.5 font-mono text-[10px] font-medium text-muted-foreground"
+      title="Unchanged vs prior report"
+    >
+      <Minus className="h-3 w-3" aria-hidden />
+    </span>
+  );
+}
+
 export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens }) {
   const score = lens === "ceiling" ? deck.ceilingScore : deck.startNowScore;
   const tier: Tier = lens === "ceiling" ? deck.ceilingTier : deck.startNowTier;
+  const movement = lens === "ceiling" ? deck.movementCeiling : deck.movementStartNow;
+  const delta = lens === "ceiling" ? deck.deltaCeiling : deck.deltaStartNow;
   const style = TIER_STYLES[tier];
   const cat = categoryMeta(deck.category);
   const CatIcon = cat.icon;
@@ -47,15 +107,18 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
             {cat.label}
           </div>
         </div>
-        <span
-          className={cn(
-            "shrink-0 rounded-md px-1.5 py-0.5 font-mono text-sm font-bold tabular-nums ring-1",
-            style.score,
-          )}
-          title={`${lens === "ceiling" ? "Ceiling" : "Start-now"} score: ${score}/100`}
-        >
-          {score}
-        </span>
+        <div className="flex shrink-0 flex-col items-end gap-1">
+          <span
+            className={cn(
+              "rounded-md px-1.5 py-0.5 font-mono text-sm font-bold tabular-nums ring-1",
+              style.score,
+            )}
+            title={`${lens === "ceiling" ? "Ceiling" : "Start-now"} score: ${score}/100`}
+          >
+            {score}
+          </span>
+          <MovementChip movement={movement} delta={delta} />
+        </div>
       </div>
 
       <div className="flex items-end justify-between gap-2">

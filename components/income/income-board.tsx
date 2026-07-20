@@ -18,6 +18,7 @@ import { ThePick } from "@/components/income/the-pick";
 import { MetaBreaker } from "@/components/income/meta-breaker";
 import { MatchupChart } from "@/components/income/matchup-chart";
 import { ClassFrequency } from "@/components/income/class-frequency";
+import { MoversStrip } from "@/components/income/movers";
 
 const LENS_COPY: Record<Lens, { label: string; icon: typeof Rocket; blurb: string }> = {
   startNow: {
@@ -106,6 +107,7 @@ export function IncomeBoard({
           <span className="font-mono text-foreground">{decks.length} decks</span>
         </div>
         <ClassFrequency decks={decks} />
+        <MoversStrip decks={decks} lens={lens} />
         <MatchupChart matchups={matchups} lens={lens} />
       </div>
 

@@ -1332,5 +1332,889 @@
       "construction-manager-general-contractor",
       "hvac-plumbing-home-services-company"
     ]
+  },
+  "construction-manager-general-contractor": {
+    "headline": "Play GC / construction manager: float the job, own the schedule",
+    "whoItsFor": "Operators with field experience or CM degree who can run crews, bids, and cash flow between draws.",
+    "firstDollar": "Employee CM path: months after hire. Owner GC: after license, insurance, and first contracted job.",
+    "steps": [
+      {
+        "title": "1. Get qualified",
+        "body": "License/bonding path for your state. Shadow a GC or climb from super if you lack capital."
+      },
+      {
+        "title": "2. Win the first bid honestly",
+        "body": "Know unit costs cold. Underbidding to win is how shops die."
+      },
+      {
+        "title": "3. Control the float",
+        "body": "Draw schedule, retainage, and change orders. Cash is the boss fight."
+      },
+      {
+        "title": "4. Build a sub network",
+        "body": "Reliable subs beat lowest bid. Protect reputation."
+      },
+      {
+        "title": "5. Systemize or stay a job boss",
+        "body": "PM software, SOPs, and a project manager if you scale."
+      }
+    ],
+    "tools": [
+      "state contractor board",
+      "bonding agent",
+      "Procore or similar",
+      "QuickBooks"
+    ],
+    "pitfalls": [
+      "under-capitalized jobs",
+      "no written change orders",
+      "weak insurance"
+    ],
+    "nextDecks": [
+      "hvac-plumbing-home-services-company",
+      "self-storage-facility"
+    ]
+  },
+  "commercial-driver-trucking-owner-operator": {
+    "headline": "Play trucking O/O: CDL first, truck second",
+    "whoItsFor": "People who can handle long hours and treat the truck as a P&L, not just a job.",
+    "firstDollar": "Company driver: weeks after CDL. Owner-operator: after truck, authority, insurance, and freight.",
+    "steps": [
+      {
+        "title": "1. Get the CDL",
+        "body": "School or carrier-paid path. Protect your record from day one."
+      },
+      {
+        "title": "2. Drive company first",
+        "body": "Learn freight, ELD, and what good dispatch looks like before debt."
+      },
+      {
+        "title": "3. Model the truck deal",
+        "body": "Payment, insurance, maintenance reserve. Deadhead kills margin."
+      },
+      {
+        "title": "4. Authority and compliance",
+        "body": "MC number, insurance, IFTA, inspections. Paperwork is the product."
+      },
+      {
+        "title": "5. Pick freight carefully",
+        "body": "Brokers vs contracts. Diversify so one broker cannot strand you."
+      }
+    ],
+    "tools": [
+      "CDL school",
+      "ELD app",
+      "maintenance log",
+      "freight calculator"
+    ],
+    "pitfalls": [
+      "buying a truck too early",
+      "no maintenance reserve",
+      "chasing high gross not net"
+    ],
+    "nextDecks": [
+      "construction-manager-general-contractor",
+      "vending-machine-route"
+    ]
+  },
+  "crumbl-cookies-franchise": {
+    "headline": "Play Crumbl franchise: capital + ops discipline",
+    "whoItsFor": "Operators with multi-hundred-k capital who can run retail labor and brand standards.",
+    "firstDollar": "After FDD review, financing, buildout, and opening. Not a weekend side hustle.",
+    "steps": [
+      {
+        "title": "1. Read the FDD cold",
+        "body": "Item 7 investment and Item 19 earnings claims. Lawyer review."
+      },
+      {
+        "title": "2. Secure capital and site",
+        "body": "Buildout ranges are wide. Underestimate at your peril."
+      },
+      {
+        "title": "3. Staff and train",
+        "body": "Cookie retail is labor + consistency. Brand audits matter."
+      },
+      {
+        "title": "4. Local marketing within brand rules",
+        "body": "Foot traffic and loyalty programs inside the system."
+      },
+      {
+        "title": "5. Watch unit economics weekly",
+        "body": "Food cost, labor %, and waste. Close poorly performing dayparts early."
+      }
+    ],
+    "tools": [
+      "FDD",
+      "SBA or bank packet",
+      "labor scheduler",
+      "POS reports"
+    ],
+    "pitfalls": [
+      "romanticizing the brand",
+      "underfunding working capital",
+      "ignoring labor ratios"
+    ],
+    "nextDecks": [
+      "chick-fil-a-operator",
+      "two-men-and-a-truck-franchise"
+    ]
+  },
+  "servpro-restoration-franchise": {
+    "headline": "Play Servpro: emergency ops and insurance relationships",
+    "whoItsFor": "Operators comfortable with 24/7 response, capital for equipment, and insurance claim workflows.",
+    "firstDollar": "After franchise training and territory open. First jobs often via insurance networks.",
+    "steps": [
+      {
+        "title": "1. Fund the build",
+        "body": "Equipment, vehicles, marketing package per FDD."
+      },
+      {
+        "title": "2. Certifications and training",
+        "body": "IICRC and brand training. Credibility with adjusters."
+      },
+      {
+        "title": "3. Network insurance and plumbers",
+        "body": "Referral engines beat cold ads for water/fire jobs."
+      },
+      {
+        "title": "4. Dispatch excellence",
+        "body": "Speed-to-site is the product in catastrophe work."
+      },
+      {
+        "title": "5. Margin on T&M and pack-outs",
+        "body": "Know what gets paid. Document everything."
+      }
+    ],
+    "tools": [
+      "FDD",
+      "IICRC courses",
+      "dispatch phone tree",
+      "claim documentation templates"
+    ],
+    "pitfalls": [
+      "thin insurance relationships",
+      "slow response",
+      "poor documentation"
+    ],
+    "nextDecks": [
+      "hvac-plumbing-home-services-company",
+      "construction-manager-general-contractor"
+    ]
+  },
+  "two-men-and-a-truck-franchise": {
+    "headline": "Play Two Men and a Truck: trucks, crews, local demand",
+    "whoItsFor": "Operators who can manage crews, vehicles, and seasonal moving demand with real capital.",
+    "firstDollar": "After franchise fee, trucks, and opening. Busy seasons fund the year.",
+    "steps": [
+      {
+        "title": "1. Capital stack and territory",
+        "body": "Item 7 ranges; trucks and warehouse if required."
+      },
+      {
+        "title": "2. Hire and train movers",
+        "body": "Damage claims destroy margins. Training is insurance."
+      },
+      {
+        "title": "3. Local SEO and partnerships",
+        "body": "Realtors and apartments feed jobs."
+      },
+      {
+        "title": "4. Route density",
+        "body": "Fewer empty miles, more jobs per day."
+      },
+      {
+        "title": "5. Add packing and commercial",
+        "body": "Higher ticket when residential softens."
+      }
+    ],
+    "tools": [
+      "FDD",
+      "fleet maintenance plan",
+      "Google Business Profile",
+      "CRM/dispatch"
+    ],
+    "pitfalls": [
+      "high claims rate",
+      "over-hiring off-season",
+      "weak reviews"
+    ],
+    "nextDecks": [
+      "landscaping-lawn-care-company",
+      "pressure-washing-business"
+    ]
+  },
+  "laundromat": {
+    "headline": "Play laundromat: buy cash flow, not a dream",
+    "whoItsFor": "Operators or investors with capital who underwrite machines, lease, and demographics.",
+    "firstDollar": "After acquisition or buildout. Semi-passive only if equipment is solid and location is right.",
+    "steps": [
+      {
+        "title": "1. Underwrite the store",
+        "body": "Utility costs, machine age, lease terms, competitor radius."
+      },
+      {
+        "title": "2. Inspect equipment",
+        "body": "Repair backlog is a silent purchase price increase."
+      },
+      {
+        "title": "3. Card systems and pricing",
+        "body": "Modern pay raises collection and data."
+      },
+      {
+        "title": "4. Cleanliness as marketing",
+        "body": "The store that smells clean wins the block."
+      },
+      {
+        "title": "5. Optional attend or hybrid",
+        "body": "Full absentees still need a reliable attendant model."
+      }
+    ],
+    "tools": [
+      "P&L trailing 12",
+      "equipment inspection",
+      "utility bills",
+      "lease abstract"
+    ],
+    "pitfalls": [
+      "ignoring lease escalators",
+      "ancient machines",
+      "no demographic check"
+    ],
+    "nextDecks": [
+      "self-storage-facility",
+      "vending-machine-route"
+    ]
+  },
+  "self-storage-facility": {
+    "headline": "Play self-storage: real estate first, software second",
+    "whoItsFor": "Capital-heavy operators or partnerships that can buy/build and run occupancy.",
+    "firstDollar": "After acquisition or certificate of occupancy. Lease-up can take years on new builds.",
+    "steps": [
+      {
+        "title": "1. Underwrite location",
+        "body": "Traffic, zoning, competitors, population growth."
+      },
+      {
+        "title": "2. Capital stack",
+        "body": "Debt, equity, construction contingency. Do not skinny the reserves."
+      },
+      {
+        "title": "3. Ops software and security",
+        "body": "Online rentals, cameras, access control."
+      },
+      {
+        "title": "4. Occupancy and rate management",
+        "body": "Push rates when full; promotions when empty."
+      },
+      {
+        "title": "5. Ancillary revenue",
+        "body": "Locks, insurance, retail. Small % that compounds."
+      }
+    ],
+    "tools": [
+      "market study",
+      "construction budget",
+      "facility management software",
+      "cameras"
+    ],
+    "pitfalls": [
+      "building into oversupply",
+      "underestimating lease-up",
+      "weak security"
+    ],
+    "nextDecks": [
+      "laundromat",
+      "express-tunnel-car-wash"
+    ]
+  },
+  "express-tunnel-car-wash": {
+    "headline": "Play express tunnel: huge capex, volume game",
+    "whoItsFor": "Operators or investors with multi-million budgets and appetite for construction + memberships.",
+    "firstDollar": "After land, permits, and build. Membership base is the real asset.",
+    "steps": [
+      {
+        "title": "1. Site and traffic counts",
+        "body": "Tunnel volume needs cars. Bad corners never get fixed by soap."
+      },
+      {
+        "title": "2. Build budget with contingency",
+        "body": "Equipment + civil work overruns are common."
+      },
+      {
+        "title": "3. Membership first",
+        "body": "Unlimited plans stabilize revenue vs retail ticket swings."
+      },
+      {
+        "title": "4. Labor light, maintenance heavy",
+        "body": "Tunnel reliability is customer experience."
+      },
+      {
+        "title": "5. Compete on speed and membership perks",
+        "body": "Not just price wars."
+      }
+    ],
+    "tools": [
+      "traffic study",
+      "equipment vendor quotes",
+      "membership CRM",
+      "maintenance contracts"
+    ],
+    "pitfalls": [
+      "underfunded build",
+      "no membership strategy",
+      "deferred maintenance"
+    ],
+    "nextDecks": [
+      "self-storage-facility",
+      "atm-route"
+    ]
+  },
+  "vending-machine-route": {
+    "headline": "Play vending: locations beat machines",
+    "whoItsFor": "Operators who will hustle placement agreements and restock routes consistently.",
+    "firstDollar": "Weeks if you place machines with product. Real income needs density.",
+    "steps": [
+      {
+        "title": "1. Start with a few machines",
+        "body": "Learn restocking and product mix before scaling."
+      },
+      {
+        "title": "2. Locations are everything",
+        "body": "Offices, apartments, factories. Written placement deals."
+      },
+      {
+        "title": "3. Track sales by SKU",
+        "body": "Kill dead products. Card readers lift spend."
+      },
+      {
+        "title": "4. Route density",
+        "body": "Cluster machines so restock days are efficient."
+      },
+      {
+        "title": "5. Reinvest cash flow",
+        "body": "Expand only when existing stops are stable."
+      }
+    ],
+    "tools": [
+      "card readers",
+      "inventory sheet",
+      "placement agreement template",
+      "van"
+    ],
+    "pitfalls": [
+      "buying machines without locations",
+      "theft/shrink",
+      "long driving between stops"
+    ],
+    "nextDecks": [
+      "atm-route",
+      "pressure-washing-business"
+    ]
+  },
+  "atm-route": {
+    "headline": "Play ATM route: float and placement",
+    "whoItsFor": "Operators with vault cash and relationships for high-traffic merchant locations.",
+    "firstDollar": "Weeks after machines and locations. Float capital is the real barrier.",
+    "steps": [
+      {
+        "title": "1. Model the float",
+        "body": "Cash in machines is your money earning surcharge share."
+      },
+      {
+        "title": "2. Place in real traffic",
+        "body": "Bars, events, rural retail. Volume over vanity spots."
+      },
+      {
+        "title": "3. Compliance and service",
+        "body": "Uptime and armored or self-cash strategies."
+      },
+      {
+        "title": "4. Negotiate residual splits",
+        "body": "Merchant vs ISO splits decide if it is worth it."
+      },
+      {
+        "title": "5. Scale carefully",
+        "body": "More machines only after cash logistics work."
+      }
+    ],
+    "tools": [
+      "ISO partnership or own",
+      "vault cash plan",
+      "service logs",
+      "contracts"
+    ],
+    "pitfalls": [
+      "underestimating float",
+      "low traffic sites",
+      "service downtime"
+    ],
+    "nextDecks": [
+      "vending-machine-route",
+      "laundromat"
+    ]
+  },
+  "hvac-plumbing-home-services-company": {
+    "headline": "Play home services company: one truck to a book of business",
+    "whoItsFor": "Tradespeople ready to sell, schedule, and hire beyond turning wrenches.",
+    "firstDollar": "Months after first independent jobs or after buying a book.",
+    "steps": [
+      {
+        "title": "1. Be great on the tools first",
+        "body": "Reviews come from fixed problems, not logos."
+      },
+      {
+        "title": "2. One truck P&L",
+        "body": "Truck, insurance, parts, marketing. Price for profit."
+      },
+      {
+        "title": "3. Recurring maintenance",
+        "body": "Agreements smooth seasons."
+      },
+      {
+        "title": "4. Hire the first tech carefully",
+        "body": "Culture and callbacks. You become the dispatcher."
+      },
+      {
+        "title": "5. Optional rollup readiness",
+        "body": "Clean books attract buyers if that is the exit."
+      }
+    ],
+    "tools": [
+      "Google Business Profile",
+      "ServiceTitan or Jobber",
+      "review system",
+      "flat rate book"
+    ],
+    "pitfalls": [
+      "no marketing engine",
+      "owner still on every job forever",
+      "messy books"
+    ],
+    "nextDecks": [
+      "electrician",
+      "plumber-pipefitter",
+      "hvac-technician"
+    ]
+  },
+  "landscaping-lawn-care-company": {
+    "headline": "Play landscaping: routes and crews",
+    "whoItsFor": "Operators who can sell accounts, manage seasonal labor, and protect margins.",
+    "firstDollar": "Weeks with a mower and first accounts. Scale needs crews and density.",
+    "steps": [
+      {
+        "title": "1. Win density routes",
+        "body": "Neighborhood clusters beat city-wide zigzags."
+      },
+      {
+        "title": "2. Standardize production",
+        "body": "Minutes per lot. Know your real cost."
+      },
+      {
+        "title": "3. Seasonal cash plan",
+        "body": "Winter services or cash reserves."
+      },
+      {
+        "title": "4. Hire and keep crews",
+        "body": "Labor is the constraint, not mowers."
+      },
+      {
+        "title": "5. Add higher ticket",
+        "body": "Hardscape, irrigation, snow. Raise average job size."
+      }
+    ],
+    "tools": [
+      "route software",
+      "crew checklist",
+      "trailer maintenance",
+      "Google reviews"
+    ],
+    "pitfalls": [
+      "lowball bidding",
+      "no winter plan",
+      "owner-operator ceiling ignored"
+    ],
+    "nextDecks": [
+      "pressure-washing-business",
+      "pool-service-route"
+    ]
+  },
+  "pressure-washing-business": {
+    "headline": "Play pressure washing: low capital, high hustle",
+    "whoItsFor": "Operators who will knock doors, upsell packages, and protect surfaces properly.",
+    "firstDollar": "Days to weeks after equipment and first flyers or ads.",
+    "steps": [
+      {
+        "title": "1. Buy the right PSI for the job",
+        "body": "House wash vs concrete. Soft wash knowledge prevents claims."
+      },
+      {
+        "title": "2. Before/after portfolio",
+        "body": "Photos sell the next job."
+      },
+      {
+        "title": "3. Local outreach daily",
+        "body": "Door hangers, HOAs, property managers."
+      },
+      {
+        "title": "4. Package pricing",
+        "body": "Driveways + houses + gutters. Raise ticket size."
+      },
+      {
+        "title": "5. Insurance and claims process",
+        "body": "Water and paint damage risk is real."
+      }
+    ],
+    "tools": [
+      "soft wash setup",
+      "phone camera",
+      "Google Business",
+      "simple invoices"
+    ],
+    "pitfalls": [
+      "damaging siding",
+      "no insurance",
+      "race-to-bottom pricing"
+    ],
+    "nextDecks": [
+      "landscaping-lawn-care-company",
+      "pool-service-route"
+    ]
+  },
+  "pool-service-route": {
+    "headline": "Play pool route: recurring stops",
+    "whoItsFor": "Operators in warm markets who want route density and chemical margin.",
+    "firstDollar": "Weeks if you buy a route or build from scratch with door-to-door.",
+    "steps": [
+      {
+        "title": "1. Buy or build the book",
+        "body": "Purchased routes cost more but start cash flowing."
+      },
+      {
+        "title": "2. Chemical and water chemistry mastery",
+        "body": "Green pools kill retention."
+      },
+      {
+        "title": "3. Density over vanity accounts",
+        "body": "Drive time is the enemy."
+      },
+      {
+        "title": "4. Repair upsells",
+        "body": "Pumps and filters raise revenue per stop."
+      },
+      {
+        "title": "5. Hire carefully",
+        "body": "Trust and quality control on other peoples property."
+      }
+    ],
+    "tools": [
+      "test kit",
+      "route software",
+      "chemical supplier account",
+      "truck rack"
+    ],
+    "pitfalls": [
+      "spread-out routes",
+      "weak chemistry skills",
+      "no repair capability"
+    ],
+    "nextDecks": [
+      "landscaping-lawn-care-company",
+      "hvac-plumbing-home-services-company"
+    ]
+  },
+  "dental-practice-owner": {
+    "headline": "Play dental practice ownership: clinical skill plus business",
+    "whoItsFor": "Dentists ready for capital, leadership, and the jump from associate to owner.",
+    "firstDollar": "Years of training first; ownership after purchase or startup buildout.",
+    "steps": [
+      {
+        "title": "1. Associate first",
+        "body": "Speed, patient communication, and production numbers."
+      },
+      {
+        "title": "2. Buy vs build math",
+        "body": "Existing cash flow vs new construction risk."
+      },
+      {
+        "title": "3. Assemble the team",
+        "body": "Hygienists and front desk culture make or break days."
+      },
+      {
+        "title": "4. Payer mix and scheduling",
+        "body": "Chair time is inventory. Protect it."
+      },
+      {
+        "title": "5. Leadership not just dentistry",
+        "body": "You own HR, marketing, and compliance."
+      }
+    ],
+    "tools": [
+      "practice broker",
+      "CPA healthcare-fluent",
+      "practice management software",
+      "loan packet"
+    ],
+    "pitfalls": [
+      "overpaying for a practice",
+      "ignoring culture",
+      "associate production habits in ownership"
+    ],
+    "nextDecks": [
+      "medical-practice-owner",
+      "med-spa-aesthetics"
+    ]
+  },
+  "medical-practice-owner": {
+    "headline": "Play physician practice ownership: long training, high ceiling",
+    "whoItsFor": "Physicians who accept that ownership is a second job on top of clinical work.",
+    "firstDollar": "After residency and capital/partnership path. Longest education barrier on the board.",
+    "steps": [
+      {
+        "title": "1. Finish training with eyes open",
+        "body": "Employment vs ownership tradeoffs are changing with PE/hospital buyouts."
+      },
+      {
+        "title": "2. Choose specialty economics carefully",
+        "body": "Payer mix and procedure mix drive reality."
+      },
+      {
+        "title": "3. Partnership or startup underwrite",
+        "body": "Buy-in terms and noncompetes matter as much as salary."
+      },
+      {
+        "title": "4. Ops partners",
+        "body": "Practice manager and billing excellence."
+      },
+      {
+        "title": "5. Know your exit world",
+        "body": "Consolidation is real. Keep options."
+      }
+    ],
+    "tools": [
+      "specialty societies",
+      "healthcare attorney",
+      "billing audit",
+      "practice valuation"
+    ],
+    "pitfalls": [
+      "bad buy-in terms",
+      "billing leakage",
+      "burnout from dual roles"
+    ],
+    "nextDecks": [
+      "dental-practice-owner",
+      "med-spa-aesthetics"
+    ]
+  },
+  "dropshipping": {
+    "headline": "Play dropshipping: ads skill is the product",
+    "whoItsFor": "Marketers who can test creatives and kill losers fast. Not passive income.",
+    "firstDollar": "Days to first sale if ads work; most stores never get there.",
+    "steps": [
+      {
+        "title": "1. Pick a product with margin after ads",
+        "body": "Fees + refunds + shipping reality."
+      },
+      {
+        "title": "2. Store is secondary to creative",
+        "body": "Hooks and offers. Iterate daily."
+      },
+      {
+        "title": "3. Tight test budget rules",
+        "body": "Kill losers in 48-72 hours. Do not fall in love."
+      },
+      {
+        "title": "4. Supplier reliability",
+        "body": "Late ships destroy ROAS with chargebacks."
+      },
+      {
+        "title": "5. Brand up or exit",
+        "body": "Generic dropship is a decaying meta. Own brand when you can."
+      }
+    ],
+    "tools": [
+      "Shopify",
+      "ad accounts",
+      "supplier samples",
+      "analytics"
+    ],
+    "pitfalls": [
+      "endless product hopping",
+      "no creative testing system",
+      "ignoring refund rates"
+    ],
+    "nextDecks": [
+      "amazon-fba-e-commerce-store",
+      "tiktok-shop-social-commerce",
+      "print-on-demand"
+    ]
+  },
+  "print-on-demand": {
+    "headline": "Play POD: niches and listings, not one viral tee",
+    "whoItsFor": "Designers and niche researchers who will publish volume and learn SEO on marketplaces.",
+    "firstDollar": "Days after listings; livable income is rare without catalog and traffic.",
+    "steps": [
+      {
+        "title": "1. Research niches with intent",
+        "body": "Hobbies, professions, micro-communities."
+      },
+      {
+        "title": "2. Quality mockups and design",
+        "body": "Standing out in saturated catalogs."
+      },
+      {
+        "title": "3. List in volume with systems",
+        "body": "Templates for uploads. Track winners."
+      },
+      {
+        "title": "4. Drive external traffic",
+        "body": "SEO and social beat pure marketplace luck."
+      },
+      {
+        "title": "5. Expand products on winners",
+        "body": "Same design, more SKUs."
+      }
+    ],
+    "tools": [
+      "Printful/Printify",
+      "design tool",
+      "Etsy or own store",
+      "listing tracker"
+    ],
+    "pitfalls": [
+      "trademark violations",
+      "one design dreams",
+      "no traffic plan"
+    ],
+    "nextDecks": [
+      "digital-products-templates",
+      "amazon-fba-e-commerce-store"
+    ]
+  },
+  "med-spa-aesthetics": {
+    "headline": "Play med spa: clinical compliance and cash-pay marketing",
+    "whoItsFor": "Licensed injectors or owners who can pair medical directors with luxury retail ops.",
+    "firstDollar": "After licensing path and clinic buildout capital. Not a pure online deck.",
+    "steps": [
+      {
+        "title": "1. Get legally structured",
+        "body": "Medical director, scope of practice, state rules."
+      },
+      {
+        "title": "2. Buildout and brand",
+        "body": "Location and feel sell as much as technique."
+      },
+      {
+        "title": "3. Membership and packages",
+        "body": "Recurring aesthetics revenue beats one-off lips."
+      },
+      {
+        "title": "4. Before/after and reviews",
+        "body": "Compliance-aware marketing."
+      },
+      {
+        "title": "5. Protect clinical quality",
+        "body": "Complications destroy the brand overnight."
+      }
+    ],
+    "tools": [
+      "state board rules",
+      "EMR/charting",
+      "booking software",
+      "liability insurance"
+    ],
+    "pitfalls": [
+      "compliance shortcuts",
+      "over-discounting",
+      "weak medical oversight"
+    ],
+    "nextDecks": [
+      "dental-practice-owner",
+      "high-ticket-consulting"
+    ]
+  },
+  "str-arbitrage-cohosting": {
+    "headline": "Play STR arbitrage / co-hosting: ops in a regulatory minefield",
+    "whoItsFor": "Operators who can sell hosts, furnish units, and handle guest ops with eyes open on local law.",
+    "firstDollar": "Weeks for co-hosting; arbitrage needs deposits and furnishings.",
+    "steps": [
+      {
+        "title": "1. Pick the model",
+        "body": "Co-host (low capital) vs lease arbitrage (higher risk/reward)."
+      },
+      {
+        "title": "2. Check regulations first",
+        "body": "Cities ban or cap STRs. Fines can erase you."
+      },
+      {
+        "title": "3. Standardize turnovers",
+        "body": "Cleaners, SOPs, dynamic pricing."
+      },
+      {
+        "title": "4. Guest communication templates",
+        "body": "Reviews are the growth loop."
+      },
+      {
+        "title": "5. Diversify properties",
+        "body": "One building policy change should not zero you."
+      }
+    ],
+    "tools": [
+      "Airbnb/VRBO tools",
+      "cleaner network",
+      "dynamic pricing tool",
+      "local ordinance research"
+    ],
+    "pitfalls": [
+      "ignoring laws",
+      "underestimating cleaning costs",
+      "single-property concentration"
+    ],
+    "nextDecks": [
+      "marketing-agency",
+      "productized-service"
+    ]
+  },
+  "online-reselling-arbitrage": {
+    "headline": "Play online reselling: sourcing skill is the edge",
+    "whoItsFor": "Hunters who enjoy finding mispriced inventory and grinding listings.",
+    "firstDollar": "Days after first sourced lot sells. Full-time needs capital velocity.",
+    "steps": [
+      {
+        "title": "1. Learn one marketplace deeply",
+        "body": "Amazon, eBay, or Poshmark first."
+      },
+      {
+        "title": "2. Source with a scanner mindset",
+        "body": "Margin after fees and shipping only."
+      },
+      {
+        "title": "3. List quality",
+        "body": "Photos and titles. Returns kill thin margins."
+      },
+      {
+        "title": "4. Turn inventory fast",
+        "body": "Cash stuck on shelves is dead."
+      },
+      {
+        "title": "5. Reinvest in better sources",
+        "body": "Wholesale and relationships beat random thrift luck."
+      }
+    ],
+    "tools": [
+      "seller account",
+      "fee calculator",
+      "shipping supplies",
+      "inventory sheet"
+    ],
+    "pitfalls": [
+      "fee-blind pricing",
+      "restricted brands",
+      "inventory hoarding"
+    ],
+    "nextDecks": [
+      "amazon-fba-e-commerce-store",
+      "dropshipping"
+    ]
   }
 }

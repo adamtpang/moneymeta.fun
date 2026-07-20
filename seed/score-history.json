@@ -1,0 +1,636 @@
+{
+  "asOf": "2026-07-13",
+  "note": "Prior week scores (pre May-2025 OEWS median refresh). Used for movement arrows.",
+  "scores": {
+    "physicians-surgeons": {
+      "startNow": 60,
+      "ceiling": 75,
+      "median": 239200,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "airline-pilots": {
+      "startNow": 67,
+      "ceiling": 72,
+      "median": 226600,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "dentists": {
+      "startNow": 56,
+      "ceiling": 57,
+      "median": 179210,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "financial-managers": {
+      "startNow": 60,
+      "ceiling": 59,
+      "median": 161700,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "lawyers": {
+      "startNow": 53,
+      "ceiling": 48,
+      "median": 151160,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "ai-ml-engineers": {
+      "startNow": 54,
+      "ceiling": 55,
+      "median": 140910,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "petroleum-engineers": {
+      "startNow": 56,
+      "ceiling": 43,
+      "median": 141280,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "pharmacists": {
+      "startNow": 49,
+      "ceiling": 44,
+      "median": 137480,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "aerospace-engineers": {
+      "startNow": 57,
+      "ceiling": 44,
+      "median": 134830,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "physician-assistants": {
+      "startNow": 57,
+      "ceiling": 53,
+      "median": 133260,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "software-developers": {
+      "startNow": 61,
+      "ceiling": 49,
+      "median": 133080,
+      "playRate": 30,
+      "livablePct": 60
+    },
+    "nurse-practitioners": {
+      "startNow": 61,
+      "ceiling": 62,
+      "median": 132050,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "actuaries": {
+      "startNow": 63,
+      "ceiling": 52,
+      "median": 125770,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "data-scientists": {
+      "startNow": 61,
+      "ceiling": 56,
+      "median": 112590,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "financial-investment-analysts": {
+      "startNow": 51,
+      "ceiling": 33,
+      "median": 101350,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "electrician": {
+      "startNow": 35,
+      "ceiling": 23,
+      "median": 62350,
+      "playRate": 25,
+      "livablePct": 40
+    },
+    "plumber-pipefitter": {
+      "startNow": 33,
+      "ceiling": 20,
+      "median": 62970,
+      "playRate": 25,
+      "livablePct": 40
+    },
+    "hvac-technician": {
+      "startNow": 34,
+      "ceiling": 21,
+      "median": 59810,
+      "playRate": 25,
+      "livablePct": 40
+    },
+    "welder-fabricator": {
+      "startNow": 29,
+      "ceiling": 15,
+      "median": 51000,
+      "playRate": 25,
+      "livablePct": 40
+    },
+    "elevator-escalator-installer": {
+      "startNow": 46,
+      "ceiling": 34,
+      "median": 106580,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "electrical-power-line-installer": {
+      "startNow": 46,
+      "ceiling": 31,
+      "median": 92560,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "construction-manager-general-contractor": {
+      "startNow": 47,
+      "ceiling": 37,
+      "median": 106980,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "dental-hygienist": {
+      "startNow": 53,
+      "ceiling": 32,
+      "median": 94260,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "commercial-driver-trucking-owner-operator": {
+      "startNow": 33,
+      "ceiling": 18,
+      "median": 57440,
+      "playRate": 22,
+      "livablePct": 15
+    },
+    "locksmith": {
+      "startNow": 44,
+      "ceiling": 13,
+      "median": 51320,
+      "playRate": 25,
+      "livablePct": 40
+    },
+    "appliance-repair-technician": {
+      "startNow": 39,
+      "ceiling": 13,
+      "median": 50640,
+      "playRate": 25,
+      "livablePct": 40
+    },
+    "chick-fil-a-operator": {
+      "startNow": 72,
+      "ceiling": 73,
+      "median": 240000,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "crumbl-cookies-franchise": {
+      "startNow": 45,
+      "ceiling": 33,
+      "median": 77359,
+      "playRate": 28,
+      "livablePct": 45
+    },
+    "servpro-restoration-franchise": {
+      "startNow": 55,
+      "ceiling": 61,
+      "median": 200000,
+      "playRate": 22,
+      "livablePct": 15
+    },
+    "two-men-and-a-truck-franchise": {
+      "startNow": 52,
+      "ceiling": 54,
+      "median": 180000,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "laundromat": {
+      "startNow": 36,
+      "ceiling": 20,
+      "median": 75000,
+      "playRate": 22,
+      "livablePct": 15
+    },
+    "self-storage-facility": {
+      "startNow": 55,
+      "ceiling": 56,
+      "median": 184500,
+      "playRate": 22,
+      "livablePct": 15
+    },
+    "express-tunnel-car-wash": {
+      "startNow": 45,
+      "ceiling": 38,
+      "median": 150000,
+      "playRate": 22,
+      "livablePct": 15
+    },
+    "vending-machine-route": {
+      "startNow": 42,
+      "ceiling": 10,
+      "median": 40000,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "atm-route": {
+      "startNow": 41,
+      "ceiling": 9,
+      "median": 36000,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "hvac-plumbing-home-services-company": {
+      "startNow": 42,
+      "ceiling": 26,
+      "median": 90000,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "landscaping-lawn-care-company": {
+      "startNow": 44,
+      "ceiling": 23,
+      "median": 80000,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "pressure-washing-business": {
+      "startNow": 45,
+      "ceiling": 16,
+      "median": 60000,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "pool-service-route": {
+      "startNow": 45,
+      "ceiling": 24,
+      "median": 85000,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "dental-practice-owner": {
+      "startNow": 62,
+      "ceiling": 77,
+      "median": 258260,
+      "playRate": 20,
+      "livablePct": 55
+    },
+    "medical-practice-owner": {
+      "startNow": 47,
+      "ceiling": 77,
+      "median": 250000,
+      "playRate": 22,
+      "livablePct": 15
+    },
+    "amazon-fba-e-commerce-store": {
+      "startNow": 42,
+      "ceiling": 7,
+      "median": 30000,
+      "playRate": 50,
+      "livablePct": 8
+    },
+    "youtube-channel": {
+      "startNow": 38,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 75,
+      "livablePct": 2
+    },
+    "twitch-live-streaming": {
+      "startNow": 43,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 55,
+      "livablePct": 1
+    },
+    "newsletter-substack": {
+      "startNow": 38,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 40,
+      "livablePct": 5
+    },
+    "podcasting": {
+      "startNow": 40,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 50,
+      "livablePct": 2
+    },
+    "indie-micro-saas": {
+      "startNow": 41,
+      "ceiling": 7,
+      "median": 6000,
+      "playRate": 45,
+      "livablePct": 5
+    },
+    "freelancing": {
+      "startNow": 44,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 72,
+      "livablePct": 10
+    },
+    "dropshipping": {
+      "startNow": 35,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 68,
+      "livablePct": 2
+    },
+    "print-on-demand": {
+      "startNow": 35,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 55,
+      "livablePct": 2
+    },
+    "online-courses-cohorts": {
+      "startNow": 44,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 48,
+      "livablePct": 4
+    },
+    "affiliate-seo-content-sites": {
+      "startNow": 41,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 55,
+      "livablePct": 4
+    },
+    "marketing-agency": {
+      "startNow": 31,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "app-development": {
+      "startNow": 44,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 40,
+      "livablePct": 8
+    },
+    "b2b-saas-sales": {
+      "startNow": 58,
+      "ceiling": 31,
+      "median": 99710,
+      "playRate": 28,
+      "livablePct": 40
+    },
+    "big-tech-swe-equity": {
+      "startNow": 77,
+      "ceiling": 77,
+      "median": 220000,
+      "playRate": 12,
+      "livablePct": 35
+    },
+    "real-estate-agent-broker": {
+      "startNow": 46,
+      "ceiling": 16,
+      "median": 56620,
+      "playRate": 28,
+      "livablePct": 45
+    },
+    "recruiter-staffing-agency": {
+      "startNow": 55,
+      "ceiling": 27,
+      "median": 80000,
+      "playRate": 30,
+      "livablePct": 10
+    },
+    "fractional-cfo-bookkeeping": {
+      "startNow": 55,
+      "ceiling": 27,
+      "median": 79880,
+      "playRate": 30,
+      "livablePct": 10
+    },
+    "ai-automation-agency": {
+      "startNow": 52,
+      "ceiling": 19,
+      "median": 0,
+      "playRate": 42,
+      "livablePct": 7
+    },
+    "med-spa-aesthetics": {
+      "startNow": 49,
+      "ceiling": 45,
+      "median": 150000,
+      "playRate": 22,
+      "livablePct": 15
+    },
+    "str-arbitrage-cohosting": {
+      "startNow": 40,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 22,
+      "livablePct": 12
+    },
+    "productized-service": {
+      "startNow": 49,
+      "ceiling": 15,
+      "median": 0,
+      "playRate": 30,
+      "livablePct": 12
+    },
+    "lead-generation-sites": {
+      "startNow": 42,
+      "ceiling": 12,
+      "median": 0,
+      "playRate": 60,
+      "livablePct": 3
+    },
+    "digital-products-templates": {
+      "startNow": 48,
+      "ceiling": 13,
+      "median": 0,
+      "playRate": 60,
+      "livablePct": 3
+    },
+    "community-membership": {
+      "startNow": 46,
+      "ceiling": 13,
+      "median": 0,
+      "playRate": 60,
+      "livablePct": 3
+    },
+    "short-form-content-funnel": {
+      "startNow": 44,
+      "ceiling": 10,
+      "median": 0,
+      "playRate": 80,
+      "livablePct": 1.5
+    },
+    "ugc-clipping": {
+      "startNow": 51,
+      "ceiling": 17,
+      "median": 0,
+      "playRate": 58,
+      "livablePct": 6
+    },
+    "high-ticket-consulting": {
+      "startNow": 47,
+      "ceiling": 12,
+      "median": 0,
+      "playRate": 60,
+      "livablePct": 3
+    },
+    "chrome-extension-tools": {
+      "startNow": 47,
+      "ceiling": 13,
+      "median": 0,
+      "playRate": 40,
+      "livablePct": 8
+    },
+    "email-list-funnel": {
+      "startNow": 46,
+      "ceiling": 12,
+      "median": 0,
+      "playRate": 60,
+      "livablePct": 3
+    },
+    "service-as-software": {
+      "startNow": 55,
+      "ceiling": 23,
+      "median": 0,
+      "playRate": 35,
+      "livablePct": 8
+    },
+    "ghostwriting-copywriting": {
+      "startNow": 48,
+      "ceiling": 13,
+      "median": 0,
+      "playRate": 55,
+      "livablePct": 8
+    },
+    "virtual-assistant": {
+      "startNow": 48,
+      "ceiling": 12,
+      "median": 0,
+      "playRate": 70,
+      "livablePct": 6
+    },
+    "social-media-management": {
+      "startNow": 48,
+      "ceiling": 13,
+      "median": 0,
+      "playRate": 65,
+      "livablePct": 7
+    },
+    "seo-freelance": {
+      "startNow": 45,
+      "ceiling": 15,
+      "median": 0,
+      "playRate": 48,
+      "livablePct": 12
+    },
+    "no-code-web-agency": {
+      "startNow": 52,
+      "ceiling": 19,
+      "median": 0,
+      "playRate": 52,
+      "livablePct": 10
+    },
+    "amazon-kdp-self-publishing": {
+      "startNow": 42,
+      "ceiling": 10,
+      "median": 0,
+      "playRate": 58,
+      "livablePct": 3
+    },
+    "tiktok-shop-social-commerce": {
+      "startNow": 48,
+      "ceiling": 20,
+      "median": 0,
+      "playRate": 60,
+      "livablePct": 4
+    },
+    "online-reselling-arbitrage": {
+      "startNow": 36,
+      "ceiling": 9,
+      "median": 0,
+      "playRate": 62,
+      "livablePct": 5
+    },
+    "domain-flipping": {
+      "startNow": 33,
+      "ceiling": 7,
+      "median": 0,
+      "playRate": 25,
+      "livablePct": 2
+    },
+    "online-tutoring": {
+      "startNow": 48,
+      "ceiling": 12,
+      "median": 0,
+      "playRate": 50,
+      "livablePct": 15
+    },
+    "bug-bounty-security": {
+      "startNow": 49,
+      "ceiling": 17,
+      "median": 0,
+      "playRate": 18,
+      "livablePct": 5
+    },
+    "faceless-content-automation": {
+      "startNow": 45,
+      "ceiling": 12,
+      "median": 0,
+      "playRate": 64,
+      "livablePct": 2
+    },
+    "paid-surveys-microtasks": {
+      "startNow": 42,
+      "ceiling": 3,
+      "median": 0,
+      "playRate": 90,
+      "livablePct": 0.5
+    },
+    "email-marketing-service": {
+      "startNow": 49,
+      "ceiling": 15,
+      "median": 0,
+      "playRate": 40,
+      "livablePct": 14
+    },
+    "stock-media-assets": {
+      "startNow": 39,
+      "ceiling": 8,
+      "median": 0,
+      "playRate": 45,
+      "livablePct": 2
+    },
+    "online-bookkeeping-remote": {
+      "startNow": 49,
+      "ceiling": 15,
+      "median": 45000,
+      "playRate": 35,
+      "livablePct": 25
+    },
+    "web-dev-freelance": {
+      "startNow": 48,
+      "ceiling": 13,
+      "median": 0,
+      "playRate": 55,
+      "livablePct": 12
+    },
+    "influencer-brand-deals": {
+      "startNow": 45,
+      "ceiling": 13,
+      "median": 0,
+      "playRate": 85,
+      "livablePct": 2
+    }
+  }
+}

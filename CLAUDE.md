@@ -113,11 +113,13 @@ Weights and thresholds are exported constants, trivial to retune.
 ## Roadmap
 
 - **Now (done):** single income board, live, static JSON, two lenses, badges,
-  The Pick, Meta Breaker, class frequency, matchup chart, 90 decks with
-  playRate/livablePct, per-deck playbooks, BLS refresh scaffold (`scripts/`).
-- **Next:** wire live BLS series IDs into `scripts/bls-refresh.mjs --apply`;
-  dated weekly report diffs (movement arrows); deeper curated playbooks for
-  remaining owner-ops decks.
+  The Pick, Meta Breaker, class frequency, movers strip, matchup chart, 90
+  decks with playRate/livablePct, per-deck playbooks (curated owner-ops too),
+  live BLS OEWS refresh (`scripts/bls-refresh.mjs --apply`), score snapshots
+  for movement (`seed/score-history.json`).
+- **Next:** push weekly cadence (BLS refresh → ship → snapshot); more curated
+  playbooks for remaining profession/healthcare decks; optional public BLS
+  key in CI for scheduled refresh.
 
 ---
 
