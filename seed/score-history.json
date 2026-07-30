@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-07-13",
-  "note": "Prior week scores (pre May-2025 OEWS median refresh). Used for movement arrows.",
+  "asOf": "2026-07-29",
+  "note": "Prior period scores for movement arrows. Re-run snapshot-scores.mjs after each meta report.",
   "scores": {
     "physicians-surgeons": {
       "startNow": 60,
@@ -10,128 +10,128 @@
       "livablePct": 55
     },
     "airline-pilots": {
-      "startNow": 67,
-      "ceiling": 72,
-      "median": 226600,
+      "startNow": 68,
+      "ceiling": 74,
+      "median": 232140,
       "playRate": 20,
       "livablePct": 55
     },
     "dentists": {
-      "startNow": 56,
-      "ceiling": 57,
-      "median": 179210,
+      "startNow": 54,
+      "ceiling": 54,
+      "median": 170950,
       "playRate": 20,
       "livablePct": 55
     },
     "financial-managers": {
-      "startNow": 60,
-      "ceiling": 59,
-      "median": 161700,
+      "startNow": 61,
+      "ceiling": 60,
+      "median": 166570,
       "playRate": 20,
       "livablePct": 55
     },
     "lawyers": {
-      "startNow": 53,
-      "ceiling": 48,
-      "median": 151160,
+      "startNow": 55,
+      "ceiling": 51,
+      "median": 159670,
       "playRate": 20,
       "livablePct": 55
     },
     "ai-ml-engineers": {
       "startNow": 54,
       "ceiling": 55,
-      "median": 140910,
+      "median": 140300,
       "playRate": 20,
       "livablePct": 55
     },
     "petroleum-engineers": {
-      "startNow": 56,
-      "ceiling": 43,
-      "median": 141280,
+      "startNow": 57,
+      "ceiling": 44,
+      "median": 144910,
       "playRate": 20,
       "livablePct": 55
     },
     "pharmacists": {
       "startNow": 49,
-      "ceiling": 44,
-      "median": 137480,
+      "ceiling": 45,
+      "median": 140910,
       "playRate": 20,
       "livablePct": 55
     },
     "aerospace-engineers": {
       "startNow": 57,
       "ceiling": 44,
-      "median": 134830,
+      "median": 134960,
       "playRate": 20,
       "livablePct": 55
     },
     "physician-assistants": {
       "startNow": 57,
-      "ceiling": 53,
-      "median": 133260,
+      "ceiling": 54,
+      "median": 135880,
       "playRate": 20,
       "livablePct": 55
     },
     "software-developers": {
-      "startNow": 61,
-      "ceiling": 49,
-      "median": 133080,
+      "startNow": 62,
+      "ceiling": 50,
+      "median": 135980,
       "playRate": 30,
       "livablePct": 60
     },
     "nurse-practitioners": {
       "startNow": 61,
-      "ceiling": 62,
-      "median": 132050,
+      "ceiling": 63,
+      "median": 132300,
       "playRate": 20,
       "livablePct": 55
     },
     "actuaries": {
-      "startNow": 63,
-      "ceiling": 52,
-      "median": 125770,
+      "startNow": 64,
+      "ceiling": 53,
+      "median": 130000,
       "playRate": 20,
       "livablePct": 55
     },
     "data-scientists": {
-      "startNow": 61,
-      "ceiling": 56,
-      "median": 112590,
+      "startNow": 63,
+      "ceiling": 58,
+      "median": 120230,
       "playRate": 20,
       "livablePct": 55
     },
     "financial-investment-analysts": {
-      "startNow": 51,
-      "ceiling": 33,
-      "median": 101350,
+      "startNow": 52,
+      "ceiling": 34,
+      "median": 102740,
       "playRate": 20,
       "livablePct": 55
     },
     "electrician": {
       "startNow": 35,
       "ceiling": 23,
-      "median": 62350,
+      "median": 63190,
       "playRate": 25,
       "livablePct": 40
     },
     "plumber-pipefitter": {
       "startNow": 33,
       "ceiling": 20,
-      "median": 62970,
+      "median": 63800,
       "playRate": 25,
       "livablePct": 40
     },
     "hvac-technician": {
       "startNow": 34,
-      "ceiling": 21,
-      "median": 59810,
+      "ceiling": 22,
+      "median": 61010,
       "playRate": 25,
       "livablePct": 40
     },
     "welder-fabricator": {
-      "startNow": 29,
-      "ceiling": 15,
-      "median": 51000,
+      "startNow": 30,
+      "ceiling": 16,
+      "median": 53750,
       "playRate": 25,
       "livablePct": 40
     },
@@ -150,23 +150,23 @@
       "livablePct": 55
     },
     "construction-manager-general-contractor": {
-      "startNow": 47,
-      "ceiling": 37,
-      "median": 106980,
+      "startNow": 49,
+      "ceiling": 40,
+      "median": 114990,
       "playRate": 22,
       "livablePct": 12
     },
     "dental-hygienist": {
       "startNow": 53,
-      "ceiling": 32,
-      "median": 94260,
+      "ceiling": 33,
+      "median": 98100,
       "playRate": 20,
       "livablePct": 55
     },
     "commercial-driver-trucking-owner-operator": {
       "startNow": 33,
       "ceiling": 18,
-      "median": 57440,
+      "median": 58640,
       "playRate": 22,
       "livablePct": 15
     },
@@ -381,9 +381,9 @@
       "livablePct": 8
     },
     "b2b-saas-sales": {
-      "startNow": 58,
-      "ceiling": 31,
-      "median": 99710,
+      "startNow": 59,
+      "ceiling": 33,
+      "median": 104920,
       "playRate": 28,
       "livablePct": 40
     },
@@ -395,9 +395,9 @@
       "livablePct": 35
     },
     "real-estate-agent-broker": {
-      "startNow": 46,
-      "ceiling": 16,
-      "median": 56620,
+      "startNow": 45,
+      "ceiling": 15,
+      "median": 52830,
       "playRate": 28,
       "livablePct": 45
     },
