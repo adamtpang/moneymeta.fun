@@ -1,6 +1,6 @@
 /** Hub + sister links, the fleet ring (Aether/DISTRIBUTION.md part 2). */
 const FLEET = [
-  { name: "adam.gives", href: "https://adam.gives", label: "the fleet" },
+  { name: "adam.gives", href: "https://adam.gives", label: "the one menu: hire Adam" },
   { name: "deathmoney.fyi", href: "https://deathmoney.fyi", label: "cut your burn" },
   { name: "skill.supply", href: "https://skill.supply", label: "get hired" },
 ];

@@ -144,6 +144,18 @@ export default function SprintPage() {
               Start now <ArrowUpRight className="h-3 w-3" aria-hidden />
             </a>
           </p>
+          <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+            This sprint is rung two of the adam.inc menu: power hour, build sprint,
+            continuation.{" "}
+            <a
+              href="https://adam.gives"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-primary hover:underline"
+            >
+              See the whole menu
+            </a>
+          </p>
         </section>
       </div>
     </div>
