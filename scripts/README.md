@@ -1,5 +1,35 @@
 # Scripts
 
+## The Monday ritual (15 minutes, in this exact order)
+
+```bash
+# 1. Refresh medians from BLS (review the git diff after)
+node scripts/bls-refresh.mjs --apply
+
+# 2. Build this week's issue (movement vs the committed baseline)
+node scripts/build-report.mjs
+
+# 3. Open seed/reports/<today>.json, read the auto-drafted "curation",
+#    edit it into your own voice (or leave it, it is honest as generated)
+
+# 4. Commit + deploy (deploys are Adam's)
+git add seed && git commit -m "Weekly meta report" && vercel deploy --prod
+
+# 5. ONLY AFTER the deploy: baseline next week's movement
+node scripts/snapshot-scores.mjs
+```
+
+Order matters: build-report reads movement against the OLD baseline, so
+snapshot-scores must run last. The $9/mo subscriber price is gated on three
+consecutive shipped issues (see EVIDENCE.md); do not mint it early.
+
+## `build-report.mjs`
+
+Writes `seed/reports/<date>.json`: picks under both lenses, risers, fallers,
+new decks, and ~300 words of auto-drafted curation to edit before shipping.
+Rendered at `/report` (latest + archive) and `/report/[week]`. Refuses to
+overwrite an existing same-day issue without `--force`.
+
 ## `expand-internet-meta.mjs`
 
 Adds high-signal internet decks and fills VS-style `playRate` / `livablePct` /
