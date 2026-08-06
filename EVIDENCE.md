@@ -45,18 +45,18 @@ issues have actually shipped**. Progress:
 | Issue | Week | Shipped | Baseline used | Movement |
 | --- | --- | --- | --- | --- |
 | 1 | 2026-08-01 | yes, deployed to production | 2026-07-29 | flat (0 risers, 0 fallers) |
-| 2 | 2026-08-06 | built and committed this session, **not yet deployed** | 2026-07-29 (unchanged, BLS dry-run confirmed 0 median moves) | flat (0 risers, 0 fallers) |
-| 3 | pending | not yet built | n/a | n/a |
+| 2 | 2026-08-06 | **yes, deployed to production** (`dpl_7zj6iyWJz6fTKEGeCRXsPgYDQwFK`, verified live) | 2026-07-29 (unchanged, BLS dry-run confirmed 0 median moves) | flat (0 risers, 0 fallers) |
+| 3 | pending | not yet built | 2026-08-06 (fresh, snapshotted post-deploy) | n/a |
 
-**2 of 3, and issue 2 only counts once it is actually live**, per the same
-"shipped means deployed" standard applied elsewhere in this fleet. Do not mint
-the $9/mo price after issue 2. Wait for issue 3.
+**2 of 3, both now genuinely shipped.** Do not mint the $9/mo price yet.
+Ship issue 3 to clear the gate.
 
-Ritual note: `scripts/snapshot-scores.mjs` was deliberately NOT re-run after
-issue 1 shipped, and is still not run as of this issue. Per
-`scripts/README.md`, it must run only after a deploy, so both issues 1 and 2
-correctly cite the same 2026-07-29 baseline (nothing has changed underneath).
-Run it once issue 2 is deployed, so issue 3 gets a fresh baseline.
+Ritual note: `scripts/snapshot-scores.mjs` ran immediately after the
+2026-08-06 deploy was verified live, per `scripts/README.md`'s stated order
+(build before snapshot, snapshot only after deploy). `seed/score-history.json`
+now reads `asOf: 2026-08-06`, scores unchanged (nothing moved), so issue 3
+will compare against a fresh baseline instead of citing 2026-07-29 a third
+time.
 
 ## The rail, verified 2026-08-06
 
@@ -82,15 +82,16 @@ One price, as required. No changes made; correctly untouched pending the
 | 2026-08-06 | OFFER.md filled for real, no brackets | template with `[buyer]` | real buyer, pain, cure, alternative, proof, price, risk reversal noted as incomplete (no refund policy stated) | OFFER.md |
 | 2026-08-06 | Launch post drafted from a real, verified counterintuitive finding | none | LinkedIn/X drafts citing the Chick-fil-A operator #2 ranking and its 0.25% acceptance rate (verified fresh via QSR Pro), unsent | launch/LAUNCH_DRAFTS.md |
 | 2026-08-06 | Fleet footer and fleet.json re-checked | assumed correct | confirmed already correct from the 2026-08-01 session: footer carries adam.gives, deathmoney.fyi, skill.supply; fleet.json status is "live", tier 1 | components/site-footer.tsx, Aether/fleet.json |
+| 2026-08-06 | Deployed to production on Adam's instruction | issue 2 built and committed, not yet live | verified live: /, /report, /report/2026-08-06, /report/2026-08-01, /sprint, /deck/dentists all 200, issue 2 curation confirmed present in the served HTML | deploy `dpl_7zj6iyWJz6fTKEGeCRXsPgYDQwFK`, Ready |
+| 2026-08-06 | Post-deploy baseline snapshot, per the ritual's stated order | score-history.json still read 2026-07-29 (used by both issues 1 and 2) | `asOf: 2026-08-06`, scores unchanged (nothing moved), issue 3 gets a fresh baseline | seed/score-history.json |
 
 ## What changes the zero
 
-1. Deploy issue 2 (`vercel deploy --prod` from this repo). Deploys are Adam's.
-2. Immediately after that deploy, run `node scripts/snapshot-scores.mjs` so
-   issue 3 gets a fresh baseline, per the ritual's stated order.
+1. ~~Deploy issue 2~~ done 2026-08-06.
+2. ~~Snapshot the new baseline~~ done 2026-08-06.
 3. Enable Vercel Web Analytics in the dashboard so traffic can actually be
-   measured, not assumed.
-4. Post the launch draft (or an edited version of it).
+   measured, not assumed. Still open.
+4. Post the launch draft (or an edited version of it). Still open.
 5. Ship issue 3 next week to clear the $9/mo gate, if the cadence holds.
 
 ## Rules
