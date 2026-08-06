@@ -1,0 +1,31 @@
+{
+  "week": "2026-08-06",
+  "baseline": "2026-07-29",
+  "title": "The money meta, week of 2026-08-06",
+  "deckCount": 90,
+  "sTierCount": 2,
+  "pick": {
+    "startNow": {
+      "slug": "big-tech-swe-equity",
+      "name": "Big-Tech SWE (equity comp)",
+      "score": 77,
+      "tier": "S",
+      "median": 220000
+    },
+    "ceiling": {
+      "slug": "dental-practice-owner",
+      "name": "Dental Practice Owner",
+      "score": 77,
+      "tier": "S",
+      "median": 258260
+    }
+  },
+  "breaker": {
+    "slug": "service-as-software",
+    "headline": "Meta Breaker: service-as-software"
+  },
+  "risers": [],
+  "fallers": [],
+  "newDecks": [],
+  "curation": "Board state, 2026-08-06: 90 decks scored, 2 in S tier under the start-now lens, still against the 2026-07-29 baseline.\n\nSecond issue, second flat week. That is expected, not a bug: BLS OEWS medians are an annual series, so a board anchored to them should sit still for stretches and then jump once a year, not wobble weekly on vibes. If this board ever showed movement every single week, that would be the sign to distrust it. The honest cadence for the occupation side of this board is closer to quarterly; the internet decks are the ones worth checking weekly, since exemplar data and playbooks change faster than a BLS release cycle.\n\nThe Pick, start now: Big-Tech SWE (equity comp) at 77 (S tier, $220k median). The start-now lens rewards reachability, income over barrier over time, so the top of this ladder is the best deck to open with today on little capital, not the biggest terminal number.\n\nThe Pick, highest ceiling: Dental Practice Owner at 77 (S tier, $258k median). Ceiling weighs terminal pay and trajectory, which is why decade-moat decks rise here that the start-now lens correctly discounts.\n\nMeta Breaker, service-as-software: selling the outcome (leads booked, hours saved, cash recovered) is beating pure tool shops and vague AI agency project work. Same skill stack, cleaner offer, stickier retainers, with economics closer to SaaS than freelance gigs. The ladder inside this deck: freelance automation work first, productize the offer once you have repeat buyers, then package it as software once the manual steps are obvious. Do not skip to software first; the outcome-selling middle step is where the pricing power actually gets proven.\n\nMethod note: occupation medians trace to BLS OEWS, internet decks carry the brutal survivorship-adjusted median and a data-confidence badge. Movement is measured against the committed 2026-07-29 snapshot, never restated."
+}
