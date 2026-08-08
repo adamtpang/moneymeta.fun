@@ -34,7 +34,7 @@ export function MetaBreaker({
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0 flex-1">
-          <div className="mb-2 inline-flex items-center gap-1.5 rounded-md bg-amber-400/15 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-amber-300 ring-1 ring-amber-400/35">
+          <div className="mb-2 inline-flex items-center gap-1.5 rounded-md bg-amber-400/15 px-2 py-0.5 font-mono text-micro font-bold uppercase tracking-[0.08em] text-amber-300 ring-1 ring-amber-400/35">
             <Flame className="h-3 w-3" aria-hidden />
             Meta breaker
           </div>
@@ -48,7 +48,7 @@ export function MetaBreaker({
             {bullets.map((b) => (
               <li
                 key={b}
-                className="rounded-lg border border-border/60 bg-background/40 px-2.5 py-2 text-[11px] leading-snug text-muted-foreground"
+                className="rounded-lg border border-border/60 bg-background/40 px-2.5 py-2 text-label leading-snug text-muted-foreground"
               >
                 {b}
               </li>
@@ -65,7 +65,7 @@ export function MetaBreaker({
           >
             <div className="flex w-full items-center justify-between gap-2">
               <div className="min-w-0">
-                <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+                <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
                   Open playbook
                 </div>
                 <div className="truncate text-sm font-semibold text-foreground group-hover:text-amber-200">
@@ -90,7 +90,7 @@ export function MetaBreaker({
                   {score}
                 </span>
               ) : null}
-              <span className="ml-auto font-mono text-[11px] text-muted-foreground">
+              <span className="ml-auto font-mono text-label text-muted-foreground">
                 {formatUsd(deck.median)} med
               </span>
             </div>

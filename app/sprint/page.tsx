@@ -45,7 +45,7 @@ export default function SprintPage() {
           </div>
 
           <div className="rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/[0.08] to-transparent p-5 sm:p-7">
-            <div className="mb-2 inline-flex items-center gap-1.5 rounded bg-primary/15 px-2 py-0.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-primary ring-1 ring-primary/30">
+            <div className="mb-2 inline-flex items-center gap-1.5 rounded bg-primary/15 px-2 py-0.5 font-mono text-label font-semibold uppercase tracking-[0.08em] text-primary ring-1 ring-primary/30">
               <Hammer className="h-3 w-3" aria-hidden /> AI Build Sprint
             </div>
             <h2 className="max-w-xl text-2xl font-bold leading-tight text-foreground sm:text-3xl">

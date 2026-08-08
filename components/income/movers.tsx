@@ -22,11 +22,11 @@ export function MoversStrip({
       className="rounded-2xl border bg-card/40 p-4 sm:p-5"
     >
       <div className="mb-1 flex flex-wrap items-center gap-2">
-        <span className="font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+        <span className="font-mono text-micro font-bold uppercase tracking-[0.08em] text-muted-foreground">
           Meta movement
         </span>
         {asOf ? (
-          <span className="font-mono text-[10px] text-muted-foreground">
+          <span className="font-mono text-micro text-muted-foreground">
             vs {asOf}
           </span>
         ) : null}
@@ -80,7 +80,7 @@ function MoverCol({
         {title}
       </div>
       {items.length === 0 ? (
-        <div className="flex items-center gap-1 text-[11px] text-muted-foreground">
+        <div className="flex items-center gap-1 text-label text-muted-foreground">
           <Minus className="h-3 w-3" aria-hidden />
           No moves this period
         </div>
@@ -97,7 +97,7 @@ function MoverCol({
                   <span className="truncate font-medium text-foreground">{d.name}</span>
                   <span
                     className={cn(
-                      "shrink-0 font-mono text-[11px] font-bold tabular-nums",
+                      "shrink-0 font-mono text-label font-bold tabular-nums",
                       tone === "up" ? "text-emerald-400" : "text-rose-400",
                     )}
                   >

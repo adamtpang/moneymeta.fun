@@ -19,7 +19,7 @@ function PickCard({ label, pick, blurb }: { label: string; pick: ReportDeckRef; 
         style.border,
       )}
     >
-      <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+      <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
         {label}
       </div>
       <div className="flex items-center justify-between gap-2">

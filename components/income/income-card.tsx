@@ -32,7 +32,7 @@ function MovementChip({
   if (movement === "new") {
     return (
       <span
-        className="inline-flex items-center rounded bg-sky-400/15 px-1 py-0.5 font-mono text-[10px] font-bold text-sky-300 ring-1 ring-sky-400/30"
+        className="inline-flex items-center rounded bg-sky-400/15 px-1 py-0.5 font-mono text-micro font-bold text-sky-300 ring-1 ring-sky-400/30"
         title="New on the board this report"
       >
         NEW
@@ -42,7 +42,7 @@ function MovementChip({
   if (movement === "up") {
     return (
       <span
-        className="inline-flex items-center gap-0.5 rounded bg-emerald-400/15 px-1 py-0.5 font-mono text-[10px] font-bold tabular-nums text-emerald-400 ring-1 ring-emerald-400/30"
+        className="inline-flex items-center gap-0.5 rounded bg-emerald-400/15 px-1 py-0.5 font-mono text-micro font-bold tabular-nums text-emerald-400 ring-1 ring-emerald-400/30"
         title={`Up ${delta} vs prior report`}
       >
         <ArrowUp className="h-3 w-3" aria-hidden />
@@ -53,7 +53,7 @@ function MovementChip({
   if (movement === "down") {
     return (
       <span
-        className="inline-flex items-center gap-0.5 rounded bg-rose-400/15 px-1 py-0.5 font-mono text-[10px] font-bold tabular-nums text-rose-400 ring-1 ring-rose-400/30"
+        className="inline-flex items-center gap-0.5 rounded bg-rose-400/15 px-1 py-0.5 font-mono text-micro font-bold tabular-nums text-rose-400 ring-1 ring-rose-400/30"
         title={`Down ${delta} vs prior report`}
       >
         <ArrowDown className="h-3 w-3" aria-hidden />
@@ -63,7 +63,7 @@ function MovementChip({
   }
   return (
     <span
-      className="inline-flex items-center gap-0.5 rounded bg-secondary px-1 py-0.5 font-mono text-[10px] font-medium text-muted-foreground"
+      className="inline-flex items-center gap-0.5 rounded bg-secondary px-1 py-0.5 font-mono text-micro font-medium text-muted-foreground"
       title="Unchanged vs prior report"
     >
       <Minus className="h-3 w-3" aria-hidden />
@@ -102,7 +102,7 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
             <span className="truncate">{deck.name}</span>
             <BookOpen className="h-3 w-3 shrink-0 opacity-0 transition-opacity group-hover/link:opacity-60" aria-hidden />
           </Link>
-          <div className="mt-1 flex items-center gap-1 text-[10px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+          <div className="mt-1 flex items-center gap-1 text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
             <CatIcon className="h-3 w-3" aria-hidden />
             {cat.label}
           </div>
@@ -124,7 +124,7 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
       <div className="flex items-end justify-between gap-2">
         <div className="font-mono text-xl font-bold leading-none tracking-tight tabular-nums text-foreground">
           {formatUsd(deck.median)}
-          <span className="ml-1 font-sans text-[10px] font-medium text-muted-foreground">
+          <span className="ml-1 font-sans text-micro font-medium text-muted-foreground">
             median
           </span>
         </div>
@@ -141,19 +141,19 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
           className="rounded-md bg-secondary/80 px-1.5 py-1"
           title="Relative play rate: how crowded this path is"
         >
-          <div className="text-[9px] font-medium uppercase tracking-wider text-muted-foreground">
+          <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
             Play
           </div>
           <div className="font-mono text-xs font-bold tabular-nums text-foreground">
             {deck.playRate}
-            <span className="text-[10px] font-medium text-muted-foreground">/100</span>
+            <span className="text-micro font-medium text-muted-foreground">/100</span>
           </div>
         </div>
         <div
           className="rounded-md bg-secondary/80 px-1.5 py-1"
           title="Estimated livable full-time rate (win rate proxy)"
         >
-          <div className="text-[9px] font-medium uppercase tracking-wider text-muted-foreground">
+          <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
             Win
           </div>
           <div
@@ -167,12 +167,12 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
             )}
           >
             {deck.livablePct}
-            <span className="text-[10px] font-medium text-muted-foreground">%</span>
+            <span className="text-micro font-medium text-muted-foreground">%</span>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-medium">
+      <div className="flex flex-wrap items-center gap-1.5 text-micro font-medium">
         <span
           className="inline-flex items-center gap-1 rounded bg-secondary px-1.5 py-0.5 text-muted-foreground"
           title="Time to first income"
@@ -198,7 +198,7 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
       <div className="flex items-center gap-2">
         <Link
           href={`/deck/${deck.slug}`}
-          className="inline-flex items-center gap-1 rounded-md bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary ring-1 ring-primary/25 transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="inline-flex items-center gap-1 rounded-md bg-primary/10 px-1.5 py-0.5 text-micro font-semibold text-primary ring-1 ring-primary/25 transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <BookOpen className="h-3 w-3" aria-hidden />
           Playbook
@@ -207,7 +207,7 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
           href={deck.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:text-foreground"
+          className="inline-flex items-center gap-0.5 text-micro font-medium text-muted-foreground transition-colors hover:text-foreground"
         >
           Source <ArrowUpRight className="h-3 w-3" aria-hidden />
         </a>
@@ -215,7 +215,7 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
 
       {deck.exemplars.length > 0 ? (
         <div className="mt-0.5 border-t border-border/70 pt-2">
-          <div className="mb-1.5 flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+          <div className="mb-1.5 flex items-center gap-1 text-micro font-semibold uppercase tracking-[0.08em] text-muted-foreground">
             <Users className="h-3 w-3" aria-hidden />
             Who&apos;s winning it
           </div>
@@ -227,10 +227,10 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
                 target="_blank"
                 rel="noopener noreferrer"
                 title={`${ex.name}: ${ex.note} (${ex.rev})`}
-                className="inline-flex items-center gap-1 rounded-md bg-accent/60 px-1.5 py-0.5 text-[11px] font-medium text-foreground/90 transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background"
+                className="inline-flex items-center gap-1 rounded-md bg-accent/60 px-1.5 py-0.5 text-label font-medium text-foreground/90 transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background"
               >
                 {ex.name}
-                <span className="font-mono text-[10px] text-primary">{ex.rev}</span>
+                <span className="font-mono text-micro text-primary">{ex.rev}</span>
               </a>
             ))}
           </div>

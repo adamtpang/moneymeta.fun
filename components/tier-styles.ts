@@ -3,7 +3,13 @@ import type { Tier } from "@/lib/meta";
 /**
  * Per-tier visual language. Strings are full literal class names so Tailwind's
  * scanner picks them up (never build class names by concatenation).
- * Heat ramp: S amber, A violet, B cyan, C emerald, D slate.
+ * Heat ramp: S amber, A violet, B cyan, C teal, D slate.
+ *
+ * C was emerald until 2026-08-08. Emerald is already this app's primary/
+ * positive-signal color (growth %, "up" movement, "verifiable" data quality,
+ * the brand mark itself), so a fringe C-tier deck rendered in the same hue as
+ * "growing" and "trustworthy" was a real collision, not a stylistic choice.
+ * Teal keeps the same cool, muted, middling read without doubling as brand.
  */
 export interface TierStyle {
   /** Big tier letter chip on the rail. */
@@ -55,13 +61,13 @@ export const TIER_STYLES: Record<Tier, TierStyle> = {
     label: "Playable",
   },
   C: {
-    chip: "bg-emerald-400 text-emerald-950 shadow-[0_0_22px_-6px] shadow-emerald-400/50",
-    border: "border-l-emerald-400/80",
-    tint: "from-emerald-500/[0.06]",
-    score: "bg-emerald-400/15 text-emerald-300 ring-emerald-400/30",
-    ring: "hover:ring-emerald-400/50",
-    glow: "hover:shadow-xl hover:shadow-emerald-400/15",
-    text: "text-emerald-300",
+    chip: "bg-teal-400 text-teal-950 shadow-[0_0_22px_-6px] shadow-teal-400/50",
+    border: "border-l-teal-400/80",
+    tint: "from-teal-500/[0.06]",
+    score: "bg-teal-400/15 text-teal-300 ring-teal-400/30",
+    ring: "hover:ring-teal-400/50",
+    glow: "hover:shadow-xl hover:shadow-teal-400/15",
+    text: "text-teal-300",
     label: "Fringe",
   },
   D: {

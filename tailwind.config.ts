@@ -46,6 +46,13 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontSize: {
+        // Named micro-type scale for chips, badges, and category labels.
+        // Replaces ad hoc text-[9px]/text-[10px]/text-[11px] scattered across
+        // the income board components with two deliberate, legible steps.
+        micro: ["0.625rem", { lineHeight: "0.875rem", letterSpacing: "0.02em" }], // 10px
+        label: ["0.6875rem", { lineHeight: "1rem", letterSpacing: "0.02em" }], // 11px
+      },
       fontFamily: {
         sans: [
           "var(--font-sans-var)",

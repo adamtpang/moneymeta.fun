@@ -28,7 +28,7 @@ export function ClassFrequency({ decks }: { decks: IncomeDeckView[] }) {
       aria-label="Class frequency, play rate by meta class"
       className="rounded-2xl border bg-card/40 p-4 sm:p-5"
     >
-      <div className="mb-1 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+      <div className="mb-1 font-mono text-micro font-bold uppercase tracking-[0.08em] text-muted-foreground">
         Class frequency
       </div>
       <h2 className="font-mono text-base font-bold tracking-tight text-foreground">
@@ -45,7 +45,7 @@ export function ClassFrequency({ decks }: { decks: IncomeDeckView[] }) {
           <div key={r.metaClass} className="grid grid-cols-[7.5rem_1fr_auto] items-center gap-2 sm:grid-cols-[9rem_1fr_auto]">
             <div className="min-w-0">
               <div className="truncate text-xs font-semibold text-foreground">{r.label}</div>
-              <div className="font-mono text-[10px] text-muted-foreground">
+              <div className="font-mono text-micro text-muted-foreground">
                 {r.count} decks
               </div>
             </div>
@@ -55,7 +55,7 @@ export function ClassFrequency({ decks }: { decks: IncomeDeckView[] }) {
                 style={{ width: `${(r.share / maxShare) * 100}%` }}
               />
             </div>
-            <div className="flex shrink-0 items-center gap-2 font-mono text-[11px] tabular-nums">
+            <div className="flex shrink-0 items-center gap-2 font-mono text-label tabular-nums">
               <span className="w-10 text-right text-foreground">{r.share}%</span>
               <span
                 className={cn(

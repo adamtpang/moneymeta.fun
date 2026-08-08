@@ -126,9 +126,12 @@ Weights and thresholds are exported constants, trivial to retune.
 ## Aesthetic
 
 VS meta report x Hearthstone tier list. Dark, dense, data-forward. Tier rows with
-S..D color coding (amber/violet/cyan/emerald/slate heat ramp). Decks as compact
-card tiles, score as a prominent badge. Mobile-first, it has to read well on a
-phone.
+S..D color coding (amber/violet/cyan/teal/slate heat ramp; C moved off emerald
+2026-08-08, emerald was already the app's primary/positive-signal color, see
+`components/tier-styles.ts`). Decks as compact card tiles, score as a
+prominent badge. Mobile-first, it has to read well on a phone. Micro-label
+type (chips, badges, category tags) uses the named `text-micro` (10px) /
+`text-label` (11px) tokens in `tailwind.config.ts`, not ad hoc `text-[Npx]`.
 
 ---
 

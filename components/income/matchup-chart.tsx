@@ -17,7 +17,7 @@ export function MatchupChart({
     <section aria-label="Matchup chart, hybrid money stacks" className="rounded-2xl border bg-card/40 p-4 sm:p-5">
       <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <div className="mb-1 inline-flex items-center gap-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-cyan-300">
+          <div className="mb-1 inline-flex items-center gap-1.5 font-mono text-micro font-bold uppercase tracking-[0.08em] text-cyan-300">
             <GitBranch className="h-3 w-3" aria-hidden />
             Matchup chart
           </div>
@@ -40,7 +40,7 @@ export function MatchupChart({
             <div className="flex items-start justify-between gap-2">
               <div>
                 <div className="text-sm font-semibold text-foreground">{m.name}</div>
-                <div className="text-[10px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+                <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
                   {m.role}
                 </div>
               </div>
@@ -54,7 +54,7 @@ export function MatchupChart({
               <PhaseChip label="Win" deck={m.wincon} lens={lens} highlight />
             </div>
 
-            <p className="text-[11px] leading-snug text-muted-foreground">{m.note}</p>
+            <p className="text-label leading-snug text-muted-foreground">{m.note}</p>
           </article>
         ))}
       </div>
@@ -75,7 +75,7 @@ function PhaseChip({
 }) {
   if (!deck) {
     return (
-      <span className="rounded-md border border-dashed border-border/70 px-2 py-1 text-[10px] text-muted-foreground">
+      <span className="rounded-md border border-dashed border-border/70 px-2 py-1 text-micro text-muted-foreground">
         {label}: missing
       </span>
     );
@@ -95,13 +95,13 @@ function PhaseChip({
           : "border-border/70 bg-card/70 hover:border-border",
       )}
     >
-      <span className="text-[9px] font-semibold uppercase tracking-wider text-muted-foreground">
+      <span className="text-micro font-semibold uppercase tracking-[0.08em] text-muted-foreground">
         {label}
       </span>
-      <span className="truncate text-[11px] font-semibold leading-tight text-foreground">
+      <span className="truncate text-label font-semibold leading-tight text-foreground">
         {deck.name}
       </span>
-      <span className={cn("font-mono text-[10px] font-bold tabular-nums", style.text)}>
+      <span className={cn("font-mono text-micro font-bold tabular-nums", style.text)}>
         {tier} · {score}
       </span>
     </Link>

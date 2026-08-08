@@ -28,11 +28,11 @@ export function ThePick({ pick }: { pick: ThePickView }) {
       <div className="relative flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0 flex-1">
           <div className="mb-2 flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-md bg-primary/15 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-primary ring-1 ring-primary/35">
+            <span className="inline-flex items-center gap-1.5 rounded-md bg-primary/15 px-2 py-0.5 font-mono text-micro font-bold uppercase tracking-[0.08em] text-primary ring-1 ring-primary/35">
               <Crosshair className="h-3 w-3" aria-hidden />
               The pick
             </span>
-            <span className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+            <span className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
               {lensLabel}
             </span>
           </div>
@@ -50,8 +50,8 @@ export function ThePick({ pick }: { pick: ThePickView }) {
             />
           </Link>
 
-          <div className="mt-1.5 flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground">
-            <span className="uppercase tracking-[0.12em]">{cat.label}</span>
+          <div className="mt-1.5 flex flex-wrap items-center gap-2 text-label text-muted-foreground">
+            <span className="uppercase tracking-[0.08em]">{cat.label}</span>
             <span className="text-border">·</span>
             <span className="font-mono tabular-nums">{formatUsd(deck.median)} median</span>
             <span className="text-border">·</span>
@@ -84,7 +84,7 @@ export function ThePick({ pick }: { pick: ThePickView }) {
             {tier}
           </div>
           <div className="text-right">
-            <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+            <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
               Meta score
             </div>
             <div

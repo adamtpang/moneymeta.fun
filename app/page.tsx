@@ -44,7 +44,7 @@ export default function Home() {
           <div className="flex items-center gap-2.5">
             <ShieldCheck className="h-4 w-4 text-emerald-400" aria-hidden />
             <div className="leading-tight">
-              <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+              <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
                 BLS-verified decks
               </div>
               <div className="text-sm font-semibold text-foreground">

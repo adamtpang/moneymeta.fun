@@ -97,7 +97,7 @@ export function IncomeBoard({
       <div className="mb-5 flex flex-col gap-3">
         {pick ? <ThePick pick={pick} /> : null}
         <MetaBreaker breaker={breaker} lens={lens} />
-        <div className="rounded-lg border border-border/50 bg-background/30 px-3 py-2 text-[11px] leading-relaxed text-muted-foreground">
+        <div className="rounded-lg border border-border/50 bg-background/30 px-3 py-2 text-label leading-relaxed text-muted-foreground">
           <span className="font-semibold text-foreground">{report.title}</span>
           <span className="mx-1.5 text-border">·</span>
           <span className="font-mono">{report.asOf}</span>
@@ -140,7 +140,7 @@ export function IncomeBoard({
                   <span className={cn("text-xs font-semibold", style.text)}>
                     {style.label}
                   </span>
-                  <span className="font-mono text-[11px] text-muted-foreground">
+                  <span className="font-mono text-label text-muted-foreground">
                     {items.length} {items.length === 1 ? "deck" : "decks"}
                   </span>
                 </div>
