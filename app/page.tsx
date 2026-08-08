@@ -1,10 +1,11 @@
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 
 import { getIncomeDecks } from "@/lib/income";
 import { getMetaReport } from "@/lib/meta-report";
 import { ReportMasthead } from "@/components/report-masthead";
 import { SiteFooter } from "@/components/site-footer";
 import { IncomeBoard } from "@/components/income/income-board";
+import { FoundingLicenseLink } from "@/components/founding-license-link";
 
 export default function Home() {
   const decks = getIncomeDecks();
@@ -18,14 +19,7 @@ export default function Home() {
 
         {/* Founding license */}
         <div className="mb-6">
-          <a
-            href="https://buy.stripe.com/dRmbJ1eno9kNfYQfgZaMU0y"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          >
-            Founding license · $29 <ArrowRight className="h-3.5 w-3.5" aria-hidden />
-          </a>
+          <FoundingLicenseLink />
         </div>
 
         {/* The money meta */}
