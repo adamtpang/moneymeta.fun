@@ -25,8 +25,8 @@
     "whatYouDo": "Fly scheduled passenger and cargo aircraft for airlines, manage flight systems, navigation, and crew. Seniority and aircraft type drive pay; major-carrier captains earn well above the median.",
     "median": 232140,
     "incomeRangeNote": "BLS median $226,600 for airline pilots/copilots/flight engineers (May 2024); senior wide-body captains at majors exceed $400K. Commercial (non-airline) pilots are a separate, lower category (~$122,670 median).",
-    "frequency": "~100,000 employed as airline pilots/copilots/flight engineers (BLS OOH, 2024)",
-    "frequencyCount": 100000,
+    "frequency": "~103,560 employed (BLS OEWS, 2025)",
+    "frequencyCount": 103560,
     "growthPct": 4,
     "barrierToEntry": "Bachelor's typically + FAA commercial + ATP certificate, 1,500 flight hours; ~$100K+ in flight training",
     "timeToFirstIncomeYears": 3,
@@ -34,8 +34,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 58,
+    "livablePct": 99
   },
   {
     "slug": "dentists",
@@ -44,8 +44,8 @@
     "whatYouDo": "Diagnose and treat problems with teeth and gums, perform procedures, and oversee dental staff. Many own or buy into a practice, which lifts income above the employee median.",
     "median": 170950,
     "incomeRangeNote": "BLS median $179,210 (May 2024); p10 < $84,740, p90 > $239,200. Practice owners and specialists (oral surgeons, orthodontists) substantially higher.",
-    "frequency": "~149,300 employed (BLS OOH, 2024)",
-    "frequencyCount": 149300,
+    "frequency": "~124,390 employed (BLS OEWS, 2025)",
+    "frequencyCount": 124390,
     "growthPct": 4,
     "barrierToEntry": "Bachelor's + DDS/DMD (~4 yrs dental school) + state licensure; ~8 yrs post-high-school",
     "timeToFirstIncomeYears": 8,
@@ -53,8 +53,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/healthcare/dentists.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 60,
+    "livablePct": 99
   },
   {
     "slug": "financial-managers",
@@ -63,8 +63,8 @@
     "whatYouDo": "Direct an organization's financial health: produce reports, steer investment and capital decisions, and build long-term financial strategy. Includes controllers, treasurers, and finance directors.",
     "median": 166570,
     "incomeRangeNote": "BLS median $161,700 (May 2024); top decile and senior corporate roles (CFO-track, large firms) well into the $300K+ range with bonuses.",
-    "frequency": "~868,600 employed (BLS OOH, 2024)",
-    "frequencyCount": 868600,
+    "frequency": "~841,710 employed (BLS OEWS, 2025)",
+    "frequencyCount": 841710,
     "growthPct": 15,
     "barrierToEntry": "Bachelor's in finance/accounting/business + typically 5+ yrs experience; MBA/CPA/CFA common for advancement",
     "timeToFirstIncomeYears": 7,
@@ -72,8 +72,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/management/financial-managers.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 84,
+    "livablePct": 99
   },
   {
     "slug": "lawyers",
@@ -82,8 +82,8 @@
     "whatYouDo": "Advise and represent clients in legal matters, draft documents, negotiate, and argue cases. BigLaw and specialized practice (corporate, IP, litigation) sit far above the median.",
     "median": 159670,
     "incomeRangeNote": "BLS median $151,160 (May 2024); bimodal market: large-firm associates start ~$225K while many public-sector/small-firm lawyers earn well under the median.",
-    "frequency": "~864,800 employed (BLS OOH, 2024)",
-    "frequencyCount": 864800,
+    "frequency": "~754,500 employed (BLS OEWS, 2025)",
+    "frequencyCount": 754500,
     "growthPct": 4,
     "barrierToEntry": "Bachelor's + JD (3 yrs law school) + pass the bar; ~7 yrs post-high-school",
     "timeToFirstIncomeYears": 7,
@@ -91,8 +91,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/legal/lawyers.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 83,
+    "livablePct": 99
   },
   {
     "slug": "ai-ml-engineers",
@@ -101,8 +101,8 @@
     "whatYouDo": "Invent and improve computing approaches, including AI and machine-learning algorithms and systems. The BLS category that most closely tracks research-grade AI/ML roles; demand driven by generative AI adoption.",
     "median": 140300,
     "incomeRangeNote": "BLS median $140,910 (May 2024) for the occupation; brand-name AI labs and FAANG ML roles pay total comp far above this (often $300K-$700K+), but that is not the BLS median.",
-    "frequency": "~40,300 employed (BLS OOH, 2024)",
-    "frequencyCount": 40300,
+    "frequency": "~37,200 employed (BLS OEWS, 2025)",
+    "frequencyCount": 37200,
     "growthPct": 20,
     "barrierToEntry": "Usually master's or PhD in CS/related; some research roles entered with a strong bachelor's; ~6-9 yrs",
     "timeToFirstIncomeYears": 9,
@@ -110,8 +110,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm",
     "metaClass": "software",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 45,
+    "livablePct": 99
   },
   {
     "slug": "petroleum-engineers",
@@ -120,8 +120,8 @@
     "whatYouDo": "Design and develop methods to extract oil and gas from below the earth, optimize drilling and recovery. Among the highest-paid engineering disciplines, concentrated in energy regions (TX, etc.).",
     "median": 144910,
     "incomeRangeNote": "BLS median $141,280 (May 2024); among the top-paying engineering fields. Pay tied to commodity cycles and operator vs. service-company roles.",
-    "frequency": "~19,600 employed (BLS OOH, 2024), small, specialized field",
-    "frequencyCount": 19600,
+    "frequency": "~18,060 employed (BLS OEWS, 2025)",
+    "frequencyCount": 18060,
     "growthPct": 1,
     "barrierToEntry": "Bachelor's in petroleum or related engineering; ~4 yrs; PE license for senior roles",
     "timeToFirstIncomeYears": 4,
@@ -129,8 +129,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/architecture-and-engineering/petroleum-engineers.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 36,
+    "livablePct": 99
   },
   {
     "slug": "pharmacists",
@@ -139,8 +139,8 @@
     "whatYouDo": "Dispense prescription medications, advise patients and providers on safe use, and manage drug therapy. Retail employment has softened while hospital/clinical roles grow.",
     "median": 140910,
     "incomeRangeNote": "BLS median $137,480 (May 2024); fairly compressed range. Clinical/specialty and management roles toward the top.",
-    "frequency": "~335,100 employed (BLS OOH, 2024)",
-    "frequencyCount": 335100,
+    "frequency": "~321,970 employed (BLS OEWS, 2025)",
+    "frequencyCount": 321970,
     "growthPct": 5,
     "barrierToEntry": "PharmD (~4 yrs after 2+ yrs pre-pharmacy) + licensure (NAPLEX); ~6-8 yrs post-high-school",
     "timeToFirstIncomeYears": 8,
@@ -148,8 +148,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/healthcare/pharmacists.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 72,
+    "livablePct": 99
   },
   {
     "slug": "aerospace-engineers",
@@ -158,8 +158,8 @@
     "whatYouDo": "Design aircraft, spacecraft, satellites, and missiles, and test prototypes. Work spans defense, commercial aviation, and the growing commercial-space sector.",
     "median": 134960,
     "incomeRangeNote": "BLS median $134,830 (May 2024); defense/space-prime and senior systems roles toward the top decile.",
-    "frequency": "~71,600 employed (BLS OOH, 2024)",
-    "frequencyCount": 71600,
+    "frequency": "~67,710 employed (BLS OEWS, 2025)",
+    "frequencyCount": 67710,
     "growthPct": 6,
     "barrierToEntry": "Bachelor's in aerospace or related engineering; ~4 yrs; some defense roles need a security clearance",
     "timeToFirstIncomeYears": 4,
@@ -167,8 +167,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/architecture-and-engineering/aerospace-engineers.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 53,
+    "livablePct": 99
   },
   {
     "slug": "physician-assistants",
@@ -177,8 +177,8 @@
     "whatYouDo": "Examine, diagnose, and treat patients and prescribe medication, working on healthcare teams. Faster on-ramp than physician for a six-figure clinical income.",
     "median": 135880,
     "incomeRangeNote": "BLS median $133,260 (May 2024); surgical and high-acuity specialties and overtime push the top decile higher.",
-    "frequency": "~162,700 employed (BLS OOH, 2024)",
-    "frequencyCount": 162700,
+    "frequency": "~162,150 employed (BLS OEWS, 2025)",
+    "frequencyCount": 162150,
     "growthPct": 20,
     "barrierToEntry": "Bachelor's + master's PA program (~2-3 yrs) + PANCE licensure; ~6-7 yrs post-high-school",
     "timeToFirstIncomeYears": 7,
@@ -186,8 +186,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/healthcare/physician-assistants.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 64,
+    "livablePct": 99
   },
   {
     "slug": "software-developers",
@@ -196,8 +196,8 @@
     "whatYouDo": "Design, build, and maintain software applications and systems. The largest high-income tech occupation; comp scales sharply with company tier and seniority.",
     "median": 135980,
     "incomeRangeNote": "BLS median $133,080 (May 2024) for software developers; big-tech total comp (base+stock+bonus) commonly $250K-$500K+ at senior levels, well above the BLS median.",
-    "frequency": "~1.7M employed (developers, QA analysts & testers; BLS OOH, 2024)",
-    "frequencyCount": 1700000,
+    "frequency": "~1,687,890 employed (BLS OEWS, 2025)",
+    "frequencyCount": 1687890,
     "growthPct": 15,
     "barrierToEntry": "Bachelor's in CS/related typical; self-taught/bootcamp paths exist; ~$0-low capital, laptop",
     "timeToFirstIncomeYears": 4,
@@ -205,8 +205,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
     "metaClass": "career",
-    "playRate": 30,
-    "livablePct": 60
+    "playRate": 93,
+    "livablePct": 99
   },
   {
     "slug": "nurse-practitioners",
@@ -215,8 +215,8 @@
     "whatYouDo": "Provide advanced primary and specialty care: assess, diagnose, prescribe, and (CRNAs) administer anesthesia. One of the fastest-growing occupations in the country.",
     "median": 132300,
     "incomeRangeNote": "BLS median $132,050 (May 2024) for the combined category; nurse anesthetists (CRNAs) earn well above $200K and pull the top of the range up.",
-    "frequency": "~382,700 employed (nurse anesthetists, midwives & NPs; BLS OOH, 2024)",
-    "frequencyCount": 382700,
+    "frequency": "~323,040 employed (BLS OEWS, 2025)",
+    "frequencyCount": 323040,
     "growthPct": 35,
     "barrierToEntry": "RN (BSN) + master's/DNP (APRN) + national certification & state licensure; ~6-8 yrs",
     "timeToFirstIncomeYears": 8,
@@ -224,8 +224,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 72,
+    "livablePct": 99
   },
   {
     "slug": "actuaries",
@@ -234,8 +234,8 @@
     "whatYouDo": "Use math, statistics, and financial theory to price and manage risk for insurers and pensions. Pay rises with each professional exam passed.",
     "median": 130000,
     "incomeRangeNote": "BLS median $125,770 (May 2024); fully credentialed Fellows (FSA/FCAS) and chief actuaries earn well into the $200K-$300K+ range.",
-    "frequency": "~33,600 employed (BLS OOH, 2024), small, credential-gated field",
-    "frequencyCount": 33600,
+    "frequency": "~26,670 employed (BLS OEWS, 2025)",
+    "frequencyCount": 26670,
     "growthPct": 22,
     "barrierToEntry": "Bachelor's (math/stats/actuarial) + multi-year exam sequence (ASA/FSA or ACAS/FCAS); ~4 yrs to entry",
     "timeToFirstIncomeYears": 4,
@@ -243,8 +243,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/math/actuaries.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 41,
+    "livablePct": 99
   },
   {
     "slug": "data-scientists",
@@ -253,8 +253,8 @@
     "whatYouDo": "Collect, model, and analyze large datasets to extract insights and build predictive systems. Fast-growing mathematical-science occupation feeding the AI/analytics boom.",
     "median": 120230,
     "incomeRangeNote": "BLS median $112,590 (May 2024); senior and big-tech data scientists' total comp ranges far higher (~$200K-$400K+), above the BLS median.",
-    "frequency": "~245,900 employed (BLS OOH, 2024)",
-    "frequencyCount": 245900,
+    "frequency": "~262,440 employed (BLS OEWS, 2025)",
+    "frequencyCount": 262440,
     "growthPct": 34,
     "barrierToEntry": "Bachelor's minimum, master's common; strong stats/programming; ~4-6 yrs",
     "timeToFirstIncomeYears": 6,
@@ -262,8 +262,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/math/data-scientists.htm",
     "metaClass": "software",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 70,
+    "livablePct": 99
   },
   {
     "slug": "financial-investment-analysts",
@@ -272,8 +272,8 @@
     "whatYouDo": "Evaluate investments, securities, and financial data to guide buy/sell and capital decisions for banks, funds, and corporates. Quant and sell-side roles in major hubs pay far above the broad median.",
     "median": 102740,
     "incomeRangeNote": "BLS median $101,350 (May 2024) for financial & investment analysts; investment-banking and hedge-fund/quant roles with bonus run multiples higher but sit in the top tail, not the median.",
-    "frequency": "~368,500 employed (BLS OOH, 2024)",
-    "frequencyCount": 368500,
+    "frequency": "~361,980 employed (BLS OEWS, 2025)",
+    "frequencyCount": 361980,
     "growthPct": 6,
     "barrierToEntry": "Bachelor's in finance/economics/math; CFA and (for quants) advanced quantitative degrees common; ~4 yrs",
     "timeToFirstIncomeYears": 4,
@@ -281,8 +281,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 74,
+    "livablePct": 99
   },
   {
     "slug": "electrician",
@@ -291,17 +291,17 @@
     "whatYouDo": "Install, maintain, and repair electrical wiring, panels, and systems in homes, businesses, and industrial sites; read blueprints, pull permits, and pass inspections. As an owner you bid jobs, run a crew, and add high-margin lines like solar and EV charging.",
     "median": 63190,
     "incomeRangeNote": "Employee (BLS May 2024): median $62,350; p10 $39,430 .. p90 $106,030. Owner-operator: solo shop ~$70K-$130K; multi-crew $150K-$250K+; residential-only ceiling ~$130K-$150K, commercial/solar pushes higher.",
-    "frequency": "~818,700 employed (BLS OOH, 2024)",
-    "frequencyCount": 818700,
+    "frequency": "~757,220 employed (BLS OEWS, 2025)",
+    "frequencyCount": 757220,
     "growthPct": 9,
     "barrierToEntry": "4-5 yr paid apprenticeship (~8,000 hrs) + journeyman license; master/contractor license to own a shop. Shop startup ~$10K-$75K (van, tools, license, insurance, bond).",
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
-    "dataQuality": "partial",
+    "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm",
     "metaClass": "career",
-    "playRate": 25,
-    "livablePct": 40
+    "playRate": 83,
+    "livablePct": 74
   },
   {
     "slug": "plumber-pipefitter",
@@ -310,17 +310,17 @@
     "whatYouDo": "Install and repair water, gas, drainage, and heating pipe systems; diagnose leaks, set fixtures, and handle code inspections. As an owner you run service trucks, do emergency callouts at premium rates, and chase commercial/new-construction contracts.",
     "median": 63800,
     "incomeRangeNote": "Employee (BLS May 2024): median $62,970; p10 $40,670 .. p90 $105,150. Owner-operator: solo ~$40K-$70K early, established solo $70K-$200K; multi-crew firms net $150K-$250K+ to owner.",
-    "frequency": "~504,500 employed (BLS OOH, 2024)",
-    "frequencyCount": 504500,
+    "frequency": "~465,840 employed (BLS OEWS, 2025)",
+    "frequencyCount": 465840,
     "growthPct": 4,
     "barrierToEntry": "4-5 yr paid apprenticeship + journeyman then master plumber license (required to own a shop in most states). Startup ~$10K-$50K for a one-truck service operation.",
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
-    "dataQuality": "partial",
+    "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm",
     "metaClass": "career",
-    "playRate": 25,
-    "livablePct": 40
+    "playRate": 77,
+    "livablePct": 75
   },
   {
     "slug": "hvac-technician",
@@ -329,17 +329,17 @@
     "whatYouDo": "Install, service, and repair heating, ventilation, air-conditioning, and refrigeration systems; charge refrigerant (EPA 608 cert required), troubleshoot controls, and do seasonal maintenance contracts. As an owner you run service trucks, sell install jobs, and bank recurring maintenance revenue.",
     "median": 61010,
     "incomeRangeNote": "Employee (BLS May 2024): median $59,810; p10 $39,130 .. p90 $91,020. Owner-operator: most owners $70K-$150K, single-truck modest, top multi-crew owners $200K-$500K+. Headline averages (~$86K) are noisy/self-reported.",
-    "frequency": "~425,200 employed (BLS OOH, 2024)",
-    "frequencyCount": 425200,
+    "frequency": "~409,670 employed (BLS OEWS, 2025)",
+    "frequencyCount": 409670,
     "growthPct": 8,
     "barrierToEntry": "6mo-2yr trade school or 3-5yr apprenticeship + EPA 608 cert; state HVAC contractor license to own a business. Startup ~$10K-$60K (truck, tools, gauges, license).",
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
-    "dataQuality": "partial",
+    "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/installation-maintenance-and-repair/heating-air-conditioning-and-refrigeration-mechanics-and-installers.htm",
     "metaClass": "career",
-    "playRate": 25,
-    "livablePct": 40
+    "playRate": 75,
+    "livablePct": 72
   },
   {
     "slug": "welder-fabricator",
@@ -348,17 +348,17 @@
     "whatYouDo": "Join metal with arc, MIG, TIG, or stick welding for construction, manufacturing, pipelines, and ships; read fab drawings and pass certified weld tests. Specialize (pipeline, rig, underwater) or own a fab/mobile-rig shop to clear six figures.",
     "median": 53750,
     "incomeRangeNote": "Employee (BLS May 2024): median $51,000; p10 $38,130 .. p90 $75,850. Specialists run far higher: pipeline $90K-$130K, rig welders $70K-$180K w/ OT, saturation/underwater $100K-$300K+. Owner-operator fab/rig shop ~$100K-$250K established.",
-    "frequency": "~457,300 employed (BLS OOH, 2024)",
-    "frequencyCount": 457300,
+    "frequency": "~416,210 employed (BLS OEWS, 2025)",
+    "frequencyCount": 416210,
     "growthPct": 2,
     "barrierToEntry": "6mo-2yr welding program or apprenticeship + AWS/process certifications; no license to start a shop but rig welder needs a ~$40K-$100K welding truck/rig. Underwater adds commercial dive school ($15K-$30K).",
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
-    "dataQuality": "partial",
+    "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/production/welders-cutters-solderers-and-brazers.htm",
     "metaClass": "career",
-    "playRate": 25,
-    "livablePct": 40
+    "playRate": 75,
+    "livablePct": 63
   },
   {
     "slug": "elevator-escalator-installer",
@@ -405,17 +405,17 @@
     "whatYouDo": "Plan, budget, schedule, and supervise construction projects from bid to handoff; coordinate subs, inspections, and clients. As a GC/owner you carry the contract, mark up subcontracted work, and take project profit on top of a manager's salary.",
     "median": 114990,
     "incomeRangeNote": "Employee (BLS May 2024): median $106,980; p10 ~$67K .. p90 $164K+. Self-employed GCs/owners vary widely with project volume and margin, small-builder owners commonly $100K-$250K, larger firm owners well into six/seven figures from project profit.",
-    "frequency": "~550,300 employed (BLS OOH, 2024)",
-    "frequencyCount": 550300,
+    "frequency": "~380,360 employed (BLS OEWS, 2025)",
+    "frequencyCount": 380360,
     "growthPct": 9,
     "barrierToEntry": "Often a bachelor's (construction mgmt/engineering) OR years on the tools rising to super; state GC license + bonding/insurance to own a firm. Capital to float payroll and materials between draws is the real gate.",
     "timeToFirstIncomeYears": 3,
     "capitalTier": "med",
-    "dataQuality": "partial",
+    "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/management/construction-managers.htm",
     "metaClass": "commerce",
-    "playRate": 22,
-    "livablePct": 12
+    "playRate": 74,
+    "livablePct": 99
   },
   {
     "slug": "dental-hygienist",
@@ -424,8 +424,8 @@
     "whatYouDo": "Clean teeth, take x-rays, screen for oral disease, and educate patients in a dental office; mostly W-2 in private practices. High pay-per-hour with limited ownership upside, corporate-practice laws bar hygienists from owning full dental practices in most states.",
     "median": 98100,
     "incomeRangeNote": "Employee (BLS May 2024): median $94,260; p10 $66,470 .. p90 $120,060. Owner upside is largely blocked: most states reserve practice ownership for licensed dentists. Independent paths exist only in a few states (CO proprietorship, ME IPDH, CA RDHAP) or via an MSO/staffing model.",
-    "frequency": "~221,600 employed (BLS OOH, 2024)",
-    "frequencyCount": 221600,
+    "frequency": "~222,740 employed (BLS OEWS, 2025)",
+    "frequencyCount": 222740,
     "growthPct": 7,
     "barrierToEntry": "Associate degree (2-3 yr accredited program) + national/regional boards + state license. Low capital, but the employee-vs-owner ceiling is a legal wall, not a money wall.",
     "timeToFirstIncomeYears": 3,
@@ -433,8 +433,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/healthcare/dental-hygienists.htm",
     "metaClass": "career",
-    "playRate": 20,
-    "livablePct": 55
+    "playRate": 68,
+    "livablePct": 99
   },
   {
     "slug": "commercial-driver-trucking-owner-operator",
@@ -443,17 +443,17 @@
     "whatYouDo": "Haul freight long-haul or regional in a tractor-trailer on a CDL. As a company driver you're paid by mile/hour; as an owner-operator you own (or lease) the truck, run your own authority or lease to a carrier, and keep the margin after fuel, maintenance, and insurance.",
     "median": 58640,
     "incomeRangeNote": "Company driver (BLS May 2024): median $57,440; p10 $38,640 .. p90 $78,800; most $55K-$85K. Owner-operator: grosses $150K-$250K but NETS ~$60K-$120K after expenses; paid-off truck can net $120K-$150K+. Caution: ~85-90% of new owner-operators fail within 2 yrs on cash flow.",
-    "frequency": "~2.2M heavy/tractor-trailer drivers (BLS, 2023-24)",
-    "frequencyCount": 2200000,
+    "frequency": "~2,062,040 employed (BLS OEWS, 2025)",
+    "frequencyCount": 2062040,
     "growthPct": 4,
     "barrierToEntry": "CDL via 3-7 wk school, ~$4K-$12K (often carrier-paid). Owner-operator adds a truck ($30K used to $150K+ new) plus authority, insurance, and working capital.",
     "timeToFirstIncomeYears": 2,
     "capitalTier": "high",
-    "dataQuality": "partial",
+    "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/transportation-and-material-moving/heavy-and-tractor-trailer-truck-drivers.htm",
     "metaClass": "commerce",
-    "playRate": 22,
-    "livablePct": 15
+    "playRate": 95,
+    "livablePct": 70
   },
   {
     "slug": "locksmith",
@@ -1032,17 +1032,17 @@
     "whatYouDo": "Sell software to businesses: prospect, demo, close. SDR → Account Executive → Enterprise AE. Pay is base + uncapped commission (OTE).",
     "median": 104920,
     "incomeRangeNote": "BLS technical-sales median $99,710; tech AE on-target earnings commonly $150K-$400K with commission (self-reported).",
-    "frequency": "~1.9M technical & wholesale sales reps (BLS)",
-    "frequencyCount": 1900000,
+    "frequency": "~284,800 employed (BLS OEWS, 2025)",
+    "frequencyCount": 284800,
     "growthPct": 3,
     "barrierToEntry": "No degree required; weeks of ramp; learn the product + a sales process.",
     "timeToFirstIncomeYears": 0.25,
     "capitalTier": "none",
-    "dataQuality": "partial",
+    "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/sales/wholesale-and-manufacturing-sales-representatives.htm",
     "metaClass": "career",
-    "playRate": 28,
-    "livablePct": 40
+    "playRate": 71,
+    "livablePct": 92
   },
   {
     "slug": "big-tech-swe-equity",
@@ -1070,8 +1070,8 @@
     "whatYouDo": "Help people buy and sell property for commission. License in weeks; income is commission and highly bimodal, top producers and team leads scale far above the median.",
     "median": 52830,
     "incomeRangeNote": "BLS median $56,620 (agents); brokers ~$63K; top producers six-to-seven figures while many earn little.",
-    "frequency": "~440,000 (BLS)",
-    "frequencyCount": 440000,
+    "frequency": "~193,370 employed (BLS OEWS, 2025)",
+    "frequencyCount": 193370,
     "growthPct": 2,
     "barrierToEntry": "Weeks of licensing; ~$1-2K start; near-zero capital.",
     "timeToFirstIncomeYears": 0.25,
@@ -1079,8 +1079,8 @@
     "dataQuality": "verifiable",
     "sourceUrl": "https://www.bls.gov/ooh/sales/real-estate-brokers-and-sales-agents.htm",
     "metaClass": "service",
-    "playRate": 28,
-    "livablePct": 45
+    "playRate": 66,
+    "livablePct": 56
   },
   {
     "slug": "recruiter-staffing-agency",

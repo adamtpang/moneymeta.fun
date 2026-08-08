@@ -83,12 +83,20 @@ interface SeedDeck {
   metaClass?: MetaClass | string;
   /**
    * Relative play rate 0-100: how crowded the ladder is (VS "popularity").
-   * Not a scientific census; editorial estimate for meta context.
+   * For the 23 SOC-mapped decks in scripts/bls-refresh.mjs, this is derived
+   * from real BLS OEWS national employment counts on a fixed log scale, not
+   * a guess. Every other deck is still an editorial estimate for meta
+   * context, not a scientific census, until it gets a real source.
    */
   playRate?: number;
   /**
    * Estimated % of players who clear a livable full-time income (VS "win rate").
-   * Brutal and uncertain for internet decks; higher for BLS-employed paths.
+   * For the 23 SOC-mapped decks in scripts/bls-refresh.mjs, this is derived
+   * from real BLS OEWS wage percentiles (10/25/50/75/90) against a $50,000/yr
+   * livable-wage threshold, see that file's header for the exact method and
+   * the threshold's source. Every other deck, mostly internet/gig/owner-
+   * operator paths with no BLS equivalent, is still an editorial estimate,
+   * brutal and uncertain by design rather than dressed up as research.
    */
   livablePct?: number;
 }
