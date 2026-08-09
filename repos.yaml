@@ -1,0 +1,30 @@
+# repos.yaml v0 — see github.com/adamtpang/repo-protocol
+repo: moneymeta.fun
+is: The Vicious Syndicate of moneymaking, every income path ranked S to D from public, verifiable data.
+url: https://moneymeta.fun
+cluster: wealth-mentors
+
+provides:
+  - id: rank-ladder
+    what: the shared money vocabulary (Bronze to Legend, income to net worth), pure functions, duplicated verbatim into any repo that needs to speak the same language
+    at: lib/rank.ts
+  - id: deck-scoring
+    what: the two-lens meta score (start-now vs highest-ceiling), derived from BLS-anchored seed data
+    at: lib/income.ts
+  - id: weekly-report
+    what: the dated periodical issue (movers, The Pick, curation) built from the live board vs the last snapshot
+    at: app/report/page.tsx
+
+stack: [nextjs, typescript, tailwind]
+
+kin:
+  - repo: deathmoney.fyi
+    why: deathmoney is the burn/debt side of the same money OS; moneymeta is offense, deathmoney is defense, and they share lib/rank.ts as canon
+  - repo: themain.quest
+    why: themain.quest is the daily execution layer for the same money OS; the one move that matters most is often a moneymeta distribution task, tracked there instead of going untracked
+  - repo: summon.guide
+    why: summon.guide's wealth-themed legends (Rockefeller, Bezos, Musk, Walton, Munger, Franklin) are real people who lived the decisions moneymeta's income decks abstract into a score; a deck page could link out to the matching legend chat
+  - repo: skill.supply
+    why: shares the fleet footer and the same audience, someone ranking income paths is the same person deciding which job to take
+
+canon: lib/rank.ts (the shared money vocabulary, identical in moneymeta.fun and deathmoney.fyi)
