@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
-        <ReportMasthead />
+        <ReportMasthead titleAs="h1" />
 
         {/* Founding license */}
         <div className="mb-6">
