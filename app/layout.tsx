@@ -53,6 +53,15 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "moneymeta.fun",
+  url: "https://moneymeta.fun",
+  description:
+    "The Vicious Syndicate of moneymaking. Every way to make money ranked S to D by median income, growth, and how fast you can start. Public, verifiable data only.",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -61,6 +70,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${sans.variable} ${mono.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="atmosphere" aria-hidden />
         {children}
         <Analytics />
