@@ -1,0 +1,31 @@
+{
+  "week": "2026-08-14",
+  "baseline": "2026-08-06",
+  "title": "The money meta, week of 2026-08-14",
+  "deckCount": 90,
+  "sTierCount": 2,
+  "pick": {
+    "startNow": {
+      "slug": "big-tech-swe-equity",
+      "name": "Big-Tech SWE (equity comp)",
+      "score": 77,
+      "tier": "S",
+      "median": 220000
+    },
+    "ceiling": {
+      "slug": "dental-practice-owner",
+      "name": "Dental Practice Owner",
+      "score": 77,
+      "tier": "S",
+      "median": 258260
+    }
+  },
+  "breaker": {
+    "slug": "service-as-software",
+    "headline": "Meta Breaker: service-as-software"
+  },
+  "risers": [],
+  "fallers": [],
+  "newDecks": [],
+  "curation": "Board state, 2026-08-14: 90 decks scored, 2 in S tier under the start-now lens, baseline 2026-08-06.\n\nNo score moved since 2026-08-06. A flat week is a finding: the medians underneath this board only move when the data does, and this week the data held. Flat weeks are what an honest baseline looks like; distrust boards that wobble weekly on vibes.\n\nThe Pick, start now: Big-Tech SWE (equity comp) at 77 (S tier, $220k median). The start-now lens rewards reachability, income over barrier over time, so the top of this ladder is the best deck to open with today on little capital, not the biggest terminal number.\n\nThe Pick, highest ceiling: Dental Practice Owner at 77 (S tier, $258k median). Ceiling weighs terminal pay and trajectory, which is why decade-moat decks rise here that the start-now lens correctly discounts.\n\nMeta Breaker on the current report: service-as-software (service-as-software).\n\nMethod note: occupation medians trace to BLS OEWS, internet decks carry the brutal survivorship-adjusted median and a data-confidence badge. Movement is measured against the committed 2026-08-06 snapshot, never restated."
+}
