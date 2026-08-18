@@ -33,7 +33,13 @@ export function ReportMasthead({ titleAs = "a" }: { titleAs?: "h1" | "a" }) {
         The best money deck to play in life, ranked. Every way to make money scored
         S to D by the data, so you know exactly where to walk.
       </p>
-      <div className="mt-4 h-px w-full bg-gradient-to-r from-primary/40 via-border to-transparent" />
+      <div className="mt-4 flex items-center justify-between gap-3 border-t border-border/80 pt-3">
+        <nav className="flex items-center gap-1" aria-label="Primary navigation">
+          <a href="/" className="rounded px-2 py-1 font-mono text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">Money decks</a>
+          <a href="/capital" className="rounded px-2 py-1 font-mono text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">Capital map</a>
+        </nav>
+        <span className="hidden font-mono text-micro uppercase tracking-[0.08em] text-muted-foreground sm:block">data report</span>
+      </div>
     </header>
   );
 }
