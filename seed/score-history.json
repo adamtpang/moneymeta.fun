@@ -637,15 +637,15 @@
       "startNow": 66,
       "ceiling": 46,
       "median": 148080,
-      "playRate": 18,
+      "playRate": 39,
       "livablePct": 99
     },
     "nuclear-reactor-operators": {
       "startNow": 60,
       "ceiling": 38,
-      "median": 122610,
-      "playRate": 12,
-      "livablePct": 95
+      "median": 122890,
+      "playRate": 20,
+      "livablePct": 99
     },
     "harbor-pilot": {
       "startNow": 48,
@@ -676,11 +676,11 @@
       "livablePct": 20
     },
     "sales-engineer": {
-      "startNow": 61,
-      "ceiling": 39,
-      "median": 121520,
-      "playRate": 40,
-      "livablePct": 95
+      "startNow": 63,
+      "ceiling": 40,
+      "median": 124900,
+      "playRate": 49,
+      "livablePct": 99
     },
     "ai-implementation-consultant": {
       "startNow": 65,

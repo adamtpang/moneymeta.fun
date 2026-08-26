@@ -3,14 +3,14 @@
 Numbers only. A zero is data and gets logged as a zero. No gate passes without a
 number or a dated receipt.
 
-## Baseline (as of 2026-08-06, from live Stripe, Vercel, and HTTP reads)
+## Baseline (latest verified value by metric)
 
 | Metric | Value | Source | As-of |
 | --- | --- | --- | --- |
 | Revenue (stranger $) | **$0** on the $29 founding license, ever | Stripe API | 2026-08-06 |
 | MRR | **$0** (lifetime license is structurally non-recurring by design) | Stripe API | 2026-08-06 |
 | Active customers | **0** | Stripe API | 2026-08-06 |
-| Weekly report issues shipped | **2** (2026-08-01, 2026-08-06) | seed/reports/, this file | 2026-08-06 |
+| Weekly report issues shipped | **3** (2026-08-01, 2026-08-06, 2026-08-14) | seed/reports/, live HTTP verification | 2026-08-26 |
 | Weekly active usage | Unknown before 2026-08-26. Collection is now enabled; first measured window is pending | Vercel CLI | 2026-08-26 |
 | Time to first value | Instant, the board renders with no signup | product | 2026-08-06 |
 | Top risk | Zero distribution. Traffic is the experiment; the report and the launch post are the instrument, and neither has reached a stranger yet | this file | 2026-08-06 |
@@ -94,6 +94,8 @@ created yet.
 | 2026-08-26 | Scoring v2, issue 3, and the Capital Map deployed together | issue 3 committed but not live; local and remote branches diverged | reconciled commit `cb19c81` deployed to production; `/`, `/report/2026-08-14`, `/capital`, and `/deck/air-traffic-controllers` all returned HTTP 200 with expected content; no Vercel runtime errors in the verification window | deploy `dpl_3fL3XLLSVE2U2x5aYnbE8BcWJNbY`, Ready |
 | 2026-08-26 | Post-deploy scoring baseline refreshed | v1 cadence baseline and formula rebase | `asOf: 2026-08-26`, `formulaVersion: 2`, 98 current scores; future movement compares like with like | seed/score-history.json |
 | 2026-08-26 | Vercel Web Analytics enabled on the production project | client component present but analytics product not provisioned | Vercel CLI returned `enabled: true` for project `prj_pxbXCiitdt39fVNNlgwLP7Fj8NCB`; first measured window pending | `vercel project web-analytics --format json` |
+| 2026-08-26 | Scoring v2 verification fixes deployed | report builder could publish false movers after a formula change; integer ties distorted tier sizes; README and one launch citation were stale | report movement now rebases by formula version; both lenses have exact `10/15/29/29/15` S/A/B/C/D counts; 26 BLS-mapped decks carry direct OEWS series links; `/`, issue 3, `/capital`, and the ATC deck all returned HTTP 200 with corrected content | commit `62a8d81`, deploy `dpl_5fGnHs3gJt1PeRGn9dp32vXMeKfn`, Ready |
+| 2026-08-26 | Corrected post-deploy baseline snapshot | BLS refresh changed ATC popularity plus nuclear-operator and sales-engineer inputs | 98 scores stamped at formula v2 after the corrected deployment; sales engineer is now 63/40 and nuclear operator 60/38 | seed/score-history.json |
 
 ## What changes the zero
 
