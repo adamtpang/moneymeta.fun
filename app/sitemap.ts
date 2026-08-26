@@ -1,5 +1,11 @@
 import type { MetadataRoute } from 'next'
 const BASE = 'https://moneymeta.fun'
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: BASE, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 }]
+  const lastModified = new Date()
+  return [
+    { url: BASE, lastModified, changeFrequency: 'weekly', priority: 1 },
+    { url: `${BASE}/capital`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${BASE}/solopreneurs`, lastModified, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/report`, lastModified, changeFrequency: 'weekly', priority: 0.7 },
+  ]
 }

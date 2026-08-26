@@ -15,6 +15,13 @@
 > `/income` and `/career` 301-redirect to `/`. `/sprint` is a standalone offer
 > page (the AI Build Sprint cash floor), not a board. No database is used; the
 > board renders directly from committed JSON.
+>
+> **Added 2026-08-26:** `/solopreneurs` is the source-linked Solo Operator
+> Index. It ranks nine current and historic one-person businesses using a
+> transparent 60% revenue scale + 20% evidence + 10% solo purity + 10% duration
+> score from `seed/solopreneurs.json` and `lib/solopreneurs.ts`. Exits,
+> cumulative revenue, and game unit sales live on a separate record board so
+> unlike metrics do not distort the annual-revenue ranking.
 
 ---
 

@@ -1,0 +1,170 @@
+{
+  "asOf": "2026-08-26",
+  "note": "The index uses the highest dated annual revenue or run rate found while the business still matched its stated solo operating model. Revenue is gross, not owner earnings, unless a source explicitly says otherwise.",
+  "operators": [
+    {
+      "slug": "gary-brewer",
+      "name": "Gary Brewer",
+      "business": "BuiltWith",
+      "category": "Data SaaS",
+      "annualRevenueUsd": 14000000,
+      "metricLabel": "$14M+ annual revenue",
+      "metricYear": 2022,
+      "metricNote": "Widely reported estimate. The cited profile describes one full-time operator plus an equity-only adviser and a blog contractor.",
+      "evidence": "reported_estimate",
+      "soloStatus": "effectively_solo",
+      "soloYears": 15,
+      "sourceUrl": "https://www.colinkeeley.com/blog/the-story-of-builtwith-1-employee-14m-arr"
+    },
+    {
+      "slug": "markus-frind",
+      "name": "Markus Frind",
+      "business": "Plenty of Fish",
+      "category": "Marketplace",
+      "annualRevenueUsd": 10800000,
+      "metricLabel": "$10.8M annualized",
+      "metricYear": 2006,
+      "metricNote": "Annualized from a founder-posted $900K month while Plenty of Fish had one employee. Google confirmed the underlying AdSense check was real.",
+      "evidence": "corroborated",
+      "soloStatus": "solo_at_metric",
+      "soloYears": 3,
+      "sourceUrl": "https://www.forbes.com/sites/kellyclay/2012/08/23/how-one-man-made-a-million-babies-with-free-online-dating/"
+    },
+    {
+      "slug": "dan-koe",
+      "name": "Dan Koe",
+      "business": "Koe Letter and courses",
+      "category": "Creator education",
+      "annualRevenueUsd": 3500000,
+      "metricLabel": "$3.5M annual revenue",
+      "metricYear": 2023,
+      "metricNote": "Founder-disclosed one-person business figure. Koe later wrote that he had added a small team, so the index caps him at this solo-era claim.",
+      "evidence": "founder_disclosed",
+      "soloStatus": "solo_at_metric",
+      "soloYears": 3,
+      "sourceUrl": "https://thedankoe.com/letters/successful-people-dont-ask-for-advice-why-99-of-people-fail/"
+    },
+    {
+      "slug": "pieter-levels",
+      "name": "Pieter Levels",
+      "business": "Nomad List, Remote OK, Photo AI",
+      "category": "Product portfolio",
+      "annualRevenueUsd": 3100000,
+      "metricLabel": "$3.1M annual revenue",
+      "metricYear": 2025,
+      "metricNote": "Confirmed by Levels during Stripe cofounder John Collison's interview. The products were described as solo productions.",
+      "evidence": "corroborated",
+      "soloStatus": "current_solo",
+      "soloYears": 11,
+      "sourceUrl": "https://levels.io/stripe-cheeky-pint-john-collison"
+    },
+    {
+      "slug": "brett-williams",
+      "name": "Brett Williams",
+      "business": "Designjoy",
+      "category": "Productized service",
+      "annualRevenueUsd": 3100000,
+      "metricLabel": "$3.1M annual revenue",
+      "metricYear": 2024,
+      "metricNote": "Third-party profile based on founder-published milestones. Designjoy's own site says Brett remains the only designer with no outsourcing.",
+      "evidence": "reported_estimate",
+      "soloStatus": "current_solo",
+      "soloYears": 7,
+      "sourceUrl": "https://yespress.io/brett-williams"
+    },
+    {
+      "slug": "justin-welsh",
+      "name": "Justin Welsh",
+      "business": "The Saturday Solopreneur",
+      "category": "Creator education",
+      "annualRevenueUsd": 2834000,
+      "metricLabel": "$2.834M annual revenue",
+      "metricYear": 2025,
+      "metricNote": "Founder-disclosed calendar-year revenue with a claimed 91% margin. The figure is public but not independently audited.",
+      "evidence": "founder_disclosed",
+      "soloStatus": "current_solo",
+      "soloYears": 6,
+      "sourceUrl": "https://www.linkedin.com/posts/justinwelsh_2025-was-about-life-first-business-second-activity-7412474769058643968-SW_c"
+    },
+    {
+      "slug": "aj-carrd",
+      "name": "AJ",
+      "business": "Carrd",
+      "category": "SaaS",
+      "annualRevenueUsd": 1000000,
+      "metricLabel": "$1M+ ARR",
+      "metricYear": 2021,
+      "metricNote": "Founder-disclosed ARR. Carrd had a two-person core at the milestone: AJ on product and development, Doni on operations and business.",
+      "evidence": "founder_disclosed",
+      "soloStatus": "effectively_solo",
+      "soloYears": 6,
+      "sourceUrl": "https://www.reddit.com/r/SaaS/comments/pnfzgw/hi_i_accidentally_bootstrapped_carrd_to_1m_arr_3/"
+    },
+    {
+      "slug": "damon-chen",
+      "name": "Damon Chen",
+      "business": "Testimonial.to",
+      "category": "SaaS",
+      "annualRevenueUsd": 400000,
+      "metricLabel": "$400K ARR",
+      "metricYear": 2022,
+      "metricNote": "Founder-disclosed milestone explicitly described as the end of his solo journey before growing to a team of two.",
+      "evidence": "founder_disclosed",
+      "soloStatus": "solo_at_metric",
+      "soloYears": 2,
+      "sourceUrl": "https://www.linkedin.com/posts/damengchen_400k-arr-for-testimonialto-such-an-amazing-activity-6988238879250165760-4Xp6"
+    },
+    {
+      "slug": "jon-yongfook",
+      "name": "Jon Yongfook",
+      "business": "Bannerbear",
+      "category": "SaaS",
+      "annualRevenueUsd": 125460,
+      "metricLabel": "$125K annualized",
+      "metricYear": 2020,
+      "metricNote": "Annualized from Bannerbear's founder-published $10,455 MRR milestone while Yongfook was still operating alone. Later team revenue is excluded.",
+      "evidence": "founder_disclosed",
+      "soloStatus": "solo_at_metric",
+      "soloYears": 1,
+      "sourceUrl": "https://www.bannerbear.com/journey-to-10k-mrr/"
+    }
+  ],
+  "recordBook": [
+    {
+      "label": "Largest solo-origin exit",
+      "name": "Markus Frind",
+      "business": "Plenty of Fish",
+      "metric": "$575M sale",
+      "asOf": "2015",
+      "note": "The company had hired by the sale, so the exit is a record-book outcome rather than a solo revenue input.",
+      "sourceUrl": "https://www.institutionalinvestor.com/article/2bsva6bnr65v9iyz5ayv4/portfolio/iac-looks-for-love-in-plentyoffish"
+    },
+    {
+      "label": "Largest solo-created game",
+      "name": "Eric Barone",
+      "business": "Stardew Valley",
+      "metric": "41M copies",
+      "asOf": "Dec 2024",
+      "note": "Barone created the original game alone for four years. A small update team arrived after release.",
+      "sourceUrl": "https://www.stardewvalley.net/press/"
+    },
+    {
+      "label": "Multi-stream portfolio",
+      "name": "Daniel Vassallo",
+      "business": "Small Bets and digital products",
+      "metric": "$1M cumulative",
+      "asOf": "Jul 2022",
+      "note": "Founder-disclosed total across three years and nine income streams, not one year's revenue.",
+      "sourceUrl": "https://www.linkedin.com/posts/danielvassallo_in-july-i-hit-1000000-in-revenue-3yrs-activity-6964251133733191680-WwEe"
+    },
+    {
+      "label": "Template business milestone",
+      "name": "Easlo",
+      "business": "Notion templates",
+      "metric": "$500K cumulative",
+      "asOf": "Mar 2023",
+      "note": "Founder-disclosed lifetime revenue milestone, kept outside the annual revenue ranking.",
+      "sourceUrl": "https://grizzly-echo-a32.notion.site/This-22-year-old-turns-Notion-templates-into-a-thriving-business-48508d92634d476e91b966c6a956d41c"
+    }
+  ]
+}

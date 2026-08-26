@@ -37,6 +37,7 @@ export function ReportMasthead({ titleAs = "a" }: { titleAs?: "h1" | "a" }) {
         <nav className="flex items-center gap-1" aria-label="Primary navigation">
           <a href="/" className="rounded px-2 py-1 font-mono text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">Money decks</a>
           <a href="/capital" className="rounded px-2 py-1 font-mono text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">Capital map</a>
+          <a href="/solopreneurs" className="rounded px-2 py-1 font-mono text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">Solo index</a>
         </nav>
         <span className="hidden font-mono text-micro uppercase tracking-[0.08em] text-muted-foreground sm:block">data report</span>
       </div>
