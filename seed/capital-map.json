@@ -1,0 +1,33 @@
+{
+  "asOf": "2026-08-17",
+  "note": "Launch snapshot. Values are rounded USD estimates captured for the initial static board; open a card to inspect its public source. Country entries use nominal GDP rather than market capitalization.",
+  "vehicles": [
+    { "slug": "bitcoin", "name": "Bitcoin", "universe": "crypto", "metricLabel": "Market cap", "sourceUrl": "https://coinmarketcap.com/currencies/bitcoin/", "priorValue": 2100000000000, "latestValue": 2350000000000 },
+    { "slug": "ethereum", "name": "Ethereum", "universe": "crypto", "metricLabel": "Market cap", "sourceUrl": "https://coinmarketcap.com/currencies/ethereum/", "priorValue": 480000000000, "latestValue": 510000000000 },
+    { "slug": "tether", "name": "Tether", "universe": "crypto", "metricLabel": "Market cap", "sourceUrl": "https://coinmarketcap.com/currencies/tether/", "priorValue": 157000000000, "latestValue": 166000000000 },
+    { "slug": "bnb", "name": "BNB", "universe": "crypto", "metricLabel": "Market cap", "sourceUrl": "https://coinmarketcap.com/currencies/bnb/", "priorValue": 91000000000, "latestValue": 98000000000 },
+    { "slug": "solana", "name": "Solana", "universe": "crypto", "metricLabel": "Market cap", "sourceUrl": "https://coinmarketcap.com/currencies/solana/", "priorValue": 79000000000, "latestValue": 85000000000 },
+
+    { "slug": "nvidia", "name": "NVIDIA", "universe": "company", "metricLabel": "Market cap", "sourceUrl": "https://companiesmarketcap.com/nvidia/marketcap/", "priorValue": 4250000000000, "latestValue": 4450000000000 },
+    { "slug": "apple", "name": "Apple", "universe": "company", "metricLabel": "Market cap", "sourceUrl": "https://companiesmarketcap.com/apple/marketcap/", "priorValue": 3150000000000, "latestValue": 3400000000000 },
+    { "slug": "microsoft", "name": "Microsoft", "universe": "company", "metricLabel": "Market cap", "sourceUrl": "https://companiesmarketcap.com/microsoft/marketcap/", "priorValue": 3650000000000, "latestValue": 3800000000000 },
+    { "slug": "alphabet", "name": "Alphabet", "universe": "company", "metricLabel": "Market cap", "sourceUrl": "https://companiesmarketcap.com/alphabet-google/marketcap/", "priorValue": 2050000000000, "latestValue": 2200000000000 },
+    { "slug": "saudi-aramco", "name": "Saudi Aramco", "universe": "company", "metricLabel": "Market cap", "sourceUrl": "https://companiesmarketcap.com/saudi-aramco/marketcap/", "priorValue": 1600000000000, "latestValue": 1550000000000 },
+    { "slug": "amazon", "name": "Amazon", "universe": "company", "metricLabel": "Market cap", "sourceUrl": "https://companiesmarketcap.com/amazon/marketcap/", "priorValue": 2300000000000, "latestValue": 2400000000000 },
+
+    { "slug": "elon-musk", "name": "Elon Musk", "universe": "person", "metricLabel": "Net worth", "sourceUrl": "https://www.forbes.com/real-time-billionaires/", "priorValue": 390000000000, "latestValue": 430000000000 },
+    { "slug": "larry-ellison", "name": "Larry Ellison", "universe": "person", "metricLabel": "Net worth", "sourceUrl": "https://www.forbes.com/real-time-billionaires/", "priorValue": 295000000000, "latestValue": 310000000000 },
+    { "slug": "mark-zuckerberg", "name": "Mark Zuckerberg", "universe": "person", "metricLabel": "Net worth", "sourceUrl": "https://www.forbes.com/real-time-billionaires/", "priorValue": 240000000000, "latestValue": 255000000000 },
+    { "slug": "jeff-bezos", "name": "Jeff Bezos", "universe": "person", "metricLabel": "Net worth", "sourceUrl": "https://www.forbes.com/real-time-billionaires/", "priorValue": 225000000000, "latestValue": 235000000000 },
+    { "slug": "warren-buffett", "name": "Warren Buffett", "universe": "person", "metricLabel": "Net worth", "sourceUrl": "https://www.forbes.com/real-time-billionaires/", "priorValue": 145000000000, "latestValue": 150000000000 },
+    { "slug": "bernard-arnault", "name": "Bernard Arnault", "universe": "person", "metricLabel": "Net worth", "sourceUrl": "https://www.forbes.com/real-time-billionaires/", "priorValue": 170000000000, "latestValue": 165000000000 },
+
+    { "slug": "united-states", "name": "United States", "universe": "country", "metricLabel": "Nominal GDP", "sourceUrl": "https://worldpopulationreview.com/countries/by-gdp", "priorValue": 28750000000000, "latestValue": 30000000000000 },
+    { "slug": "china", "name": "China", "universe": "country", "metricLabel": "Nominal GDP", "sourceUrl": "https://worldpopulationreview.com/countries/by-gdp", "priorValue": 18500000000000, "latestValue": 19200000000000 },
+    { "slug": "germany", "name": "Germany", "universe": "country", "metricLabel": "Nominal GDP", "sourceUrl": "https://worldpopulationreview.com/countries/by-gdp", "priorValue": 4600000000000, "latestValue": 4900000000000 },
+    { "slug": "japan", "name": "Japan", "universe": "country", "metricLabel": "Nominal GDP", "sourceUrl": "https://worldpopulationreview.com/countries/by-gdp", "priorValue": 4200000000000, "latestValue": 4300000000000 },
+    { "slug": "india", "name": "India", "universe": "country", "metricLabel": "Nominal GDP", "sourceUrl": "https://worldpopulationreview.com/countries/by-gdp", "priorValue": 3900000000000, "latestValue": 4200000000000 },
+    { "slug": "united-kingdom", "name": "United Kingdom", "universe": "country", "metricLabel": "Nominal GDP", "sourceUrl": "https://worldpopulationreview.com/countries/by-gdp", "priorValue": 3600000000000, "latestValue": 3800000000000 },
+    { "slug": "france", "name": "France", "universe": "country", "metricLabel": "Nominal GDP", "sourceUrl": "https://worldpopulationreview.com/countries/by-gdp", "priorValue": 3100000000000, "latestValue": 3200000000000 }
+  ]
+}
