@@ -12,7 +12,7 @@
  *                 double-count the same risk the startNow lens already prices.
  *
  * Why win rate entered the score (2026-08-23): it was in the seed data,
- * BLS-derived for the 23 SOC-mapped decks, rendered on every card, and absent
+ * BLS-derived for the 26 SOC-mapped decks, rendered on every card, and absent
  * from scoreFor() entirely. The board was ranking decks by payoff alone, which
  * put a 12%-win-rate franchise in S tier next to a 99%-win-rate profession.
  * That is the Hearthstone equivalent of ranking decks by average damage dealt.
@@ -137,7 +137,7 @@ interface SeedDeck {
   metaClass?: MetaClass | string;
   /**
    * Relative play rate 0-100: how crowded the ladder is (VS "popularity").
-   * For the 23 SOC-mapped decks in scripts/bls-refresh.mjs, this is derived
+   * For the 26 SOC-mapped decks in scripts/bls-refresh.mjs, this is derived
    * from real BLS OEWS national employment counts on a fixed log scale, not
    * a guess. Every other deck is still an editorial estimate for meta
    * context, not a scientific census, until it gets a real source.
@@ -145,7 +145,7 @@ interface SeedDeck {
   playRate?: number;
   /**
    * Estimated % of players who clear a livable full-time income (VS "win rate").
-   * For the 23 SOC-mapped decks in scripts/bls-refresh.mjs, this is derived
+   * For the 26 SOC-mapped decks in scripts/bls-refresh.mjs, this is derived
    * from real BLS OEWS wage percentiles (10/25/50/75/90) against a $50,000/yr
    * livable-wage threshold, see that file's header for the exact method and
    * the threshold's source. Every other deck, mostly internet/gig/owner-
@@ -224,26 +224,36 @@ function reachScore(years: number, capital: CapitalTier): number {
 }
 
 /**
- * Assign tiers by rank across the whole board under one lens. Ties are handled
- * by score, not by array position, so two decks on the same score always land
- * in the same tier no matter how the seed happens to be ordered.
+ * Assign exact percentile bands by rank across the whole board under one lens.
+ * Ranking uses the unrounded score, so display rounding does not collapse a
+ * large set of distinct decks onto one tier boundary. Exact raw-score ties are
+ * broken by slug, a stable policy that cannot drift with seed order.
  */
-function tiersByRank(scores: number[]): (score: number) => Tier {
-  const sorted = [...scores].sort((a, b) => b - a);
-  const n = sorted.length;
-  if (n === 0) return () => "D";
-  const cutAt = (share: number) => sorted[Math.max(0, Math.round(n * share) - 1)];
-  const sCut = Math.max(cutAt(TIER_BANDS.S), TIER_FLOOR_S);
-  const aCut = cutAt(TIER_BANDS.A);
-  const bCut = cutAt(TIER_BANDS.B);
-  const cCut = cutAt(TIER_BANDS.C);
-  return (score: number): Tier => {
-    if (score >= sCut) return "S";
-    if (score >= aCut) return "A";
-    if (score >= bCut) return "B";
-    if (score >= cCut) return "C";
-    return "D";
-  };
+function tiersByRank(all: SeedDeck[], lens: Lens): Map<string, Tier> {
+  const ranked = all
+    .map((deck) => ({ deck, rawScore: rawScoreFor(deck, lens) }))
+    .sort((a, b) => b.rawScore - a.rawScore || a.deck.slug.localeCompare(b.deck.slug));
+  const n = ranked.length;
+  const endS = Math.round(n * TIER_BANDS.S);
+  const endA = Math.round(n * TIER_BANDS.A);
+  const endB = Math.round(n * TIER_BANDS.B);
+  const endC = Math.round(n * TIER_BANDS.C);
+  const result = new Map<string, Tier>();
+  ranked.forEach(({ deck, rawScore }, index) => {
+    const score = Math.round(rawScore);
+    const tier: Tier =
+      index < endS && score >= TIER_FLOOR_S
+        ? "S"
+        : index < endA
+          ? "A"
+          : index < endB
+            ? "B"
+            : index < endC
+              ? "C"
+              : "D";
+    result.set(deck.slug, tier);
+  });
+  return result;
 }
 
 /**
@@ -268,22 +278,26 @@ function expectedPayoff(deck: SeedDeck): number {
   return incomeScore(deck.median) * winRate(deck.livablePct);
 }
 
-export function scoreFor(deck: SeedDeck, lens: Lens): number {
+function rawScoreFor(deck: SeedDeck, lens: Lens): number {
   const gro = growthScore(deck.growthPct);
   if (lens === "ceiling") {
     // Conditional on winning by definition, so no win-rate discount here.
     const w = LENS_WEIGHTS.ceiling;
-    return Math.round(w.income * incomeScore(deck.median) + w.growth * gro);
+    return w.income * incomeScore(deck.median) + w.growth * gro;
   }
   const w = LENS_WEIGHTS.startNow;
   const reach = reachScore(deck.timeToFirstIncomeYears, deck.capitalTier);
-  return Math.round(w.income * expectedPayoff(deck) + w.growth * gro + w.reach * reach);
+  return w.income * expectedPayoff(deck) + w.growth * gro + w.reach * reach;
+}
+
+export function scoreFor(deck: SeedDeck, lens: Lens): number {
+  return Math.round(rawScoreFor(deck, lens));
 }
 
 function toView(
   deck: SeedDeck,
-  startNowTierOf: (score: number) => Tier,
-  ceilingTierOf: (score: number) => Tier,
+  startNowTiers: Map<string, Tier>,
+  ceilingTiers: Map<string, Tier>,
 ): IncomeDeckView {
   const startNowScore = scoreFor(deck, "startNow");
   const ceilingScore = scoreFor(deck, "ceiling");
@@ -309,9 +323,9 @@ function toView(
     playRate: deck.playRate ?? 0,
     livablePct: deck.livablePct ?? 0,
     startNowScore,
-    startNowTier: startNowTierOf(startNowScore),
+    startNowTier: startNowTiers.get(deck.slug) ?? "D",
     ceilingScore,
-    ceilingTier: ceilingTierOf(ceilingScore),
+    ceilingTier: ceilingTiers.get(deck.slug) ?? "D",
     exemplars,
     movementStartNow,
     movementCeiling,
@@ -346,9 +360,9 @@ export function getIncomeDecks(): IncomeDeckView[] {
   const all = decks as SeedDeck[];
   // Tiers are relative, so both lenses need the full score distribution before
   // any single deck can be graded. Score the board first, then band it.
-  const startNowTierOf = tiersByRank(all.map((d) => scoreFor(d, "startNow")));
-  const ceilingTierOf = tiersByRank(all.map((d) => scoreFor(d, "ceiling")));
-  return all.map((d) => toView(d, startNowTierOf, ceilingTierOf));
+  const startNowTiers = tiersByRank(all, "startNow");
+  const ceilingTiers = tiersByRank(all, "ceiling");
+  return all.map((d) => toView(d, startNowTiers, ceilingTiers));
 }
 
 /** Group decks into S→D buckets for one lens, sorted by that lens's score. */
@@ -361,7 +375,7 @@ export function groupByLens(
   const buckets: Record<Tier, IncomeDeckView[]> = { S: [], A: [], B: [], C: [], D: [] };
   for (const d of list) buckets[d[tierKey]].push(d);
   for (const t of Object.keys(buckets) as Tier[]) {
-    buckets[t].sort((a, b) => b[scoreKey] - a[scoreKey]);
+    buckets[t].sort((a, b) => b[scoreKey] - a[scoreKey] || a.slug.localeCompare(b.slug));
   }
   return buckets;
 }

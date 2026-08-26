@@ -68,8 +68,8 @@ Log zero as zero. Do not infer old traffic because collection only began on
 | Claim | Evidence |
 | --- | --- |
 | 98 decks | `seed/income-decks.json` count, verified 2026-08-26 |
-| Airline pilots: Start now 67, ceiling 74, $232,140 median, 99% livable proxy, 4% growth | Current `lib/income.ts` output and the deck's [BLS source](https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm) |
-| Air traffic controllers: Start now 66, $148,080 median, 99% livable proxy | Current `lib/income.ts` output and the deck's [BLS source](https://www.bls.gov/ooh/transportation-and-material-moving/air-traffic-controllers.htm) |
+| Airline pilots: Start now 67, ceiling 74, $232,140 median, 99% livable proxy, 4% growth | Current `lib/income.ts` output and the exact [BLS OEWS median-wage series](https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000053201113) |
+| Air traffic controllers: Start now 66, $148,080 median, 99% livable proxy | Current `lib/income.ts` output and the exact [BLS OEWS median-wage series](https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000053202113) |
 | Forward deployed engineer: Start now 67, ceiling 100, $385,000 estimate, 20% livable proxy, 35% growth proxy | Current `lib/income.ts` output. The deck is visibly labeled `partial`, not BLS-verifiable, and links to its source |
 
 Do not call the FDE compensation estimate a verified median. Do not claim

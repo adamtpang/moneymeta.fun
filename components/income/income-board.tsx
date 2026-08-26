@@ -25,7 +25,7 @@ const LENS_COPY: Record<Lens, { label: string; icon: typeof Rocket; blurb: strin
     label: "Best to start now",
     icon: Rocket,
     blurb:
-      "Ranked by income over barrier over time, what a high-agency person with little capital can reach fastest.",
+      "Ranked by win-rate-adjusted payoff, growth, and reachability: the strongest path to open today.",
   },
   ceiling: {
     label: "Highest ceiling",
@@ -49,7 +49,9 @@ export function IncomeBoard({
   const grouped = useMemo(() => {
     const b: Record<Tier, IncomeDeckView[]> = { S: [], A: [], B: [], C: [], D: [] };
     for (const d of decks) b[d[tierKey]].push(d);
-    for (const t of TIER_ORDER) b[t].sort((a, c) => c[scoreKey] - a[scoreKey]);
+    for (const t of TIER_ORDER) {
+      b[t].sort((a, c) => c[scoreKey] - a[scoreKey] || a.slug.localeCompare(c.slug));
+    }
     return b;
   }, [decks, scoreKey, tierKey]);
 

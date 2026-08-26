@@ -18,7 +18,7 @@
  * Docs: https://www.bls.gov/developers/
  * OEWS format: https://github.com/govex/bls-oews-api-tutorial
  *
- * What "real" means here: for the 23 SOC-mapped decks below, playRate and
+ * What "real" means here: for the 26 SOC-mapped decks below, playRate and
  * livablePct stop being editorial estimates and become derived from actual
  * BLS OEWS employment counts and wage-percentile spread. Every other deck on
  * the board keeps its editorial estimate untouched, this script only ever
@@ -53,7 +53,7 @@ const PLAYRATE_EMP_MAX = 3000000;
 
 /** SOC with dash → series for national annual wage stats. */
 const SOC_MAP = [
-  // Added 2026-08-23 from the global low-barrier/high-pay research pass. Both
+  // Added 2026-08-23 from the global low-barrier/high-pay research pass. All
   // are real OEWS series, so median, playRate, livablePct and the percentiles
   // self-update on the next --apply run instead of staying at researched values.
   { slug: "air-traffic-controllers", soc: "53-2021", label: "Air Traffic Controllers" },
@@ -239,12 +239,12 @@ async function main() {
       if (p10 != null) deck.p10 = p10;
       if (p90 != null) deck.p90 = p90;
       if (deck.dataQuality !== "verifiable") deck.dataQuality = "verifiable";
-      if (!deck.sourceUrl?.includes("bls.gov")) deck.sourceUrl = "https://www.bls.gov/oes/";
+      deck.sourceUrl = `https://api.bls.gov/publicAPI/v2/timeseries/data/${seriesId(m.soc, DATATYPES.median)}`;
     }
   }
 
   console.log("");
-  console.log(`Would update ${updates.length} decks${apply ? " (APPLIED)" : " (dry-run)"}`);
+  console.log(apply ? `Updated ${updates.length} decks (APPLIED)` : `Would update ${updates.length} decks (dry-run)`);
   if (apply && updates.length) {
     fs.writeFileSync(decksPath, JSON.stringify(decks, null, 2) + "\n");
     console.log(`Wrote ${decksPath}`);

@@ -125,6 +125,9 @@ calibrated to the v1 distribution and never moved when v2's win-rate multiplier
 compressed the scale, which left S permanently empty and made "should S be 58 or
 63" unanswerable, because nothing anywhere in the repo said what S meant.
 Percentile bands self-correct on every formula change and seed refresh.
+They rank on the unrounded formula result and break exact ties by slug, then
+display the rounded score. This keeps the promised band sizes exact without
+making seed order an invisible input.
 
 The two lenses treat the odds differently on purpose. **startNow is expected
 value**: it answers "what happens if you start this today", so the chance of

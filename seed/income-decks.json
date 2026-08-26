@@ -24,7 +24,7 @@
     "category": "profession",
     "whatYouDo": "Fly scheduled passenger and cargo aircraft for airlines, manage flight systems, navigation, and crew. Seniority and aircraft type drive pay; major-carrier captains earn well above the median.",
     "median": 232140,
-    "incomeRangeNote": "BLS median $226,600 for airline pilots/copilots/flight engineers (May 2024); senior wide-body captains at majors exceed $400K. Commercial (non-airline) pilots are a separate, lower category (~$122,670 median).",
+    "incomeRangeNote": "BLS median $232,140 for airline pilots/copilots/flight engineers (May 2025; $226,600 in May 2024). Senior wide-body captains at majors exceed $400K. Commercial pilots are a separate, lower category.",
     "frequency": "~103,560 employed (BLS OEWS, 2025)",
     "frequencyCount": 103560,
     "growthPct": 4,
@@ -32,7 +32,7 @@
     "timeToFirstIncomeYears": 3,
     "capitalTier": "med",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000053201113",
     "metaClass": "career",
     "playRate": 58,
     "livablePct": 99
@@ -51,10 +51,12 @@
     "timeToFirstIncomeYears": 8,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/healthcare/dentists.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000029102113",
     "metaClass": "career",
     "playRate": 60,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 86250,
+    "p90": 319630
   },
   {
     "slug": "financial-managers",
@@ -70,10 +72,12 @@
     "timeToFirstIncomeYears": 7,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/management/financial-managers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000011303113",
     "metaClass": "career",
     "playRate": 84,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 94310,
+    "p90": 323270
   },
   {
     "slug": "lawyers",
@@ -89,10 +93,12 @@
     "timeToFirstIncomeYears": 7,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/legal/lawyers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000023101113",
     "metaClass": "career",
     "playRate": 83,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 78360,
+    "p90": 351600
   },
   {
     "slug": "ai-ml-engineers",
@@ -108,10 +114,12 @@
     "timeToFirstIncomeYears": 9,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000015122113",
     "metaClass": "software",
     "playRate": 45,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 82200,
+    "p90": 230630
   },
   {
     "slug": "petroleum-engineers",
@@ -120,17 +128,18 @@
     "whatYouDo": "Design and develop methods to extract oil and gas from below the earth, optimize drilling and recovery. Among the highest-paid engineering disciplines, concentrated in energy regions (TX, etc.).",
     "median": 144910,
     "incomeRangeNote": "BLS median $141,280 (May 2024); among the top-paying engineering fields. Pay tied to commodity cycles and operator vs. service-company roles.",
-    "frequency": "~18,060 employed (BLS OEWS, 2025)",
+    "frequency": "~18,060 employed (BLS OEWS, latest)",
     "frequencyCount": 18060,
     "growthPct": 1,
     "barrierToEntry": "Bachelor's in petroleum or related engineering; ~4 yrs; PE license for senior roles",
     "timeToFirstIncomeYears": 4,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/architecture-and-engineering/petroleum-engineers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000017217113",
     "metaClass": "career",
     "playRate": 36,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 81440
   },
   {
     "slug": "pharmacists",
@@ -146,10 +155,12 @@
     "timeToFirstIncomeYears": 8,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/healthcare/pharmacists.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000029105113",
     "metaClass": "career",
     "playRate": 72,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 99290,
+    "p90": 174230
   },
   {
     "slug": "aerospace-engineers",
@@ -165,7 +176,7 @@
     "timeToFirstIncomeYears": 4,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/architecture-and-engineering/aerospace-engineers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000017201113",
     "metaClass": "career",
     "playRate": 53,
     "livablePct": 99
@@ -184,10 +195,12 @@
     "timeToFirstIncomeYears": 7,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/healthcare/physician-assistants.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000029107113",
     "metaClass": "career",
     "playRate": 64,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 99380,
+    "p90": 190280
   },
   {
     "slug": "software-developers",
@@ -203,10 +216,12 @@
     "timeToFirstIncomeYears": 4,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000015125213",
     "metaClass": "career",
     "playRate": 93,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 82460,
+    "p90": 214670
   },
   {
     "slug": "nurse-practitioners",
@@ -222,10 +237,12 @@
     "timeToFirstIncomeYears": 8,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/healthcare/nurse-anesthetists-nurse-midwives-and-nurse-practitioners.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000029117113",
     "metaClass": "career",
     "playRate": 72,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 101340,
+    "p90": 174420
   },
   {
     "slug": "actuaries",
@@ -241,10 +258,12 @@
     "timeToFirstIncomeYears": 4,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/math/actuaries.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000015201113",
     "metaClass": "career",
     "playRate": 41,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 78570,
+    "p90": 215100
   },
   {
     "slug": "data-scientists",
@@ -260,10 +279,12 @@
     "timeToFirstIncomeYears": 6,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/math/data-scientists.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000015205113",
     "metaClass": "software",
     "playRate": 70,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 67240,
+    "p90": 199130
   },
   {
     "slug": "financial-investment-analysts",
@@ -279,10 +300,12 @@
     "timeToFirstIncomeYears": 4,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000013205113",
     "metaClass": "career",
     "playRate": 74,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 63720,
+    "p90": 180860
   },
   {
     "slug": "electrician",
@@ -298,10 +321,12 @@
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000047211113",
     "metaClass": "career",
     "playRate": 83,
-    "livablePct": 74
+    "livablePct": 74,
+    "p10": 42640,
+    "p90": 108510
   },
   {
     "slug": "plumber-pipefitter",
@@ -317,10 +342,12 @@
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000047215213",
     "metaClass": "career",
     "playRate": 77,
-    "livablePct": 75
+    "livablePct": 75,
+    "p10": 44150,
+    "p90": 108420
   },
   {
     "slug": "hvac-technician",
@@ -336,10 +363,12 @@
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/installation-maintenance-and-repair/heating-air-conditioning-and-refrigeration-mechanics-and-installers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000049902113",
     "metaClass": "career",
     "playRate": 75,
-    "livablePct": 72
+    "livablePct": 72,
+    "p10": 40050,
+    "p90": 95210
   },
   {
     "slug": "welder-fabricator",
@@ -355,10 +384,12 @@
     "timeToFirstIncomeYears": 5,
     "capitalTier": "med",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/production/welders-cutters-solderers-and-brazers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000051412113",
     "metaClass": "career",
     "playRate": 75,
-    "livablePct": 63
+    "livablePct": 63,
+    "p10": 39240,
+    "p90": 77530
   },
   {
     "slug": "elevator-escalator-installer",
@@ -412,10 +443,12 @@
     "timeToFirstIncomeYears": 3,
     "capitalTier": "med",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/management/construction-managers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000011902113",
     "metaClass": "commerce",
     "playRate": 74,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 69690,
+    "p90": 189440
   },
   {
     "slug": "dental-hygienist",
@@ -431,10 +464,12 @@
     "timeToFirstIncomeYears": 3,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/healthcare/dental-hygienists.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000029129213",
     "metaClass": "career",
     "playRate": 68,
-    "livablePct": 99
+    "livablePct": 99,
+    "p10": 74880,
+    "p90": 126050
   },
   {
     "slug": "commercial-driver-trucking-owner-operator",
@@ -450,10 +485,12 @@
     "timeToFirstIncomeYears": 2,
     "capitalTier": "high",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/transportation-and-material-moving/heavy-and-tractor-trailer-truck-drivers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000053303213",
     "metaClass": "commerce",
     "playRate": 95,
-    "livablePct": 70
+    "livablePct": 70,
+    "p10": 40140,
+    "p90": 79380
   },
   {
     "slug": "locksmith",
@@ -1029,7 +1066,7 @@
     "slug": "b2b-saas-sales",
     "name": "B2B SaaS Sales (AE)",
     "category": "sales",
-    "whatYouDo": "Sell software to businesses: prospect, demo, close. SDR \u2192 Account Executive \u2192 Enterprise AE. Pay is base + uncapped commission (OTE).",
+    "whatYouDo": "Sell software to businesses: prospect, demo, close. SDR → Account Executive → Enterprise AE. Pay is base + uncapped commission (OTE).",
     "median": 104920,
     "incomeRangeNote": "BLS technical-sales median $99,710; tech AE on-target earnings commonly $150K-$400K with commission (self-reported).",
     "frequency": "~284,800 employed (BLS OEWS, 2025)",
@@ -1039,10 +1076,12 @@
     "timeToFirstIncomeYears": 0.25,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/sales/wholesale-and-manufacturing-sales-representatives.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000041401113",
     "metaClass": "career",
     "playRate": 71,
-    "livablePct": 92
+    "livablePct": 92,
+    "p10": 52600,
+    "p90": 200440
   },
   {
     "slug": "big-tech-swe-equity",
@@ -1077,10 +1116,12 @@
     "timeToFirstIncomeYears": 0.25,
     "capitalTier": "low",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/sales/real-estate-brokers-and-sales-agents.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000041902213",
     "metaClass": "service",
     "playRate": 66,
-    "livablePct": 56
+    "livablePct": 56,
+    "p10": 32970,
+    "p90": 123590
   },
   {
     "slug": "recruiter-staffing-agency",
@@ -1716,36 +1757,40 @@
     "whatYouDo": "Sequence and separate aircraft from FAA towers, TRACONs, and en-route centers. Federal job, paid from the first day of FAA Academy; seniority and facility level drive pay.",
     "median": 148080,
     "incomeRangeNote": "BLS median $144,580 (May 2024), $148,080 in the May 2025 release. Top facilities exceed $200K with premium pay. Federal pay bands, so the spread is narrow by design.",
-    "frequency": "~24,000 employed (BLS OEWS)",
-    "frequencyCount": 24000,
+    "frequency": "~22,510 employed (BLS OEWS, 2025)",
+    "frequencyCount": 22510,
     "growthPct": 3,
     "barrierToEntry": "No bachelor's strictly required: a degree, OR 3 years progressive work experience, OR a combination of both. FAA Academy 2-5 months (paid), then 2-3 years on-the-job to full certification. Hiring age cap 30.",
     "timeToFirstIncomeYears": 0.5,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/transportation-and-material-moving/air-traffic-controllers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000053202113",
     "metaClass": "career",
-    "playRate": 18,
-    "livablePct": 99
+    "playRate": 39,
+    "livablePct": 99,
+    "p10": 78420,
+    "p90": 215610
   },
   {
     "slug": "nuclear-reactor-operators",
     "name": "Nuclear Power Reactor Operators",
     "category": "trade",
     "whatYouDo": "Operate and monitor reactor controls, adjust output, and respond to plant conditions at a commercial nuclear station. NRC-licensed, shift work.",
-    "median": 122610,
+    "median": 122890,
     "incomeRangeNote": "BLS median roughly $122,610-$122,890. Non-licensed operators start around $60-80K during training; base moves to $90-120K after 2-4 years and the RO license. Overtime is common and can add materially.",
-    "frequency": "~5,300 employed (BLS OEWS)",
-    "frequencyCount": 5300,
+    "frequency": "~5,150 employed (BLS OEWS, 2025)",
+    "frequencyCount": 5150,
     "growthPct": 3,
     "barrierToEntry": "High school diploma is the formal minimum. Extensive paid on-the-job training plus NRC licensing exams; 2-4 years to a reactor operator license.",
     "timeToFirstIncomeYears": 1,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/production/power-plant-operators-distributors-and-dispatchers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000051801113",
     "metaClass": "career",
-    "playRate": 12,
-    "livablePct": 95
+    "playRate": 20,
+    "livablePct": 99,
+    "p10": 98640,
+    "p90": 149310
   },
   {
     "slug": "harbor-pilot",
@@ -1828,19 +1873,21 @@
     "name": "Sales / Solutions Engineer",
     "category": "tech",
     "whatYouDo": "The technical half of a sales team. Run demos, scope architectures, answer the hard questions, and build proofs of concept. An account executive carries the quota and the cold outreach; you carry the technical win.",
-    "median": 121520,
-    "incomeRangeNote": "BLS median $121,520 for sales engineers (May 2024). Solutions engineers specifically report a $170K median base, $135K at the 25th percentile and $215K at the 75th. Sales-engineer OTE runs $180-260K, with top performers past $320K. Entry-level base $80-110K. Software publishers pay a $35K+ premium over manufacturing.",
-    "frequency": "~66,000 employed (BLS OEWS)",
-    "frequencyCount": 66000,
+    "median": 124900,
+    "incomeRangeNote": "BLS median $124,900 for sales engineers (May 2025; $121,520 in May 2024). Solutions engineers specifically report a $170K median base, $135K at the 25th percentile and $215K at the 75th. Sales-engineer OTE runs $180-260K, with top performers past $320K. Entry-level base $80-110K. Software publishers pay a $35K+ premium over manufacturing.",
+    "frequency": "~51,790 employed (BLS OEWS, 2025)",
+    "frequencyCount": 51790,
     "growthPct": 5,
     "barrierToEntry": "Technical depth plus the ability to present. No licence, no capital. Notably not a cold-calling role: prospecting sits with the account executive, so it is the version of a sales career that rewards building rather than dialling.",
     "timeToFirstIncomeYears": 0.5,
     "capitalTier": "none",
     "dataQuality": "verifiable",
-    "sourceUrl": "https://www.bls.gov/ooh/sales/sales-engineers.htm",
+    "sourceUrl": "https://api.bls.gov/publicAPI/v2/timeseries/data/OEUN000000000000041903113",
     "metaClass": "career",
-    "playRate": 40,
-    "livablePct": 95
+    "playRate": 49,
+    "livablePct": 99,
+    "p10": 73870,
+    "p90": 195270
   },
   {
     "slug": "ai-implementation-consultant",
