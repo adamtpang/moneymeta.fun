@@ -95,11 +95,9 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
   return (
     <div
       className={cn(
-        "group flex flex-col gap-2.5 rounded-xl border border-border/70 bg-card/80 p-3.5",
-        "ring-1 ring-transparent backdrop-blur-sm transition-all duration-200",
-        "hover:-translate-y-1 hover:border-border hover:bg-card",
+        "group flex flex-col gap-2.5 rounded-lg border border-border/70 bg-card/70 p-3",
+        "ring-1 ring-transparent transition-colors hover:border-border hover:bg-card",
         style.ring,
-        style.glow,
       )}
     >
       <div className="flex items-start justify-between gap-2">
@@ -110,7 +108,7 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
             title={`${deck.name} playbook`}
           >
             <span className="truncate">{deck.name}</span>
-            <BookOpen className="h-3 w-3 shrink-0 opacity-0 transition-opacity group-hover/link:opacity-60" aria-hidden />
+            <BookOpen className="h-3 w-3 shrink-0 opacity-40 transition-opacity group-hover/link:opacity-80" aria-hidden />
           </Link>
           <div className="mt-1 flex items-center gap-1 text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
             <CatIcon className="h-3 w-3" aria-hidden />
@@ -132,7 +130,7 @@ export function IncomeCard({ deck, lens }: { deck: IncomeDeckView; lens: Lens })
       </div>
 
       <div className="flex items-end justify-between gap-2">
-        <div className="font-mono text-xl font-bold leading-none tracking-tight tabular-nums text-foreground">
+        <div className="font-mono text-xl font-bold leading-none tabular-nums text-foreground">
           {formatUsd(deck.median)}
           <span className="ml-1 font-sans text-micro font-medium text-muted-foreground">
             median

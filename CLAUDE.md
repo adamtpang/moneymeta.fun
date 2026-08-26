@@ -22,6 +22,19 @@
 > score from `seed/solopreneurs.json` and `lib/solopreneurs.ts`. Exits,
 > cumulative revenue, and game unit sales live on a separate record board so
 > unlike metrics do not distort the annual-revenue ranking.
+>
+> **Added 2026-08-26:** `/solopreneurs/study` is the S-tier study lab for
+> Markus Frind, Gary Brewer, and Pieter Levels. Source-linked operating loops,
+> timelines, exact metrics, evidence ledgers, copyable tactics, noncopyable
+> advantages, and failure modes come from `seed/solo-playbooks.json` through
+> `lib/solo-playbooks.ts`. A private client-only workbench compares the user's
+> current operating system without saving or publishing entered numbers.
+>
+> **Design refresh 2026-08-26:** shared chrome and primary boards now follow
+> shadcn `dashboard-01`: compact sticky navigation, neutral graphite surfaces,
+> 8px maximum radii, flat data bands, and no atmospheric gradients or glows.
+> Active shadcn primitives: Button, Input, Label, Progress, Separator, Tabs,
+> and Tooltip. See `DESIGN.md` for the live system.
 
 ---
 
@@ -159,6 +172,10 @@ two in lockstep or the baseline drifts from the live board.
 - `app/page.tsx`: the board (masthead + lens + The Pick/breaker/matchups + tiers).
 - `app/deck/[slug]/page.tsx`: per-deck playbook (steps, tools, pitfalls, ladder).
 - `app/layout.tsx`, `app/globals.css`: shell, fonts, the atmosphere layer.
+- `app/solopreneurs/study/page.tsx`, `components/solopreneurs/study-lab.tsx`:
+  S-tier research and private gap workbench.
+- `seed/solo-playbooks.json`, `lib/solo-playbooks.ts`: sourced operator
+  playbooks and evidence ledgers.
 - `app/opengraph-image.tsx`: edge OG image. `app/sprint/page.tsx`: offer page.
 - `components/income/*`: income-board, income-card, income-meta, the-pick,
   meta-breaker, matchup-chart, class-frequency.
@@ -179,6 +196,8 @@ two in lockstep or the baseline drifts from the live board.
 - **Next:** push weekly cadence (BLS refresh → ship → snapshot); more curated
   playbooks for remaining profession/healthcare decks; optional public BLS
   key in CI for scheduled refresh.
+- **Next for solo research:** use the private gap workbench with Adam's actual
+  baseline, then turn the top three gaps into one dated operating experiment.
 
 ---
 
@@ -191,6 +210,9 @@ S..D color coding (amber/violet/cyan/teal/slate heat ramp; C moved off emerald
 prominent badge. Mobile-first, it has to read well on a phone. Micro-label
 type (chips, badges, category tags) uses the named `text-micro` (10px) /
 `text-label` (11px) tokens in `tailwind.config.ts`, not ad hoc `text-[Npx]`.
+The shared canvas is neutral graphite rather than blue-black. Emerald is limited
+to brand, action, positive movement, and focus. Ambient gradients, glow orbs,
+and blueprint grids were removed so the board reads as an operating tool.
 
 ---
 

@@ -30,7 +30,7 @@ export function MetaBreaker({
   return (
     <section
       aria-label="Meta breaker of the week"
-      className="rounded-2xl border border-amber-400/25 bg-gradient-to-r from-amber-500/[0.08] via-card/60 to-transparent p-4 sm:p-5"
+      className="h-full min-w-0 rounded-lg border border-amber-400/25 bg-card/45 p-4"
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0 flex-1">
@@ -38,7 +38,7 @@ export function MetaBreaker({
             <Flame className="h-3 w-3" aria-hidden />
             Meta breaker
           </div>
-          <h2 className="font-mono text-base font-bold tracking-tight text-foreground sm:text-lg">
+          <h2 className="font-mono text-base font-bold text-foreground sm:text-lg">
             {headline}
           </h2>
           <p className="mt-1.5 max-w-2xl text-xs leading-relaxed text-muted-foreground">
@@ -48,7 +48,7 @@ export function MetaBreaker({
             {bullets.map((b) => (
               <li
                 key={b}
-                className="rounded-lg border border-border/60 bg-background/40 px-2.5 py-2 text-label leading-snug text-muted-foreground"
+                className="border-l border-amber-400/35 pl-2.5 text-label leading-snug text-muted-foreground"
               >
                 {b}
               </li>
@@ -60,7 +60,7 @@ export function MetaBreaker({
           <Link
             href={`/deck/${deck.slug}`}
             className={cn(
-              "group flex shrink-0 items-center gap-3 rounded-xl border border-border/70 bg-card/80 px-3 py-2.5 transition-all hover:-translate-y-0.5 hover:border-amber-400/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:min-w-[200px] sm:flex-col sm:items-start",
+              "group flex w-full shrink-0 flex-col items-start gap-3 rounded-md border border-border/70 bg-background/35 px-3 py-2.5 transition-colors hover:border-amber-400/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:w-auto sm:min-w-[190px]",
             )}
           >
             <div className="flex w-full items-center justify-between gap-2">

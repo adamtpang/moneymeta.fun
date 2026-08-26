@@ -19,7 +19,7 @@ export function MoversStrip({
   return (
     <section
       aria-label="Week over week movers"
-      className="rounded-2xl border bg-card/40 p-4 sm:p-5"
+      className="h-full rounded-lg border bg-card/40 p-4"
     >
       <div className="mb-1 flex flex-wrap items-center gap-2">
         <span className="font-mono text-micro font-bold uppercase tracking-[0.08em] text-muted-foreground">
@@ -31,7 +31,7 @@ export function MoversStrip({
           </span>
         ) : null}
       </div>
-      <h2 className="font-mono text-base font-bold tracking-tight text-foreground">
+      <h2 className="font-mono text-base font-bold text-foreground">
         Biggest risers and fallers
       </h2>
       <p className="mt-1 max-w-2xl text-xs leading-relaxed text-muted-foreground">
@@ -74,7 +74,7 @@ function MoverCol({
   tone: "up" | "down";
 }) {
   return (
-    <div className="rounded-xl border border-border/70 bg-background/40 p-3">
+    <div className="rounded-md border border-border/70 bg-background/40 p-3">
       <div className="mb-2 flex items-center gap-1.5 text-xs font-semibold text-foreground">
         {icon}
         {title}

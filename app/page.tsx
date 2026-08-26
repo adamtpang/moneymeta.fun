@@ -14,50 +14,38 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
-        <ReportMasthead titleAs="h1" />
+      <div className="mx-auto w-full max-w-[1320px] px-4 pb-8">
+        <ReportMasthead />
 
-        {/* Founding license */}
-        <div className="mb-6">
-          <FoundingLicenseLink />
-        </div>
-
-        {/* The money meta */}
-        <div className="mb-4">
-          <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-            The money meta
+        <header className="mb-5 border-b pb-5">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="font-mono text-micro font-bold text-primary">THE MONEY META</p>
+              <h1 className="mt-1 text-2xl font-black sm:text-3xl">The best money decks to play now</h1>
+              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+                Every path is scored on income, win rate, growth, and the barrier to starting.
+                Occupations use BLS data. Internet paths keep their brutal median and carry an
+                evidence badge instead of borrowing exceptional founder outcomes.
+              </p>
+            </div>
+            <FoundingLicenseLink />
           </div>
-          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
-            Every way to make money as a &ldquo;deck,&rdquo; scored on{" "}
-            <span className="font-semibold text-foreground">
-              income × win rate × growth ÷ barrier
-            </span>
-            . Win rate is the share of players who clear a livable income, so a $240k median that
-            88% of players never reach does not outrank a $130k median that 99% do. Occupations are
-            anchored on{" "}
-            <span className="font-semibold text-foreground">BLS</span> data; internet paths show
-            the brutal median and a self-reported badge. The Pick, Meta Breaker, and matchup chart
-            sit above the S-D board, like a Data Reaper report.
-          </p>
-        </div>
+        </header>
 
         <div
-          className="mb-6 flex items-center justify-between gap-3 rounded-lg border bg-card/60 px-3.5 py-3"
+          className="mb-5 grid overflow-hidden rounded-lg border bg-card/45 sm:grid-cols-[1fr_auto]"
           aria-label="Board coverage"
         >
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 px-3.5 py-3">
             <ShieldCheck className="h-4 w-4 text-emerald-400" aria-hidden />
             <div className="leading-tight">
-              <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
-                BLS-verified decks
-              </div>
-              <div className="text-sm font-semibold text-foreground">
-                of {decks.length} total on the board
-              </div>
+              <div className="text-micro font-medium text-muted-foreground">BLS-VERIFIED COVERAGE</div>
+              <div className="text-sm font-semibold text-foreground">{verified} of {decks.length} decks</div>
             </div>
           </div>
-          <div className="font-mono text-lg font-bold tabular-nums text-foreground">
-            {verified}
+          <div className="border-t px-3.5 py-3 sm:border-l sm:border-t-0">
+            <p className="text-micro text-muted-foreground">SCORING MODEL</p>
+            <p className="mt-0.5 font-mono text-xs font-bold text-foreground">payoff × odds + growth + reach</p>
           </div>
         </div>
 
@@ -65,7 +53,7 @@ export default function Home() {
 
         {/* Methodology */}
         <section
-          className="mt-8 rounded-xl border bg-card/40 p-4"
+          className="mt-8 border-t pt-5"
           aria-label="How the money meta works"
         >
           <p className="max-w-3xl text-xs leading-relaxed text-muted-foreground">

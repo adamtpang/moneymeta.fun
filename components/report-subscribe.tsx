@@ -15,7 +15,7 @@ const MAILTO =
 export function ReportSubscribe() {
   return (
     <section
-      className="mt-8 rounded-xl border border-primary/30 bg-primary/[0.06] p-4"
+      className="mt-8 rounded-lg border border-primary/30 bg-primary/[0.05] p-4"
       aria-label="Subscribe to the weekly report"
     >
       <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
@@ -31,28 +31,24 @@ export function ReportSubscribe() {
           method="post"
           className="mt-3 flex max-w-md flex-wrap gap-2"
         >
-          <input
+          <Input
             type="email"
             name="email"
             required
             placeholder="you@example.com"
-            className="min-w-0 flex-1 rounded-lg border border-border/70 bg-card/80 px-3 py-1.5 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="min-w-0 flex-1 bg-card/80"
           />
-          <button
-            type="submit"
-            className="rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          >
-            Subscribe
-          </button>
+          <Button type="submit" size="sm"><Mail className="h-4 w-4" aria-hidden />Subscribe</Button>
         </form>
       ) : (
-        <a
-          href={MAILTO}
-          className="mt-3 inline-flex items-center rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-        >
-          Get it by email
-        </a>
+        <Button asChild size="sm" className="mt-3">
+          <a href={MAILTO}><Mail className="h-4 w-4" aria-hidden />Get it by email</a>
+        </Button>
       )}
     </section>
   );
 }
+import { Mail } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";

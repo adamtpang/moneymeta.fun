@@ -23,6 +23,7 @@ import {
   timeLabel,
 } from "@/components/income/income-meta";
 import { SiteFooter } from "@/components/site-footer";
+import { ReportMasthead } from "@/components/report-masthead";
 
 export function generateStaticParams() {
   return getAllDeckSlugs().map((slug) => ({ slug }));
@@ -64,7 +65,8 @@ export default function DeckPlaybookPage({
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto w-full max-w-[900px] px-4 py-6 sm:py-10">
+      <div className="mx-auto w-full max-w-[900px] px-4 pb-8">
+        <ReportMasthead />
         <Link
           href="/"
           className="mb-6 inline-flex items-center gap-1.5 rounded text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
@@ -90,7 +92,7 @@ export default function DeckPlaybookPage({
             )}
           </div>
 
-          <h1 className="font-mono text-2xl font-black tracking-tight text-foreground sm:text-3xl">
+          <h1 className="font-mono text-2xl font-black text-foreground sm:text-3xl">
             {deck.name}
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -156,7 +158,7 @@ export default function DeckPlaybookPage({
         </div>
 
         <div className="flex flex-col gap-4">
-          <section className="rounded-2xl border bg-card/50 p-4 sm:p-5">
+          <section className="rounded-lg border bg-card/50 p-4 sm:p-5">
             <h2 className="mb-2 flex items-center gap-1.5 font-mono text-xs font-bold uppercase tracking-[0.08em] text-primary">
               <Crosshair className="h-3.5 w-3.5" aria-hidden />
               Who this deck is for
@@ -168,7 +170,7 @@ export default function DeckPlaybookPage({
             </p>
           </section>
 
-          <section className="rounded-2xl border bg-card/50 p-4 sm:p-5">
+          <section className="rounded-lg border bg-card/50 p-4 sm:p-5">
             <h2 className="mb-1 font-mono text-xs font-bold uppercase tracking-[0.08em] text-foreground">
               How to play it
             </h2>
@@ -179,7 +181,7 @@ export default function DeckPlaybookPage({
               {pb.steps.map((step, i) => (
                 <li
                   key={step.title}
-                  className="rounded-xl border border-border/70 bg-background/40 p-3.5"
+                  className="rounded-md border border-border/70 bg-background/40 p-3.5"
                 >
                   <div className="mb-1 flex items-center gap-2">
                     <span className="flex h-6 w-6 items-center justify-center rounded-md bg-primary/15 font-mono text-label font-bold text-primary">
@@ -198,7 +200,7 @@ export default function DeckPlaybookPage({
           </section>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <section className="rounded-2xl border bg-card/50 p-4 sm:p-5">
+            <section className="rounded-lg border bg-card/50 p-4 sm:p-5">
               <h2 className="mb-3 flex items-center gap-1.5 font-mono text-xs font-bold uppercase tracking-[0.08em] text-cyan-300">
                 <Wrench className="h-3.5 w-3.5" aria-hidden />
                 Tools
@@ -215,7 +217,7 @@ export default function DeckPlaybookPage({
               </ul>
             </section>
 
-            <section className="rounded-2xl border bg-card/50 p-4 sm:p-5">
+            <section className="rounded-lg border bg-card/50 p-4 sm:p-5">
               <h2 className="mb-3 flex items-center gap-1.5 font-mono text-xs font-bold uppercase tracking-[0.08em] text-rose-300">
                 <ShieldAlert className="h-3.5 w-3.5" aria-hidden />
                 Pitfalls
@@ -232,7 +234,7 @@ export default function DeckPlaybookPage({
           </div>
 
           {deck.exemplars.length > 0 ? (
-            <section className="rounded-2xl border bg-card/50 p-4 sm:p-5">
+            <section className="rounded-lg border bg-card/50 p-4 sm:p-5">
               <h2 className="mb-1 font-mono text-xs font-bold uppercase tracking-[0.08em] text-foreground">
                 Legend-rate exemplars
               </h2>
@@ -246,7 +248,7 @@ export default function DeckPlaybookPage({
                     href={ex.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-xl border border-border/70 bg-background/40 p-3 transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    className="rounded-md border border-border/70 bg-background/40 p-3 transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     <div className="flex items-center justify-between gap-2">
                       <span className="text-sm font-semibold text-foreground">{ex.name}</span>
@@ -260,7 +262,7 @@ export default function DeckPlaybookPage({
           ) : null}
 
           {pb.nextDecks.length > 0 ? (
-            <section className="rounded-2xl border bg-card/50 p-4 sm:p-5">
+            <section className="rounded-lg border bg-card/50 p-4 sm:p-5">
               <h2 className="mb-1 font-mono text-xs font-bold uppercase tracking-[0.08em] text-foreground">
                 Ladder up
               </h2>
@@ -272,7 +274,7 @@ export default function DeckPlaybookPage({
                   <Link
                     key={d.slug}
                     href={`/deck/${d.slug}`}
-                    className="group flex items-center justify-between gap-3 rounded-xl border border-border/70 bg-background/40 px-3 py-2.5 transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    className="group flex items-center justify-between gap-3 rounded-md border border-border/70 bg-background/40 px-3 py-2.5 transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     <div className="min-w-0">
                       <div className="truncate text-sm font-semibold text-foreground group-hover:text-primary">
@@ -289,7 +291,7 @@ export default function DeckPlaybookPage({
             </section>
           ) : null}
 
-          <section className="rounded-xl border border-border/60 bg-background/30 p-4">
+          <section className="rounded-lg border border-border/60 bg-background/30 p-4">
             <p className="text-xs leading-relaxed text-muted-foreground">
               <span className="font-semibold text-foreground">What you do on paper: </span>
               {deck.whatYouDo}
@@ -335,7 +337,7 @@ function Stat({
   badge?: React.ReactNode;
 }) {
   return (
-    <div className="rounded-xl border bg-card/60 px-3 py-2.5">
+    <div className="rounded-lg border bg-card/60 px-3 py-2.5">
       <div className="text-micro font-medium uppercase tracking-[0.08em] text-muted-foreground">
         {label}
       </div>

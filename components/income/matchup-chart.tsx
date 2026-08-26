@@ -14,14 +14,14 @@ export function MatchupChart({
   lens: Lens;
 }) {
   return (
-    <section aria-label="Matchup chart, hybrid money stacks" className="rounded-2xl border bg-card/40 p-4 sm:p-5">
+    <section aria-label="Matchup chart, hybrid money stacks" className="rounded-lg border bg-card/40 p-4">
       <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <div className="mb-1 inline-flex items-center gap-1.5 font-mono text-micro font-bold uppercase tracking-[0.08em] text-cyan-300">
             <GitBranch className="h-3 w-3" aria-hidden />
             Matchup chart
           </div>
-          <h2 className="font-mono text-base font-bold tracking-tight text-foreground">
+          <h2 className="font-mono text-base font-bold text-foreground">
             Hybrid stacks beat pure single-class decks
           </h2>
           <p className="mt-1 max-w-2xl text-xs leading-relaxed text-muted-foreground">
@@ -35,7 +35,7 @@ export function MatchupChart({
         {matchups.map((m) => (
           <article
             key={m.id}
-            className="flex flex-col gap-2.5 rounded-xl border border-border/70 bg-background/40 p-3"
+            className="flex flex-col gap-2.5 rounded-md border border-border/70 bg-background/40 p-3"
           >
             <div className="flex items-start justify-between gap-2">
               <div>

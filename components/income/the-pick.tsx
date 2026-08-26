@@ -18,14 +18,11 @@ export function ThePick({ pick }: { pick: ThePickView }) {
     <section
       aria-label={`The pick under ${lensLabel}`}
       className={cn(
-        "relative overflow-hidden rounded-2xl border border-l-[3px] bg-gradient-to-br to-transparent p-4 sm:p-5",
+        "h-full min-w-0 rounded-lg border border-l-2 bg-card/45 p-4",
         style.border,
-        style.tint,
       )}
     >
-      <div className="pointer-events-none absolute -right-8 -top-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
-
-      <div className="relative flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0 flex-1">
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-md bg-primary/15 px-2 py-0.5 font-mono text-micro font-bold uppercase tracking-[0.08em] text-primary ring-1 ring-primary/35">
@@ -39,9 +36,9 @@ export function ThePick({ pick }: { pick: ThePickView }) {
 
           <Link
             href={`/deck/${deck.slug}`}
-            className="group/link inline-flex max-w-full items-center gap-1.5 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="group/link inline-flex w-full min-w-0 items-center gap-1.5 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            <h2 className="truncate font-mono text-xl font-black tracking-tight text-foreground sm:text-2xl">
+            <h2 className="min-w-0 truncate font-mono text-xl font-black text-foreground sm:text-2xl">
               {deck.name}
             </h2>
             <ArrowRight
@@ -76,7 +73,7 @@ export function ThePick({ pick }: { pick: ThePickView }) {
         <div className="flex shrink-0 items-center gap-3 sm:flex-col sm:items-end">
           <div
             className={cn(
-              "flex h-14 w-14 items-center justify-center rounded-xl font-mono text-3xl font-black",
+              "flex h-12 w-12 items-center justify-center rounded-md font-mono text-2xl font-black",
               style.chip,
             )}
             title={`Tier ${tier}`}

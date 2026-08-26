@@ -26,12 +26,12 @@ export function ClassFrequency({ decks }: { decks: IncomeDeckView[] }) {
   return (
     <section
       aria-label="Class frequency, play rate by meta class"
-      className="rounded-2xl border bg-card/40 p-4 sm:p-5"
+      className="h-full rounded-lg border bg-card/40 p-4"
     >
       <div className="mb-1 font-mono text-micro font-bold uppercase tracking-[0.08em] text-muted-foreground">
         Class frequency
       </div>
-      <h2 className="font-mono text-base font-bold tracking-tight text-foreground">
+      <h2 className="font-mono text-base font-bold text-foreground">
         What is being played
       </h2>
       <p className="mt-1 max-w-2xl text-xs leading-relaxed text-muted-foreground">

@@ -19,7 +19,7 @@ function CapitalCard({ vehicle }: { vehicle: CapitalVehicle }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${vehicle.name}, ${vehicle.metricLabel} ${formatUsd(vehicle.latestValue)}, opens source in a new tab`}
-      className={`group relative flex min-h-32 flex-col justify-between rounded-lg border bg-card/75 p-3 ring-1 ring-transparent transition duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background ${style.ring} ${style.glow}`}
+      className={`group relative flex min-h-32 flex-col justify-between rounded-lg border bg-card/65 p-3 ring-1 ring-transparent transition-colors hover:bg-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background ${style.ring}`}
     >
       <div className="flex items-start justify-between gap-2">
         <div>
@@ -60,9 +60,9 @@ export function CapitalBoard({ groups }: { groups: Record<Tier, CapitalVehicle[]
             <section
               key={tier}
               aria-label={`${tier} tier, ${style.label}`}
-              className={`overflow-hidden border-l-4 ${style.border} rounded-r-lg bg-gradient-to-r ${style.tint} to-transparent`}
+              className={`grid overflow-hidden rounded-lg border border-l-2 bg-card/30 sm:grid-cols-[7rem_1fr] ${style.border}`}
             >
-              <div className="flex items-center gap-3 px-3 py-3 sm:px-4">
+              <div className="flex items-center gap-3 border-b bg-background/25 px-3 py-3 sm:flex-col sm:items-start sm:border-b-0 sm:border-r">
                 <div className={`grid h-10 w-10 shrink-0 place-items-center rounded font-mono text-2xl font-black ${style.chip}`} aria-hidden>
                   {tier}
                 </div>
@@ -71,7 +71,7 @@ export function CapitalBoard({ groups }: { groups: Record<Tier, CapitalVehicle[]
                   <p className="text-xs text-muted-foreground">{vehicles.length} vehicles</p>
                 </div>
               </div>
-              <div className="grid gap-2 px-3 pb-3 sm:grid-cols-2 sm:px-4 sm:pb-4 lg:grid-cols-3">
+              <div className="grid gap-2 p-3 sm:grid-cols-2 lg:grid-cols-3">
                 {vehicles.map((vehicle) => <CapitalCard key={vehicle.slug} vehicle={vehicle} />)}
               </div>
             </section>

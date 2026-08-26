@@ -14,7 +14,7 @@ function PickCard({ label, pick, blurb }: { label: string; pick: ReportDeckRef; 
     <Link
       href={`/deck/${pick.slug}`}
       className={cn(
-        "group flex flex-col gap-2 rounded-xl border border-l-2 bg-card/70 p-4 transition-all hover:-translate-y-0.5 hover:bg-card",
+        "group flex flex-col gap-2 rounded-lg border border-l-2 bg-card/70 p-4 transition-colors hover:bg-card",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
         style.border,
       )}
@@ -64,12 +64,14 @@ function MoverRow({ m, up }: { m: ReportMover; up: boolean }) {
 }
 
 export function IssueBody({ issue, latest = false }: { issue: ReportIssue; latest?: boolean }) {
+  const Heading = latest ? "h2" : "h1";
+
   return (
     <article aria-label={issue.title}>
       <header className="mb-5">
-        <h1 className="font-mono text-2xl font-black tracking-tight text-foreground sm:text-3xl">
+        <Heading className="font-mono text-2xl font-black text-foreground sm:text-3xl">
           {issue.title}
-        </h1>
+        </Heading>
         <p className="mt-1 font-mono text-xs text-muted-foreground">
           {issue.deckCount} decks · {issue.sTierCount} in S tier (start now) · movement vs{" "}
           {issue.baseline}
@@ -113,7 +115,7 @@ export function IssueBody({ issue, latest = false }: { issue: ReportIssue; lates
         </section>
       )}
 
-      <section className="rounded-xl border bg-card/40 p-4" aria-label="This week's read">
+      <section className="rounded-lg border bg-card/40 p-4" aria-label="This week's read">
         <div className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
           This week&apos;s read
         </div>

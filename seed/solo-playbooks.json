@@ -1,0 +1,143 @@
+{
+  "asOf": "2026-08-26",
+  "operators": [
+    {
+      "slug": "markus-frind",
+      "archetype": "Free consumer network",
+      "thesis": "Remove the price barrier, let users create the inventory, monetize attention, and keep the operating surface brutally small.",
+      "summary": "Plenty of Fish won by being free in a paid category. That choice accelerated profile density, which improved the product for every user. Frind then monetized the audience through advertising and affiliates while relying on optimized infrastructure and community moderation instead of a conventional staff.",
+      "loop": [
+        { "label": "Wedge", "value": "Free dating when established competitors charged" },
+        { "label": "Distribution", "value": "Profiles attracted more profiles through network density" },
+        { "label": "Monetization", "value": "AdSense and affiliate demand paid for free consumer access" },
+        { "label": "Automation", "value": "Lean servers, self-service, and community moderation" },
+        { "label": "Moat", "value": "A dense local relationship graph that improved with scale" }
+      ],
+      "timeline": [
+        { "period": "2003", "event": "Built Plenty of Fish as a free dating site and kept the product deliberately plain.", "sourceId": "inc" },
+        { "period": "2006", "event": "Operated alone while the site reached roughly 3.4 to 3.5 million monthly unique visitors on five or six servers.", "sourceId": "opw" },
+        { "period": "2006", "event": "Posted a $900K monthly AdSense check. Forbes reported that Google confirmed the check.", "sourceId": "forbes" },
+        { "period": "2007-08", "event": "Added three customer-service employees only after the network was already large. Inc reported 2008 revenue tracking toward $10M with margins above 50%.", "sourceId": "inc" }
+      ],
+      "numbers": [
+        { "value": "$900K", "label": "one-month revenue", "context": "Founder-posted 2006 AdSense month while operating alone", "confidence": "corroborated", "sourceId": "forbes" },
+        { "value": "3.4-3.5M", "label": "monthly uniques", "context": "Served by one operator in the 2006 interview", "confidence": "founder interview", "sourceId": "opw" },
+        { "value": "5-6", "label": "servers", "context": "The reported infrastructure footprint at that scale", "confidence": "founder interview", "sourceId": "opw" },
+        { "value": ">50%", "label": "margin", "context": "Inc estimate for 2008 after the first support hires", "confidence": "reported", "sourceId": "inc" }
+      ],
+      "copyable": [
+        "Make one side of a market free when another side will pay for access or intent.",
+        "Design moderation, onboarding, and inventory creation so users do most of the work.",
+        "Treat infrastructure efficiency as a business-model advantage, not only a technical concern."
+      ],
+      "nonCopyable": [
+        "The early web-dating window before mobile incumbents consolidated attention.",
+        "Existing profile density. A new network begins empty and cannot copy mature liquidity.",
+        "A broad display-ad market that could fund free access at that exact scale."
+      ],
+      "failureModes": [
+        "Launching a free marketplace without a credible payer on the other side.",
+        "Mistaking low headcount for low responsibility. Trust, safety, and abuse still compound.",
+        "Adding features before local network density makes the core loop useful."
+      ],
+      "sources": [
+        { "id": "inc", "label": "Inc. profile", "url": "https://www.inc.com/magazine/20090101/and-the-money-comes-rolling-in.html", "type": "reported profile" },
+        { "id": "opw", "label": "Online Personals Watch interview", "url": "https://onlinepersonalswatch.com/2006/06/opw_interview_p-2/", "type": "founder interview" },
+        { "id": "forbes", "label": "Forbes AdSense report", "url": "https://www.forbes.com/sites/kellyclay/2012/08/23/how-one-man-made-a-million-babies-with-free-online-dating/", "type": "corroborated report" }
+      ]
+    },
+    {
+      "slug": "gary-brewer",
+      "archetype": "Free utility to data SaaS",
+      "thesis": "Give away a narrow lookup tool, observe what professional users repeatedly need, then sell the accumulated dataset at a high self-serve price.",
+      "summary": "BuiltWith began as a free answer to a simple question: what technology does this website use? Brewer let that utility attract users, converted repeated professional needs into Trends and Pro, moved from one-off reports to flat monthly plans, and kept the company at a two-person core with automated crawling and support.",
+      "loop": [
+        { "label": "Wedge", "value": "A free technology lookup with immediate utility" },
+        { "label": "Distribution", "value": "Searchable lookup pages, word of mouth, and repeat research" },
+        { "label": "Monetization", "value": "High-value lead lists and market intelligence subscriptions" },
+        { "label": "Automation", "value": "Continuous crawling, self-serve checkout, and support documentation" },
+        { "label": "Moat", "value": "Historical web data that a new entrant cannot backfill" }
+      ],
+      "timeline": [
+        { "period": "2007", "event": "Conceived BuiltWith after inspecting website source code and launched the free lookup tool.", "sourceId": "builtwith" },
+        { "period": "2007-10", "event": "Kept experimenting through weak early demand, nearly sold the project, then followed customer requests into Trends, Pro, and paid reports.", "sourceId": "builtwith" },
+        { "period": "2011", "event": "A later case profile reports roughly $40K per month while Brewer still treated BuiltWith as a part-time project.", "sourceId": "keeley" },
+        { "period": "2012-13", "event": "Andrew Rogers joined as the second core operator. Brewer dates clear product-market fit to about 2013, six years after launch.", "sourceId": "builtwith" },
+        { "period": "2022", "event": "The $14M annual figure used by the index is a third-party estimate, not an audited or first-party disclosure.", "sourceId": "audit" }
+      ],
+      "numbers": [
+        { "value": "6 years", "label": "to clear product-market fit", "context": "Brewer's retrospective from launch in 2007 to traction around 2013", "confidence": "first party", "sourceId": "builtwith" },
+        { "value": "$40K/mo", "label": "reported 2011 revenue", "context": "A third-party profile says it was still a part-time project", "confidence": "reported", "sourceId": "keeley" },
+        { "value": "2", "label": "core operators", "context": "Brewer and Andrew Rogers, with no conventional growth team", "confidence": "first party", "sourceId": "builtwith" },
+        { "value": "$14M", "label": "reported annual scale", "context": "Index input, explicitly treated as a weak third-party estimate", "confidence": "estimate", "sourceId": "audit" }
+      ],
+      "copyable": [
+        "Use a free utility to reveal high-intent professional demand before building a broad platform.",
+        "Turn repeated lookup behavior into saved lists, monitoring, and workflow data worth paying for.",
+        "Price against business value and replace routine support with searchable answers and short demos."
+      ],
+      "nonCopyable": [
+        "Nearly two decades of historical crawl data and the authority attached to it.",
+        "A mature search footprint built from years of useful public lookup pages.",
+        "The patience to compound a dataset for six years before obvious product-market fit."
+      ],
+      "failureModes": [
+        "Copying the interface without accumulating a proprietary dataset.",
+        "Charging low consumer prices for a tool that creates measurable B2B value.",
+        "Giving up during the long data-compounding period or scaling payroll before demand is repeatable."
+      ],
+      "sources": [
+        { "id": "builtwith", "label": "BuiltWith 10-year retrospective", "url": "https://blog.builtwith.com/2017/07/17/10-years-of-builtwith/", "type": "first party" },
+        { "id": "keeley", "label": "Colin Keeley profile", "url": "https://www.colinkeeley.com/blog/the-story-of-builtwith-1-employee-14m-arr", "type": "reported profile" },
+        { "id": "audit", "label": "Kaeda evidence audit", "url": "https://kaeda.co/cases/builtwith", "type": "secondary audit" }
+      ]
+    },
+    {
+      "slug": "pieter-levels",
+      "archetype": "Audience-led product portfolio",
+      "thesis": "Ship many small bets in public, keep the demand signals, capture launch attention into owned channels, and automate the products that earn the right to survive.",
+      "summary": "Levels used a public 12-startups-in-12-months challenge as both production cadence and distribution. Nomad List began as a spreadsheet, reached the top of Hacker News, and became an audience and data asset. That audience seeded Remote OK and later products, while email capture, self-serve payments, and a large automation layer kept the portfolio solo.",
+      "loop": [
+        { "label": "Wedge", "value": "Fast public MVPs built around his own recurring problems" },
+        { "label": "Distribution", "value": "Build in public, launch spikes, email capture, and cross-product traffic" },
+        { "label": "Monetization", "value": "Community access, job posts, sponsorship, and subscriptions" },
+        { "label": "Automation", "value": "Cron jobs and self-serve workflows replace recurring operations" },
+        { "label": "Moat", "value": "An owned audience plus a portfolio that distributes the next product" }
+      ],
+      "timeline": [
+        { "period": "2014", "event": "Started the 12 startups in 12 months challenge and shipped Nomad List first as a crowdsourced spreadsheet.", "sourceId": "talk" },
+        { "period": "2014", "event": "Turned the spreadsheet into a website, reached number one on Hacker News, and captured the traffic into email and community channels.", "sourceId": "talk" },
+        { "period": "2014-15", "event": "Launched Remote OK into the Nomad List audience and charged employers for job listings while keeping job seekers free.", "sourceId": "talk" },
+        { "period": "2018", "event": "Described a fleet of 187 automated jobs and robots handling recurring product operations.", "sourceId": "talk" },
+        { "period": "2025", "event": "Told Stripe cofounder John Collison that the solo portfolio was producing about $3.1M per year.", "sourceId": "stripe" },
+        { "period": "Mar 2026", "event": "Published Photo AI at roughly $105K monthly revenue and $80K monthly profit.", "sourceId": "year" }
+      ],
+      "numbers": [
+        { "value": "12 in 12", "label": "public shipping challenge", "context": "A distribution mechanism and a search for demand, not twelve lasting successes", "confidence": "first party", "sourceId": "talk" },
+        { "value": "187", "label": "automated jobs", "context": "Cron jobs and robots described in the operating stack", "confidence": "first party", "sourceId": "talk" },
+        { "value": "$3.1M/yr", "label": "portfolio revenue", "context": "Confirmed in the Stripe interview while describing the products as solo", "confidence": "corroborated", "sourceId": "stripe" },
+        { "value": "$105K/mo", "label": "Photo AI revenue", "context": "Founder-published March 2026 product result", "confidence": "first party", "sourceId": "year" }
+      ],
+      "copyable": [
+        "Use a fixed shipping cadence to discover demand instead of trying to predict it in private.",
+        "Put a real buy button on the smallest useful product and capture launch traffic into email.",
+        "Cross-distribute adjacent products and automate every recurring task that does not need judgment."
+      ],
+      "nonCopyable": [
+        "A decade of audience trust, backlinks, domains, and cross-product distribution.",
+        "The accumulated portfolio cash flow that can fund repeated experiments.",
+        "The survivorship effect. Most launches failed and the visible winners are not the median result."
+      ],
+      "failureModes": [
+        "Imitating the product count without an owned distribution loop.",
+        "Building in public as entertainment while never asking for payment.",
+        "Keeping weak products alive and multiplying support load instead of pruning aggressively."
+      ],
+      "sources": [
+        { "id": "talk", "label": "How I build my minimum viable products", "url": "https://levels.io/startups", "type": "first-party talk" },
+        { "id": "stripe", "label": "Stripe interview with John Collison", "url": "https://levels.io/stripe-cheeky-pint-john-collison", "type": "corroborated interview" },
+        { "id": "year", "label": "Levels.io 2026 operating log", "url": "https://levels.io/2026", "type": "first party" }
+      ]
+    }
+  ]
+}

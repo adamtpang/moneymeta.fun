@@ -30,10 +30,10 @@ export default function CapitalPage() {
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
+      <div className="mx-auto w-full max-w-[1320px] px-4 pb-8">
         <ReportMasthead />
 
-        <section className="mb-6" aria-labelledby="capital-map-title">
+        <section className="mb-5 border-b pb-5" aria-labelledby="capital-map-title">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <p className="font-mono text-micro font-semibold uppercase tracking-[0.12em] text-primary">The capital map</p>
@@ -46,9 +46,9 @@ export default function CapitalPage() {
           </div>
         </section>
 
-        <section className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-4" aria-label="Capital map sources">
+        <section className="mb-5 grid grid-cols-2 overflow-hidden rounded-lg border bg-card/45 sm:grid-cols-4" aria-label="Capital map sources">
           {universes.map(({ label, detail, icon: Icon }) => (
-            <div key={label} className="flex min-h-20 items-center gap-2 rounded-lg border bg-card/55 p-3">
+            <div key={label} className="flex min-h-16 items-center gap-2 border-b border-r p-3 even:border-r-0 sm:border-b-0 sm:border-r sm:last:border-r-0">
               <Icon className="h-4 w-4 shrink-0 text-primary" aria-hidden />
               <div className="min-w-0">
                 <p className="text-sm font-semibold">{label}</p>
@@ -60,7 +60,7 @@ export default function CapitalPage() {
 
         <CapitalBoard groups={groups} />
 
-        <section className="mt-8 rounded-lg border bg-card/40 p-4" aria-label="Capital map methodology">
+        <section className="mt-8 border-t pt-5" aria-label="Capital map methodology">
           <p className="max-w-4xl text-xs leading-relaxed text-muted-foreground">
             <span className="font-semibold text-foreground">Method.</span> Meta score = 50% normalized log-size + 50% recent growth, with growth clamped at plus or minus 12% to limit outliers. Values span fundamentally different things: market capitalization for crypto and public companies, Forbes-estimated net worth for people, and nominal GDP for countries. The tier list is a comparative map of capital concentration, not an investability or financial-advice ranking. {getCapitalNote()}
           </p>

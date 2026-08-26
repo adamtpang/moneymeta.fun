@@ -4,29 +4,29 @@
 
 @layer base {
   :root {
-    --background: 200 32% 4%;
-    --foreground: 200 14% 92%;
+    --background: 220 8% 5%;
+    --foreground: 45 8% 92%;
 
-    --card: 200 24% 7%;
-    --card-foreground: 200 14% 92%;
+    --card: 220 7% 8%;
+    --card-foreground: 45 8% 92%;
 
-    --primary: 152 76% 46%;
-    --primary-foreground: 152 92% 5%;
+    --primary: 156 72% 45%;
+    --primary-foreground: 156 90% 5%;
 
-    --secondary: 200 16% 13%;
-    --secondary-foreground: 200 14% 92%;
+    --secondary: 220 6% 13%;
+    --secondary-foreground: 45 8% 92%;
 
-    --muted: 200 16% 13%;
-    --muted-foreground: 200 11% 57%;
+    --muted: 220 6% 13%;
+    --muted-foreground: 220 5% 61%;
 
-    --accent: 200 18% 16%;
-    --accent-foreground: 200 14% 92%;
+    --accent: 220 6% 16%;
+    --accent-foreground: 45 8% 92%;
 
-    --border: 200 16% 14%;
-    --input: 200 16% 14%;
-    --ring: 152 76% 46%;
+    --border: 220 6% 18%;
+    --input: 220 6% 18%;
+    --ring: 156 72% 45%;
 
-    --radius: 0.7rem;
+    --radius: 0.5rem;
   }
 
   * {
@@ -38,33 +38,17 @@
     font-feature-settings: "cv05", "ss01";
   }
 
-  /* Fixed atmospheric backdrop: terminal glow + blueprint grid, masked at top. */
   .atmosphere {
     position: fixed;
     inset: 0;
     z-index: -1;
     pointer-events: none;
-    background:
-      radial-gradient(52rem 34rem at 88% -10%, hsl(152 76% 46% / 0.1), transparent 60%),
-      radial-gradient(46rem 30rem at 4% 0%, hsl(42 92% 52% / 0.06), transparent 58%),
-      linear-gradient(180deg, hsl(200 32% 5%), hsl(200 34% 3.2%));
-  }
-
-  .atmosphere::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(hsl(200 30% 62% / 0.045) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(200 30% 62% / 0.045) 1px, transparent 1px);
-    background-size: 58px 58px;
-    -webkit-mask-image: radial-gradient(125% 85% at 50% -5%, #000 30%, transparent 76%);
-    mask-image: radial-gradient(125% 85% at 50% -5%, #000 30%, transparent 76%);
+    background: hsl(var(--background));
   }
 
   ::selection {
-    background: hsl(152 76% 46% / 0.28);
-    color: hsl(152 30% 96%);
+    background: hsl(156 72% 45% / 0.28);
+    color: hsl(45 8% 96%);
   }
 
   ::-webkit-scrollbar {
@@ -72,12 +56,22 @@
     height: 11px;
   }
   ::-webkit-scrollbar-thumb {
-    background: hsl(200 14% 22%);
+    background: hsl(220 6% 24%);
     border: 3px solid hsl(var(--background));
     border-radius: 9999px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(200 14% 30%);
+    background: hsl(220 6% 32%);
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
   }
 }
 

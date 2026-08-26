@@ -1,4 +1,5 @@
 import {
+  ArrowRight,
   BarChart3,
   ExternalLink,
   History,
@@ -6,10 +7,12 @@ import {
   Trophy,
   UserRound,
 } from "lucide-react";
+import Link from "next/link";
 
 import { ReportMasthead } from "@/components/report-masthead";
 import { SiteFooter } from "@/components/site-footer";
 import { SolopreneurIndex } from "@/components/solopreneurs/solopreneur-index";
+import { Button } from "@/components/ui/button";
 import { formatDate } from "@/lib/format";
 import {
   getSolopreneurAsOf,
@@ -44,10 +47,10 @@ export default function SolopreneursPage() {
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto w-full max-w-[1320px] px-4 py-6 sm:py-10">
+      <div className="mx-auto w-full max-w-[1320px] px-4 pb-8">
         <ReportMasthead />
 
-        <section className="mb-5" aria-labelledby="solo-index-title">
+        <section className="mb-5 border-b pb-5" aria-labelledby="solo-index-title">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <p className="font-mono text-micro font-semibold uppercase tracking-[0.12em] text-primary">
@@ -62,9 +65,17 @@ export default function SolopreneursPage() {
                 claims instead of treating every internet number as fact.
               </p>
             </div>
-            <p className="font-mono text-xs text-muted-foreground">
-              Research snapshot: {formatDate(getSolopreneurAsOf())}
-            </p>
+            <div className="flex flex-col items-start gap-2 sm:items-end">
+              <Button asChild size="sm">
+                <Link href="/solopreneurs/study">
+                  Study the S-tier playbooks
+                  <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+              </Button>
+              <p className="font-mono text-xs text-muted-foreground">
+                Research snapshot: {formatDate(getSolopreneurAsOf())}
+              </p>
+            </div>
           </div>
         </section>
 

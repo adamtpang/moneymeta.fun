@@ -26,7 +26,7 @@ export default function ReportIssuePage({ params }: { params: { week: string } }
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto w-full max-w-[860px] px-4 py-6 sm:py-10">
+      <div className="mx-auto w-full max-w-[860px] px-4 pb-8">
         <ReportMasthead />
         <IssueBody issue={issue} />
         <ReportSubscribe />

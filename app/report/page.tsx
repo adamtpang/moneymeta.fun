@@ -19,19 +19,18 @@ export default function ReportIndexPage() {
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto w-full max-w-[860px] px-4 py-6 sm:py-10">
+      <div className="mx-auto w-full max-w-[860px] px-4 pb-8">
         <ReportMasthead />
 
-        <div className="mb-4">
-          <div className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-            The weekly report
-          </div>
+        <header className="mb-5 border-b pb-5">
+          <div className="font-mono text-micro font-bold text-primary">THE WEEKLY REPORT</div>
+          <h1 className="mt-1 text-2xl font-black sm:text-3xl">What changed in the money meta</h1>
           <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
             The board is the live state; this is the periodical. Every Monday:
             what moved, The Pick under both lenses, and the honest note when
             nothing moved at all.
           </p>
-        </div>
+        </header>
 
         {latest ? (
           <IssueBody issue={latest} latest />
