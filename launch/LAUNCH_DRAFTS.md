@@ -2,96 +2,90 @@
 
 **STATUS: DRAFTS. NOTHING HAS BEEN SENT OR POSTED.** Adam posts these himself.
 
-Drafted 2026-08-06, sourced from the live board and the 2026-08-06 report
-issue. Every number below is computed live in `seed/income-decks.json` via the
-formula in `lib/income.ts`, reproduced independently in this file's sources
-section. Do not edit a number without recomputing it.
+Updated 2026-08-26 for scoring formula v2 and the 98-deck board. Every ranking
+below was recomputed from `seed/income-decks.json` through `lib/income.ts`.
 
----
+## 1. LinkedIn draft
 
-## 1. LinkedIn / X post
+I built a tier list for 98 ways to make money, scored like a game meta.
 
-> Angle: the counterintuitive finding, S-tier chart as the visual. The hook
-> has to survive the "see more" cut, so it leads with the surprise, not the
-> methodology.
+The first version made a basic mistake: it treated income as win rate. A path
+could look S tier because the winners earned a lot, even when very few people
+actually reached a livable income.
 
----
+The new model separates the size of the win from the odds of winning.
 
-I built a tier list for every way to make money, scored the way Hearthstone
-players score a deck: income times growth divided by how hard it is to start.
-90 paths, all anchored to public data.
+That changes the answer depending on the question:
 
-The number two spot, right behind Big Tech engineer with equity, on both start
-now and highest ceiling:
+- Airline pilots share the highest Start now score at 67. The public-data
+  inputs are a $232,140 median, a 99% livable-income proxy, and 4% projected
+  growth.
+- Forward deployed engineer has the highest ceiling score at 100, using a
+  partial-data $385,000 compensation estimate and 35% growth proxy. But its 20%
+  livable-income proxy discounts the Start now result to 67.
+- Air traffic controllers score 66 for Start now: $148,080 median, 99%
+  livable-income proxy, and a much shorter path to first income.
 
-Chick-fil-A franchise operator. Median take home around $240,000. Ahead of
-physicians, financial managers, data scientists, AI engineers.
+One ranking cannot honestly answer both "what can pay the most?" and "what is
+the strongest path to start from here?" So the board has two lenses, visible
+data-confidence labels, and a public source on every deck.
 
-Here is the catch, and it is the whole point of the board: acceptance rate is
-about 0.25 percent. Roughly 60,000 people apply a year, 100 to 150 get chosen.
-That is a lower acceptance rate than Harvard. The score says S tier. The play
-rate says almost nobody gets to play this deck.
+The board, methodology, weekly reports, and Capital Map are live:
 
-That is exactly why the board shows both numbers. A high score with a brutal
-win rate is a real category, not a contradiction, the same way a powerful but
-rarely-drafted card reads in an actual meta report.
+https://moneymeta.fun/?utm_source=linkedin&utm_medium=social&utm_campaign=scoring_v2
 
-Second finding, quieter but sharper: a dentist who owns their practice
-outranks a physician on lifetime ceiling. Not because dentistry pays more
-(physicians still win on raw median), but because a physician's path takes 15
-years to first income against a practice owner's 4. Time eats ceiling.
+## 2. Short draft for X or Threads
 
-Board, method, and the weekly report: moneymeta.fun
+I rebuilt the scoring for a tier list of 98 ways to make money.
 
-[Attach: screenshot of the S-tier rows from the live board, or link directly
-so the auto-generated tier-chart preview image renders]
+Income is the size of the win. It is not the win rate.
 
----
+Highest ceiling: forward deployed engineer, 100.
+Strongest Start now score: airline pilots, 67.
+Air traffic controllers: 66.
 
-## 2. Shorter version (X / Threads character limits)
+Two lenses, confidence labels, and a public source on every deck:
 
----
+https://moneymeta.fun/?utm_source=x&utm_medium=social&utm_campaign=scoring_v2
 
-Tier list for every way to make money, scored like a game meta: income x
-growth / barrier to start.
+## 3. Measurement protocol
 
-#2 spot on the whole board, ahead of physicians, data scientists, and AI
-engineers: Chick-fil-A franchise operator, ~$240k median.
+Vercel Web Analytics was enabled on 2026-08-26. The app already emits the
+`checkout_click` event from the $29 founding-license link.
 
-Catch: about 0.25% acceptance rate, lower than Harvard's. High score, brutal
-win rate. That tension is the whole point of showing both numbers.
+Record results 24 hours and 7 days after Adam posts:
 
-moneymeta.fun
+| Window | Platform | Post impressions | Site visits | Checkout clicks | Stranger sales |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 24 hours | pending | pending | pending | pending | pending |
+| 7 days | pending | pending | pending | pending | pending |
 
----
+Log zero as zero. Do not infer old traffic because collection only began on
+2026-08-26.
 
-## Sources
+## Sources and caveats
 
-Recomputed independently for this draft. If a number here does not match a
-fresh run of `lib/income.ts` against current `seed/income-decks.json`, trust
-the live computation and fix this file.
-
-| Claim | Source |
+| Claim | Evidence |
 | --- | --- |
-| Chick-fil-A operator: ceiling score 73, start-now score 72, both #2 on the board behind Big-Tech SWE (77/77) | Computed 2026-08-06 from `seed/income-decks.json` via the formula in `lib/income.ts` |
-| Chick-fil-A operator median ~$240k | `seed/income-decks.json`, sourced to [FDD Item 19 analysis, franchisechatter.com, 2024](https://www.franchisechatter.com/2024/09/19/fdd-talk-chick-fil-a-franchise-costs-fees-average-revenues-and-or-profits-2024-review/). Deck's own `dataQuality` field is "partial": Item 19 discloses revenue, not profit, so income is a third-party estimate. State this caveat if asked, do not drop it. |
-| Chick-fil-A operator livablePct 12 (proxy for the acceptance-rate framing); ~60,000 applicants a year, 100 to 150 selected, ~0.25% acceptance rate, lower than Harvard's 3.4% | `seed/income-decks.json` frequency field ("acceptance rate well under 1%") plus [QSR Pro, Chick-fil-A operator selection process](https://qsr.pro/articles/chick-fil-a-operator-selection-process), verified 2026-08-06. This figure is NOT in the repo's seed data; it is sourced fresh for this post only. |
-| Dental Practice Owner ceiling score 77 ($258,260 median, 4yr time to first income) vs Physicians & Surgeons ceiling score 75 ($239,200 median, 15yr time to first income) | Computed 2026-08-06 from `seed/income-decks.json` |
-| Big-Tech SWE (equity comp) is #1 on both lenses at score 77 | Computed 2026-08-06 from `seed/income-decks.json` |
+| 98 decks | `seed/income-decks.json` count, verified 2026-08-26 |
+| Airline pilots: Start now 67, ceiling 74, $232,140 median, 99% livable proxy, 4% growth | Current `lib/income.ts` output and the deck's [BLS source](https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm) |
+| Air traffic controllers: Start now 66, $148,080 median, 99% livable proxy | Current `lib/income.ts` output and the deck's [BLS source](https://www.bls.gov/ooh/transportation-and-material-moving/air-traffic-controllers.htm) |
+| Forward deployed engineer: Start now 67, ceiling 100, $385,000 estimate, 20% livable proxy, 35% growth proxy | Current `lib/income.ts` output. The deck is visibly labeled `partial`, not BLS-verifiable, and links to its source |
 
-## Claims deliberately NOT made
+Do not call the FDE compensation estimate a verified median. Do not claim
+customers or subscribers. Revenue and active customers remain zero until a
+stranger purchase proves otherwise.
 
-- No claim that moneymeta.fun has paying customers or subscribers. As of
-  2026-08-06: $0 revenue, 0 customers, verified against Stripe.
-- No claim that the $240k Chick-fil-A figure is confirmed profit. It is a
-  disclosed-revenue-based third-party estimate, and the post should not
-  imply otherwise if a reader pushes back in replies.
-- No specific "X slots per year" Chick-fil-A franchise figure unless verified
-  fresh; it is not in this repo's sourced seed data.
+## PPLX solopreneur thread: product implication
 
-## After posting
+The conversation identifies a useful future category, but not a trustworthy
+dataset yet. There is no canonical, consistently verified leaderboard for
+solo operators. Existing lists mix founder interviews, self-reported revenue,
+acquisition disclosures, and estimates.
 
-Log in EVIDENCE.md: date posted, platform, impressions, replies, and any
-traffic delta visible once Vercel Web Analytics is actually enabled (it is
-not, as of 2026-08-06; see EVIDENCE.md). A zero is a real result and gets
-logged as one.
+The defensible product version would be a **Solo Operator Meta** with four
+separate fields: annual revenue, owner earnings, duration, and verification
+confidence. Pieter Levels, Eric Barone, Markus Frind, Justin Welsh, and the
+other names in the conversation are research candidates, not seed truth.
+Nothing from that list should enter the live score until every claim has a
+dated primary source or a visible partial-data label.
