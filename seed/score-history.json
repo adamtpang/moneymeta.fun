@@ -1,289 +1,290 @@
 {
-  "asOf": "2026-08-06",
+  "asOf": "2026-08-26",
+  "formulaVersion": 2,
   "note": "Prior period scores for movement arrows. Re-run snapshot-scores.mjs after each meta report.",
   "scores": {
     "physicians-surgeons": {
-      "startNow": 60,
+      "startNow": 43,
       "ceiling": 75,
       "median": 239200,
       "playRate": 20,
       "livablePct": 55
     },
     "airline-pilots": {
-      "startNow": 68,
+      "startNow": 67,
       "ceiling": 74,
       "median": 232140,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 58,
+      "livablePct": 99
     },
     "dentists": {
       "startNow": 54,
       "ceiling": 54,
       "median": 170950,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 60,
+      "livablePct": 99
     },
     "financial-managers": {
-      "startNow": 61,
+      "startNow": 60,
       "ceiling": 60,
       "median": 166570,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 84,
+      "livablePct": 99
     },
     "lawyers": {
-      "startNow": 55,
+      "startNow": 54,
       "ceiling": 51,
       "median": 159670,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 83,
+      "livablePct": 99
     },
     "ai-ml-engineers": {
       "startNow": 54,
       "ceiling": 55,
       "median": 140300,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 45,
+      "livablePct": 99
     },
     "petroleum-engineers": {
       "startNow": 57,
       "ceiling": 44,
       "median": 144910,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 36,
+      "livablePct": 99
     },
     "pharmacists": {
       "startNow": 49,
       "ceiling": 45,
       "median": 140910,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 72,
+      "livablePct": 99
     },
     "aerospace-engineers": {
       "startNow": 57,
       "ceiling": 44,
       "median": 134960,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 53,
+      "livablePct": 99
     },
     "physician-assistants": {
       "startNow": 57,
       "ceiling": 54,
       "median": 135880,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 64,
+      "livablePct": 99
     },
     "software-developers": {
-      "startNow": 62,
+      "startNow": 61,
       "ceiling": 50,
       "median": 135980,
-      "playRate": 30,
-      "livablePct": 60
+      "playRate": 93,
+      "livablePct": 99
     },
     "nurse-practitioners": {
       "startNow": 61,
       "ceiling": 63,
       "median": 132300,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 72,
+      "livablePct": 99
     },
     "actuaries": {
-      "startNow": 64,
+      "startNow": 63,
       "ceiling": 53,
       "median": 130000,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 41,
+      "livablePct": 99
     },
     "data-scientists": {
       "startNow": 63,
       "ceiling": 58,
       "median": 120230,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 70,
+      "livablePct": 99
     },
     "financial-investment-analysts": {
-      "startNow": 52,
+      "startNow": 51,
       "ceiling": 34,
       "median": 102740,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 74,
+      "livablePct": 99
     },
     "electrician": {
-      "startNow": 35,
+      "startNow": 33,
       "ceiling": 23,
       "median": 63190,
-      "playRate": 25,
-      "livablePct": 40
+      "playRate": 83,
+      "livablePct": 74
     },
     "plumber-pipefitter": {
-      "startNow": 33,
+      "startNow": 31,
       "ceiling": 20,
       "median": 63800,
-      "playRate": 25,
-      "livablePct": 40
+      "playRate": 77,
+      "livablePct": 75
     },
     "hvac-technician": {
-      "startNow": 34,
+      "startNow": 32,
       "ceiling": 22,
       "median": 61010,
-      "playRate": 25,
-      "livablePct": 40
+      "playRate": 75,
+      "livablePct": 72
     },
     "welder-fabricator": {
-      "startNow": 30,
+      "startNow": 28,
       "ceiling": 16,
       "median": 53750,
-      "playRate": 25,
-      "livablePct": 40
+      "playRate": 75,
+      "livablePct": 63
     },
     "elevator-escalator-installer": {
-      "startNow": 46,
+      "startNow": 39,
       "ceiling": 34,
       "median": 106580,
       "playRate": 20,
       "livablePct": 55
     },
     "electrical-power-line-installer": {
-      "startNow": 46,
+      "startNow": 41,
       "ceiling": 31,
       "median": 92560,
       "playRate": 20,
       "livablePct": 55
     },
     "construction-manager-general-contractor": {
-      "startNow": 49,
+      "startNow": 48,
       "ceiling": 40,
       "median": 114990,
-      "playRate": 22,
-      "livablePct": 12
+      "playRate": 74,
+      "livablePct": 99
     },
     "dental-hygienist": {
       "startNow": 53,
       "ceiling": 33,
       "median": 98100,
-      "playRate": 20,
-      "livablePct": 55
+      "playRate": 68,
+      "livablePct": 99
     },
     "commercial-driver-trucking-owner-operator": {
-      "startNow": 33,
+      "startNow": 32,
       "ceiling": 18,
       "median": 58640,
-      "playRate": 22,
-      "livablePct": 15
+      "playRate": 95,
+      "livablePct": 70
     },
     "locksmith": {
-      "startNow": 44,
+      "startNow": 41,
       "ceiling": 13,
       "median": 51320,
       "playRate": 25,
       "livablePct": 40
     },
     "appliance-repair-technician": {
-      "startNow": 39,
+      "startNow": 37,
       "ceiling": 13,
       "median": 50640,
       "playRate": 25,
       "livablePct": 40
     },
     "chick-fil-a-operator": {
-      "startNow": 72,
+      "startNow": 38,
       "ceiling": 73,
       "median": 240000,
       "playRate": 22,
       "livablePct": 12
     },
     "crumbl-cookies-franchise": {
-      "startNow": 45,
+      "startNow": 40,
       "ceiling": 33,
       "median": 77359,
       "playRate": 28,
       "livablePct": 45
     },
     "servpro-restoration-franchise": {
-      "startNow": 55,
+      "startNow": 29,
       "ceiling": 61,
       "median": 200000,
       "playRate": 22,
       "livablePct": 15
     },
     "two-men-and-a-truck-franchise": {
-      "startNow": 52,
+      "startNow": 39,
       "ceiling": 54,
       "median": 180000,
       "playRate": 20,
       "livablePct": 55
     },
     "laundromat": {
-      "startNow": 36,
+      "startNow": 29,
       "ceiling": 20,
       "median": 75000,
       "playRate": 22,
       "livablePct": 15
     },
     "self-storage-facility": {
-      "startNow": 55,
+      "startNow": 31,
       "ceiling": 56,
       "median": 184500,
       "playRate": 22,
       "livablePct": 15
     },
     "express-tunnel-car-wash": {
-      "startNow": 45,
+      "startNow": 26,
       "ceiling": 38,
       "median": 150000,
       "playRate": 22,
       "livablePct": 15
     },
     "vending-machine-route": {
-      "startNow": 42,
+      "startNow": 40,
       "ceiling": 10,
       "median": 40000,
       "playRate": 22,
       "livablePct": 12
     },
     "atm-route": {
-      "startNow": 41,
+      "startNow": 40,
       "ceiling": 9,
       "median": 36000,
       "playRate": 22,
       "livablePct": 12
     },
     "hvac-plumbing-home-services-company": {
-      "startNow": 42,
+      "startNow": 33,
       "ceiling": 26,
       "median": 90000,
       "playRate": 22,
       "livablePct": 12
     },
     "landscaping-lawn-care-company": {
-      "startNow": 44,
+      "startNow": 36,
       "ceiling": 23,
       "median": 80000,
       "playRate": 22,
       "livablePct": 12
     },
     "pressure-washing-business": {
-      "startNow": 45,
+      "startNow": 41,
       "ceiling": 16,
       "median": 60000,
       "playRate": 22,
       "livablePct": 12
     },
     "pool-service-route": {
-      "startNow": 45,
+      "startNow": 36,
       "ceiling": 24,
       "median": 85000,
       "playRate": 22,
       "livablePct": 12
     },
     "dental-practice-owner": {
-      "startNow": 62,
+      "startNow": 44,
       "ceiling": 77,
       "median": 258260,
       "playRate": 20,
       "livablePct": 55
     },
     "medical-practice-owner": {
-      "startNow": 47,
+      "startNow": 13,
       "ceiling": 77,
       "median": 250000,
       "playRate": 22,
@@ -381,35 +382,35 @@
       "livablePct": 8
     },
     "b2b-saas-sales": {
-      "startNow": 59,
+      "startNow": 58,
       "ceiling": 33,
       "median": 104920,
-      "playRate": 28,
-      "livablePct": 40
+      "playRate": 71,
+      "livablePct": 92
     },
     "big-tech-swe-equity": {
-      "startNow": 77,
+      "startNow": 54,
       "ceiling": 77,
       "median": 220000,
       "playRate": 12,
       "livablePct": 35
     },
     "real-estate-agent-broker": {
-      "startNow": 45,
+      "startNow": 43,
       "ceiling": 15,
       "median": 52830,
-      "playRate": 28,
-      "livablePct": 45
+      "playRate": 66,
+      "livablePct": 56
     },
     "recruiter-staffing-agency": {
-      "startNow": 55,
+      "startNow": 47,
       "ceiling": 27,
       "median": 80000,
       "playRate": 30,
       "livablePct": 10
     },
     "fractional-cfo-bookkeeping": {
-      "startNow": 55,
+      "startNow": 47,
       "ceiling": 27,
       "median": 79880,
       "playRate": 30,
@@ -423,7 +424,7 @@
       "livablePct": 7
     },
     "med-spa-aesthetics": {
-      "startNow": 49,
+      "startNow": 31,
       "ceiling": 45,
       "median": 150000,
       "playRate": 22,
@@ -612,7 +613,7 @@
       "livablePct": 2
     },
     "online-bookkeeping-remote": {
-      "startNow": 49,
+      "startNow": 47,
       "ceiling": 15,
       "median": 45000,
       "playRate": 35,
@@ -631,6 +632,62 @@
       "median": 0,
       "playRate": 85,
       "livablePct": 2
+    },
+    "air-traffic-controllers": {
+      "startNow": 66,
+      "ceiling": 46,
+      "median": 148080,
+      "playRate": 18,
+      "livablePct": 99
+    },
+    "nuclear-reactor-operators": {
+      "startNow": 60,
+      "ceiling": 38,
+      "median": 122610,
+      "playRate": 12,
+      "livablePct": 95
+    },
+    "harbor-pilot": {
+      "startNow": 48,
+      "ceiling": 60,
+      "median": 192763,
+      "playRate": 6,
+      "livablePct": 90
+    },
+    "saturation-diver": {
+      "startNow": 50,
+      "ceiling": 40,
+      "median": 123299,
+      "playRate": 8,
+      "livablePct": 60
+    },
+    "fifo-mining-australia": {
+      "startNow": 54,
+      "ceiling": 30,
+      "median": 92000,
+      "playRate": 30,
+      "livablePct": 70
+    },
+    "forward-deployed-engineer": {
+      "startNow": 67,
+      "ceiling": 100,
+      "median": 385000,
+      "playRate": 10,
+      "livablePct": 20
+    },
+    "sales-engineer": {
+      "startNow": 61,
+      "ceiling": 39,
+      "median": 121520,
+      "playRate": 40,
+      "livablePct": 95
+    },
+    "ai-implementation-consultant": {
+      "startNow": 65,
+      "ceiling": 68,
+      "median": 150000,
+      "playRate": 45,
+      "livablePct": 30
     }
   }
 }

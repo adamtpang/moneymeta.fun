@@ -2216,5 +2216,1654 @@
       "amazon-fba-e-commerce-store",
       "dropshipping"
     ]
+  },
+  "physicians-surgeons": {
+    "headline": "Play physicians and surgeons: the longest ladder, the highest ceiling",
+    "whoItsFor": "People committed to an 11-15 year training runway who want the highest verified BLS median and the top clinical ceiling in this batch.",
+    "firstDollar": "11-15 years. Attending-level pay doesn't start until residency (sometimes fellowship) is complete; residency itself pays roughly $60-70K/yr as a trainee wage, not attending income.",
+    "steps": [
+      {
+        "title": "1. Pre-med foundation (undergrad + MCAT)",
+        "body": "Bachelor's degree with pre-med coursework (biology, chemistry, organic chem, physics), a competitive GPA, and the MCAT. ~4 years."
+      },
+      {
+        "title": "2. Medical school (MD or DO)",
+        "body": "Apply via AMCAS or AACOMAS, complete a 4-year MD or DO program, pass USMLE Step 1 and Step 2 CK (or COMLEX for DO)."
+      },
+      {
+        "title": "3. Match into residency",
+        "body": "Rank programs through the NRMP Match, then complete residency: 3 years for primary care/family medicine up to 5-7 years for surgical subspecialties, at trainee pay."
+      },
+      {
+        "title": "4. Optional fellowship for subspecialty",
+        "body": "1-3 more years for cardiology, ortho subspecialties, and similar, which push income well past the broad median."
+      },
+      {
+        "title": "5. Licensure and first attending job",
+        "body": "Pass USMLE Step 3 (or COMLEX Level 3), get a state medical license, credential with a hospital or group, and negotiate the first attending contract."
+      }
+    ],
+    "tools": [
+      "USMLE/COMLEX prep (UWorld, Boards and Beyond)",
+      "NRMP Match",
+      "State medical board licensing portal",
+      "Physician contract review attorney",
+      "Malpractice insurance broker"
+    ],
+    "pitfalls": [
+      "Six-figure med school debt compounding through a low-pay residency",
+      "Choosing a specialty for prestige rather than fit and lifestyle",
+      "Skipping contract review on the first attending job, RVU structures and non-competes vary wildly",
+      "Underestimating years to breakeven against non-medical peers who started earning at 22"
+    ],
+    "nextDecks": [
+      "dentists",
+      "physician-assistants",
+      "medical-practice-owner",
+      "nurse-practitioners"
+    ]
+  },
+  "airline-pilots": {
+    "headline": "Play airline pilots: buy the flight hours, earn the seniority",
+    "whoItsFor": "People willing to front real training capital for a defined, checkbox-style path to a six-figure, seniority-driven career.",
+    "firstDollar": "First paid flying job (flight instructor or regional first officer) can come in 1.5-2 years once you hold a commercial certificate; the 1,500-hour ATP threshold for an airline seat typically takes 2-3 years total.",
+    "steps": [
+      {
+        "title": "1. Private and instrument ratings",
+        "body": "Start flight training at a Part 61/141 school or a collegiate aviation program, earn a Private Pilot Certificate then an Instrument Rating. Roughly $15-25K."
+      },
+      {
+        "title": "2. Commercial certificate + CFI",
+        "body": "Add a Commercial Pilot Certificate and, usually, a Certified Flight Instructor rating so you can build hours by teaching. Another $20-30K."
+      },
+      {
+        "title": "3. Build the 1,500 hours",
+        "body": "Fly as a CFI, banner tow, aerial survey, or similar to accumulate the FAA-mandated 1,500 hours for an ATP certificate (250 hours with an approved bachelor's under R-ATP rules)."
+      },
+      {
+        "title": "4. Earn the ATP certificate, get hired regional",
+        "body": "Pass the ATP written and checkride, apply to regional carriers (Envoy, SkyWest, PSA, and similar), complete type-rating training."
+      },
+      {
+        "title": "5. Build seniority toward a major",
+        "body": "Regional first officer pay is modest; seniority (years of service, base, aircraft) at a major carrier is what drives pay past $300-400K for senior captains."
+      }
+    ],
+    "tools": [
+      "Part 141 flight school",
+      "FAA written test prep (Sheppard Air, Sporty's)",
+      "ATP-level type rating provider",
+      "Union seniority list tracker (airlinepilotcentral.com)"
+    ],
+    "pitfalls": [
+      "Financing $80-100K+ in flight training debt before any airline income starts",
+      "Treating regional first-officer pay (often under $60K to start) as the ceiling instead of the on-ramp",
+      "Ignoring commuting, base, and seniority mechanics that dominate quality of life and pay progression"
+    ],
+    "nextDecks": [
+      "aerospace-engineers",
+      "petroleum-engineers",
+      "lawyers"
+    ]
+  },
+  "dentists": {
+    "headline": "Play dentists: license once, then buy or build the practice",
+    "whoItsFor": "People who want a licensed clinical ceiling with a well-trodden path to practice ownership.",
+    "firstDollar": "~8 years to first income as an associate dentist; ownership, buying into or starting a practice, is what pushes pay meaningfully above the employee median.",
+    "steps": [
+      {
+        "title": "1. Pre-dental undergrad + DAT",
+        "body": "Bachelor's degree with pre-dental science coursework, a competitive GPA, and the Dental Admission Test (DAT)."
+      },
+      {
+        "title": "2. Dental school (DDS or DMD)",
+        "body": "4-year CODA-accredited program, with clinical rotations in years 3-4."
+      },
+      {
+        "title": "3. Pass licensure exams",
+        "body": "The National Board Dental Examination (INBDE) plus a state or regional clinical licensure exam."
+      },
+      {
+        "title": "4. Associate at an existing practice",
+        "body": "Most new dentists start as an associate, commission or salary plus production bonus, to build clinical speed and a patient base before owning."
+      },
+      {
+        "title": "5. Buy in or start a practice",
+        "body": "Use a practice-acquisition loan (several banks specialize in dental practice lending) to buy an existing book or start fresh; ownership is where income clears $250K+."
+      }
+    ],
+    "tools": [
+      "DAT prep (Kaplan, Bootcamp.com)",
+      "State dental board licensing",
+      "Dental-specific practice lenders (Bank of America Practice Solutions, Live Oak Bank)",
+      "Practice management software (Dentrix, Open Dental)"
+    ],
+    "pitfalls": [
+      "Dental school debt averaging $300K+ that eats years of associate-level pay",
+      "Buying a practice at an inflated multiple without a broker/CPA review",
+      "Underestimating the non-clinical skills, staffing, billing, marketing, that practice ownership actually requires"
+    ],
+    "nextDecks": [
+      "dental-practice-owner",
+      "physicians-surgeons",
+      "dental-hygienist",
+      "physician-assistants"
+    ]
+  },
+  "financial-managers": {
+    "headline": "Play financial managers: climb from analyst to the office that signs the checks",
+    "whoItsFor": "Finance and accounting grads willing to spend 5-10 years building a track record before stepping into a controller, treasurer, or finance-director seat.",
+    "firstDollar": "~7 years. This is a promotion-path deck, not a licensing-gate one: the credential (CPA/CFA/MBA) matters less than the years of P&L, FP&A, or accounting ownership behind you.",
+    "steps": [
+      {
+        "title": "1. Finance/accounting/business bachelor's",
+        "body": "Build the technical base, accounting, corporate finance, financial modeling, that every finance-manager track requires."
+      },
+      {
+        "title": "2. Entry analyst role",
+        "body": "Start as a financial, staff, or FP&A analyst at a company, or in public accounting (Big 4 audit is a common on-ramp)."
+      },
+      {
+        "title": "3. Earn a credential that signals depth",
+        "body": "A CPA license (accounting track) or CFA charter (investment/analysis track) is the single biggest lever for promotion speed; both take 1-3 years alongside work."
+      },
+      {
+        "title": "4. Move into a management layer",
+        "body": "Progress from analyst to senior analyst to manager, owning a budget, a close process, or a business unit's numbers, typically 5+ years in."
+      },
+      {
+        "title": "5. Step into a financial-manager title",
+        "body": "Controller, treasurer, or finance director, often via internal promotion or a lateral move; an MBA can accelerate this jump but is optional."
+      }
+    ],
+    "tools": [
+      "CPA exam prep (Becker)",
+      "CFA Institute curriculum",
+      "Financial modeling courses (Wall Street Prep, CFI)",
+      "FP&A/ERP tools (NetSuite, Adaptive Insights, Excel/SQL)"
+    ],
+    "pitfalls": [
+      "Treating the CPA/CFA as optional when it's the fastest credential-based promotion lever available",
+      "Staying too long in a pure-analyst role without asking for P&L or team ownership",
+      "Switching companies too often to build the multi-year track record promotion committees actually look for"
+    ],
+    "nextDecks": [
+      "actuaries",
+      "financial-investment-analysts",
+      "fractional-cfo-bookkeeping"
+    ]
+  },
+  "lawyers": {
+    "headline": "Play lawyers: pass the bar, then pick BigLaw scale or small-firm ceiling",
+    "whoItsFor": "People willing to take on law-school debt for a genuinely bimodal market: BigLaw associate pay starts near $225K, but most lawyers earn well under the reported median.",
+    "firstDollar": "~7 years to first income as a licensed, practicing attorney; a strong 2L-year summer associate offer can convert to real BigLaw pay before graduation.",
+    "steps": [
+      {
+        "title": "1. Bachelor's degree + LSAT",
+        "body": "Any major works; build a competitive GPA and LSAT score, since both drive law school admission and scholarship money."
+      },
+      {
+        "title": "2. Law school (JD, 3 years)",
+        "body": "Attend an ABA-accredited program; 1L grades and law review/journal placement heavily influence which firms recruit you."
+      },
+      {
+        "title": "3. Summer associate recruiting (OCI)",
+        "body": "On-campus interviewing after 1L or 2L year is the main pipeline into BigLaw; a strong summer associate offer often converts to a full-time job."
+      },
+      {
+        "title": "4. Pass the bar exam",
+        "body": "Sit for the bar in the state you intend to practice (the UBE is portable across many states); this is the hard gate to practicing law at all."
+      },
+      {
+        "title": "5. Choose the track",
+        "body": "BigLaw associate (highest pay, longest hours, up-or-out to partner), government/public-interest (lower pay, PSLF loan forgiveness eligible), or small-firm/solo (income depends entirely on business development)."
+      }
+    ],
+    "tools": [
+      "LSAT prep (7Sage, Khan Academy free)",
+      "Bar exam prep (Barbri, Themis)",
+      "State bar licensing board",
+      "Legal research tools (Westlaw, Lexis)"
+    ],
+    "pitfalls": [
+      "Attending a low-ranked law school on debt without a scholarship",
+      "Assuming the reported median applies broadly when the market is genuinely bimodal, BigLaw vs. everyone else",
+      "Missing PSLF-track loan forgiveness by leaving public-interest work before the 10-year clock completes"
+    ],
+    "nextDecks": [
+      "financial-managers",
+      "aerospace-engineers",
+      "petroleum-engineers"
+    ]
+  },
+  "ai-ml-engineers": {
+    "headline": "Play AI/ML engineer: the research-adjacent track above general software dev",
+    "whoItsFor": "Strong CS builders willing to go deep on math and ML fundamentals instead of stopping at general software engineering.",
+    "firstDollar": "~9 years on the BLS-tracked path (bachelor's plus graduate research background); in practice, many working ML engineers enter industry with a strong bachelor's plus a portfolio of shipped models, no PhD required for most roles.",
+    "steps": [
+      {
+        "title": "1. CS/math foundation",
+        "body": "Bachelor's in computer science, math, or a related quantitative field; linear algebra, probability, and algorithms are the load-bearing courses."
+      },
+      {
+        "title": "2. Build a real ML portfolio",
+        "body": "Ship actual models, not tutorials: a Kaggle competition result, a fine-tuned open-source model, a deployed inference pipeline. This substitutes for credentials at most companies."
+      },
+      {
+        "title": "3. Go deep with a master's or equivalent self-study",
+        "body": "A master's in CS/ML (or the BLS-tracked PhD for pure research-scientist roles) sharpens the theory; many industry ML engineer roles hire strong bachelor's-plus-portfolio candidates without it."
+      },
+      {
+        "title": "4. Target ML-specific interview loops",
+        "body": "These test differently from general SWE, ML system design, applied math, take-home modeling tasks, not just algorithm puzzles."
+      },
+      {
+        "title": "5. Specialize to raise the ceiling",
+        "body": "NLP/LLMs, computer vision, or ML infra/MLOps are the sub-tracks that command the highest total comp at AI labs and large tech companies, well above the broad BLS median."
+      }
+    ],
+    "tools": [
+      "PyTorch / TensorFlow",
+      "Hugging Face",
+      "Kaggle",
+      "fast.ai or Andrew Ng's ML courses",
+      "GPU cloud for training runs (Lambda, RunPod)"
+    ],
+    "pitfalls": [
+      "Confusing 'took an ML course' with 'shipped a model that works on real data'",
+      "Chasing PhD-only research roles when most paying ML engineer jobs need a bachelor's plus proof of work",
+      "Ignoring that the BLS median badly understates top-of-market AI-lab total comp, it's capped at the broad occupational category"
+    ],
+    "nextDecks": [
+      "software-developers",
+      "data-scientists",
+      "big-tech-swe-equity"
+    ]
+  },
+  "petroleum-engineers": {
+    "headline": "Play petroleum engineers: one degree, a commodity-cycle ceiling",
+    "whoItsFor": "Engineering students willing to bet on energy-sector demand and geographic concentration for one of the fastest, highest-paying engineering on-ramps.",
+    "firstDollar": "~4 years, the shortest time-to-first-income in this batch. A first job out of a petroleum engineering bachelor's pays well above the general engineering median.",
+    "steps": [
+      {
+        "title": "1. ABET-accredited petroleum engineering bachelor's",
+        "body": "A small number of schools offer the specific degree (Texas A&M, UT Austin, Colorado School of Mines, Oklahoma, LSU); a mechanical or chemical engineering degree with an energy focus is a viable alternative entry."
+      },
+      {
+        "title": "2. Internship with an operator or service company",
+        "body": "Summer internships at majors (ExxonMobil, Chevron) or service companies (SLB, Halliburton, Baker Hughes) are the standard hiring pipeline into full-time roles."
+      },
+      {
+        "title": "3. First role as a field or reservoir engineer",
+        "body": "Entry-level work is often field-based (drilling, completions, production) before moving into reservoir or reservoir-simulation roles."
+      },
+      {
+        "title": "4. FE exam early, then PE licensure",
+        "body": "Fundamentals of Engineering exam right after graduation, then Professional Engineer licensure after ~4 years of work experience, required for senior technical sign-off roles."
+      },
+      {
+        "title": "5. Track the commodity cycle",
+        "body": "Pay and hiring move with oil and gas prices; operator-side roles typically pay more than service-company roles, and relocation to basins like the Permian is often part of the career."
+      }
+    ],
+    "tools": [
+      "ABET-accredited PE program",
+      "NCEES FE/PE exam",
+      "SPE (Society of Petroleum Engineers) membership and journals",
+      "Reservoir simulation software (Eclipse, CMG)"
+    ],
+    "pitfalls": [
+      "Entering right before a commodity downturn, hiring and pay in this field are cyclical, not steady",
+      "Underestimating how geographically concentrated the job market is",
+      "Treating this as a 'safe' long-term bet without watching the energy transition's effect on long-run headcount, BLS projects only 1% growth here, the flattest in this batch"
+    ],
+    "nextDecks": [
+      "aerospace-engineers",
+      "airline-pilots",
+      "lawyers"
+    ]
+  },
+  "pharmacists": {
+    "headline": "Play pharmacists: license once, then pick clinical over retail",
+    "whoItsFor": "People who want a defined, four-year clinical doctorate with a fairly compressed, predictable pay band, not a path to outsized upside.",
+    "firstDollar": "~8 years to first income as a licensed PharmD; retail employment has softened, so clinical and hospital residency tracks are increasingly where the job growth is.",
+    "steps": [
+      {
+        "title": "1. Pre-pharmacy coursework",
+        "body": "2+ years of prerequisite science courses, many students complete these within a bachelor's, some programs accept after 2 years of undergrad."
+      },
+      {
+        "title": "2. PCAT (where required) and PharmCAS application",
+        "body": "Fewer PharmD programs still require the PCAT, check each target program, and apply through the centralized PharmCAS system."
+      },
+      {
+        "title": "3. PharmD program (4 years)",
+        "body": "Doctor of Pharmacy degree from an ACPE-accredited school, including Advanced Pharmacy Practice Experience (APPE) rotations in the final year."
+      },
+      {
+        "title": "4. Pass licensure exams",
+        "body": "NAPLEX (national) and MPJE (state-specific pharmacy law) are both required to practice."
+      },
+      {
+        "title": "5. Choose retail/community vs. clinical",
+        "body": "Retail chains hire straight out of licensure; hospital and clinical specialty roles often require a 1-2 year residency (PGY1/PGY2) but pay more and are the growing side of the field."
+      }
+    ],
+    "tools": [
+      "PharmCAS application portal",
+      "NAPLEX/MPJE prep (RxPrep)",
+      "ACPE-accredited PharmD program list",
+      "ASHP residency matching program"
+    ],
+    "pitfalls": [
+      "PharmD debt loads that are high relative to a fairly compressed pay band, unlike medicine, there is no six-figure jump waiting at the top",
+      "Chasing retail hours that are shrinking as chains cut pharmacist staffing",
+      "Skipping a residency when targeting clinical/hospital roles that increasingly expect one"
+    ],
+    "nextDecks": [
+      "physician-assistants",
+      "nurse-practitioners",
+      "dentists"
+    ]
+  },
+  "aerospace-engineers": {
+    "headline": "Play aerospace engineers: one degree, defense or commercial space",
+    "whoItsFor": "Engineering students who want a fast, single-bachelor's on-ramp into aircraft, spacecraft, or defense systems work.",
+    "firstDollar": "~4 years. A first job out of an ABET-accredited aerospace engineering bachelor's pays well above the general engineering median.",
+    "steps": [
+      {
+        "title": "1. ABET-accredited aerospace/aeronautical engineering bachelor's",
+        "body": "Core coursework in aerodynamics, propulsion, structures, and controls; co-ops or internships during school are the standard hiring pipeline."
+      },
+      {
+        "title": "2. Target defense primes or commercial aviation/space",
+        "body": "Lockheed Martin, Boeing, Northrop Grumman, and RTX hire the bulk of the field; SpaceX, Blue Origin, and Relativity are the fast-growing commercial-space alternative."
+      },
+      {
+        "title": "3. Get clearance-eligible if going defense",
+        "body": "Many defense-prime roles require or strongly prefer U.S. citizenship and eligibility for a security clearance; this can gate which teams you're placed on."
+      },
+      {
+        "title": "4. Specialize early",
+        "body": "Propulsion, structures, avionics/controls, or systems engineering are the common sub-tracks; commercial space companies especially reward generalist engineers who can move fast across disciplines."
+      },
+      {
+        "title": "5. PE licensure or a master's for senior tracks",
+        "body": "Not required for most industry roles, but a master's (often employer-funded) or PE licensure supports the move into senior or principal engineer roles."
+      }
+    ],
+    "tools": [
+      "ABET-accredited aerospace program",
+      "NCEES FE/PE exam",
+      "CAD/simulation tools (CATIA, ANSYS, MATLAB/Simulink)",
+      "Security clearance process (if going defense)"
+    ],
+    "pitfalls": [
+      "Assuming defense and commercial space pay and hire the same way, clearance requirements, program funding cycles, and equity upside all differ sharply",
+      "Treating the degree as terminal without specializing into a sub-discipline hiring managers actually screen for",
+      "Underestimating how cyclical defense-program funding can be for job stability"
+    ],
+    "nextDecks": [
+      "petroleum-engineers",
+      "airline-pilots",
+      "lawyers"
+    ]
+  },
+  "physician-assistants": {
+    "headline": "Play physician assistants: the fastest clinical six-figure track",
+    "whoItsFor": "People who want real clinical scope of practice, exam, diagnose, prescribe, without the decade-plus MD/DO runway.",
+    "firstDollar": "~7 years to first income as a licensed PA; roughly half the time-to-income of physicians-surgeons, the fastest path to a clinical six-figure salary in this batch.",
+    "steps": [
+      {
+        "title": "1. Bachelor's + healthcare hours",
+        "body": "Most PA programs require prerequisite science coursework plus direct patient-care experience (often 1,000+ hours) as an EMT, CNA, medical scribe, or similar before you can apply."
+      },
+      {
+        "title": "2. Apply through CASPA",
+        "body": "The centralized PA school application system; competitive programs weigh GPA, patient-care hours, and the GRE (where required) heavily."
+      },
+      {
+        "title": "3. PA program (master's, ~2-3 years)",
+        "body": "Accredited by ARC-PA, includes classroom science plus clinical rotations across specialties like surgery, primary care, and emergency medicine."
+      },
+      {
+        "title": "4. Pass the PANCE",
+        "body": "The Physician Assistant National Certifying Exam is the single licensure gate; pass it, get a state license, and you can practice."
+      },
+      {
+        "title": "5. Choose a specialty and setting",
+        "body": "Unlike physicians, PAs can move between specialties without redoing residency; surgical and high-acuity specialties pay above the median, primary care and outpatient settings pay closer to it."
+      }
+    ],
+    "tools": [
+      "CASPA application portal",
+      "PANCE prep (Rosh Review, PANCE Prep Pearls)",
+      "ARC-PA-accredited program list",
+      "AAPA (professional association) resources"
+    ],
+    "pitfalls": [
+      "Underestimating the patient-care-hours prerequisite, this alone can add a year or two before you can even apply",
+      "Picking a program based on acceptance rate alone without checking PANCE first-time pass rates",
+      "Assuming specialty mobility is unlimited, moving into surgical subspecialties still requires on-the-job training even without a new residency"
+    ],
+    "nextDecks": [
+      "nurse-practitioners",
+      "pharmacists",
+      "physicians-surgeons",
+      "dental-hygienist"
+    ]
+  },
+  "nurse-practitioners": {
+    "headline": "Play nurse practitioner: RN to APRN, the highest-ceiling nursing path",
+    "whoItsFor": "RNs (or pre-nursing students) willing to commit 6-8 years of school and clinicals for one of the best-paying, fastest-growing licensed roles in healthcare.",
+    "firstDollar": "RN wages start after the BSN (~4 yrs); full NP-level pay starts after the MSN/DNP and board certification (~6-8 yrs total).",
+    "steps": [
+      {
+        "title": "1. Get the BSN and RN license",
+        "body": "Accredited BSN program (or ADN-to-BSN bridge), then pass the NCLEX-RN. This is your earning floor while you train further."
+      },
+      {
+        "title": "2. Work as an RN and pick a track",
+        "body": "1-2 years of bedside RN experience strengthens grad-school applications and clarifies family, acute care, psych, or CRNA."
+      },
+      {
+        "title": "3. Complete the MSN or DNP",
+        "body": "Accredited nurse practitioner program, in-person or hybrid, with clinical hours logged under a preceptor."
+      },
+      {
+        "title": "4. Pass national certification and get licensed",
+        "body": "ANCC or AANP boards depending on track; state APRN license and, where required, a collaborative practice agreement."
+      },
+      {
+        "title": "5. Negotiate scope and setting",
+        "body": "Full-practice-authority states let you run your own clinic; CRNA and specialty tracks push pay well past the $132K median."
+      }
+    ],
+    "tools": [
+      "NCLEX-RN prep",
+      "accredited MSN/DNP program",
+      "AANP or ANCC certification exam",
+      "state board of nursing site"
+    ],
+    "pitfalls": [
+      "Choosing an unaccredited or diploma-mill NP program",
+      "Skipping bedside RN experience before grad school",
+      "Not checking your state's scope-of-practice rules before committing to a specialty"
+    ],
+    "nextDecks": [
+      "physician-assistants",
+      "physicians-surgeons",
+      "dental-hygienist",
+      "medical-practice-owner"
+    ]
+  },
+  "actuaries": {
+    "headline": "Play actuary: pass exams, climb from analyst to Fellow",
+    "whoItsFor": "Math and stats-strong people who want steady six-figure pay without patient contact or sales, and don't mind years of professional exams.",
+    "firstDollar": "Entry-level actuarial analyst roles pay while you sit for exams; full Fellow-level pay (FSA/FCAS) takes roughly 6-10 years.",
+    "steps": [
+      {
+        "title": "1. Build the math base",
+        "body": "Bachelor's in math, statistics, actuarial science, or a related quantitative field; strong Excel, SQL, and R help."
+      },
+      {
+        "title": "2. Pass 1-2 exams before you're hired",
+        "body": "SOA (Exams P, FM) or CAS (Exams 1, 2). Passing even one before graduating is the biggest lever on landing an entry role."
+      },
+      {
+        "title": "3. Land an entry-level actuarial analyst job",
+        "body": "Insurers, consultancies, and reinsurers hire actuarial trainees who study on paid company time."
+      },
+      {
+        "title": "4. Keep passing exams on a schedule",
+        "body": "ASA/ACAS status after roughly 7 exams, FSA/FCAS after the full sequence. Each pass typically triggers a raise."
+      },
+      {
+        "title": "5. Specialize for the ceiling",
+        "body": "Health, life, P&C, or pension track; chief actuary and consulting-partner roles clear $200K-$300K+."
+      }
+    ],
+    "tools": [
+      "SOA or CAS exam syllabus",
+      "Coaching Actuaries (Adapt)",
+      "exam study group",
+      "employer study-time policy"
+    ],
+    "pitfalls": [
+      "Failing to pass any exams before applying, which makes cold-hiring much harder",
+      "Picking the SOA vs CAS track without checking which employers you actually want",
+      "Burning out by cramming exams instead of pacing 1-2 a year"
+    ],
+    "nextDecks": [
+      "financial-investment-analysts",
+      "financial-managers",
+      "data-scientists"
+    ]
+  },
+  "data-scientists": {
+    "headline": "Play data scientist: stats plus software, ride the analytics boom",
+    "whoItsFor": "People comfortable with both statistics and code who want to build models and analysis pipelines, with a shorter path than a PhD-track research role.",
+    "firstDollar": "Entry analyst or DS roles are reachable in about 1-2 years with the right portfolio; the strongest offers cluster around bachelor's-plus-experience or a master's.",
+    "steps": [
+      {
+        "title": "1. Learn the actual stack",
+        "body": "Python (pandas, scikit-learn), SQL, statistics through regression and hypothesis testing, and one visualization tool."
+      },
+      {
+        "title": "2. Build projects on real data",
+        "body": "End-to-end projects, ingest, clean, model, ship a result, beat Kaggle-only portfolios. Publish them on GitHub."
+      },
+      {
+        "title": "3. Get a foot-in role",
+        "body": "Data analyst or junior DS role to build production experience; a master's helps but isn't mandatory with a strong portfolio."
+      },
+      {
+        "title": "4. Ship models that move a metric",
+        "body": "Employers promote people who can tie a model to revenue, cost, or retention, not just an accuracy score."
+      },
+      {
+        "title": "5. Specialize toward ML engineering or leadership",
+        "body": "MLOps/ML engineering tracks toward big-tech comp; management track toward analytics leadership."
+      }
+    ],
+    "tools": [
+      "Python/Jupyter",
+      "SQL",
+      "scikit-learn or PyTorch",
+      "GitHub portfolio"
+    ],
+    "pitfalls": [
+      "Portfolio full of tutorial clones instead of original analysis",
+      "Chasing every new ML framework instead of shipping",
+      "Ignoring communication, since models nobody understands don't get used"
+    ],
+    "nextDecks": [
+      "ai-ml-engineers",
+      "software-developers",
+      "big-tech-swe-equity"
+    ]
+  },
+  "financial-investment-analysts": {
+    "headline": "Play financial analyst: model, cover, and climb toward the buy side",
+    "whoItsFor": "Finance, econ, or math grads who want structured corporate or Wall Street pay with a clear promotion ladder, and are willing to grind modeling reps early.",
+    "firstDollar": "Analyst-level pay starts right out of undergrad; the CFA and buy-side or quant moves are what push past the $101K median.",
+    "steps": [
+      {
+        "title": "1. Get the base degree",
+        "body": "Finance, economics, accounting, or, for quant tracks, math, statistics, or CS."
+      },
+      {
+        "title": "2. Land an analyst seat",
+        "body": "Corporate FP&A, equity research, or an IB analyst program. Recruiting is relationship- and internship-driven, so start early."
+      },
+      {
+        "title": "3. Start the CFA if you're staying analyst-side",
+        "body": "Level I is common to sit for while still working; the full charter (3 levels, roughly 2-4 years) is the credential that signals seriousness."
+      },
+      {
+        "title": "4. Build a modeling and market track record",
+        "body": "DCFs, comps, real calls you made. This is your pitch for a buy-side or research move."
+      },
+      {
+        "title": "5. Move toward the ceiling",
+        "body": "Hedge fund, private equity, or quant research roles pay multiples of the BLS median but sit in the top tail, not the base case."
+      }
+    ],
+    "tools": [
+      "Excel financial modeling",
+      "CFA curriculum",
+      "Bloomberg Terminal (employer-provided)",
+      "Wall Street Prep or similar course"
+    ],
+    "pitfalls": [
+      "Treating the CFA as a substitute for real deal and modeling experience",
+      "Assuming top-tail hedge-fund pay is the median outcome",
+      "Networking only after you need a job, not before"
+    ],
+    "nextDecks": [
+      "actuaries",
+      "financial-managers",
+      "fractional-cfo-bookkeeping"
+    ]
+  },
+  "welder-fabricator": {
+    "headline": "Play welder: certify fast, then chase the pay in the specialty",
+    "whoItsFor": "Hands-on people who want one of the shortest training-to-paycheck trades, with a real path to six figures through rig, pipeline, or underwater specialization.",
+    "firstDollar": "6 months to 2 years through a welding program or apprenticeship gets you a first paycheck; specialty certs unlock the higher tiers.",
+    "steps": [
+      {
+        "title": "1. Learn the core processes",
+        "body": "Stick, MIG, TIG, and flux-core through a community college or trade school program, or a shop apprenticeship."
+      },
+      {
+        "title": "2. Pass AWS certification tests",
+        "body": "Certified welder tests, per process and position, are what employers and unions actually check, not just the class."
+      },
+      {
+        "title": "3. Take entry shop or construction work",
+        "body": "Build plate and pipe reps, speed, and a clean visual or x-ray pass rate."
+      },
+      {
+        "title": "4. Specialize for the pay jump",
+        "body": "Pipeline (travel-heavy), structural or rig, or underwater (adds commercial dive school at $15K-$30K) all pay well above the shop-welder median."
+      },
+      {
+        "title": "5. Own the equipment if you go independent",
+        "body": "A welding truck or rig ($40K-$100K) lets you contract directly instead of through a shop."
+      }
+    ],
+    "tools": [
+      "AWS certification tests",
+      "welding program or apprenticeship",
+      "process-specific machine (MIG/TIG/stick) and PPE",
+      "welding truck or rig for independent work"
+    ],
+    "pitfalls": [
+      "Certifying in only one process or position and getting boxed out of jobs",
+      "Underestimating the travel demands of pipeline and rig work",
+      "Skipping dive-school prerequisites before chasing underwater rates"
+    ],
+    "nextDecks": [
+      "electrician",
+      "electrical-power-line-installer",
+      "hvac-technician"
+    ]
+  },
+  "elevator-escalator-installer": {
+    "headline": "Play elevator mechanic: the highest-paid trade with the tightest door",
+    "whoItsFor": "People willing to compete hard for a limited number of NEIEP/IUEC apprenticeship slots, in exchange for one of the best trade-only median wages in the country.",
+    "firstDollar": "Apprentice wages start once you're accepted; full mechanic pay ($106K median) hits after the 4-5 year apprenticeship.",
+    "steps": [
+      {
+        "title": "1. Check eligibility and apply early",
+        "body": "NEIEP, the IUEC's training arm, posts openings by local; slots are few and applications often open only occasionally."
+      },
+      {
+        "title": "2. Pass the aptitude test and interview",
+        "body": "Mechanical aptitude testing plus an interview; a construction, trade, or military background helps your odds."
+      },
+      {
+        "title": "3. Complete the 4-5 year apprenticeship",
+        "body": "Paid on-the-job training under a mechanic plus NEIEP coursework, covering hydraulics, traction systems, and controls."
+      },
+      {
+        "title": "4. License and certify per state",
+        "body": "Many states require a separate elevator mechanic license or exam on top of the apprenticeship."
+      },
+      {
+        "title": "5. Work toward a service route or adjuster role",
+        "body": "Service mechanics on a set route, and adjusters who commission new installs, sit at the top of the pay band."
+      }
+    ],
+    "tools": [
+      "NEIEP application portal",
+      "IUEC local union office",
+      "state elevator licensing board",
+      "basic hand and hydraulic tools"
+    ],
+    "pitfalls": [
+      "Assuming you can start without going through NEIEP/IUEC, since most of the market is unionized",
+      "Missing narrow application windows",
+      "Underestimating how few slots open each year; plan a backup trade while you wait"
+    ],
+    "nextDecks": [
+      "electrician",
+      "electrical-power-line-installer",
+      "hvac-technician"
+    ]
+  },
+  "electrical-power-line-installer": {
+    "headline": "Play lineman: apprenticeship first, storm work pays the ceiling",
+    "whoItsFor": "People who want top trade pay, can pass a physical/climbing test, and will travel for storm work.",
+    "firstDollar": "Apprentice wages from day one of a paid 3-4 yr program; lineman school grads still need an apprenticeship before full journeyman pay.",
+    "steps": [
+      {
+        "title": "1. Choose the path",
+        "body": "Lineman school (15wk-15mo) for a resume edge, or apply direct to a utility/IBEW apprenticeship (3-4 yr paid, no school debt)."
+      },
+      {
+        "title": "2. Pass the gate tests",
+        "body": "CDL, DOT physical, pole-climb and aptitude tests (EEI TECH/CAST). Utilities and IBEW locals screen hard before hiring."
+      },
+      {
+        "title": "3. Log apprentice hours safely",
+        "body": "OJT under journeymen, classroom code hours, arc-flash and climbing safety certs. Mistakes at height are fatal, the culture is strict for a reason."
+      },
+      {
+        "title": "4. Chase storm and travel work",
+        "body": "Mutual-aid deployments and overtime after hurricanes/ice storms are how journeymen clear $120K-$150K+, not base rate alone."
+      },
+      {
+        "title": "5. Specialize or go contractor",
+        "body": "Substation vs transmission vs distribution, or move into a line-crew foreman/contracting role for the next ceiling."
+      }
+    ],
+    "tools": [
+      "IBEW local / utility apprenticeship listing",
+      "CDL",
+      "climbing gear and PPE",
+      "EEI TECH/CAST test prep"
+    ],
+    "pitfalls": [
+      "skipping physical/climb screen prep and washing out",
+      "treating lineman school as a guarantee of a union slot",
+      "underestimating the travel/storm-callout lifestyle"
+    ],
+    "nextDecks": [
+      "electrician",
+      "welder-fabricator",
+      "elevator-escalator-installer"
+    ]
+  },
+  "dental-hygienist": {
+    "headline": "Play dental hygienist: high hourly pay, ownership blocked in most states",
+    "whoItsFor": "People who want strong pay-per-hour healthcare work without dental school debt, willing to check the law before assuming they can own a practice.",
+    "firstDollar": "Months after finishing the associate program and passing boards; most start as a W-2 hire in a private practice.",
+    "steps": [
+      {
+        "title": "1. Finish an accredited program",
+        "body": "2-3 yr CODA-accredited associate degree with clinical hours."
+      },
+      {
+        "title": "2. Pass boards and license",
+        "body": "National/regional written exam + state clinical exam + state license application."
+      },
+      {
+        "title": "3. Work the employee track first",
+        "body": "Private-practice pay-per-hour is the real ceiling lever; negotiate day rate, not just hourly."
+      },
+      {
+        "title": "4. Check your state's ownership law",
+        "body": "Most states legally bar hygienists from owning a practice; CO (proprietorship), ME (IPDH), and CA (RDHAP) are exceptions."
+      },
+      {
+        "title": "5. Go independent only where it's legal",
+        "body": "Build direct-access clientele (nursing homes, schools, underserved patients) under that state's specific supervision rules."
+      }
+    ],
+    "tools": [
+      "CODA-accredited hygiene program",
+      "NBDHE / regional board exam prep",
+      "state dental board license",
+      "practice management software if independent"
+    ],
+    "pitfalls": [
+      "assuming ownership is legal in your state without checking first",
+      "underpricing independent-practice visits relative to a dental office",
+      "not negotiating day rate as an employee"
+    ],
+    "nextDecks": [
+      "dental-practice-owner",
+      "dentists",
+      "medical-practice-owner"
+    ]
+  },
+  "locksmith": {
+    "headline": "Play locksmith: lowest capital in the trades, emergency premium pays the bills",
+    "whoItsFor": "People who want a fast, cheap start and don't mind after-hours lockout calls.",
+    "firstDollar": "Often within weeks: first paid lockout or rekey job once tools and licensing (where required) are sorted.",
+    "steps": [
+      {
+        "title": "1. Get trained fast",
+        "body": "Weeks-to-months of hands-on training via community college, ALOA courses, or apprenticing under a working locksmith."
+      },
+      {
+        "title": "2. Check your state's license/bond rules",
+        "body": "Requirements vary widely, some states require licensing and background checks, others none. Get compliant before advertising."
+      },
+      {
+        "title": "3. Buy the minimum kit",
+        "body": "Key machine, pick/bypass tools, a service vehicle. Realistic startup is ~$5K-$20K, among the cheapest trade launches."
+      },
+      {
+        "title": "4. Price the emergency premium",
+        "body": "After-hours lockouts and automotive transponder work carry the real margin; a bare rekey call barely covers overhead."
+      },
+      {
+        "title": "5. Build local visibility",
+        "body": "Google Business Profile and local SEO matter more than brand, most working locksmiths are self-employed and invisible to BLS."
+      }
+    ],
+    "tools": [
+      "key machine",
+      "pick/bypass tool set",
+      "service vehicle",
+      "Google Business Profile"
+    ],
+    "pitfalls": [
+      "skipping licensing/bonding where required",
+      "underpricing emergency after-hours calls",
+      "no way to verify a caller's right to the property, a real liability exposure"
+    ],
+    "nextDecks": [
+      "appliance-repair-technician",
+      "hvac-plumbing-home-services-company",
+      "pressure-washing-business"
+    ]
+  },
+  "appliance-repair-technician": {
+    "headline": "Play appliance repair: van, parts markup, and diagnosis speed",
+    "whoItsFor": "People who like mechanical/electrical troubleshooting and want a low-barrier owner-operator route.",
+    "firstDollar": "Often within weeks of training/certs: first paid service call once you have a van and basic tool kit.",
+    "steps": [
+      {
+        "title": "1. Get trained",
+        "body": "Weeks to a few months via manufacturer certs, a community college program, or working under an established tech."
+      },
+      {
+        "title": "2. Get EPA 608 if you'll touch sealed refrigeration",
+        "body": "Required for fridge/freezer and other sealed-system repair work."
+      },
+      {
+        "title": "3. Stock the van",
+        "body": "Common parts inventory (belts, igniters, control boards, seals) cuts callback trips and lifts close rate."
+      },
+      {
+        "title": "4. Price the callout plus parts markup",
+        "body": "The diagnostic fee covers the drive; parts markup and labor are where the real margin sits."
+      },
+      {
+        "title": "5. Add techs once booked solid",
+        "body": "Single-tech owners commonly clear ~$75K; 3-5 techs scale toward $150K-$200K+ EBITDA."
+      }
+    ],
+    "tools": [
+      "basic electrical/mechanical toolkit",
+      "EPA 608 cert",
+      "service van + parts inventory",
+      "scheduling/dispatch software"
+    ],
+    "pitfalls": [
+      "undercharging the diagnostic/callout fee",
+      "no parts inventory causing dead return trips",
+      "scaling to multiple techs before dispatch/booking systems exist"
+    ],
+    "nextDecks": [
+      "locksmith",
+      "hvac-technician",
+      "hvac-plumbing-home-services-company"
+    ]
+  },
+  "twitch-live-streaming": {
+    "headline": "Play Twitch: thousands of unpaid hours before any real money",
+    "whoItsFor": "People who can stream 20-40+ hrs/week live, tolerate zero pay for a long stretch, and bring real charisma or a competitive skill edge.",
+    "firstDollar": "First subs/donations can land within ~6 months, but a livable income never arrives for the vast majority of streamers.",
+    "steps": [
+      {
+        "title": "1. Pick a discoverable format",
+        "body": "Choose a game or format with real concurrent-viewer discoverability on Twitch, not just your personal favorite."
+      },
+      {
+        "title": "2. Stream on a real schedule",
+        "body": "4-6 days/week, same time slot, for months before judging traction. Consistency is how the algorithm and viewers both learn you exist."
+      },
+      {
+        "title": "3. Network inside the community",
+        "body": "Raids, collabs, and Discord presence matter more than Twitch's own discovery, which is weak for small channels."
+      },
+      {
+        "title": "4. Convert viewers into subs",
+        "body": "Give people a clear reason to return: personality, banter, a recognizable format. Views without retention don't monetize."
+      },
+      {
+        "title": "5. Move past platform payouts",
+        "body": "Once you have real concurrent viewers, sponsorships and direct deals pay far more than Twitch's own sub/bit payouts."
+      }
+    ],
+    "tools": [
+      "OBS / Streamlabs",
+      "StreamElements",
+      "A real mic and webcam",
+      "Discord community",
+      "Direct sponsor outreach"
+    ],
+    "pitfalls": [
+      "Burnout from unpaid 40+ hour weeks with no guaranteed return",
+      "Chasing sub count instead of building an actual community",
+      "Treating Twitch payouts as the ceiling when sponsorships are the real money",
+      "No backup income during the multi-month zero-revenue stretch"
+    ],
+    "nextDecks": [
+      "youtube-channel",
+      "podcasting",
+      "ugc-clipping",
+      "short-form-content-funnel"
+    ]
+  },
+  "podcasting": {
+    "headline": "Play podcasting: downloads compound slowly, ad money is gated on scale",
+    "whoItsFor": "People who can commit to a weekly cadence for 1-2+ years before ad money is real; easier with an existing audience or a co-host who brings distribution.",
+    "firstDollar": "Around 2 years to real income. Ad money meaningfully starts near the ~10,000 downloads/episode threshold, which very few shows reach.",
+    "steps": [
+      {
+        "title": "1. Pick a sustainable format",
+        "body": "Interview, solo, or co-host, whichever you can actually sustain weekly without burning out."
+      },
+      {
+        "title": "2. Publish consistently before monetizing",
+        "body": "6-12 months minimum. Downloads compound slowly and most podfade happens before episode 10."
+      },
+      {
+        "title": "3. Fix production quality early",
+        "body": "Bad audio loses new listeners in the first minute. Editing and show notes are not optional polish, they're retention."
+      },
+      {
+        "title": "4. Hit the ad threshold",
+        "body": "Once downloads approach ~10K/episode, start dynamic ad insertion or direct sponsor outreach. Below that, ad money is negligible."
+      },
+      {
+        "title": "5. Layer memberships and cross-promotion",
+        "body": "Patreon/memberships plus guest-audience cross-promotion keep the download count compounding past the ad threshold."
+      }
+    ],
+    "tools": [
+      "Riverside.fm / Squadcast for remote recording",
+      "Descript for editing",
+      "Spotify for Podcasters (hosting)",
+      "Podcorn or direct sponsor outreach"
+    ],
+    "pitfalls": [
+      "Quitting before episode 20, where most podfade happens",
+      "Recording quality bad enough to lose new listeners immediately",
+      "No consistent release schedule",
+      "Chasing celebrity guests before there's an audience to justify their time"
+    ],
+    "nextDecks": [
+      "youtube-channel",
+      "newsletter-substack",
+      "high-ticket-consulting",
+      "community-membership"
+    ]
+  },
+  "app-development": {
+    "headline": "Play app development: ship a niche app, fight the store lottery",
+    "whoItsFor": "Engineers who can ship fast and iterate on ASO and retention, not just write code.",
+    "firstDollar": "Weeks after launch with paid UA or a viral loop; most solo apps never clear $1,000/mo.",
+    "steps": [
+      {
+        "title": "1. Pick a narrow, painful niche",
+        "body": "Chase one underserved use case, not a broad everything-app. Subscriptions need obvious recurring value."
+      },
+      {
+        "title": "2. Ship an MVP in weeks",
+        "body": "One core loop, a working paywall on day one. Flutter/React Native/Swift, whichever you can ship fastest."
+      },
+      {
+        "title": "3. Nail App Store Optimization",
+        "body": "Title, screenshots, keywords, and reviews decide if anyone finds you before you write a line of ad copy."
+      },
+      {
+        "title": "4. Test paid UA on a tight budget",
+        "body": "TikTok/Meta ads to find a payback period that works before scaling spend. Kill what doesn't convert."
+      },
+      {
+        "title": "5. Iterate on retention and pricing",
+        "body": "Most solo apps die from churn, not lack of downloads. A/B test onboarding and the paywall relentlessly."
+      }
+    ],
+    "tools": [
+      "Flutter / React Native / Swift",
+      "RevenueCat",
+      "App Store Connect / Google Play Console",
+      "TikTok / Meta Ads Manager"
+    ],
+    "pitfalls": [
+      "Building a broad app nobody searches for",
+      "Ignoring ASO and hoping for organic discovery",
+      "Scaling ad spend before the payback period is proven"
+    ],
+    "nextDecks": [
+      "indie-micro-saas",
+      "chrome-extension-tools",
+      "digital-products-templates",
+      "service-as-software"
+    ]
+  },
+  "real-estate-agent-broker": {
+    "headline": "Play real estate agent: license fast, then build a repeat-client machine",
+    "whoItsFor": "People good with strangers who can survive commission-only income during the first slow months.",
+    "firstDollar": "Weeks after licensing, but the true first close often takes 2-4 months of prospecting.",
+    "steps": [
+      {
+        "title": "1. Get licensed",
+        "body": "State pre-license course plus exam, typically weeks and $1-2K. Join a brokerage that actually trains new agents."
+      },
+      {
+        "title": "2. Pick a farm",
+        "body": "A neighborhood, price band, or niche (first-time buyers, relocations, luxury) you can dominate instead of chasing every lead."
+      },
+      {
+        "title": "3. Build a pipeline beyond Zillow leads",
+        "body": "Sphere of influence, open houses, referral partners (lenders, attorneys), and consistent follow-up beat paid leads alone."
+      },
+      {
+        "title": "4. Systemize the transaction",
+        "body": "Checklists, a transaction coordinator once you can afford one, and a CRM so no lead or deadline slips."
+      },
+      {
+        "title": "5. Convert closings into referrals",
+        "body": "Past clients should eventually outproduce new-lead prospecting; this is how top producers scale far past the median."
+      }
+    ],
+    "tools": [
+      "MLS access",
+      "CRM (Follow Up Boss / kvCORE)",
+      "DocuSign",
+      "Canva for listing marketing"
+    ],
+    "pitfalls": [
+      "Underestimating the cash runway needed before the first commission lands",
+      "Chasing every lead source instead of owning one farm",
+      "No systemized follow-up, deals go cold"
+    ],
+    "nextDecks": [
+      "recruiter-staffing-agency",
+      "high-ticket-consulting",
+      "marketing-agency"
+    ]
+  },
+  "recruiter-staffing-agency": {
+    "headline": "Play recruiting: get paid on placement, then build a desk",
+    "whoItsFor": "People who like sourcing and sales, comfortable on the phone, patient with a commission-based ramp.",
+    "firstDollar": "Weeks to a first placement fee once you have live requisitions and a working candidate pipeline.",
+    "steps": [
+      {
+        "title": "1. Pick a niche you can source in",
+        "body": "Vertical (healthcare, tech, skilled trades) or role type. Generalist desks lose to specialists on both sides of the placement."
+      },
+      {
+        "title": "2. Land your first client reqs",
+        "body": "Cold outreach to hiring managers, or join an agency to learn the model on someone else's book of business first."
+      },
+      {
+        "title": "3. Build a real sourcing pipeline",
+        "body": "Boolean search, LinkedIn Recruiter, referrals, and a database you own, not just job board scraping."
+      },
+      {
+        "title": "4. Run a tight interview-to-offer process",
+        "body": "Fast screens, honest expectation-setting on both sides, constant candidate communication cuts fall-off."
+      },
+      {
+        "title": "5. Go solo or scale a team",
+        "body": "Once you have a repeatable placement rate, decide between staying a high-earning solo desk or hiring recruiters under you."
+      }
+    ],
+    "tools": [
+      "LinkedIn Recruiter",
+      "ATS (Bullhorn / Loxo)",
+      "Boolean search tools",
+      "Zoom/phone for screens"
+    ],
+    "pitfalls": [
+      "Generalist desk with no niche edge",
+      "No owned candidate database, starting from zero every search",
+      "Placing candidates who don't stick past the guarantee period"
+    ],
+    "nextDecks": [
+      "b2b-saas-sales",
+      "real-estate-agent-broker",
+      "high-ticket-consulting"
+    ]
+  },
+  "fractional-cfo-bookkeeping": {
+    "headline": "Play fractional finance: bookkeeping first, CFO leverage later",
+    "whoItsFor": "People with real accounting or finance chops who want recurring B2B revenue instead of one employer.",
+    "firstDollar": "Weeks to months for a first retainer client, faster with an existing SMB or startup network.",
+    "steps": [
+      {
+        "title": "1. Start where the barrier is lowest",
+        "body": "Bookkeeping needs no license. Get 2-3 small-business clients on monthly retainer to build cash flow and case studies."
+      },
+      {
+        "title": "2. Get the stack right",
+        "body": "QuickBooks/Xero certification signals competence fast to non-finance-savvy owners."
+      },
+      {
+        "title": "3. Ladder into fractional CFO work",
+        "body": "Once you have books-level trust, upsell forecasting, cash runway, and fundraise-readiness work at CFO rates."
+      },
+      {
+        "title": "4. Price as a retainer, not by the hour",
+        "body": "A recurring monthly fee scoped to deliverables (close, reporting, board deck) protects margin as you add clients."
+      },
+      {
+        "title": "5. Cap client count deliberately",
+        "body": "A handful of well-paying retainers beats a dozen thin ones; protect the hours that let you charge CFO rates."
+      }
+    ],
+    "tools": [
+      "QuickBooks / Xero",
+      "Excel / Google Sheets",
+      "Fathom or similar reporting dashboard",
+      "Calendly for retainer check-ins"
+    ],
+    "pitfalls": [
+      "Underpricing bookkeeping and staying stuck there",
+      "Taking on clients with no clean books to start from",
+      "No written scope, retainer creeps into unpaid CFO work"
+    ],
+    "nextDecks": [
+      "virtual-assistant",
+      "high-ticket-consulting",
+      "marketing-agency"
+    ]
+  },
+  "social-media-management": {
+    "headline": "Play SMM: productize a niche retainer",
+    "whoItsFor": "Platform-fluent operators who'd rather manage brand content than build their own audience.",
+    "firstDollar": "Weeks via outbound to local or niche brands with a tight portfolio.",
+    "steps": [
+      {
+        "title": "1. Pick a platform and niche",
+        "body": "Instagram for restaurants, LinkedIn for B2B founders. One lane beats 'I do all social.'"
+      },
+      {
+        "title": "2. Build a spec portfolio",
+        "body": "Mock up a week of content for a dream client, unpaid, to show the work not just talk about it."
+      },
+      {
+        "title": "3. Land the first retainer",
+        "body": "Local businesses and small brands first; DM outreach with the spec work attached."
+      },
+      {
+        "title": "4. Systematize the pipeline",
+        "body": "Content calendar, approval flow, monthly report. Batch-create, don't live inside the feed."
+      },
+      {
+        "title": "5. Raise rates or add scope",
+        "body": "Ads management, UGC sourcing, or a second niche once one retainer is proven."
+      }
+    ],
+    "tools": [
+      "Later / Metricool",
+      "Canva / CapCut",
+      "Notion content calendar",
+      "Stripe"
+    ],
+    "pitfalls": [
+      "pricing by post instead of retainer",
+      "no reporting so clients cannot see value",
+      "chasing every platform at once"
+    ],
+    "nextDecks": [
+      "short-form-content-funnel",
+      "ugc-clipping",
+      "productized-service",
+      "email-marketing-service"
+    ]
+  },
+  "seo-freelance": {
+    "headline": "Play SEO: proof beats promises",
+    "whoItsFor": "Technical and content operators who can show a real ranking, not just describe a strategy.",
+    "firstDollar": "Months; case studies from your own or a friend's site come before paid clients.",
+    "steps": [
+      {
+        "title": "1. Rank one site first",
+        "body": "Your own blog, a friend's business, anything. A real result beats a certification."
+      },
+      {
+        "title": "2. Package a tight offer",
+        "body": "Technical audit, content plan, or link building. Not 'full-service SEO' on day one."
+      },
+      {
+        "title": "3. Target B2B and local",
+        "body": "Higher retainer tolerance than consumer content sites."
+      },
+      {
+        "title": "4. Report against dollars, not just rankings",
+        "body": "Traffic and rank tell a story; leads and revenue close renewals."
+      },
+      {
+        "title": "5. Adapt to AI search",
+        "body": "Citation-worthy, structured content matters alongside classic technical SEO now."
+      }
+    ],
+    "tools": [
+      "Ahrefs / Semrush",
+      "Screaming Frog",
+      "Google Search Console",
+      "Surfer / Clearscope"
+    ],
+    "pitfalls": [
+      "selling rankings with no revenue story",
+      "content-only work with no technical audit",
+      "one-client dependency"
+    ],
+    "nextDecks": [
+      "affiliate-seo-content-sites",
+      "lead-generation-sites",
+      "productized-service"
+    ]
+  },
+  "no-code-web-agency": {
+    "headline": "Play no-code: speed is the pitch",
+    "whoItsFor": "Tool-fluent builders with taste who can ship a client site in days, not months.",
+    "firstDollar": "Weeks; first project from a warm network or a portfolio piece done on spec.",
+    "steps": [
+      {
+        "title": "1. Pick one stack",
+        "body": "Webflow, Framer, or Bubble. Depth in one beats shallow fluency in three."
+      },
+      {
+        "title": "2. Build 2-3 portfolio pieces",
+        "body": "Redesign a real brand's site on spec if you have zero client work yet."
+      },
+      {
+        "title": "3. Sell fixed packages",
+        "body": "Landing page, 5-page site, light app. Fixed price and scope, not hourly."
+      },
+      {
+        "title": "4. Templatize your process",
+        "body": "Reusable components and a build checklist cut delivery time each project."
+      },
+      {
+        "title": "5. Ladder into retainers",
+        "body": "Hosting, updates, and CRO become recurring revenue after the build."
+      }
+    ],
+    "tools": [
+      "Webflow / Framer / Bubble",
+      "AI builders (v0, Lovable)",
+      "Figma",
+      "Stripe"
+    ],
+    "pitfalls": [
+      "endless revisions with no scope line",
+      "racing to the bottom on Fiverr/Upwork",
+      "no maintenance retainer after launch"
+    ],
+    "nextDecks": [
+      "web-dev-freelance",
+      "app-development",
+      "productized-service"
+    ]
+  },
+  "tiktok-shop-social-commerce": {
+    "headline": "Play TikTok Shop: the video is the storefront",
+    "whoItsFor": "Content-first operators comfortable filming daily and sourcing or picking products fast.",
+    "firstDollar": "Weeks after a first algorithm-favored post with an in-feed product link.",
+    "steps": [
+      {
+        "title": "1. Pick a product lane",
+        "body": "Source your own, dropship, or join an affiliate program. Margin after returns is the real number."
+      },
+      {
+        "title": "2. Post daily in-feed content",
+        "body": "Demos, unboxings, before/after. Volume and hooks beat production value."
+      },
+      {
+        "title": "3. Get into the Shop tab",
+        "body": "Set up the TikTok Shop seller account, listings, and shipping before you scale content."
+      },
+      {
+        "title": "4. Watch returns and margin",
+        "body": "Impulse-buy traffic returns more than intentional shoppers; price for it."
+      },
+      {
+        "title": "5. Diversify off one platform",
+        "body": "Repost winners to Instagram/YouTube Shorts; algorithm risk can zero a channel overnight."
+      }
+    ],
+    "tools": [
+      "TikTok Shop seller center",
+      "CapCut",
+      "Printify / Printful or a supplier",
+      "Return/fee tracker"
+    ],
+    "pitfalls": [
+      "one-platform, one-algorithm dependency",
+      "ignoring return rates on impulse buys",
+      "chasing virality with no margin behind it"
+    ],
+    "nextDecks": [
+      "ugc-clipping",
+      "short-form-content-funnel",
+      "amazon-fba-e-commerce-store",
+      "dropshipping"
+    ]
+  },
+  "domain-flipping": {
+    "headline": "Play domain flipping: buy taste, sell patience",
+    "whoItsFor": "People with spare capital and a real eye for brandable or aged names. Not a cash-now path; treat it like an illiquid side portfolio.",
+    "firstDollar": "Months to a year. Most domains sit unsold; budget for dead capital and slow sales cycles.",
+    "steps": [
+      {
+        "title": "1. Pick one lane",
+        "body": "Brandables, aged expired-domain drops, or niche keyword domains. Do not spread across all three at once."
+      },
+      {
+        "title": "2. Buy on the aftermarket",
+        "body": "GoDaddy Auctions, NameJet, Dynadot marketplace, expired-domain drop catches beat fresh registrations for resale value."
+      },
+      {
+        "title": "3. List everywhere buyers look",
+        "body": "Afternic, Sedo, Dan.com, plus your own for-sale landers with a clear buy-it-now price."
+      },
+      {
+        "title": "4. Price to actually sell",
+        "body": "Check comps on similar names sold recently. Negotiate a real offer instead of holding out for a home run."
+      },
+      {
+        "title": "5. Reinvest gradually",
+        "body": "Roll early wins into 2-3 more names. Do not put the whole float into one big bet."
+      }
+    ],
+    "tools": [
+      "GoDaddy Auctions",
+      "NameJet",
+      "Afternic / Dan.com",
+      "Sedo",
+      "Estibot / NamePros for appraisal"
+    ],
+    "pitfalls": [
+      "Overpaying on gut feeling with no comps",
+      "Registering fresh generic names nobody searches for",
+      "Treating a domain portfolio as a retirement plan instead of a side bet"
+    ],
+    "nextDecks": [
+      "online-reselling-arbitrage",
+      "affiliate-seo-content-sites",
+      "indie-micro-saas"
+    ]
+  },
+  "online-tutoring": {
+    "headline": "Play online tutoring: rate over platform",
+    "whoItsFor": "People with real subject mastery (test prep, language, STEM) who want cash fast with zero capital.",
+    "firstDollar": "Weeks. Sign up, get your first trial lesson booked.",
+    "steps": [
+      {
+        "title": "1. Pick a scarce subject",
+        "body": "MCAT/LSAT prep, advanced math, or a credentialed language beats generic homework help on rate."
+      },
+      {
+        "title": "2. Start on a platform for reviews",
+        "body": "Preply, Wyzant, iTalki. Underprice your first 5-10 lessons to bank five-star ratings fast."
+      },
+      {
+        "title": "3. Raise your rate on a schedule",
+        "body": "Every 10 five-star reviews, raise price. Tutors who stall at intro pricing cap their own ceiling."
+      },
+      {
+        "title": "4. Move top clients direct",
+        "body": "Once trust is built, offer a discount off the platform fee for direct payment, checking platform terms first."
+      },
+      {
+        "title": "5. Package for volume",
+        "body": "Group classes or a small cohort course once you have a repeat roster. Hourly 1:1 alone caps your income."
+      }
+    ],
+    "tools": [
+      "Preply / Wyzant / iTalki",
+      "Zoom",
+      "Calendly",
+      "Stripe for direct clients"
+    ],
+    "pitfalls": [
+      "Staying at intro rate forever",
+      "Platform-only with no owned channel or repeat-client base",
+      "No niche, so you compete purely on price"
+    ],
+    "nextDecks": [
+      "online-courses-cohorts",
+      "high-ticket-consulting",
+      "ghostwriting-copywriting"
+    ]
+  },
+  "bug-bounty-security": {
+    "headline": "Play bug bounty: methodology beats luck",
+    "whoItsFor": "Security-skilled builders who can go deep on one vuln class instead of spraying every program. Power-law payouts; most accounts earn near zero.",
+    "firstDollar": "Months, if ever. Budget a year of largely unpaid learning before the first real bounty lands.",
+    "steps": [
+      {
+        "title": "1. Learn on labs first",
+        "body": "PortSwigger Web Security Academy, HackTheBox, TryHackMe before touching a live program."
+      },
+      {
+        "title": "2. Specialize in one vuln class",
+        "body": "IDOR, SSRF, auth bypass. Depth on one class beats shallow breadth across all of them."
+      },
+      {
+        "title": "3. Pick programs with real payout history",
+        "body": "HackerOne and Bugcrowd leaderboards show which programs actually pay out at meaningful severity."
+      },
+      {
+        "title": "4. Write reports that get triaged fast",
+        "body": "Clear repro steps, real impact, a fix suggestion. Sloppy reports get closed as N/A regardless of the bug."
+      },
+      {
+        "title": "5. Build a public track record",
+        "body": "Write-ups and CTF placings get you invited to private programs and paid pentest contracts, the real income ladder."
+      }
+    ],
+    "tools": [
+      "Burp Suite",
+      "HackerOne / Bugcrowd",
+      "PortSwigger Web Security Academy",
+      "Nuclei / subfinder for recon"
+    ],
+    "pitfalls": [
+      "Chasing every program with no specialty",
+      "Submitting low-effort or duplicate reports",
+      "Treating this as full income before month one of real payouts exists"
+    ],
+    "nextDecks": [
+      "freelancing",
+      "high-ticket-consulting",
+      "software-developers"
+    ]
+  },
+  "faceless-content-automation": {
+    "headline": "Play faceless content: defensible niche first, avoid the copyright trap",
+    "whoItsFor": "Editors who can produce consistent volume without appearing on camera. Crowded meta; most channels never monetize.",
+    "firstDollar": "12-18 months of consistent uploads before YouTube Partner Program or sponsor money is real.",
+    "steps": [
+      {
+        "title": "1. Pick a defensible niche",
+        "body": "Narrated documentaries, original compilations, or properly licensed footage, not reuploaded clips."
+      },
+      {
+        "title": "2. Build a repeatable pipeline",
+        "body": "Script, voice, edit, thumbnail. Know your real cost per video before you scale upload volume."
+      },
+      {
+        "title": "3. Upload on a real schedule for months",
+        "body": "The algorithm needs a consistent signal, not a burst. Judge results at month 6-12, not week 2."
+      },
+      {
+        "title": "4. Clear the monetization gates",
+        "body": "YPP watch-hour and subscriber thresholds first, then layer AdSense, sponsorships, and affiliate links."
+      },
+      {
+        "title": "5. Diversify beyond one channel",
+        "body": "Spread the niche across a second channel or platform so one copyright strike does not zero you out."
+      }
+    ],
+    "tools": [
+      "CapCut / Premiere",
+      "ElevenLabs or similar TTS",
+      "TubeBuddy / VidIQ",
+      "Licensed stock footage libraries"
+    ],
+    "pitfalls": [
+      "Reused footage that gets copyright-struck or demonetized",
+      "Chasing view count with no monetization plan",
+      "Quitting before month 12, when most channels are still near zero"
+    ],
+    "nextDecks": [
+      "youtube-channel",
+      "short-form-content-funnel",
+      "ugc-clipping"
+    ]
+  },
+  "paid-surveys-microtasks": {
+    "headline": "Play surveys and microtasks: pocket money, not a plan",
+    "whoItsFor": "Anyone who wants a few dollars for spare minutes. Nobody should build an income plan around this deck; it is on the board to keep the meta honest.",
+    "firstDollar": "Minutes. Sign up, complete a task, get paid same day or week.",
+    "steps": [
+      {
+        "title": "1. Stack 2-3 legit platforms",
+        "body": "Prolific, UserTesting, and Amazon Mechanical Turk pay better per hour than generic survey panels."
+      },
+      {
+        "title": "2. Filter for the highest-paying task types",
+        "body": "User testing and screened research studies pay far more per hour than click-through surveys."
+      },
+      {
+        "title": "3. Track your real hourly rate",
+        "body": "Log time against payout for a week. Most people quit once they see the true number."
+      },
+      {
+        "title": "4. Treat payouts as beer money",
+        "body": "Do not count on this for rent, bills, or as a savings plan. The win rate is the whole problem with this deck."
+      },
+      {
+        "title": "5. Use it as a bridge, not a destination",
+        "body": "If you have any real skill, move to freelancing or online tutoring the moment you can land one paying client."
+      }
+    ],
+    "tools": [
+      "Prolific",
+      "UserTesting",
+      "Amazon Mechanical Turk",
+      "A spreadsheet to track real hourly rate"
+    ],
+    "pitfalls": [
+      "Mistaking gross payouts for livable income",
+      "Sinking hours other decks would pay 10x for",
+      "Panels that pay in gift cards or points instead of cash"
+    ],
+    "nextDecks": [
+      "freelancing",
+      "online-tutoring",
+      "virtual-assistant"
+    ]
+  },
+  "email-marketing-service": {
+    "headline": "Play email marketing: sell the lift, not the hours",
+    "whoItsFor": "Writers who understand ecommerce or SaaS funnels and can point to a real revenue lift, not just good copy.",
+    "firstDollar": "Weeks to a first retainer if you already know one ESP well and can show a before/after metric.",
+    "steps": [
+      {
+        "title": "1. Master one ESP deeply",
+        "body": "Klaviyo for ecommerce or Customer.io/HubSpot for SaaS. Deep specialist beats broad-but-shallow."
+      },
+      {
+        "title": "2. Build 2-3 proof pieces",
+        "body": "Audit an existing brand's flows for free or cheap, document the fix and the measured lift."
+      },
+      {
+        "title": "3. Price the retainer on flows and campaigns",
+        "body": "Welcome, abandon cart, post-purchase, and win-back is a sellable fixed-scope package, not an hourly quote."
+      },
+      {
+        "title": "4. Report the number that matters",
+        "body": "Email-attributed revenue as a percent of total revenue, pulled from the client's own dashboard."
+      },
+      {
+        "title": "5. Ladder into an agency",
+        "body": "Once you have 3-5 retainer clients, hire a second copywriter and take a cut instead of trading more of your own hours."
+      }
+    ],
+    "tools": [
+      "Klaviyo / Customer.io",
+      "Figma for email design",
+      "A swipe file of proven flows",
+      "Shopify/Stripe dashboards for revenue proof"
+    ],
+    "pitfalls": [
+      "Pricing hourly instead of by outcome",
+      "No before/after proof, so every pitch is a cold claim",
+      "One-off campaigns instead of recurring flow retainers"
+    ],
+    "nextDecks": [
+      "productized-service",
+      "marketing-agency",
+      "service-as-software"
+    ]
+  },
+  "stock-media-assets": {
+    "headline": "Play stock media: volume compounds, one upload doesn't",
+    "whoItsFor": "Photographers, videographers, or audio/3D creators willing to build a large catalog over years, not weeks.",
+    "firstDollar": "Months for the first sale; real monthly income needs a catalog in the thousands of assets.",
+    "steps": [
+      {
+        "title": "1. Shoot for demand, not personal taste",
+        "body": "Research what buyers actually license via each platform's trending and bestseller pages before you shoot."
+      },
+      {
+        "title": "2. Upload to multiple marketplaces at once",
+        "body": "Shutterstock, Adobe Stock, iStock. Distribution across platforms multiplies the return on a single shoot."
+      },
+      {
+        "title": "3. Batch metadata and keywords",
+        "body": "Searchability sells more than raw quality. Spend real time on titles and keywords per asset."
+      },
+      {
+        "title": "4. Track earnings per platform monthly",
+        "body": "Drop weak platforms, double down on whichever converts best for your specific niche."
+      },
+      {
+        "title": "5. Compound the catalog",
+        "body": "Treat every shoot as permanent inventory. Income lags catalog size by roughly 1-2 years."
+      }
+    ],
+    "tools": [
+      "Shutterstock / Adobe Stock / iStock contributor accounts",
+      "Lightroom",
+      "Keyword and metadata tools"
+    ],
+    "pitfalls": [
+      "Uploading a few hundred images and expecting real income",
+      "Ignoring metadata and keywording",
+      "Chasing trends instead of evergreen categories"
+    ],
+    "nextDecks": [
+      "digital-products-templates",
+      "print-on-demand",
+      "affiliate-seo-content-sites"
+    ]
+  },
+  "online-bookkeeping-remote": {
+    "headline": "Play remote bookkeeping: certify, niche, retain",
+    "whoItsFor": "Detail-oriented operators who want a real recurring-revenue service business with a low skill floor and a clear certification path.",
+    "firstDollar": "Months. QuickBooks Online or Xero certification plus your first 1-2 small-business clients.",
+    "steps": [
+      {
+        "title": "1. Get certified on the dominant platform",
+        "body": "QuickBooks Online ProAdvisor is the credential small-business clients actually check for."
+      },
+      {
+        "title": "2. Pick an industry niche",
+        "body": "Ecommerce, med spas, or contractors. Niche bookkeepers command higher rates than generalists."
+      },
+      {
+        "title": "3. Land the first clients through community",
+        "body": "Local business Facebook groups, referrals, and nonprofit boards beat cold marketplace bidding."
+      },
+      {
+        "title": "4. Price as a monthly retainer",
+        "body": "A fixed monthly fee per client scales your income with your systems, not your hours."
+      },
+      {
+        "title": "5. Systematize onboarding and close",
+        "body": "A repeatable checklist per client lets you add clients without adding proportional hours."
+      }
+    ],
+    "tools": [
+      "QuickBooks Online + ProAdvisor certification",
+      "Xero",
+      "A client onboarding checklist",
+      "Calendly"
+    ],
+    "pitfalls": [
+      "Undercharging because bookkeeping feels simple",
+      "No niche, so you compete against $10/hr overseas bids",
+      "No systemized month-end close, so growth breaks you"
+    ],
+    "nextDecks": [
+      "fractional-cfo-bookkeeping",
+      "virtual-assistant",
+      "productized-service"
+    ]
   }
 }

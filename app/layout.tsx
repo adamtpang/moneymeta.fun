@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://moneymeta.fun"),
   title: "moneymeta.fun, the best money deck to play in life",
   description:
-    "The Vicious Syndicate of moneymaking. Every way to make money ranked S to D by median income, growth, and how fast you can start. Public, verifiable data only.",
+    "The Vicious Syndicate of moneymaking. Every way to make money ranked S to D by income, win rate, growth, and how fast you can start. Public, verifiable data only.",
   keywords: [
     "market cap",
     "tier list",
@@ -59,7 +59,7 @@ const jsonLd = {
   name: "moneymeta.fun",
   url: "https://moneymeta.fun",
   description:
-    "The Vicious Syndicate of moneymaking. Every way to make money ranked S to D by median income, growth, and how fast you can start. Public, verifiable data only.",
+    "The Vicious Syndicate of moneymaking. Every way to make money ranked S to D by income, win rate, growth, and how fast you can start. Public, verifiable data only.",
 };
 
 export default function RootLayout({

@@ -53,6 +53,12 @@ const PLAYRATE_EMP_MAX = 3000000;
 
 /** SOC with dash → series for national annual wage stats. */
 const SOC_MAP = [
+  // Added 2026-08-23 from the global low-barrier/high-pay research pass. Both
+  // are real OEWS series, so median, playRate, livablePct and the percentiles
+  // self-update on the next --apply run instead of staying at researched values.
+  { slug: "air-traffic-controllers", soc: "53-2021", label: "Air Traffic Controllers" },
+  { slug: "nuclear-reactor-operators", soc: "51-8011", label: "Nuclear Power Reactor Operators" },
+  { slug: "sales-engineer", soc: "41-9031", label: "Sales Engineers" },
   { slug: "software-developers", soc: "15-1252", label: "Software Developers" },
   { slug: "data-scientists", soc: "15-2051", label: "Data Scientists" },
   { slug: "ai-ml-engineers", soc: "15-1221", label: "Computer and Information Research Scientists" },
@@ -226,6 +232,12 @@ async function main() {
       }
       if (newPlayRate != null) deck.playRate = newPlayRate;
       if (newLivablePct != null) deck.livablePct = newLivablePct;
+      // Persist the tail, don't just consume it. p90 is the "if you are top
+      // decile at this deck" number, already fetched above and, until
+      // 2026-08-23, discarded after deriving livablePct. It is the only
+      // BLS-sourced input a ceiling-of-ceilings lens can honestly use.
+      if (p10 != null) deck.p10 = p10;
+      if (p90 != null) deck.p90 = p90;
       if (deck.dataQuality !== "verifiable") deck.dataQuality = "verifiable";
       if (!deck.sourceUrl?.includes("bls.gov")) deck.sourceUrl = "https://www.bls.gov/oes/";
     }

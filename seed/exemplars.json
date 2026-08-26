@@ -124,15 +124,15 @@
       "name": "Maor Shlomo",
       "handle": "@MaorShlomo",
       "url": "https://base44.com",
-      "note": "Base44 vibe-coding builder; fast acquisition",
-      "rev": "~$1.5M/yr"
+      "note": "Base44 AI app builder, solo founder, no outside funding; sold to Wix in mid-2025 for $80M on ~$3.5M revenue (22x multiple); milestone payouts have since pushed his total proceeds above $150M as of Aug 2026",
+      "rev": "$3.5M/yr revenue at sale; $150M+ total exit proceeds"
     },
     {
       "name": "Ben Broca",
       "handle": "@benbroca",
       "url": "https://polsia.com",
-      "note": "Polsia 'AI CEO' agents, newest + hypiest, treat skeptically",
-      "rev": "~$6M/yr claimed"
+      "note": "Polsia 'AI CEO' agents running businesses with zero human employees; self-reported run-rate climbed from ~$1M to ~$4.5M ARR within months, targeting $10M by end of 2026. Newest and hypiest, opaque revenue definitions, treat skeptically",
+      "rev": "~$4.5M/yr run-rate (claimed)"
     }
   ],
   "marketing-agency": [
@@ -176,15 +176,7 @@
       "rev": "~$360K/yr"
     }
   ],
-  "big-tech-swe-equity": [
-    {
-      "name": "Tony Dinh",
-      "handle": "@tdinh_me",
-      "url": "https://tonydinh.com",
-      "note": "Left employment after building an audience + products on the side",
-      "rev": "~$1.6M/yr"
-    }
-  ],
+  "big-tech-swe-equity": [],
   "productized-service": [
     {
       "name": "Brett Williams",
@@ -203,17 +195,17 @@
   ],
   "digital-products-templates": [
     {
-      "name": "Pieter Levels",
-      "handle": "@levelsio",
-      "url": "https://levels.io",
-      "note": "Many one-time and subscription products; PhotoAI carries the stack",
-      "rev": "~3.1M USD/yr"
+      "name": "Thomas Frank",
+      "handle": "@TomFrankly",
+      "url": "https://thomasjfrank.com",
+      "note": "Notion templates (Ultimate Brain, Creator's Companion) sold as one-time digital products on Gumroad-style checkout, not subscription SaaS",
+      "rev": "~$120K/mo template sales (2026)"
     },
     {
       "name": "Marc Lou",
       "handle": "@marc_louvion",
       "url": "https://shipfa.st",
-      "note": "ShipFast boilerplate sold as a product, not a course cosplay",
+      "note": "ShipFast boilerplate sold as a one-time digital product, not a course cosplay",
       "rev": "~1M USD/yr"
     }
   ],
@@ -244,11 +236,11 @@
   ],
   "high-ticket-consulting": [
     {
-      "name": "Lenny Rachitsky",
-      "handle": "@lennysan",
-      "url": "https://www.lennysnewsletter.com",
-      "note": "Paid newsletter + premium community/consulting adjacency in PM niche",
-      "rev": "~2M USD/yr"
+      "name": "Dan Martell",
+      "handle": "@danmartell",
+      "url": "https://www.danmartell.com/coaching",
+      "note": "SaaS Academy: high-ticket coaching for B2B SaaS founders ($15K-30K+/yr per member), 800+ founders coached, narrow niche and deep engagement, not a mass course",
+      "rev": "$15K-30K+/yr per client (program pricing; company-level revenue not publicly disclosed)"
     }
   ],
   "service-as-software": [
@@ -265,8 +257,382 @@
       "name": "Tony Dinh",
       "handle": "@tdinh_me",
       "url": "https://tonydinh.com",
-      "note": "Dev tools and products including extension-adjacent indie software",
-      "rev": "~1.6M USD/yr"
+      "note": "Black Magic (Magic Sidebar Chrome extension for X/Twitter) grew to $14K MRR before Twitter's API price hike forced a sale",
+      "rev": "~$14K MRR peak; sold for $128K"
+    }
+  ],
+  "construction-manager-general-contractor": [
+    {
+      "name": "Josh Downing",
+      "handle": "Direct Movement Group",
+      "url": "https://www.cnbc.com/2016/11/02/how-a-31-year-old-general-contractor-built-a-multi-million-company-in-2-years.html",
+      "note": "Launched general contracting firm Direct Movement Group in Jacksonville, FL in 2014 via Thumbtack leads; grew to 24 subcontractors and an Orlando division",
+      "rev": "~$2.3M/yr (2015), projected ~$5M for 2016"
+    }
+  ],
+  "two-men-and-a-truck-franchise": [
+    {
+      "name": "Chad Arnold",
+      "handle": "Two Men and a Truck franchisee",
+      "url": "https://blog.twomenandatruckfranchising.com/2019/08/30/franchisee-chad-arnold-taking-on-dallas-area-20-years-after-first-signing-as-franchisee/",
+      "note": "Bought his first Two Men and a Truck franchise in Michigan in 2000 at age 24; built a 6-location California territory (Sacramento, San Diego, Pasadena, ~80 employees) before starting a new Dallas-area territory in 2019",
+      "rev": "~$4.5M/yr peak territory revenue (CA operations, 2004-2019)"
+    }
+  ],
+  "appliance-repair-technician": [
+    {
+      "name": "Vladislav Kislov",
+      "handle": "Supreme Appliance Repair",
+      "url": "https://techbullion.com/ai-will-help-fix-a-broken-fridge-expert-vladislav-kislov-on-the-latest-trends-in-the-home-appliance-service-market/",
+      "note": "Founder/CEO of Supreme Appliance Repair, a multi-technician appliance repair company operating across 20 US states",
+      "rev": "~$2.5M-$5M/yr company revenue (multiple 2025 profiles)"
+    }
+  ],
+  "dental-hygienist": [
+    {
+      "name": "Lashawnda Jenkins, RDH",
+      "handle": "Experience Dental Hygiene - Boulder",
+      "url": "https://www.rdhmag.com/career-profession/alternative-practice/article/14310527/colorado-dentists-find-success-developing-independent-dental-hygiene-practices",
+      "note": "Independent dental hygiene practice owner in Boulder, CO, one of the few states that legally allows hygienists to own a hygiene practice; income not publicly disclosed",
+      "rev": "not publicly disclosed"
+    }
+  ],
+  "laundromat": [
+    {
+      "name": "Jordan Berry",
+      "handle": "Laundromat Resource",
+      "url": "https://www.laundromatresource.com",
+      "note": "First LA laundromat hit ~$27K/mo revenue; now runs multiple stores at $50K+/mo, 45% margin",
+      "rev": "~$22K/mo net (multi-store)"
+    }
+  ],
+  "self-storage-facility": [
+    {
+      "name": "Nick Huber",
+      "handle": "Sweaty Startup / Bolt Storage",
+      "url": "https://www.sweatystartup.com",
+      "note": "Built first facility from scratch in 2017 for $2.9M (615 units); now co-owns Bolt Storage, 60+ facilities, 1.9M sqft",
+      "rev": "~$324K/yr NOI (first facility, 2020)"
+    }
+  ],
+  "hvac-plumbing-home-services-company": [
+    {
+      "name": "Mike Goldberg",
+      "handle": "Peak Plumbing, Heating, Cooling & Environmental",
+      "url": "https://peakphc.com",
+      "note": "Started the company in Vail/Gypsum, CO in 2022 with 5 techs; grew to 35 employees in 3 years",
+      "rev": "$1M -> $12M/yr revenue (2022-2026)"
+    }
+  ],
+  "landscaping-lawn-care-company": [
+    {
+      "name": "Jonathan Pototschnik",
+      "handle": "CitiTurf / Lawn Care Millionaire",
+      "url": "https://www.lawncaremillionaire.com",
+      "note": "Built CitiTurf lawn care company (Plano, TX) past the $1M mark; also co-founded and exited Service Autopilot, lawn care scheduling software",
+      "rev": "$1M+/yr (CitiTurf)"
+    }
+  ],
+  "pressure-washing-business": [
+    {
+      "name": "Joshua Brown",
+      "handle": "Brown's Pressure Washing",
+      "url": "https://www.upflip.com/blog/how-to-start-a-pressure-washing-business",
+      "note": "Started with $5K; grew to $1M/yr in 4 years, now ~$2M/yr and launched it as a franchise",
+      "rev": "~$2M/yr"
+    }
+  ],
+  "pool-service-route": [
+    {
+      "name": "Kyle Peter",
+      "handle": "Nevergreen Pools",
+      "url": "https://www.getskimmer.com/blog/case-study-nevergreen-pools",
+      "note": "Started 2018 with $5K and 12 weekly pools near Sacramento, CA; grew to 600+ customers, 12-person team in ~5 years",
+      "rev": "600+ pools serviced (revenue undisclosed)"
+    }
+  ],
+  "dental-practice-owner": [
+    {
+      "name": "Dr. Rick Workman",
+      "handle": "Heartland Dental founder",
+      "url": "https://heartland.com/about-us/",
+      "note": "Opened a two-chair practice in Effingham, IL in 1980 on a $30K family loan; sold most of his practices for $15.8M in 1997, then founded Heartland Dental. Extreme outlier, shown as a real verified trajectory, not the typical single-practice outcome",
+      "rev": "$30K loan -> $15.8M sale (1997) -> Heartland Dental, now a $6B+ DSO"
+    }
+  ],
+  "amazon-fba-e-commerce-store": [
+    {
+      "name": "Mike Jackness",
+      "handle": "@ecmike",
+      "url": "https://www.ecomcrew.com",
+      "note": "Built ColorIt adult coloring books into a ~$2.5M brand launched via Amazon FBA; hosts EcomCrew podcast (500+ episodes) with publicly disclosed numbers",
+      "rev": "~$2.5M/yr (ColorIt brand)"
+    }
+  ],
+  "youtube-channel": [
+    {
+      "name": "Ali Abdaal",
+      "handle": "@aliabdaal",
+      "url": "https://aliabdaal.com",
+      "note": "Cambridge-trained doctor turned YouTuber; publishes annual public breakdowns of ad, sponsor, and product revenue built on the channel",
+      "rev": "~$2M/yr profit disclosed for 2022; business has since scaled well past that on the same audience"
+    }
+  ],
+  "twitch-live-streaming": [
+    {
+      "name": "Tfue",
+      "handle": "@Tfue",
+      "url": "https://twitch.tv/tfue",
+      "note": "2021 Twitch payout leak (covering Aug 2019-Oct 2021) showed him among the top-earning streamers; figure is direct platform payout only, before sponsorships",
+      "rev": "~$5.3M (leak-verified Twitch payouts over ~2 years)"
+    }
+  ],
+  "podcasting": [
+    {
+      "name": "Joe Rogan",
+      "handle": "@joerogan",
+      "url": "https://www.joerogan.com",
+      "note": "The Joe Rogan Experience; 2024 Spotify renewal reported by WSJ/Variety/Forbes, moved from Spotify-exclusive to wide distribution",
+      "rev": "up to $250M total (multi-year Spotify deal, not annual)"
+    },
+    {
+      "name": "Alex Cooper",
+      "handle": "@alexandracooper",
+      "url": "https://www.callherdaddy.com",
+      "note": "Call Her Daddy; 2024 SiriusXM deal reported by Variety/Hollywood Reporter, roughly double her prior $60M Spotify deal",
+      "rev": "up to $125M total (multi-year SiriusXM deal, not annual)"
+    }
+  ],
+  "dropshipping": [
+    {
+      "name": "Gabriel St-Germain",
+      "handle": "@gabrielstgermain",
+      "url": "https://www.youtube.com/@GabrielStGermain",
+      "note": "Documented $825K from a single dropshipping store in under 4 months as a teenager (press-reported, not audited); later monetized the story via an ecom course, treat as self-reported-adjacent",
+      "rev": "~$825K in 4 months (single-store case)"
+    }
+  ],
+  "print-on-demand": [
+    {
+      "name": "Ryan Hogue",
+      "handle": "@ryanhogueofficial",
+      "url": "https://ryanhogue.com",
+      "note": "Former web developer; print-on-demand royalty income reported in multiple CNBC Make It interviews 2022-2024 (self-reported to CNBC, not audited)",
+      "rev": "~$14K/mo (print-on-demand slice)"
+    },
+    {
+      "name": "Michael Essek",
+      "handle": "@michaelessek",
+      "url": "https://merchinformer.com/merch-amazon-success-interview-michael-essek/",
+      "note": "Merch by Amazon + Redbubble + TeePublic royalties, disclosed in a Merch Informer interview",
+      "rev": "~$12K/mo royalties + ~$2K/mo direct sales"
+    }
+  ],
+  "real-estate-agent-broker": [
+    {
+      "name": "Ben Caballero",
+      "handle": "HomesUSA.com",
+      "url": "https://bencaballero.com",
+      "note": "Broker and CEO of HomesUSA.com; three-time Guinness World Records holder for most annual home sale transactions by an individual sell-side agent, based on audited MLS data",
+      "rev": "$3.67B/yr sales volume (2025); personal income undisclosed"
+    }
+  ],
+  "recruiter-staffing-agency": [
+    {
+      "name": "Diane Prince",
+      "handle": "@dianeprincejohnston",
+      "url": "https://dianeprince.co",
+      "note": "Founded and grew title-insurance-niche staffing agency OnStaff, sold to Hall Kinion after 6 years; now coaches recruiting agency owners",
+      "rev": "$28M exit (6 years)"
+    }
+  ],
+  "fractional-cfo-bookkeeping": [
+    {
+      "name": "Philip Kean",
+      "handle": "Lane Gate Advisory",
+      "url": "https://www.lanegateadvisory.com",
+      "note": "Founder/CEO of Lane Gate Advisory, a fractional CFO practice for SaaS/fintech companies under 500 employees; ex-VP Finance at UiPath, currently serves several client companies on retainer",
+      "rev": "Not publicly disclosed"
+    }
+  ],
+  "med-spa-aesthetics": [
+    {
+      "name": "Erin Alonso",
+      "handle": "DermFx",
+      "url": "https://www.dermfx.com",
+      "note": "RN/FNP who started injecting Botox out of her car; built DermFx into a multi-location med spa group across Orange County and LA",
+      "rev": "~$9.2M/yr (est., multi-location group)"
+    }
+  ],
+  "str-arbitrage-cohosting": [
+    {
+      "name": "Sean Rakidzich",
+      "handle": "@rakidzich",
+      "url": "https://www.rakidzich.com",
+      "note": "11-year Airbnb arbitrage operator; 155 leased units across 8 cities, zero owned real estate",
+      "rev": "~$1M+/mo portfolio revenue (self-reported, gross not profit)"
+    }
+  ],
+  "lead-generation-sites": [
+    {
+      "name": "Matt Diggity",
+      "handle": "@mattdiggity",
+      "url": "https://leadspring.org",
+      "note": "LeadSpring: portfolio of 20+ affiliate/lead-gen niche sites; grew 2 flagship health/fitness sites to nearly $100K/mo combined",
+      "rev": "~$1.2M/yr (2 flagship sites; broader multi-site portfolio)"
+    }
+  ],
+  "short-form-content-funnel": [
+    {
+      "name": "Codie Sanchez",
+      "handle": "@codiesanchez",
+      "url": "https://www.contrarianthinking.co",
+      "note": "Grew Contrarian Thinking from short viral clips to 250K+ newsletter subscribers, funneling into paid membership and courses",
+      "rev": "~$5.4M/yr (education/newsletter products)"
+    }
+  ],
+  "ugc-clipping": [
+    {
+      "name": "Anthony Fujiwara",
+      "handle": "Clipping",
+      "url": "https://www.forbes.com/sites/boazsobrado/2026/04/26/the-creator-of-clipping-who-powers-stakes-viral-machine/",
+      "note": "Built Clipping, a marketplace paying 23K+ contract clippers per view; ladder from doing clips into running the agency. Company revenue, not personal income; top individual clippers on the platform clear $30-40K/mo",
+      "rev": "~$7.7M/yr (company sales)"
+    }
+  ],
+  "ghostwriting-copywriting": [
+    {
+      "name": "Nicolas Cole",
+      "handle": "@Nicolascole77",
+      "url": "https://www.nicolascole.com",
+      "note": "Grew ghostwriting agency Digital Press to 23 staff, 80+ clients, $180K/mo (2018-2020, later wound down)",
+      "rev": "~$2M/yr peak"
+    }
+  ],
+  "virtual-assistant": [
+    {
+      "name": "Mary Marsh",
+      "handle": "@aim2assist",
+      "url": "https://aim2assist.com",
+      "note": "Founded Aim2Assist in 2014, VA services for C-level execs, team of 15",
+      "rev": "~$790K/yr ($66K/mo)"
+    }
+  ],
+  "social-media-management": [
+    {
+      "name": "Austin Armstrong",
+      "handle": "@SocialtyPro",
+      "url": "https://socialtypro.com",
+      "note": "Founder/CEO of Socialty Pro, TikTok marketing + SEO agency for brands",
+      "rev": "~$1M+/yr agency revenue"
+    }
+  ],
+  "amazon-kdp-self-publishing": [
+    {
+      "name": "Mark Dawson",
+      "handle": "@pbackwriter",
+      "url": "https://markjdawson.com",
+      "note": "Self-published thriller author (John Milton series), income from direct Amazon book sales, separate from his Self Publishing Formula course business",
+      "rev": "~$450K/yr"
+    }
+  ],
+  "tiktok-shop-social-commerce": [
+    {
+      "name": "Ayman Ihiri",
+      "handle": "@akhi.ayman",
+      "url": "https://www.linkedin.com/in/aymanihiri/",
+      "note": "Print-on-demand seller building a TikTok Shop + Shopify business from a full-time job/grad school",
+      "rev": "scaling toward ~$1M/yr revenue"
+    }
+  ],
+  "online-reselling-arbitrage": [
+    {
+      "name": "Ryan Grant",
+      "handle": "@minutesandmoney",
+      "url": "https://onlinesellingexperiment.com",
+      "note": "Retail/online arbitrage on Amazon, sourced via clearance and liquidation, 10-person team by 2018",
+      "rev": "~$5.9M/yr revenue (2018)"
+    }
+  ],
+  "domain-flipping": [
+    {
+      "name": "Mark Levine",
+      "handle": "domain investor, recurring DNW Podcast guest",
+      "url": "https://domainnamewire.com/2021/02/15/domain-investing-case-study-dnw-podcast-325/",
+      "note": "Sold 70 domains in 2020, results tracked live for multiple years on the Domain Name Wire podcast with Andrew Allemann",
+      "rev": "~$70-80K net/yr"
+    }
+  ],
+  "online-tutoring": [
+    {
+      "name": "Joanna",
+      "handle": "joannaesl.com",
+      "url": "https://joannaesl.com",
+      "note": "Full-time Preply ESL tutor at $40/hr, publishes annual earnings breakdowns from platform payout data",
+      "rev": "~$22.3K/yr (1:1 lessons only)"
+    }
+  ],
+  "bug-bounty-security": [
+    {
+      "name": "Santiago Lopez",
+      "handle": "@try_to_hack",
+      "url": "https://hackerone.com/try_to_hack",
+      "note": "First bug bounty hunter to cross $1M on HackerOne, ~1,600 reports filed since starting self-taught in 2015",
+      "rev": "~$1M+ total bounties"
+    }
+  ],
+  "faceless-content-automation": [
+    {
+      "name": "Adavia Davis",
+      "handle": "faceless YouTube network operator",
+      "url": "https://fortune.com/2025/12/30/ai-slop-faceless-youtube-accounts-adavia-davis-user-generated-content/",
+      "note": "Runs 5+ AI-narrated faceless channels (ambient sleep/history niche); Fortune independently verified earnings via AdSense screenshots",
+      "rev": "~$40-60K/mo"
+    }
+  ],
+  "email-marketing-service": [
+    {
+      "name": "Chase Dimond",
+      "handle": "@ecomchasedimond",
+      "url": "https://www.chasedimond.com",
+      "note": "Co-founded Boundless Labs, an ecommerce email agency that hit 7-figure annual revenue within 2 years before merging into Structured",
+      "rev": "7-figure agency revenue"
+    }
+  ],
+  "stock-media-assets": [
+    {
+      "name": "Kaspars Grinvalds",
+      "handle": "grinvalds",
+      "url": "https://www.shutterstock.com/g/grinvalds/about",
+      "note": "20-year microstock photographer with 10,500+ images across Shutterstock, Adobe Stock, iStock, Canva, and 123RF",
+      "rev": "~$50K/yr (~$4.2K/mo)"
+    }
+  ],
+  "online-bookkeeping-remote": [
+    {
+      "name": "Alyssa J. Dillon",
+      "handle": "AD Finance Manager / Dillon Business Advisors",
+      "url": "https://financial-cents.com/resources/expert-interviews/your-cents-worth-alyssa-j-dillon/",
+      "note": "Grew her bookkeeping/accounting firm from $750 in month one to sustained $27-42K/mo within year one",
+      "rev": "~$324K/yr (firm revenue, year one)"
+    }
+  ],
+  "web-dev-freelance": [
+    {
+      "name": "Steve Tenuto",
+      "handle": "@stenuto",
+      "url": "https://www.indiehackers.com/post/how-i-made-121k-in-a-year-as-a-freelance-web-dev-d982d26db2",
+      "note": "Solo freelance web dev, ~90% of projects from the real estate niche, Gridsome/Nuxt.js plus Contentful stack",
+      "rev": "~$121K/yr"
+    }
+  ],
+  "influencer-brand-deals": [
+    {
+      "name": "Naomi Melanie Leanage",
+      "handle": "@naomileanage",
+      "url": "https://www.tiktok.com/@naomileanage",
+      "note": "TikTok creator with ~500K followers, reported by Business Insider; minimum $6K per sponsored post",
+      "rev": "~$200K/yr from brand deals"
     }
   ]
 }

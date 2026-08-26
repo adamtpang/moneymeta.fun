@@ -29,8 +29,12 @@ export default function Home() {
           </div>
           <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
             Every way to make money as a &ldquo;deck,&rdquo; scored on{" "}
-            <span className="font-semibold text-foreground">median income × growth ÷ barrier</span>.
-            Occupations are anchored on{" "}
+            <span className="font-semibold text-foreground">
+              income × win rate × growth ÷ barrier
+            </span>
+            . Win rate is the share of players who clear a livable income, so a $240k median that
+            88% of players never reach does not outrank a $130k median that 99% do. Occupations are
+            anchored on{" "}
             <span className="font-semibold text-foreground">BLS</span> data; internet paths show
             the brutal median and a self-reported badge. The Pick, Meta Breaker, and matchup chart
             sit above the S-D board, like a Data Reaper report.

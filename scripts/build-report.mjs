@@ -18,6 +18,13 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 
+const args = process.argv.slice(2);
+const unknownArgs = args.filter((arg) => arg !== "--force");
+if (unknownArgs.length > 0) {
+  console.error("Usage: node scripts/build-report.mjs [--force]");
+  process.exit(1);
+}
+
 const require = createRequire(import.meta.url);
 const decks = require("../seed/income-decks.json");
 const history = require("../seed/score-history.json");
@@ -30,7 +37,9 @@ const GROWTH_LO = -10;
 const GROWTH_HI = 35;
 const TIME_MAX = 11;
 const CAP = { none: 100, low: 75, med: 45, high: 15 };
-const TIERS = { S: 70, A: 58, B: 46, C: 34 };
+// Keep in lockstep with lib/income.ts: TIER_BANDS, TIER_FLOOR_S, scoreFor().
+const TIER_BANDS = { S: 0.1, A: 0.25, B: 0.55, C: 0.85 };
+const TIER_FLOOR_S = 55;
 const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
 const inc = (m) => clamp(((m - INCOME_MIN) / (INCOME_MAX - INCOME_MIN)) * 100, 0, 100);
 const gro = (p) => clamp(((p - GROWTH_LO) / (GROWTH_HI - GROWTH_LO)) * 100, 0, 100);
@@ -38,10 +47,24 @@ const reach = (y, c) => {
   const t = clamp(((TIME_MAX - y) / TIME_MAX) * 100, 0, 100);
   return 0.6 * t + 0.4 * (CAP[c] ?? 50);
 };
+const winRate = (p) => (typeof p === "number" && !Number.isNaN(p) ? clamp(p, 0, 100) / 100 : 1);
+const payoff = (d) => inc(d.median) * winRate(d.livablePct);
 const startNow = (d) =>
-  Math.round(0.4 * inc(d.median) + 0.2 * gro(d.growthPct) + 0.4 * reach(d.timeToFirstIncomeYears, d.capitalTier));
+  Math.round(0.4 * payoff(d) + 0.2 * gro(d.growthPct) + 0.4 * reach(d.timeToFirstIncomeYears, d.capitalTier));
 const ceiling = (d) => Math.round(0.7 * inc(d.median) + 0.3 * gro(d.growthPct));
-const tierFor = (s) => (s >= TIERS.S ? "S" : s >= TIERS.A ? "A" : s >= TIERS.B ? "B" : s >= TIERS.C ? "C" : "D");
+
+/** Percentile bands over the whole board, mirroring tiersByRank in lib/income.ts. */
+const tierGrader = (scores) => {
+  const sorted = [...scores].sort((a, b) => b - a);
+  const n = sorted.length;
+  if (!n) return () => "D";
+  const cutAt = (share) => sorted[Math.max(0, Math.round(n * share) - 1)];
+  const sCut = Math.max(cutAt(TIER_BANDS.S), TIER_FLOOR_S);
+  const aCut = cutAt(TIER_BANDS.A);
+  const bCut = cutAt(TIER_BANDS.B);
+  const cCut = cutAt(TIER_BANDS.C);
+  return (s) => (s >= sCut ? "S" : s >= aCut ? "A" : s >= bCut ? "B" : s >= cCut ? "C" : "D");
+};
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outDir = path.join(__dirname, "..", "seed", "reports");
@@ -49,7 +72,7 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const asOf = new Date().toISOString().slice(0, 10);
 const outFile = path.join(outDir, `${asOf}.json`);
-if (fs.existsSync(outFile) && !process.argv.includes("--force")) {
+if (fs.existsSync(outFile) && !args.includes("--force")) {
   console.error(`Issue ${asOf} already exists. Re-run with --force to overwrite.`);
   process.exit(1);
 }
@@ -59,6 +82,10 @@ if (history.asOf === asOf) {
       `Normal order: build-report BEFORE snapshot-scores.`,
   );
 }
+
+// Tiers are relative, so grade the whole board before grading any one deck.
+const startNowTierOf = tierGrader(decks.map(startNow));
+const ceilingTierOf = tierGrader(decks.map(ceiling));
 
 // Current scores + movement vs the baseline
 const rows = decks.map((d) => {
@@ -70,9 +97,9 @@ const rows = decks.map((d) => {
     name: d.name,
     metaClass: d.metaClass ?? d.category,
     startNow: sn,
-    startNowTier: tierFor(sn),
+    startNowTier: startNowTierOf(sn),
     ceiling: ce,
-    ceilingTier: tierFor(ce),
+    ceilingTier: ceilingTierOf(ce),
     median: d.median,
     dStartNow: prior ? sn - prior.startNow : null,
     dCeiling: prior ? ce - prior.ceiling : null,

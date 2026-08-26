@@ -11,6 +11,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 
+const unknownArgs = process.argv.slice(2);
+if (unknownArgs.length > 0) {
+  console.error("Usage: node scripts/snapshot-scores.mjs");
+  process.exit(1);
+}
+
 // Pure scoring (duplicate of lib/income.ts constants so we can run without TS)
 const require = createRequire(import.meta.url);
 const decks = require("../seed/income-decks.json");
@@ -28,8 +34,14 @@ const reach = (y, c) => {
   const t = clamp(((TIME_MAX - y) / TIME_MAX) * 100, 0, 100);
   return 0.6 * t + 0.4 * (CAP[c] ?? 50);
 };
+// Win rate (livablePct) discounts payoff on the startNow lens only. The
+// ceiling lens is conditional on winning by definition, so it stays undiscounted.
+// Keep in lockstep with SCORE_FORMULA_VERSION and scoreFor() in lib/income.ts.
+const SCORE_FORMULA_VERSION = 2;
+const winRate = (p) => (typeof p === "number" && !Number.isNaN(p) ? clamp(p, 0, 100) / 100 : 1);
+const payoff = (d) => inc(d.median) * winRate(d.livablePct);
 const startNow = (d) =>
-  Math.round(0.4 * inc(d.median) + 0.2 * gro(d.growthPct) + 0.4 * reach(d.timeToFirstIncomeYears, d.capitalTier));
+  Math.round(0.4 * payoff(d) + 0.2 * gro(d.growthPct) + 0.4 * reach(d.timeToFirstIncomeYears, d.capitalTier));
 const ceiling = (d) => Math.round(0.7 * inc(d.median) + 0.3 * gro(d.growthPct));
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -49,6 +61,7 @@ for (const d of decks) {
 
 const payload = {
   asOf,
+  formulaVersion: SCORE_FORMULA_VERSION,
   note: "Prior period scores for movement arrows. Re-run snapshot-scores.mjs after each meta report.",
   scores,
 };

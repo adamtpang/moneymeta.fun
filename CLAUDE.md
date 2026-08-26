@@ -3,7 +3,7 @@
 > Status: **Live on moneymeta.fun (Vercel).** ONE board: the money meta.
 > The whole site is the income board, served at the root (`/`, `app/page.tsx`).
 > It answers one question: the best money deck to play in life. Income *paths*
-> ("decks") come from `seed/income-decks.json` (BLS-anchored, 90 decks) via
+> ("decks") come from `seed/income-decks.json` (BLS-anchored, 98 decks) via
 > `lib/income.ts`, with a two-lens toggle (start-now vs highest-ceiling),
 > data-confidence badges, and real indie-hacker exemplars (`seed/exemplars.json`)
 > on the internet decks. VS-style report layer: **The Pick**, **Meta Breaker**,
@@ -34,12 +34,22 @@ Vicious Syndicate's meta score ≈ **popularity × win rate**. We map that onto 
 
 | Hearthstone (VS)              | moneymeta.fun                                   |
 | ----------------------------- | ----------------------------------------------- |
-| How often a deck wins         | **Median income** (BLS wage) = win rate         |
+| How often a deck wins         | **`livablePct`** = share of players clearing a livable income |
+| How big the win is            | **Median income** (BLS wage) = payoff, not win rate |
+| How often a deck is played    | **`playRate`** (BLS employment counts) = popularity |
 | Deck trajectory               | **Growth** (BLS 10-year projection)             |
 | Barrier to play the deck      | time-to-first-income + capital needed           |
-| Meta score                    | `income × growth ÷ barrier` → 0..100            |
+| Meta score                    | win-rate-adjusted payoff + growth + reachability -> 0..100 |
 | Tier (S/A/B/C/D)              | Derived from the meta score                     |
 | Deck archetype                | Income path (profession, trade, owner, internet)|
+
+**Corrected 2026-08-23.** This table used to read "Median income = win rate",
+and `lib/income.ts` scored accordingly: `livablePct` and `playRate` were in the
+seed, rendered on every card, and absent from `scoreFor()` entirely. Median
+income is the size of the win, not the odds of it. Ranking by payoff alone put
+a 12%-win-rate franchise in S tier beside a 99%-win-rate profession, which is
+the Hearthstone equivalent of ranking decks by average damage dealt. Do not
+reintroduce the conflation.
 
 Unlike self-reported income (gameable, survivorship-biased), the BLS anchors are
 public and verifiable. Internet/creator paths that lack a public median are shown
@@ -70,14 +80,14 @@ Each lens derives its own S..D tiering; the same deck can tier differently.
 
 ## Data model (static JSON, nothing computed is stored)
 
-- `seed/income-decks.json` — 90 decks: slug, name, category, metaClass, playRate
+- `seed/income-decks.json`: 98 decks: slug, name, category, metaClass, playRate
   (0-100 crowdedness), livablePct (win-rate proxy), whatYouDo, median,
   incomeRangeNote, frequency, frequencyCount, growthPct, barrierToEntry,
   timeToFirstIncomeYears, capitalTier, dataQuality, sourceUrl.
-- `seed/exemplars.json` — real people wired onto internet decks, keyed by slug.
-- `seed/meta-report.json` — curated Data Reaper layer: Meta Breaker + hybrid
+- `seed/exemplars.json`: real people wired onto internet decks, keyed by slug.
+- `seed/meta-report.json`: curated Data Reaper layer: Meta Breaker + hybrid
   matchup stacks (opener → midgame → wincon).
-- `seed/playbooks.json` — curated how-to guides for high-leverage decks; all
+- `seed/playbooks.json`: curated how-to guides for high-leverage decks; all
   other decks get a category-aware default playbook from `lib/playbook.ts`.
 
 Scores and tiers are computed in a pure function in `lib/income.ts`, never stored.
@@ -85,28 +95,67 @@ Scores and tiers are computed in a pure function in `lib/income.ts`, never store
 ### Meta formula (tunable, `lib/income.ts`)
 
 ```
-startNow = 0.4*income + 0.2*growth + 0.4*reach   (reach = 0.6*time + 0.4*capital)
-ceiling  = 0.7*income + 0.3*growth
+payoff   = income * winRate                      (winRate = livablePct / 100)
+startNow = 0.4*payoff + 0.2*growth + 0.4*reach   (reach = 0.6*time + 0.4*capital)
+ceiling  = 0.7*income + 0.3*growth               (no win-rate discount, see below)
 income normalized $30k->0 .. $250k->100 ; growth on the BLS 10-year projection
-tiers: S >= 70 · A >= 58 · B >= 46 · C >= 34 · D < 34
+tiers: relative bands, top 10% S, next 15% A, next 30% B, next 30% C, bottom 15% D
 ```
 
-Weights and thresholds are exported constants, trivial to retune.
+### The grading rubric (what a tier actually means)
+
+Tiers are **relative to the current board**, not absolute score cutoffs. This is
+a meta report: a VS Tier 1 deck is Tier 1 relative to the current meta, not
+against a fixed standard. Bands live in `TIER_BANDS` (`lib/income.ts`).
+
+| Tier | Band | What it means for the reader |
+|---|---|---|
+| **S** | top 10% | Take it seriously as a plan. High pay, good odds, reachable without capital. |
+| **A** | next 15% | Strong, but one thing costs you: years, a credential, capital, or odds under 90%. |
+| **B** | next 30% | A real living for most who stick with it. Ordinary ceiling. |
+| **C** | next 30% | Works for a minority. Most who try do not clear a living. |
+| **D** | bottom 15% | Median outcome near zero, or the barrier eats the payoff. |
+
+`TIER_FLOOR_S` (55) is the one absolute guard: no deck is called S purely for
+topping a bad field. If nothing clears the floor, S is empty and that emptiness
+is a real statement, not a scaling bug.
+
+Fixed cutoffs (S>=70 A>=58 B>=46 C>=34) were replaced 2026-08-23. They were
+calibrated to the v1 distribution and never moved when v2's win-rate multiplier
+compressed the scale, which left S permanently empty and made "should S be 58 or
+63" unanswerable, because nothing anywhere in the repo said what S meant.
+Percentile bands self-correct on every formula change and seed refresh.
+
+The two lenses treat the odds differently on purpose. **startNow is expected
+value**: it answers "what happens if you start this today", so the chance of
+losing belongs in the number. **ceiling is conditional value**: it already
+means "if you make it, how high", so discounting it by win rate would
+double-count the same risk startNow already prices.
+
+`SCORE_FORMULA_VERSION` in `lib/income.ts` is stamped into
+`seed/score-history.json`. When they disagree, movement is reported as
+`rebased` and deltas are zeroed, so a formula change never publishes fake
+risers and fallers. After any formula change, re-run
+`node scripts/snapshot-scores.mjs`.
+
+Weights and thresholds are exported constants, trivial to retune. The formula
+is duplicated in `scripts/snapshot-scores.mjs` (it runs without TS); keep the
+two in lockstep or the baseline drifts from the live board.
 
 ---
 
 ## Where things live
 
-- `app/page.tsx` — the board (masthead + lens + The Pick/breaker/matchups + tiers).
-- `app/deck/[slug]/page.tsx` — per-deck playbook (steps, tools, pitfalls, ladder).
-- `app/layout.tsx`, `app/globals.css` — shell, fonts, the atmosphere layer.
-- `app/opengraph-image.tsx` — edge OG image. `app/sprint/page.tsx` — offer page.
-- `components/income/*` — income-board, income-card, income-meta, the-pick,
+- `app/page.tsx`: the board (masthead + lens + The Pick/breaker/matchups + tiers).
+- `app/deck/[slug]/page.tsx`: per-deck playbook (steps, tools, pitfalls, ladder).
+- `app/layout.tsx`, `app/globals.css`: shell, fonts, the atmosphere layer.
+- `app/opengraph-image.tsx`: edge OG image. `app/sprint/page.tsx`: offer page.
+- `components/income/*`: income-board, income-card, income-meta, the-pick,
   meta-breaker, matchup-chart, class-frequency.
-- `components/report-masthead.tsx`, `components/site-footer.tsx` — shared chrome.
-- `components/tier-styles.ts` — the S..D visual language.
-- `lib/income.ts` — scoring · `lib/meta-report.ts` — The Pick / breaker / matchups
-  · `lib/playbook.ts` — playbook resolve · `lib/meta.ts` · `lib/format.ts`.
+- `components/report-masthead.tsx`, `components/site-footer.tsx`: shared chrome.
+- `components/tier-styles.ts`: the S..D visual language.
+- `lib/income.ts`: scoring · `lib/meta-report.ts`: The Pick / breaker / matchups
+  · `lib/playbook.ts`: playbook resolve · `lib/meta.ts` · `lib/format.ts`.
 
 ---
 
@@ -114,7 +163,7 @@ Weights and thresholds are exported constants, trivial to retune.
 
 - **Now (done):** single income board, live, static JSON, two lenses, badges,
   The Pick, Meta Breaker, class frequency, movers strip, matchup chart, 90
-  decks with playRate/livablePct, per-deck playbooks (curated owner-ops too),
+  98 decks with playRate/livablePct, per-deck playbooks (curated owner-ops too),
   live BLS OEWS refresh (`scripts/bls-refresh.mjs --apply`), score snapshots
   for movement (`seed/score-history.json`).
 - **Next:** push weekly cadence (BLS refresh → ship → snapshot); more curated

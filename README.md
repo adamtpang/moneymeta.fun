@@ -36,7 +36,7 @@ pnpm dev        # http://localhost:3000
 ```
 
 The board renders directly from
-[`seed/income-decks.json`](seed/income-decks.json) (BLS-anchored, 62 decks) plus
+[`seed/income-decks.json`](seed/income-decks.json) (BLS-anchored, 98 decks) plus
 real exemplars in [`seed/exemplars.json`](seed/exemplars.json). Scores and tiers
 are computed in [`lib/income.ts`](lib/income.ts) and never stored.
 
@@ -55,7 +55,7 @@ Scores and tiers are always derived, never stored.
 
 ## Also here
 
-- [`/sprint`](https://moneymeta.fun/sprint) — the AI Build Sprint offer page (the cash floor).
+- [`/sprint`](https://moneymeta.fun/sprint): the AI Build Sprint offer page (the cash floor).
 
 The Capital and Career boards were removed in the 2026-07-20 refocus to make the
 site solely the money meta; `/income` and `/career` redirect to `/`.

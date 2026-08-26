@@ -1,10 +1,21 @@
 /**
  * The Income board, moneymeta's second map: income *paths* ("decks") ranked by
- * the same popularity x win-rate idea, but win-rate = median income and the
- * score is barrier-aware. Two lenses:
- *   - startNow  : reachable + fast (income ÷ barrier ÷ time), for a high-agency
- *                 person starting today with little capital.
- *   - ceiling   : highest expected value (terminal pay x trajectory).
+ * the same popularity x win-rate idea Vicious Syndicate uses for Hearthstone.
+ * Two lenses, and they deliberately treat the odds differently:
+ *   - startNow  : EXPECTED value. Payoff is discounted by livablePct, the real
+ *                 win rate (what share of players clear a livable income), then
+ *                 weighted by reachability. This is "what happens if you start
+ *                 this today", so the odds of losing belong in the number.
+ *   - ceiling   : CONDITIONAL value. Terminal pay x trajectory, win rate
+ *                 deliberately excluded, because this lens already means "if
+ *                 you make it, how high". Applying win rate here would
+ *                 double-count the same risk the startNow lens already prices.
+ *
+ * Why win rate entered the score (2026-08-23): it was in the seed data,
+ * BLS-derived for the 23 SOC-mapped decks, rendered on every card, and absent
+ * from scoreFor() entirely. The board was ranking decks by payoff alone, which
+ * put a 12%-win-rate franchise in S tier next to a 99%-win-rate profession.
+ * That is the Hearthstone equivalent of ranking decks by average damage dealt.
  * All scores are derived here from seed/income-decks.json (BLS-anchored). Nothing
  * computed is stored. Constants are exported so the formula stays tunable.
  */
@@ -29,12 +40,40 @@ export type MetaClass =
   | "career"
   | "other";
 
-export const INCOME_TIERS: Record<Exclude<Tier, "D">, number> = {
-  S: 70,
-  A: 58,
-  B: 46,
-  C: 34,
+/**
+ * The grading rubric. Tiers are RELATIVE to the current board, not absolute
+ * score cutoffs, because this is a meta report: it describes the field as it
+ * stands, the same way a Vicious Syndicate Tier 1 deck is Tier 1 relative to
+ * the current meta rather than against a fixed standard.
+ *
+ * Each value is the cumulative share of the board at or above that tier.
+ *   S = top 10%   "take it seriously as a plan"
+ *   A = next 15%  "strong, but one thing costs you: years, credential, capital, or odds"
+ *   B = next 30%  "a real living for most who stick with it"
+ *   C = next 30%  "works for a minority, most who try don't clear a living"
+ *   D = bottom 15% "median outcome near zero, or the barrier eats the payoff"
+ *
+ * Replaced fixed cutoffs (S>=70 A>=58 B>=46 C>=34) on 2026-08-23. Those were
+ * calibrated to the v1 formula's distribution and were never moved when v2's
+ * win-rate multiplier compressed the scale, which left S permanently empty and
+ * made every "should S be 58 or 63" argument unanswerable. Percentile bands
+ * self-correct on every formula change and every seed refresh, so this class
+ * of recalibration debt cannot recur.
+ */
+export const TIER_BANDS: Record<Exclude<Tier, "D">, number> = {
+  S: 0.10,
+  A: 0.25,
+  B: 0.55,
+  C: 0.85,
 };
+
+/**
+ * The one absolute guard on an otherwise relative rubric: no deck is called
+ * S just for topping a bad field. If nothing clears this, S is empty and that
+ * emptiness is a real statement about the world rather than a scaling bug.
+ * Currently dormant, the 10th-ranked deck scores comfortably above it.
+ */
+export const TIER_FLOOR_S = 55;
 
 // Income normalized linearly: $30k -> 0, $250k -> 100 (median annual).
 export const INCOME_MIN = 30000;
@@ -55,6 +94,21 @@ export const LENS_WEIGHTS = {
   startNow: { income: 0.4, growth: 0.2, reach: 0.4 },
   ceiling: { income: 0.7, growth: 0.3 },
 } as const;
+
+/**
+ * Score formula version. Bump this whenever scoreFor() changes shape, and
+ * re-run scripts/snapshot-scores.mjs to lock a fresh baseline.
+ *
+ * Movement arrows compare a deck's score against seed/score-history.json. If
+ * the formula changed since that snapshot, every delta is an artifact of the
+ * new ruler, not of the economy moving. Rather than publish a -34 "faller"
+ * that nothing real caused, toView() reports movement as "rebased" whenever
+ * the snapshot's formulaVersion does not match this constant.
+ *
+ * v1: 0.4*income + 0.2*growth + 0.4*reach, win rate unused.
+ * v2: income replaced by expected payoff (income x livablePct) on startNow.
+ */
+export const SCORE_FORMULA_VERSION = 2;
 
 export interface Exemplar {
   name: string;
@@ -99,9 +153,23 @@ interface SeedDeck {
    * brutal and uncertain by design rather than dressed up as research.
    */
   livablePct?: number;
+  /**
+   * BLS OEWS 10th/90th percentile annual wage, written by
+   * scripts/bls-refresh.mjs --apply for the SOC-mapped decks only. p90 is the
+   * real tail: what this deck pays someone in its top decile. Absent on every
+   * internet/owner-operator deck, because BLS has no equivalent series for
+   * them, which is exactly why no lens may treat a missing p90 as a low one.
+   */
+  p10?: number;
+  p90?: number;
 }
 
-export type Movement = "up" | "down" | "flat" | "new";
+/**
+ * "rebased" is not a movement, it is the honest absence of one: the scoring
+ * formula changed since the last snapshot, so no comparison is meaningful
+ * until scripts/snapshot-scores.mjs runs again.
+ */
+export type Movement = "up" | "down" | "flat" | "new" | "rebased";
 
 export interface IncomeDeckView extends SeedDeck {
   startNowScore: number;
@@ -122,6 +190,8 @@ export interface IncomeDeckView extends SeedDeck {
 interface ScoreHistoryFile {
   asOf: string;
   note?: string;
+  /** Which SCORE_FORMULA_VERSION produced these scores. Absent means v1. */
+  formulaVersion?: number;
   scores: Record<
     string,
     { startNow: number; ceiling: number; median?: number; playRate?: number; livablePct?: number }
@@ -153,49 +223,95 @@ function reachScore(years: number, capital: CapitalTier): number {
   return 0.6 * time + 0.4 * CAPITAL_SCORE[capital];
 }
 
-function tierFor(score: number): Tier {
-  if (score >= INCOME_TIERS.S) return "S";
-  if (score >= INCOME_TIERS.A) return "A";
-  if (score >= INCOME_TIERS.B) return "B";
-  if (score >= INCOME_TIERS.C) return "C";
-  return "D";
+/**
+ * Assign tiers by rank across the whole board under one lens. Ties are handled
+ * by score, not by array position, so two decks on the same score always land
+ * in the same tier no matter how the seed happens to be ordered.
+ */
+function tiersByRank(scores: number[]): (score: number) => Tier {
+  const sorted = [...scores].sort((a, b) => b - a);
+  const n = sorted.length;
+  if (n === 0) return () => "D";
+  const cutAt = (share: number) => sorted[Math.max(0, Math.round(n * share) - 1)];
+  const sCut = Math.max(cutAt(TIER_BANDS.S), TIER_FLOOR_S);
+  const aCut = cutAt(TIER_BANDS.A);
+  const bCut = cutAt(TIER_BANDS.B);
+  const cCut = cutAt(TIER_BANDS.C);
+  return (score: number): Tier => {
+    if (score >= sCut) return "S";
+    if (score >= aCut) return "A";
+    if (score >= bCut) return "B";
+    if (score >= cCut) return "C";
+    return "D";
+  };
+}
+
+/**
+ * Win rate, 0..1. livablePct is the share of players who clear a livable
+ * full-time income, BLS wage-percentile derived for the SOC-mapped decks and
+ * an explicit editorial estimate elsewhere (see the seed field's own comment).
+ * Guarded rather than defaulted to 0, because a missing win rate should not
+ * silently zero a deck's payoff.
+ */
+function winRate(livablePct: number | undefined): number {
+  if (typeof livablePct !== "number" || Number.isNaN(livablePct)) return 1;
+  return clamp(livablePct, 0, 100) / 100;
+}
+
+/**
+ * Expected payoff: what the median player actually takes home from this deck,
+ * not what the deck pays the people who survive it. A $240,000 median at a 12%
+ * win rate is not the same object as a $240,000 median at 99%, and until
+ * 2026-08-23 this board scored them identically.
+ */
+function expectedPayoff(deck: SeedDeck): number {
+  return incomeScore(deck.median) * winRate(deck.livablePct);
 }
 
 export function scoreFor(deck: SeedDeck, lens: Lens): number {
-  const inc = incomeScore(deck.median);
   const gro = growthScore(deck.growthPct);
   if (lens === "ceiling") {
+    // Conditional on winning by definition, so no win-rate discount here.
     const w = LENS_WEIGHTS.ceiling;
-    return Math.round(w.income * inc + w.growth * gro);
+    return Math.round(w.income * incomeScore(deck.median) + w.growth * gro);
   }
   const w = LENS_WEIGHTS.startNow;
   const reach = reachScore(deck.timeToFirstIncomeYears, deck.capitalTier);
-  return Math.round(w.income * inc + w.growth * gro + w.reach * reach);
+  return Math.round(w.income * expectedPayoff(deck) + w.growth * gro + w.reach * reach);
 }
 
-function toView(deck: SeedDeck): IncomeDeckView {
+function toView(
+  deck: SeedDeck,
+  startNowTierOf: (score: number) => Tier,
+  ceilingTierOf: (score: number) => Tier,
+): IncomeDeckView {
   const startNowScore = scoreFor(deck, "startNow");
   const ceilingScore = scoreFor(deck, "ceiling");
   const exemplars =
     (exemplarMap as Record<string, Exemplar[]>)[deck.slug] ?? [];
   const prior = history.scores?.[deck.slug];
-  const deltaStartNow = prior ? startNowScore - prior.startNow : 0;
-  const deltaCeiling = prior ? ceilingScore - prior.ceiling : 0;
-  const movementStartNow: Movement = prior
-    ? movementFromDelta(deltaStartNow)
-    : "new";
-  const movementCeiling: Movement = prior
-    ? movementFromDelta(deltaCeiling)
-    : "new";
+  // A snapshot taken under a different formula cannot be compared: the deltas
+  // would describe the ruler changing, not the economy. Report "rebased" and
+  // zero the delta so the movers strip stays empty until the next snapshot.
+  const comparable = (history.formulaVersion ?? 1) === SCORE_FORMULA_VERSION;
+  const deltaStartNow = prior && comparable ? startNowScore - prior.startNow : 0;
+  const deltaCeiling = prior && comparable ? ceilingScore - prior.ceiling : 0;
+  const movementFor = (delta: number): Movement => {
+    if (!prior) return "new";
+    if (!comparable) return "rebased";
+    return movementFromDelta(delta);
+  };
+  const movementStartNow: Movement = movementFor(deltaStartNow);
+  const movementCeiling: Movement = movementFor(deltaCeiling);
   return {
     ...deck,
     metaClass: deck.metaClass ?? "other",
     playRate: deck.playRate ?? 0,
     livablePct: deck.livablePct ?? 0,
     startNowScore,
-    startNowTier: tierFor(startNowScore),
+    startNowTier: startNowTierOf(startNowScore),
     ceilingScore,
-    ceilingTier: tierFor(ceilingScore),
+    ceilingTier: ceilingTierOf(ceilingScore),
     exemplars,
     movementStartNow,
     movementCeiling,
@@ -227,7 +343,12 @@ export function getMovers(
 
 /** All income decks with both lenses scored and exemplars attached. */
 export function getIncomeDecks(): IncomeDeckView[] {
-  return (decks as SeedDeck[]).map(toView);
+  const all = decks as SeedDeck[];
+  // Tiers are relative, so both lenses need the full score distribution before
+  // any single deck can be graded. Score the board first, then band it.
+  const startNowTierOf = tiersByRank(all.map((d) => scoreFor(d, "startNow")));
+  const ceilingTierOf = tiersByRank(all.map((d) => scoreFor(d, "ceiling")));
+  return all.map((d) => toView(d, startNowTierOf, ceilingTierOf));
 }
 
 /** Group decks into S→D buckets for one lens, sorted by that lens's score. */

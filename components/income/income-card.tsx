@@ -39,6 +39,16 @@ function MovementChip({
       </span>
     );
   }
+  if (movement === "rebased") {
+    return (
+      <span
+        className="inline-flex items-center rounded bg-secondary px-1 py-0.5 font-mono text-micro font-medium text-muted-foreground"
+        title="Scoring formula changed since the last snapshot, so no movement can honestly be reported yet"
+      >
+        REBASED
+      </span>
+    );
+  }
   if (movement === "up") {
     return (
       <span
