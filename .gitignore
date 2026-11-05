@@ -24,6 +24,8 @@ pnpm-debug.log*
 # env
 .env
 .env*.local
+.env*
+!.env.example
 
 # drizzle
 /drizzle
